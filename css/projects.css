@@ -47,7 +47,7 @@
 /*obsidio*/
 
 .obsidio-header {
-    background: url(/img/obsidio/obsidio-header.png) center center no-repeat;
+    background: url(/img/obsidio/obsidio-header.jpg) center center no-repeat;
     background-size: cover;
     height: 500px;
     padding: 0 !important;
@@ -99,7 +99,7 @@
 /*rw digital*/
 
 .rw-digital-header {
-    background: url(/img/rw-digital/business-card-mockup.png) center center no-repeat;
+    background: url(/img/rw-digital/business-card.jpg) center center no-repeat;
     background-size: cover;
     height: 500px;
     padding: 0 !important;
@@ -109,7 +109,7 @@
 /*project mammoth*/
 
 .pm-header {
-    background: url(/img/project-mammoth/pm-1.png) center center no-repeat;
+    background: url(/img/project-mammoth/pm-1.jpg) center center no-repeat;
     background-size: cover;
     height: 500px;
     padding: 0 !important;
