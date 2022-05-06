@@ -28,7 +28,7 @@ body {
     opacity: 1;
     transition: 1.8s opacity;
     font-family: 'Roboto Light';
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 .bold {
