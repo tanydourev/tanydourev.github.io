@@ -6,14 +6,8 @@
 }
 
 @font-face {
-    font-family: 'Inter Italic';
-    src: url(/fonts/Inter-Light.ttf);
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Macaria';
-    src: url(/fonts/Macaria.otf);
+    font-family: 'Mark Pro';
+    src: url(/fonts/Mark-Pro.ttf);
 }
 
 
@@ -27,12 +21,23 @@
 
 html {
     height: 100%;
+    background-color: #171717;
 }
 
 body {
-    color: #171717;
+    background-color: #171717;
+    color: #fff;
     font-family: 'Inter Light';
     overflow-x: hidden;
+
+    /*webpage fade in*/
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 .row > * {
@@ -48,264 +53,133 @@ p {
 /*text styles*/
 
 .bold {
-    font-family: 'Macaria';
-    font-weight: 600;
-    letter-spacing: 0.05em;
+    color: #10ffa3;
+    font-family: 'Mark Pro';
 }
 
-.accent-colour {
-    color: #fc5957;
+.bold-2 {
+    color: #fff;
+    font-family: 'Mark Pro';
+    font-weight: 800;
 }
 
 
 /*links*/
 
 a {
-    color: #171717;
+    color: #10ffa3;
     text-decoration: none;
     transition: ease-in 0.4s;
 }
 
 a:hover {
-    color: #171717;
+    color: #fff;
+}
+
+
+/* navigation */
+
+.topbar {
+    background-color: #262626;
+    padding: 5px 0 5px 40px !important;
+    color: #fff;
+    font-size: 20px;
+    margin: 50px 0 0 0;
+    border-radius: 15px;
+}
+
+.logo {
+    font-size: 40px;
+}
+
+.aa-line-icons {
+    --Line-Icons-Size: 35px;
+    --Line-Icons-Color: #fff;
+    margin: 14px 45px 0 0;
+    float: right;
+    transition: 0.3s ease-in !important;
+}
+
+
+/*landing page*/
+
+.content {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.landing {
+    margin: 150px 0 0 0;
+}
+
+.landing-title {
+    font-family: 'Mark Pro';
+    font-size: 90px;
+    font-weight: 800;
+    line-height: 1em;
+}
+
+.arrow {
+    font-family: 'Mark Pro';
+    font-size: 40px;
+    text-align: center;
+    margin: 100px 0 100px 0;
+}
+
+.regular {
+    font-size: 20px;
+    margin: 30px 0 50px 0;
+    text-align: left;
+}
+
+
+/*portfolio*/
+
+.project {
+    border: #171717 solid 10px;
+}
+
+.card {
+    background-color: #212121;
+    color: #fff;
+    transition: 0.3s ease-in;
+}
+
+.card:hover {
+    filter: grayscale(1);
+}
+
+.card-title {
+    color: #fff;
+    font-family: 'Mark Pro';
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: -3px;
+}
+
+.card-text {
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
 }
 
 
 /*footer*/
 
 .footer {
-    background-color: #fff;
-    color: #171717;
+    background-color: #212121;
+    color: #fff;
     padding: 30px 0 30px 0;
-    margin-top: 50px;
+    margin-top: 70px;
     text-align: center;
     font-size: 16px;
-    letter-spacing: 0.05em;
-}
-
-
-/* navigation */
-
-.general-nav {
-    background-color: #fff;
-    color: black;
-    font-size: 20px;
-    letter-spacing: 0.05em;
-    line-height: 1.2em;
-    padding: 25px 0 10px 0;
-    top: 0;
-    z-index: 100;
-    position: sticky;
-    -webkit-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.43);
-    box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.43);
-}
-
-
-/* landing page */
-
-.left {
-    background-color: #fc5957;
-    height: 100vh;
-}
-
-.right {
-    background-color: #fff;
-    height: 100vh;
-}
-
-#welcome {
-    padding: 100px 0 100px 0;
-}
-
-.landing-title {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    font-family: 'Macaria';
-    font-size: 200px;
-    line-height: 0.9em;
-    font-weight: 600;
-}
-
-.landing-text {
-    font-size: 40px;
-    line-height: 1.4em;
-    max-width: 90%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.regular-text {
-    color: #171717;
-    font-size: 25px;
-    line-height: 1.4em;
-    text-align: center;
-}
-
-
-/*portfolio*/
-
-#portfolio-grid {
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-.project {
-    border: #fff solid 10px;
-}
-
-.card {
-    transition: 0.2s ease-in;
-}
-
-.card:hover {
-    -webkit-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.43);
-    box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.43);
-}
-
-#about {
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-
-/*connect*/
-
-#connect {
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 0 0 50px 0;
-}
-
-.contact-links {
-    margin: 0 auto;
-    text-align: center;
-    margin: 30px 0 0 0;
-}
-
-button {
-    width: auto;
-    padding: 5px 20px;
-    border: #fc5957 solid 1px;
-    border-radius: 500px;
-    background-color: #fc5957;
-    color: #fff;
-    transition: 0.2s ease-in;
-    font-size: 20px;
-    text-align: center;
-}
-
-button:hover {
-    color: #171717;
-    background-color: #fff;
-    border: #171717 solid 1px;
-}
-
-
-/*projects*/
-
-#content {
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-.title {
-    margin: 60px 0 0 0;
-    letter-spacing: 0.02em;
-    font-family: 'Macaria';
-    font-weight: 600;
-}
-
-.subtitle {
-    letter-spacing: 0.06em;
-    padding: 20px 45px 10px 45px;
-    font-family: 'Macaria';
-    font-weight: 600;
-}
-
-.project-desc {
-    color: #171717;
-    font-size: 21px;
-    line-height: 1.4em;
-    padding: 30px 0 0 0;
-}
-
-.project-text {
-    color: #171717;
-    font-size: 22px;
-    line-height: 1.4em;
-    padding: 0 0 10px 0;
-}
-
-.back-button {
-    margin: 80px 0 50px 0;
-    text-align: center;
-}
-
-
-/*eco domes*/
-
-.eco-header {
-    background: url(/img/eco-domes/visualization.png) center center no-repeat;
-    background-size: cover;
-    height: 500px;
-    padding: 0 !important;
-}
-
-
-/*kent st.claire*/
-
-.obsidio-header {
-    background: url(/img/kent-stclaire/ksc-4.png) center center no-repeat;
-    background-size: cover;
-    height: 500px;
-    padding: 0 !important;
-}
-
-
-/*rw digital*/
-
-.rw-digital-header {
-    background: url(/img/rw-digital/business-card.jpg) center center no-repeat;
-    background-size: cover;
-    height: 500px;
-    padding: 0 !important;
-}
-
-.carousel-control-next:hover {
-    border: 0;
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.carousel-control-prev:hover {
-    border: 0;
-    background-color: rgba(255, 255, 255, 0);
-}
-
-
-/*voxel art*/
-
-.voxel-header {
-    background: url(/img/voxel-art/voxel-art-header.png) center center no-repeat;
-    background-size: cover;
-    height: 500px;
-    padding: 0 !important;
 }
 
 
 /*cp2077 level*/
 
 /*
-.level-header {
-    background: url(/img/cp2077-level/unity-5.png) center center no-repeat;
-    background-size: cover;
-    height: 500px;
-    padding: 0 !important;
-}
-
 .info-box {
     border: solid 1px #171717;
     padding: 20px !important;
@@ -340,6 +214,7 @@ button:hover {
 */
 
 
+
 /*project mammoth*/
 
 /*
@@ -353,9 +228,13 @@ button:hover {
 
 
 /* X-Small devices (portrait phones, less than 576px) */
-/*
 @media (max-width: 575.98px) {
 
+    .landing-title {
+        font-size: 80px;
+    }
+
+    /*
     .chat-box-R {
         max-width: 75%;
     }
@@ -371,8 +250,8 @@ button:hover {
     .cyberpsycho {
         display: none;
     }
-}
 */
+}
 
 /* Small devices (landscape phones, 576px and up) */
 /*
