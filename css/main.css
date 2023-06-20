@@ -966,6 +966,7 @@ footer {
   .about-text {
     width: 80%;
     margin: 0 auto;
+    text-align: left;
   }
 
   .about-split-2 {
