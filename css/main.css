@@ -50,12 +50,12 @@ body.fade-out {
 
 @font-face {
   font-family: Integral CF;
-  src: url(/fonts/IntegralCF-Bold.otf);
+  src: url(../fonts/IntegralCF-Bold.otf);
 }
 
 @font-face {
   font-family: Basic Grotesque;
-  src: url(/fonts/BasisGrotesqueArabicPro-Regular.ttf);
+  src: url(../fonts/BasisGrotesqueArabicPro-Regular.ttf);
 }
 
 
