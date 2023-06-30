@@ -163,7 +163,7 @@
 /* phone */
 @media only screen and (max-width: 599px) {
     .sidenav a {
-        font-size: 60px;
+        font-size: 55px;
     }
 
     .kofi h1,
@@ -174,7 +174,7 @@
     .cp2077-level h1 {
         width: 80%;
         margin: 0 auto;
-        font-size: 60px;
+        font-size: 55px;
     }
 
     #page-content {
@@ -189,6 +189,7 @@
     #page-content p {
         display: block;
         width: 100%;
+        font-size: 17px;
     }
 
     .element {
