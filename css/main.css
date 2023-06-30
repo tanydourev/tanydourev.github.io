@@ -1,1037 +1,337 @@
 /* ---------- GENERAL STYLING ---------- */
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  height: 100%;
-  background-color: #fff;
+    height: 100%;
+    background-color: #fff;
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
-  background-color: #fff;
-  font-family: Basic Grotesque;
-  opacity: 1;
-  transition: 1s opacity;
-  overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    color: #151515;
+    background-color: #fff;
+    font-family: Inter Regular;
+    opacity: 1;
+    transition: 1s opacity;
+    overflow-x: hidden;
 }
 
 body.fade-out {
-  opacity: 0;
-  transition: none;
+    opacity: 0;
+    transition: none;
 }
-
-
-/* ---------- SCROLLBAR ---------- */
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #e4e4e4;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #000;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #383838;
-}
-
-
-/* ---------- FONTS ---------- */
-
-@font-face {
-  font-family: Integral CF;
-  src: url(../fonts/IntegralCF-Bold.otf);
-}
-
-@font-face {
-  font-family: Basic Grotesque;
-  src: url(../fonts/BasisGrotesqueArabicPro-Regular.ttf);
-}
-
-
-/* ---------- TEXT SPANS ---------- */
-
-.peach {
-  color: #ffa38c;
-}
-
-.white {
-  color: #fff;
-}
-
-.projects small {
-  padding-top: 5px;
-  font-size: 15px;
-  font-style: oblique;
-}
-
-.quote {
-  display: block;
-  border-left: 3px solid #ffa38c;
-  padding-left: 20px;
-}
-
-/* ---------- LINKS ---------- */
 
 a {
-  color: #ffa38c;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
+    color: #151515;
 }
 
-a:hover {
-  color: #fff;
+/* ---------- FONTS & TEXT STYLES ---------- */
+
+@font-face {
+    font-family: Inter Regular;
+    src: url(../fonts/Inter-Regular.ttf);
 }
 
-
-/* ---------- BUTTONS ---------- */
-
-button {
-  font-family: Basic Grotesque;
-  border: none;
+@font-face {
+    font-family: Inter Bold;
+    src: url(../fonts/Inter-Bold.ttf);
 }
 
-button:hover {
-  cursor: pointer;
+.stroked {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    transition: 0.3s ease-in-out;
 }
 
+.stroked:hover {
+    color: #fff;
+    -webkit-text-stroke: none;
+}
 
-/* ---------- SIDEBAR NAVIGATION ---------- */
+/* ---------- NAVIGATION ---------- */
 
 .sidenav {
-  height: 100%;
-  width: 0;
-  padding-top: 60px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #fff;
-  border-left: 1px solid #000;
-  overflow-x: hidden;
-  transition: 0.5s;
-  z-index: 1;
+    height: 100%;
+    width: 0;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #151515;
+    overflow-x: hidden;
+    transition: 1s ease-in-out;
+    z-index: 101;
 }
 
 .sidenav a {
-  display: block;
-  padding: 8px 8px 8px 35px;
-  color: #000;
-  font-size: 22px;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-}
-
-.sidenav a:hover {
-  color: #ffa38c;
-  cursor: pointer;
+    display: block;
+    color: #fff;
+    font-family: Inter Bold;
+    font-size: 100px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
 }
 
 .openbtn {
-  margin-left: 50px;
-  position: absolute;
-  top: 20px;
-  right: 28px;
-  color: #fff;
-  font-size: 25px;
+    position: absolute;
+    top: 20px;
+    right: 33px;
+    color: #fff;
+    font-size: 30px;
+    z-index: 100;
 }
 
 .openbtn:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
-.sidenav .closebtn {
-  margin-left: 50px;
-  position: absolute;
-  top: 0;
-  right: 20px;
-  font-size: 50px;
+.closebtn {
+    position: absolute;
+    top: 8px;
+    right: 30px;
+    color: #fff;
+    font-family: Inter Regular !important;
+    font-size: 50px !important;
 }
 
 .sidenav-title {
-  padding: 8px 8px 8px 30px;
-  font-family: Integral CF;
-  font-size: 40px;
+    padding: 8px 8px 8px 30px;
+    font-family: Integral CF;
+    font-size: 40px;
 }
 
+/* ---------- GALLERY CONTENT ---------- */
 
-/* ---------- LANDING PAGE ---------- */
-
-.content-container,
-.project-content-container, .about-container {
-  display: grid;
-  place-items: center;
-  align-content: center;
-  height: auto;
-  background-color: #ffa38c;
+.gallery-carousel {
+    background: #EEE;
 }
 
-.landing-title {
-  margin: 1.4em 0 10px 0;
-  color: #fff;
-  font-family: Integral CF;
-  font-size: 130px;
-  font-weight: 300;
-  text-align: center;
-  line-height: 1.3em;
-  letter-spacing: -1px;
+.gallery-carousel a {
+    text-decoration: none;
 }
 
-.landing-subtitle {
-  margin-bottom: 35px;
-  color: #fff;
-  font-size: 33px;
-  font-weight: 200px;
-  text-align: center;
+.kofi {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    background: url(../img/kofi-thumbnail.png) center center no-repeat;
+    background-size: cover;
+    counter-increment: carousel-cell;
 }
 
-.landing-buttons {
-  display: block;
-  margin: 0 auto;
+.rw-digital {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    background: url(../img/rwdigital-thumbnail.png) center center no-repeat;
+    background-size: cover;
+    counter-increment: carousel-cell;
 }
 
-.contact-buttons a {
-  color: #000 !important;
+.project-mammoth {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    background: url(../img/project-mammoth-thumbnail.png) center center no-repeat;
+    background-size: cover;
+    counter-increment: carousel-cell;
 }
 
-.contact-1,
-.contact-2,
-.contact-3 {
-  display: inline-block;
-  width: 15;
-  padding: 11px 15px;
-  color: #fff;
-  background-color: #ffa38c;
-  font-size: 25px;
-  text-align: center;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  transition: 0.3s ease-in-out;
+.eco-domes {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    background: url(../img/eco-domes-thumbnail.png) center center no-repeat;
+    background-size: cover;
+    counter-increment: carousel-cell;
 }
 
-.contact-2,
-.contact-3 {
-  margin-left: 10px;
+.witchs-brew {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    background: url(../img/witchs-brew-thumbnail.png) center no-repeat;
+    background-size: cover;
+    counter-increment: carousel-cell;
 }
 
-.contact-1:hover,
-.contact-2:hover,
-.contact-3:hover {
-  color: #ffa38c;
-  background-color: #fff;
+.cp2077-level {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    background: url(../img/cp2077-level-thumbnail.png) center no-repeat;
+    background-size: cover;
+    counter-increment: carousel-cell;
 }
 
-.arrow {
-  padding: 1.5em 0 1em 0;
-  color: #fff;
-  font-size: 80px;
+.kofi h1,
+.rw-digital h1,
+.witchs-brew h1,
+.project-mammoth h1,
+.eco-domes h1,
+.witchs-brew h1,
+.cp2077-level h1 {
+    font-family: Inter Bold;
+    font-size: 100px;
+    color: #fff;
+    text-align: center;
+    line-height: 1em;
 }
 
-
-/* ---------- PORTFOLIO GALLERY ----------*/
-
-.portfolio-container {
-  height: auto;
-  width: 100%;
-  background-color: #151515;
+.witchs-brew h1:hover,
+.cp2077-level h1:hover {
+    cursor: not-allowed;
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+/* ---------- CAROUSEL ELEMENTS ---------- */
+
+.flickity-button {
+    background: #151515 !important;
 }
 
-.projects div {
-  height: 375px;
+.flickity-prev-next-button {
+    height: 30px !important;
+    width: 30px !important;
+    border-radius: 5px !important;
 }
 
-.project-1 p,
-.project-2 p,
-.project-3 p,
-.project-6 p,
-.project-8 p {
-  opacity: 0;
-  transition: 0.3s ease-in-out;
+.flickity-button-icon {
+    fill: #fff !important;
 }
 
-.project-4 p,
-.project-5 p,
-.project-9 p {
-  opacity: 1;
+.flickity-prev-next-button.previous {
+    left: 20px !important;
 }
 
-.project-1 p:hover,
-.project-2 p:hover,
-.project-3 p:hover,
-.project-6 p:hover,
-.project-8 p:hover {
-  opacity: 1;
+.flickity-prev-next-button.next {
+    right: 20px !important;
 }
 
-.thumbnail-title {
-  display: grid;
-  place-items: center;
-  align-content: center;
-  height: 375px;
-  padding: 5px;
-  color: #ffa38c;
-  background-color: #fff;
-  font-size: 25px;
-  letter-spacing: 2px;
+.flickity-page-dots {
+    bottom: 20px !important;
 }
 
-.wip-thumbnail {
-  display: grid;
-  place-items: center;
-  align-content: center;
-  height: 375px;
-  padding: 5px;
-  color: #fff;
-  font-size: 25px;
-  letter-spacing: 2px;
+.flickity-page-dots .dot {
+    height: 8px !important;
+    width: 8px !important;
+    background: #969696 !important;
+    opacity: 1 !important;
 }
 
-.project-1 {
-  background: url(../img/rwdigital-thumbnail.png) center center no-repeat;
-  background-size: cover;
+.flickity-page-dots .dot.is-selected {
+    background: #151515 !important;
 }
 
-.project-2 {
-  background: url(../img/project-mammoth-thumbnail.png) center center no-repeat;
-  background-size: cover;
+/* ---------- PROJECT CONTENT ---------- */
+
+#page-content {
+    display: flex;
+    height: auto;
+    padding: 4em 0 4em 8em;
 }
 
-.project-3 {
-  background: url(../img/kofi-thumbnail.png) center center no-repeat;
-  background-size: cover;
+.bottom-spacing {
+    margin-bottom: 4em;
 }
 
-.project-4 {
-  background: url(../img/chrome.png) center center no-repeat;
-  background-size: cover;
+.top-spacing {
+    margin-top: 4em;
 }
 
-.project-4:hover {
-  cursor: pointer;
+.element,
+.copyright {
+    flex: 20%;
+    font-size: 18px;
 }
 
-.project-5 {
-  background: url(../img/kofi-aromo-blur.png) center center no-repeat;
-  background-size: cover;
+.page-text {
+    flex: 80%;
 }
 
-.project-6 {
-  background: url(../img/eco-domes-thumbnail.png) center center no-repeat;
-  background-size: cover;
+#page-content h1 {
+    width: 80%;
+    margin: -20px 0 20px 0;
+    color: #212121;
+    font-family: Inter Bold;
+    font-size: 60px;
 }
 
-.project-7 {
-  background: url(../img/cp2077-thumbnail-blur.png) center center no-repeat;
-  background-size: cover;
+#page-content p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6em;
 }
 
-.project-8 {
-  background: url(../img/voxel-2.png) center center no-repeat;
-  background-size: cover;
+/* ---------- CAROUSELS IN PROJECTS ---------- */
+
+.animals-carousel,
+.environments-carousel,
+.rw-carousel,
+.eco-domes-carousel {
+    height: auto;
 }
 
-.project-9 {
-  background: url(../img/anthropocene.png) center center no-repeat;
-  background-size: cover;
+.animals,
+.rw-posts {
+    width: 100%;
+    counter-increment: carousel-cell;
 }
 
-.project-9:hover {
-  cursor: pointer;
+.dimensions {
+    margin-right: 20px;
 }
 
-
-/* ---------- IMAGE VIEWER MODAL ---------- */
-
-#image-viewer {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  overflow: auto;
-  z-index: 1;
+.gap {
+    gap: 20px;
 }
 
-.modal-content {
-  display: block;
-  max-width: 500px;
-  margin: auto;
-  border: 1px solid #fff;
-}
-
-.modal-content {
-  animation-name: zoom;
-  animation-duration: 0.5s;
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0)
-  }
-
-  to {
-    transform: scale(1)
-  }
-}
-
-#image-viewer .close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #fff;
-  font-size: 50px;
-  transition: 0.3s ease;
-}
-
-#image-viewer .close:hover,
-#image-viewer .close:focus {
-  color: #ffa38c;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-/* ---------- PROJECT PAGES ---------- */
-
-.project-container {
-  height: auto;
-  padding: 8em 15em;
-  background-color: #fff;
-}
-
-.project-title,
-.about-title {
-  margin: 1.4em 0 20px 0;
-  color: #fff;
-  font-family: Integral CF;
-  font-size: 130px;
-  font-weight: 300;
-  text-align: center;
-  line-height: 1em;
-  letter-spacing: -1px;
-}
-
-.project-title {
-  margin: 1.4em 0 30px 0;
-}
-
-/* ----- info about project ----- */
-.button-1,
-.button-2 {
-  display: inline-block;
-  width: auto;
-  padding: 8px 13px;
-  color: #fff;
-  background-color: #ffa38c;
-  font-size: 20px;
-  text-align: center;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  transition: 0.3s ease-in-out;
-}
-
-.project-text {
-  width: 80%;
-  margin: 0 auto;
-  color: #151515;
-  font-size: 19px;
-  text-align: justify;
-  line-height: 1.5em;
-}
-
-.project-text img {
-  max-width: 100%;
-}
-
-/* ----- content splits ----- */
-.grid-images-2, .about-split-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-images-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-images-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.images img {
-  object-fit: cover;
-  height: 375px;
-}
-
-.grid-images-mk {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-}
-
-.grid-videos-pm {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  gap: 30px;
-  padding: 0 70px 0 30px;
-  background-color: #fff;
-}
-
-
-/* ---------- ABOUT ---------- */
-
-.about-container {
-  display: grid;
-  place-items: center;
-  align-content: center;
-  height: auto;
-  background-color: #151515;
-}
-
-.about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.profile-icon {
-  height: auto;
-  width: 80%;
-  border: 1px solid #000;
-}
-
-.about-text {
-  margin-left: -3em;
-  font-size: 19px;
-  text-align: justify;
-  line-height: 1.5em;
-}
-
-.about-contact-1,
-.about-contact-2,
-.about-contact-3 {
-  display: inline-block;
-  padding: 10px 0;
-  color: #ffa38c;
-  font-size: 25px;
-  text-align: center;
-  transition: 0.3s ease-in-out;
-}
-
-.about-contact-2,
-.about-contact-3 {
-  margin-left: 15px;
-}
-
-.about-contact-1:hover,
-.about-contact-2:hover,
-.about-contact-3:hover {
-  color: #151515;
-}
-
-
-/* ---------- FOOTER ---------- */
-
-footer {
-  display: grid;
-  place-items: center;
-  align-content: center;
-  height: 45px;
-  color: #fff;
-  background-color: #ffa38c;
-  border-top: 1px solid #fff;
-}
-
-
-/* ---------- MEDIA QUERIES ----------*/
-
-/* large monitor */
-@media only screen and (min-width: 1600px) {
-  
-  /* ----- page titles ----- */
-  .landing-title, .project-title {
-    margin-top: 2.3em;
-  }
-
-  .arrow {
-    padding: 2.5em 0 1em 0;
-  }
-
-  /* ----- portfolio gallery ----- */
-  .projects div {
-    height: 450px;
-  }
-
-  .thumbnail-title,
-  .wip-thumbnail {
-    height: 450px;
-  }
-
-  /* ----- for videos ----- */
-  .override {
-    height: 700px;
-  }
-
-  /* ----- image viewer modal ----- */
-  #image-viewer {
-    padding-top: 10em;
-  }
-
-  .images img {
-    object-fit: cover;
-    height: 450px;
-  }
-
-  .modal-content {
-    width: 90%;
-  }
-}
-
-/* regular laptop */
-@media only screen and (min-width: 1200px) and (max-width: 1599px) {
-  
-  /* ----- for videos ----- */
-  .override {
-    height: 600px;
-  }
-
-  /* ----- image viewer modal ----- */
-  #image-viewer {
-    padding-top: 5em;
-  }
-
-  .modal-content {
-    width: 60%;
-  }
-}
-
-/* small laptop */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  
-  /* ----- page titles ----- */
-  .landing-title, .project-title {
-    margin-top: 1.75em;
-    font-size: 120px;
-  }
-
-  .landing-subtitle {
-    font-size: 30px;
-  }
-
-  .arrow {
-    padding: 1.5em 0 1em 0;
-  }
-
-  /* ----- portfolio gallery ----- */
-  .projects {
+.carousel-triple {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .projects div {
-    height: 375px;
-  }
-
-  .thumbnail-title,
-  .wip-thumbnail {
-    height: 375px;
-  }
-
-  /* ----- about page ----- */
-  .about {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .about-split-2 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .about-text {
-    margin: 30px 0 0 0;
-    font-size: 19px;
-    text-align: justify;
-    line-height: 1.5em;
-  }
-
-  .profile-icon {
-    height: auto;
-    width: 80%;
-    margin: 0 auto;
-    border: 1px solid #000;
-  }
-
-  /* ----- for videos ----- */
-  .override {
-    height: 500px;
-  }
-
-  /* ----- image modal viewer ----- */
-  #image-viewer {
-    padding-top: 8em;
-  }
-
-  .images img {
-    object-fit: cover;
-    height: 375px;
-  }
-
-  .modal-content {
-    width: 90%;
-  }
+    margin: 3em 3em 0 3em;
 }
 
-/* tablet */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* ---------- IMAGE GRIDS ---------- */
 
-  /* ----- container padding ----- */
-  .content-container,
-  .project-content-container, .about-container {
-    height: auto;
-    padding: 0 5em;
-  }
-
-  /* ----- page titles ----- */
-  .landing-title, .project-title {
-    margin-top: 1.5em;
-    font-size: 100px;
-  }
-
-  .landing-subtitle {
-    margin-bottom: 25px;
-    font-size: 28px;
-  }
-
-  .arrow {
-    padding: 2em 0 1em 0;
-    font-size: 60px;
-  }
-
-  /* ----- portfolio gallery ----- */
-  .projects {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .projects div {
-    height: 375px;
-  }
-
-  .thumbnail-title,
-  .wip-thumbnail {
-    height: 375px;
-    font-size: 22px;
-  }
-
-  /* ----- about page ----- */
-  .about-split-2 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .about-text {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .profile-icon {
-    margin: 0 auto;
-    width: 60%;
-    margin-bottom: 30px;
-  }
-
-  /* ----- project pages ----- */
-  .project-container {
-    padding: 6em 5em;
-  }
-
-  /* ----- for videos ----- */
-  .override {
-    height: 400px;
-  }
-
-  /* ----- image viewer modal ----- */
-  #image-viewer {
-    padding-top: 6em;
-  }
-
-  .images img {
-    object-fit: cover;
-    height: 375px;
-  }
-
-  .modal-content {
-    width: 90%;
-  }
+.image-padding {
+    margin: 3em;
 }
 
-/* landscape phone */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-
-  /* ----- container padding ----- */
-  .content-container,
-  .project-content-container, .about-container {
-    height: auto;
-    padding: 3em 5em 0 5em;
-  }
-
-  /* ----- page titles ----- */
-  .landing-title, .project-title {
-    margin-top: 2em;
-    font-size: 70px;
-  }
-
-  .landing-subtitle {
-    margin-bottom: 25px;
-    font-size: 23px;
-  }
-
-  .arrow {
-    padding-top: 1.5em;
-    font-size: 60px;
-  }
-
-  /* ----- social buttons ----- */
-  .button-1,
-  .button-2,
-  .contact-1,
-  .contact-2,
-  .contact-3 {
-    padding: 9px 12px;
-    font-size: 20px;
-    border: 2px solid #fff;
-  }
-
-  /* ----- portfolio gallery ----- */
-  .projects {
+.image-double {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .projects div {
-    height: 350px;
-  }
-
-  .thumbnail-title,
-  .wip-thumbnail {
-    height: 350px;
-    font-size: 20px;
-  }
-
-  /* ----- about page ----- */
-  .about-text {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .about-split-2 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .about-text {
-    width: 80%;
-  }
-
-  .profile-icon {
-    margin: 0 auto;
-    width: 60%;
-    margin-bottom: 30px;
-  }
-
-  /* ----- project pages ----- */
-  .project-container {
-    padding: 6em 1em;
-  }
-
-  /* ----- content splits ----- */
-  .grid-images-4 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .grid-images-mk,
-  .grid-videos-pm {
-    grid-template-columns: repeat(1, 100%);
-  }
-
-  .grid-videos-pm {
-    padding: 0 40px 0 30px;
-  }
-
-  /* ----- for videos ----- */
-  .override {
-    height: 500px;
-  }
-
-  /* ----- image modal viewer ----- */
-  #image-viewer {
-    padding-top: 6em;
-  }
-
-  .images img {
-    object-fit: cover;
-    height: 350x;
-  }
-
-  .modal-content {
-    width: 60%;
-  }
+    margin: 3em;
 }
 
-/* phone */
-@media only screen and (max-width: 599px) {
-  
-  /* ----- container padding ----- */
-  .content-container {
-    height: auto;
-    padding: 0 2em;
-  }
-
-  .project-container {
-    padding: 6em 0;
-  }
-
-  .project-content-container, .about-container {
-    padding: 2em 2em 0 2em;
-  }
-
-  /* ----- page titles ----- */
-  .landing-title {
-    margin: 2.3em 0 30px 0;
-    font-size: 60px;
-    line-height: 1em;
-  }
-
-  .home {
-    font-size: 80px !important;
-  }
-
-  .project-title {
-    margin: 2.3em 0 30px 0;
-    font-size: 60px;
-  }
-
-  .landing-subtitle {
-    font-size: 23px;
-    line-height: 1.3em;
-  }
-
-  .arrow {
-    padding: 2em 0 1em 0;
-    font-size: 60px;
-  }
-
-  /* ----- social buttons ----- */
-  .button-1,
-  .button-2,
-  .contact-1,
-  .contact-2,
-  .contact-3 {
-    padding: 9px 12px;
-    font-size: 20px;
-    border: 2px solid #fff;
-  }
-
-  .contact-buttons {
-    display: inline-block;
-  }
-
-  /* ----- portfolio gallery ----- */
-  .projects {
+.image-triple {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
+    grid-template-columns: repeat(3, 1fr);
+}
 
-  .projects div {
-    height: 400px;
-  }
+/* ---------- ABOUT PAGE ---------- */
 
-  .thumbnail-title,
-  .wip-thumbnail {
-    height: 400px;
-    font-size: 20px;
-  }
-
-  /* ----- about page ----- */
-  .about-text {
-    width: 80%;
-    margin: 0 auto;
-    text-align: left;
-  }
-
-  .about-split-2 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .about-text {
-    width: 80%;
-  }
-
-  .profile-icon {
-    margin: 0 auto;
-    width: 80%;
-    margin-bottom: 30px;
-  }
-
-  /* ----- project pages ----- */
-  .project-text {
-    width: 80%;
-    text-align: left;
-  }
-
-  /* ----- content splits ----- */
-  .grid-images-2 {
+.page-header {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .grid-images-3 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  
-  .grid-images-4 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .grid-images-mk,
-  .grid-videos-pm {
-    grid-template-columns: repeat(1, 100%);
-  }
-
-  .grid-videos-pm {
-    padding: 0 40px 0 30px;
-  }
-
-  /* ----- for videos ----- */
-  .override {
-    height: 500px;
-  }
-
-  /* ----- image modal viewer ----- */
-  #image-viewer {
-    padding-top: 12em;
-  }
-
-  .images img {
-    object-fit: cover;
-    height: 400px;
-  }
-
-  .modal-content {
-    width: 80%;
-  }
+    place-items: center;
+    align-content: center;
 }
