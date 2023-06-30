@@ -4,41 +4,42 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tany Dourev</title>
-    <meta name="description" content="An interaction designer and type nerd with a love for fonts and video games.">
+    <title>KOFI | Tany Dourev - Multimedia Designer</title>
+    <meta name="description" content="A multimedia designer and type nerd with a love for fonts and video games.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="icon" href="img/favicon/favicon.png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
 </head>
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><b>&times;</b></a>
         <p class="sidenav-title">🍊</p>
         <a href="./">PORTFOLIO</a>
-        <a href="./about">ABOUT</a>
-        <a href="media/cv-tany-dourev.pdf" target="_blank">CV/RESUME</a>
+        <a href="./about"><span class="stroked">ABOUT</span></a>
+        <a href="media/cv-tany-dourev.pdf" target="_blank"><span class="stroked">CV</span></a>
     </div>
 
-    <span onclick="openNav()" class="openbtn">☰</span>
-
-    <div class="project-content-container">
-        <h1 class="landing-title" style="text-align: center;">KOFI.</h1>
-        <div class="landing-buttons">
-            <p class="button-1" style="margin-right: 10px;">2023</p>
-            <p class="button-2">☕</p>
+    <div id="navigation">
+        <div class="logo"></div>
+        <div id="menu">
+            <span onclick="openNav()" class="openbtn"><b>☰</b></span>
         </div>
-
-        <p class="arrow">↓</p>
     </div>
 
-    <div class="project-container">
-        <div class="project-content">
-            <p class="project-text"><b>KOFI</b> is a monoline display typeface inspired by the Kofi Aromo coffee
+    <header class="page-header"
+        style="background: url(/img/kofi-thumbnail.png) center center no-repeat; background-size: cover; height: 60vh; margin-bottom: 4em;">
+    </header>
+
+    <div id="page-content" class="bottom-spacing">
+        <div class="element"><b>OVERVIEW /</b></div>
+        <div class="page-text">
+            <h1>KOFI typeface</h1>
+            <p>KOFI is a monoline display typeface inspired by the Kofi Aromo coffee
                 franchise in Activision Blizzard's <em>Overwatch</em>. A full set of letterforms, numbers and
                 punctuation were derived from a ten-charactered logo, which only existed for the purpose of set-dressing
                 the in-game world of Numbani. I saw this an interesting opportunity to breathe new life into it, given
@@ -48,22 +49,31 @@
         </div>
     </div>
 
-    <img src="img/kofi-1.png" style="width: 100%; display: block;">
-    <img src="img/kofi-2.png" style="width: 100%; display: block;">
-    <img src="img/kofi-3.png" style="width: 100%; display: block;">
-    <img src="img/kofi-4.png" style="width: 100%; display: block;">
-    <img src="img/kofi-5.png" style="width: 100%; display: block;">
-    <img src="img/kofi-6.png" style="width: 100%; display: block;">
-    <img src="img/kofi-7.png" style="width: 100%; display: block;">
-    <img src="img/kofi-8.png" style="width: 100%; display: block;">
-    <img src="img/kofi-9.png" style="width: 100%; display: block;">
+    <img src="img/kofi-1.png" style="max-width: 100%; display: block;">
+    <img src="img/kofi-2.png" style="max-width: 100%; display: block;">
+    <div class="image-padding">
+        <img src="img/kofi-3.png" style="max-width: 100%; display: block;">
+    </div>
+    <img src="img/kofi-4.png" style="max-width: 100%; display: block;">
+    <div class="image-padding">
+        <img src="img/kofi-5.png" style="max-width: 100%; display: block;">
+    </div>
+    <img src="img/kofi-6.png" style="max-width: 100%; display: block;">
+    <img src="img/kofi-7.png" style="max-width: 100%; display: block;">
+    <div class="image-padding">
+        <img src="img/kofi-8.png" style="max-width: 100%; display: block;">
+    </div>
+    <div class="image-padding">
+        <img src="img/kofi-9.png" style="max-width: 100%; display: block;">
+    </div>
 
-    <footer>
-        <p> © Tany Dourev, 2023. All Rights Reserved.</p>
-    </footer>
+    <div id="page-content">
+        <div class="copyright"><b>COPYRIGHT /</b><br>© Tany Dourev, 2023. All Rights Reserved.</div>
+    </div>
 
+    <script src="scripts/scripts.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/path/to/flickity.pkgd.min.js"></script>
 </body>
-
-<script src="scripts/scripts.js"></script>
 
 </html>
