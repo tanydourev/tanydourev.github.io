@@ -4,92 +4,74 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tany Dourev</title>
-    <meta name="description" content="An interaction designer and type nerd with a love for fonts and video games.">
+    <title>ABOUT | Tany Dourev - Multimedia Designer</title>
+    <meta name="description" content="A multimedia designer and type nerd with a love for fonts and video games.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="icon" href="img/favicon/favicon.png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
-
-    <script src="//pull.cappuccicons.com/cpf.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
 </head>
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><b>&times;</b></a>
         <p class="sidenav-title">🍊</p>
-        <a href="./">PORTFOLIO</a>
+        <a href="./"><span class="stroked">PORTFOLIO</span></a>
         <a href="./about">ABOUT</a>
-        <a href="media/cv-tany-dourev.pdf" target="_blank">CV/RESUME</a>
+        <a href="media/cv-tany-dourev.pdf" target="_blank"><span class="stroked">CV</span></a>
     </div>
 
-    <span onclick="openNav()" class="openbtn">☰</span>
-
-    <div class="about-container">
-        <h1 class="landing-title home" style="text-align: center;">MEET <span class="peach">TANY.</span></h1>
-        <div class="landing-buttons">
-            <p class="button-1">🍊</p>
-        </div>
-
-        <p class="arrow">↓</p>
-    </div>
-
-    <div class="project-container">
-        <div class="project-content">
-            <div class="about-split-2">
-                <img class="profile-icon" src="img/profile-icon.png">
-                <div class="about-text">
-                    <p><b>TANY DOUREV</b> is an interaction designer and type nerd with a
-                        love
-                        for fonts and video games. She began
-                        her creative journey as a graphic designer and has since expanded into
-                        typography, branding, UX/UI and 3D design. Much of her inspiration stems from video game
-                        worlds,
-                        neo-futuristic art and cyberpunk aesthetics. Outside of design, she enjoys a
-                        good cup of
-                        green tea and likes to watch cars go around circuits on the weekends.</p>
-
-                    <br>
-
-                    <p style="padding-bottom: 10px;"><b>RESEARCH THESES:</b></p>
-                    <span class="quote">Signage Design & Wayfinding Systems: The Toronto Subway’s Fight For
-                        Credibility (coming soon!)</span>
-                    </p>
-
-                    <br>
-
-                    <p><b>LET'S CHAT!</b></p>
-                    <div class="about-landing-buttons" style="margin-top: 5px;">
-                        <a href="mailto:tanydourev@gmail.com">
-                            <p class="about-contact-1">
-                                <i class="cp cp-envelope-alt"></i>
-                            </p>
-                        </a>
-                        <a href="https://www.linkedin.com/in/tanydourev">
-                            <p class="about-contact-2">
-                                <i class="cp cp-linkedin"></i>
-                            </p>
-                        </a>
-                        <a href="https://www.instagram.com/tanydourev">
-                            <p class="about-contact-3">
-                                <i class="cp cp-instagram"></i>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <div id="navigation">
+        <div class="logo"></div>
+        <div id="menu">
+            <span onclick="openNav()" class="openbtn"><b>☰</b></span>
         </div>
     </div>
 
-    <footer>
-        <p> © Tany Dourev, 2023. All Rights Reserved.</p>
-    </footer>
+    <header class="page-header"
+        style="background-color: #151515; height: 60vh; margin-bottom: 4em;">
+        <h1>🍊</h1>
+    </header>
 
+    <div id="page-content">
+        <div class="element"><b>WELCOME /</b></div>
+        <div class="page-text">
+            <h1>Hi, I'm Tany!</h1>
+            <p>I'm a multimedia designer and type nerd with a love for fonts and video games. I began my creative journey as a graphic designer and have since expanded into typography, branding, UX/UI design and 3D design.<br><br>Much of my work is inspired by video games, neo-futuristic art and cyberpunk aesthetics. Anything I create, I try to bring it past surface level and take advantage of its full potential by merging various design discplines together to create truly unique projects.<br><br>Outside of design, I enjoy a good cup of tea and watching F1 cars race around circuits on the weekend.</p>
+        </div>
+    </div>
+
+    <div id="page-content" class="about">
+        <div class="element"><b>EXPERIENCE /</b></div>
+        <div class="page-text">
+            <p>Graphic Designer @ RW Digital (2021 - Present)<br>Student Design Assistant @ Brock University (2021)<br>Digital Program Assistant @ St. Catharines Museum (2020)</p>
+        </div>
+    </div>
+
+    <div id="page-content" class="about">
+        <div class="element"><b>RESEARCH /</b></div>
+        <div class="page-text">
+            <p><b>Signage Design & Wayfinding Systems: The Toronto Subway’s Fight For Credibility</b><br>Undergraduate Thesis (2022/23)</hp>
+        </div>
+    </div>
+
+    <div id="page-content" class="about">
+        <div class="element"><b>CONTACT /</b></div>
+        <div class="page-text">
+            <p><a href="mailto:tanydourev@gmail.com">Email</a> / <a href="https://www.linkedin.com/in/tanydourev">LinkedIn</a> / <a href="https://www.instagram.com/tanydourev">Instagram</a></p>
+        </div>
+    </div>
+
+    <div id="page-content">
+        <div class="copyright"><b>COPYRIGHT /</b><br>© Tany Dourev, 2023. All Rights Reserved.</div>
+    </div>
+
+    <script src="scripts/scripts.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/path/to/flickity.pkgd.min.js"></script>
 </body>
-
-<script src="scripts/scripts.js"></script>
 
 </html>
