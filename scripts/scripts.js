@@ -9,21 +9,9 @@ window.addEventListener('DOMContentLoaded', () => {
 // navigation triggers
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "100%";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
-
-
-// image viewer modal
-
-$(".images img").click(function(){
-    $("#full-image").attr("src", $(this).attr("src"));
-    $('#image-viewer').show();
-  });
-  
-  $("#image-viewer .close").click(function(){
-    $('#image-viewer').hide();
-  });
