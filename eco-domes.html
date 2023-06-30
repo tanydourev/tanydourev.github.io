@@ -4,55 +4,58 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tany Dourev</title>
-    <meta name="description" content="An interaction designer and type nerd with a love for fonts and video games.">
+    <title>ECO DOMES | Tany Dourev - Multimedia Designer</title>
+    <meta name="description" content="A multimedia designer and type nerd with a love for fonts and video games.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="icon" href="img/favicon/favicon.png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
 </head>
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><b>&times;</b></a>
         <p class="sidenav-title">🍊</p>
         <a href="./">PORTFOLIO</a>
-        <a href="./about">ABOUT</a>
-        <a href="media/cv-tany-dourev.pdf" target="_blank">CV/RESUME</a>
+        <a href="./about"><span class="stroked">ABOUT</span></a>
+        <a href="media/cv-tany-dourev.pdf" target="_blank"><span class="stroked">CV</span></a>
     </div>
 
-    <span onclick="openNav()" class="openbtn">☰</span>
-
-    <div class="project-content-container">
-        <h1 class="landing-title" style="text-align: center;">ECO DOMES.</h1>
-        <div class="landing-buttons">
-            <p class="button-1" style="margin-right: 10px;">2021</p>
-            <p class="button-2">🌱</p>
+    <div id="navigation">
+        <div class="logo"></div>
+        <div id="menu">
+            <span onclick="openNav()" class="openbtn"><b>☰</b></span>
         </div>
-
-        <p class="arrow">↓</p>
     </div>
 
-    <div class="project-container">
-        <div class="project-content">
-            <p class="project-text"><b>ECO DOMES</b> is a 2021 project concept aimed at creating immersive public spaces
-                with sustainable integrations. The domes, designed to be placed in Queen Victoria Park at the Niagara
-                Falls waterfront area, would provide a resting space for patrons while simulatenously utilizing the
-                benefits of greenery for oxygen reproduction.
-            </p>
+    <header class="page-header"
+        style="background: url(/img/eco-domes-thumbnail.png) center center no-repeat; background-size: cover; height: 60vh; margin-bottom: 4em;">
+    </header>
+
+    <div id="page-content" class="bottom-spacing">
+        <div class="element"><b>OVERVIEW /</b></div>
+        <div class="page-text">
+            <h1>Eco Domes concept</h1>
+            <p>Eco Domes is a 2021 project concept aimed at creating immersive public spaces with sustainable
+                integrations. The domes, designed to be placed in Queen Victoria Park at the Niagara Falls waterfront
+                area, would provide a resting space for patrons while simulatenously utilizing the benefits of greenery
+                for oxygen reproduction.</p>
         </div>
     </div>
 
     <img src="img/eco-domes-1.png" style="width: 100%; display: block;">
-    <img src="img/eco-domes-2.png" style="width: 100%; display: block;">
-    <img src="img/eco-domes-3.png" style="width: 100%; display: block;">
+    <div class="image-padding">
+        <img src="img/eco-domes-3.png" style="max-width: 100%; display: block;">
+    </div>
+    <img src="img/eco-domes-2.png" style="max-width: 100%; display: block;">
 
-    <div class="project-container">
-        <div class="project-content">
-            <p class="project-text">The structure of the domes was inspired by four
+    <div id="page-content" class="top-spacing">
+        <div class="element"><b>INSPIRATIONS /</b></div>
+        <div class="page-text">
+            <p>The structure of the domes was inspired by four
                 specific
                 public design examples: the
                 <a href="https://architizer.com/projects/cellular-tessellation/">2014 "Cellular Tessellation"
@@ -63,40 +66,72 @@
                 in Los Angeles, USA; and the interior of the <a href="https://archello.com/project/vista">Vista
                     Coffee
                     Shop</a> in Guangzhou, China. Elements from each example were taken to form the prelimiary
-                shapes of the domes, as well as influence colours, materials and natural integrations.<br><br>Rhino 7's
-                panelling tools were used in the creation of the hexagonal grid that covers
-                the roof of each dome. Layered sections were added on the lower half to ensure that air would be able to
-                circulate in and out of the structure, inviting a partial form of privacy without being overly closed
-                in. A polycarbonate dome would be placed underneath the hexagonal grid to protect from exterior weather
-                elements, known for its durability and common usage in greenhouses.
+                shapes of the domes, as well as influence colours, materials and natural integrations.
             </p>
         </div>
     </div>
 
-    <img src="img/eco-domes-4.png" style="width: 100%; display: block;">
-    <img src="img/eco-domes-5.png" style="width: 100%; display: block;">
-
-    <div class="project-container">
-        <div class="project-content">
-            <p class="project-text">The location for the domes, Queen Victoria Park, is often used for different events
-                based on the season. In the spring and summer, it becomes a picnic spot and play area for families. In
-                the winter, it hosts light displays that are a part of the city's annual Festival of Lights. This space
-                is located in an area that is heavily populated by tourists, making it accessible to all demographics
-                who would be interested in interacting with the domes.<br><br><small>Satellite imagery courtesy of
-                    Google Earth.</small></p>
+    <div id="page-content" class="bottom-spacing">
+        <div class="element"><b>TOOLS /</b></div>
+        <div class="page-text">
+            <p>Rhino 7's
+                panelling tools were used in the creation of the hexagonal grid that covers
+                the roof of each dome. Layered sections were added on the lower half to ensure that air would be able to
+                circulate in and out of the structure, inviting a partial form of privacy without being overly closed
+                in. A polycarbonate dome would be placed underneath the hexagonal grid to protect from exterior weather
+                elements, known for its durability and common usage in greenhouses.<br><br>All materials were generated
+                using the Chaos V-Ray plugin for Rhino 7.</p>
         </div>
     </div>
 
-    <img src="img/eco-domes-6.png" style="width: 100%; display: block;">
-    <img src="img/eco-domes-7.png" style="width: 100%; display: block;">
+    <img src="img/eco-domes-4.png" style="max-width: 100%; display: block;">
+    <div class="image-padding">
+        <div class="eco-domes-carousel"
+            data-flickity='{ "wrapAround": true, "prevNextButtons" : true, "pageDots" : true }'>
+            <div class="dimensions">
+                <img src="img/eco-domes-size-1.png" style="max-width: 100%; display: block;">
+            </div>
+            <div class="dimensions">
+                <img src="img/eco-domes-size-2.png" style="max-width: 100%; display: block;">
+            </div>
+            <div class="dimensions">
+                <img src="img/eco-domes-size-3.png" style="max-width: 100%; display: block;">
+            </div>
+            <div class="dimensions">
+                <img src="img/eco-domes-size-4.png" style="max-width: 100%; display: block;">
+            </div>
+            <div class="dimensions">
+                <img src="img/eco-domes-size-5.png" style="max-width: 100%; display: block;">
+            </div>
+            <div class="dimensions">
+                <img src="img/eco-domes-size-6.png" style="max-width: 100%; display: block;">
+            </div>
+        </div>
+    </div>
+
+    <div id="page-content" class="bottom-spacing">
+        <div class="element"><b>LOCATION /</b></div>
+        <div class="page-text">
+            <p>Queen Victoria Park is located in an area that is heavily populated by tourists, making it accessible to all demographics
+                who would be interested in interacting with the domes. It is often used for different events based on the season: a picnic spot and play area for families in the summer; during the winter, it
+                hosts light displays that are a part of the city's annual Festival of Lights.
+                <br><br>Satellite imagery courtesy of Google
+                Earth®.</p>
+        </div>
+    </div>
+
     <img src="img/eco-domes-8.png" style="width: 100%; display: block;">
+    <div class="image-padding">
+        <img src="img/eco-domes-6.png" style="width: 100%; display: block;">
+    </div>
 
-    <footer>
-        <p> © Tany Dourev, 2023. All Rights Reserved.</p>
-    </footer>
+    <div id="page-content">
+        <div class="copyright"><b>COPYRIGHT /</b><br>© Tany Dourev, 2023. All Rights Reserved.</div>
+    </div>
 
+    <script src="scripts/scripts.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/path/to/flickity.pkgd.min.js"></script>
 </body>
-
-<script src="scripts/scripts.js"></script>
 
 </html>
