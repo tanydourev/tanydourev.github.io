@@ -12,3 +12,39 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+// flickity carousels
+var flkty = new Flickity('.gallery-carousel', {
+    wrapAround: true,
+    prevNextButtons: false,
+    pageDots: true,
+    accessibility: true
+});
+
+var flkty = new Flickity('.rw-carousel', {
+    wrapAround: true,
+    prevNextButtons: true,
+    pageDots: false,
+    accessibility: true
+});
+
+var flkty = new Flickity('.animals-carousel', {
+    wrapAround: true,
+    prevNextButtons: true,
+    pageDots: true,
+    accessibility: false
+});
+
+var flkty = new Flickity('.environments-carousel', {
+    wrapAround: true,
+    prevNextButtons: true,
+    pageDots: true,
+    accessibility: false
+});
+
+var flkty = new Flickity('.eco-domes-carousel', {
+    wrapAround: true,
+    prevNextButtons: true,
+    pageDots: true,
+    accessibility: false
+});
