@@ -21,13 +21,6 @@ var flkty = new Flickity('.gallery-carousel', {
     accessibility: true
 });
 
-var flkty = new Flickity('.rw-carousel', {
-    wrapAround: true,
-    prevNextButtons: true,
-    pageDots: false,
-    accessibility: true
-});
-
 var flkty = new Flickity('.animals-carousel', {
     wrapAround: true,
     prevNextButtons: true,
