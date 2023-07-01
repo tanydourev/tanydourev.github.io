@@ -12,7 +12,6 @@
     <link rel="icon" href="img/favicon/favicon.png">
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
 </head>
 
 <body>
@@ -75,7 +74,7 @@
     </div>
 
     <div class="image-double gap">
-        <div class="animals-carousel" data-flickity='{ "wrapAround": true, "prevNextButtons" : true, "pageDots" : true, "accessibility" : false }'>
+        <div class="animals-carousel">
             <div class="animals">
                 <img src="img/animals-1.png" style="max-width: 100%; display: block;">
             </div>
@@ -89,7 +88,8 @@
                 <img src="img/animals-4.png" style="max-width: 100%; display: block;">
             </div>
         </div>
-        <div class="environments-carousel" data-flickity='{ "wrapAround": true, "prevNextButtons" : true, "pageDots" : true, "accessibility" : false }'>
+        
+        <div class="environments-carousel">
             <div class="animals">
                 <img src="img/enviro-1.png" style="max-width: 100%; display: block;">
             </div>
@@ -133,9 +133,8 @@
         <div class="copyright"><small>© Tany Dourev, 2023. All Rights Reserved.</small></div>
     </div>
 
-    <script src="scripts/scripts.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="/path/to/flickity.pkgd.min.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 
 </html>
