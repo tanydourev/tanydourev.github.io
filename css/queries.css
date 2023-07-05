@@ -102,6 +102,13 @@
         font-size: 70px;
     }
 
+    .gallery-carousel .splide__arrow {
+        color: #fff !important;
+        border-radius: 5px !important;
+        opacity: 1 !important;
+        margin: 0 8px !important;
+    }
+
     .kofi h1,
     .rw-digital h1,
     .project-mammoth h1,
