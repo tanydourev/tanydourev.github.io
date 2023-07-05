@@ -7,11 +7,14 @@
     <title>Tany Dourev - Multimedia Designer</title>
     <meta name="description" content="A multimedia designer and type nerd with a love for fonts and video games.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- stylesheets -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/queries.css">
-    <link rel="icon" href="img/favicon/favicon.png">
+    <link rel="stylesheet" href="css/splide.min.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon/favicon.png">
 </head>
 
 <body>
@@ -30,37 +33,53 @@
         </div>
     </div>
 
-    <div class="gallery-carousel">
-        <div class="kofi">
-            <a href="./kofi">
-                <h1>KOFI <span class="stroked">→</span></h1>
-            </a>
-        </div>
-        <div class="rw-digital">
-            <a href="./rw-digital">
-                <h1>RW DIGITAL <span class="stroked">→</span></h1>
-            </a>
-        </div>
-        <div class="project-mammoth">
-            <a href="./project-mammoth">
-                <h1>PROJECT MAMMOTH <span class="stroked">→</span></h1>
-            </a>
-        </div>
-        <div class="eco-domes">
-            <a href="./eco-domes">
-                <h1>ECO DOMES <span class="stroked">→</span></h1>
-            </a>
-        </div>
-        <div class="witchs-brew">
-            <h1><span class="stroked">THE WITCH'S BREW</span></h1>
-        </div>
-        <div class="cp2077-level">
-            <h1><span class="stroked">CP2077 LEVEL</span></h1>
+    <div class="splide gallery-carousel">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <div class="kofi splide__slide">
+                    <a href="kofi.html">
+                        <h1>KOFI <span class="stroked">→</span></h1>
+                    </a>
+                </div>
+                <div class="rw-digital splide__slide">
+                    <a href="rw-digital.html">
+                        <h1>RW DIGITAL <span class="stroked">→</span></h1>
+                    </a>
+                </div>
+                <div class="project-mammoth splide__slide">
+                    <a href="project-mammoth.html">
+                        <h1>PROJECT MAMMOTH <span class="stroked">→</span></h1>
+                    </a>
+                </div>
+                <div class="eco-domes splide__slide">
+                    <a href="eco-domes.html">
+                        <h1>ECO DOMES <span class="stroked">→</span></h1>
+                    </a>
+                </div>
+                <div class="witchs-brew splide__slide">
+                    <h1><span class="stroked">THE WITCH'S BREW</span></h1>
+                </div>
+                <div class="cp2077-level splide__slide">
+                    <h1><span class="stroked">CP2077 LEVEL</span></h1>
+                </div>
+            </ul>
         </div>
     </div>
 
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- scripts -->
+    <script src="scripts/splide.min.js"></script>
     <script src="scripts/scripts.js"></script>
+
+    <script>
+        var splide = new Splide('.gallery-carousel', {
+            type: 'loop',
+            speed: 800,
+        });
+        splide.mount();
+    </script>
+</body>
+
+</html>
 </body>
 
 </html>
