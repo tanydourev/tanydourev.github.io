@@ -8,14 +8,14 @@
 
 html {
     height: 100%;
-    background-color: #fff;
+    background-color: #151515;
 }
 
 body {
     height: 100vh;
     width: 100vw;
     color: #151515;
-    background-color: #fff;
+    background-color: #151515;
     font-family: Inter Regular;
     opacity: 1;
     transition: 1s opacity;
@@ -205,41 +205,34 @@ a {
 
 /* ---------- CAROUSEL ELEMENTS ---------- */
 
-.flickity-button {
-    background: #151515 !important;
+.gallery-carousel .splide__pagination__page.is-active {
+    background: #fff !important;
 }
 
-.flickity-prev-next-button {
-    height: 30px !important;
-    width: 30px !important;
+.gallery-carousel .splide__pagination__page {
+    margin: 8px 6px 25px 6px !important;
+}
+
+.gallery-carousel .splide__arrow {
+    color: #fff !important;
     border-radius: 5px !important;
-}
-
-.flickity-button-icon {
-    fill: #fff !important;
-}
-
-.flickity-prev-next-button.previous {
-    left: 20px !important;
-}
-
-.flickity-prev-next-button.next {
-    right: 20px !important;
-}
-
-.flickity-page-dots {
-    bottom: 20px !important;
-}
-
-.flickity-page-dots .dot {
-    height: 8px !important;
-    width: 8px !important;
-    background: #969696 !important;
     opacity: 1 !important;
+    margin: 0 15px !important;
 }
 
-.flickity-page-dots .dot.is-selected {
-    background: #151515 !important;
+.carousel-triple .splide__pagination__page,
+.image-double .splide__pagination__page,
+.image-padding .splide__pagination__page {
+    display: none !important;
+}
+
+.carousel-triple .splide__arrow,
+.image-double .splide__arrow,
+.image-padding .splide__arrow {
+    color: #151515 !important;
+    background: #fff !important;
+    border-radius: 5px !important;
+    margin: 0 3px !important;
 }
 
 /* ---------- PROJECT CONTENT ---------- */
