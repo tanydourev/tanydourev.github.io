@@ -124,7 +124,7 @@ a {
     display: grid;
     place-items: center;
     align-content: center;
-    background: url(../img/kofi-thumbnail.png) center center no-repeat;
+    background: url(../img/kofi-thumbnail.jpg) center center no-repeat;
     background-size: cover;
     counter-increment: carousel-cell;
 }
@@ -135,7 +135,7 @@ a {
     display: grid;
     place-items: center;
     align-content: center;
-    background: url(../img/rwdigital-thumbnail.png) center center no-repeat;
+    background: url(../img/rwdigital-thumbnail.jpg) center center no-repeat;
     background-size: cover;
     counter-increment: carousel-cell;
 }
@@ -168,7 +168,7 @@ a {
     display: grid;
     place-items: center;
     align-content: center;
-    background: url(../img/witchs-brew-thumbnail.png) center no-repeat;
+    background: url(../img/witchs-brew-thumbnail.jpg) center no-repeat;
     background-size: cover;
     counter-increment: carousel-cell;
 }
@@ -198,7 +198,6 @@ a {
     line-height: 1em;
 }
 
-.witchs-brew h1:hover,
 .cp2077-level h1:hover {
     cursor: not-allowed;
 }
