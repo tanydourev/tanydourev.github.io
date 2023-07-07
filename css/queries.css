@@ -2,6 +2,10 @@
 
 /* large monitor */
 @media only screen and (min-width: 1600px) {
+    .gallery-carousel-mobile {
+        display: none;
+    }
+
     #page-content p {
         width: 60%;
     }
@@ -9,6 +13,10 @@
 
 /* regular laptop */
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .gallery-carousel-mobile {
+        display: none;
+    }
+
     #page-content p {
         width: 60%;
     }
@@ -18,6 +26,10 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .sidenav a {
         font-size: 90px;
+    }
+
+    .gallery-carousel-mobile {
+        display: none;
     }
 
     .kofi h1,
@@ -52,6 +64,10 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .sidenav a {
         font-size: 90px;
+    }
+
+    .gallery-carousel-mobile {
+        display: none;
     }
 
     .kofi h1,
@@ -102,11 +118,8 @@
         font-size: 70px;
     }
 
-    .gallery-carousel .splide__arrow {
-        color: #fff !important;
-        border-radius: 5px !important;
-        opacity: 1 !important;
-        margin: 0 8px !important;
+    .gallery-carousel-mobile {
+        display: none;
     }
 
     .kofi h1,
@@ -169,8 +182,36 @@
 
 /* phone */
 @media only screen and (max-width: 599px) {
+    .openbtn {
+        top: 5%;
+        right: 33px;
+        color: #fff;
+        font-size: 30px;
+        z-index: 100;
+    }
+
     .sidenav a {
         font-size: 55px;
+    }
+
+    .gallery-carousel {
+        display: none;
+    }
+
+    .gallery-carousel .splide__arrow {
+        color: #fff !important;
+        border-radius: 5px !important;
+        opacity: 1 !important;
+        margin: 0 8px !important;
+    }
+
+    .kofi,
+    .rw-digital,
+    .project-mammoth,
+    .eco-domes,
+    .witchs-brew,
+    .cp2077-level {
+        display: block;
     }
 
     .kofi h1,
@@ -179,14 +220,16 @@
     .eco-domes h1,
     .witchs-brew h1,
     .cp2077-level h1 {
-        width: 80%;
-        margin: 0 auto;
-        font-size: 55px;
+        font-size: 58px;
+        text-align: left;
+        position: absolute;
+        bottom: 8%;
+        left: 25px;
     }
 
     #page-content {
         display: block;
-        padding: 2.5em 2.5em 4em 2.5em;
+        padding: 2.5em 2em 4em 2em;
     }
 
     #page-content h1 {
