@@ -198,6 +198,10 @@
         display: none;
     }
 
+    .gallery-carousel-mobile {
+        display: block;
+    }
+
     .gallery-carousel .splide__arrow {
         color: #fff !important;
         border-radius: 5px !important;
