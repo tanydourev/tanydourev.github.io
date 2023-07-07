@@ -110,11 +110,13 @@ a {
 
 /* ---------- GALLERY CONTENT ---------- */
 
-.gallery-carousel {
+.gallery-carousel,
+.gallery-carousel-mobile {
     background: #EEE;
 }
 
-.gallery-carousel a {
+.gallery-carousel a,
+.gallery-carousel-mobile a {
     text-decoration: none;
 }
 
@@ -204,7 +206,8 @@ a {
 
 /* ---------- CAROUSEL ELEMENTS ---------- */
 
-.gallery-carousel .splide__pagination__page.is-active {
+.gallery-carousel .splide__pagination__page.is-active,
+.gallery-carousel-mobile .splide__pagination__page.is-active {
     background: #fff !important;
 }
 
@@ -212,11 +215,19 @@ a {
     margin: 8px 6px 25px 6px !important;
 }
 
+.gallery-carousel-mobile .splide__pagination__page {
+    margin: 8px 15px 6px 6px !important;
+}
+
 .gallery-carousel .splide__arrow {
     color: #fff !important;
     border-radius: 5px !important;
     opacity: 1 !important;
     margin: 0 15px !important;
+}
+
+.gallery-carousel-mobile .splide__arrow {
+    display: none;
 }
 
 .carousel-triple .splide__pagination__page,
@@ -287,10 +298,6 @@ a {
 .rw-posts {
     width: 100%;
     counter-increment: carousel-cell;
-}
-
-.dimensions {
-    margin-right: 20px;
 }
 
 .gap {
