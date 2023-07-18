@@ -220,10 +220,18 @@ a {
 }
 
 .gallery-carousel .splide__arrow {
-    color: #fff !important;
-    border-radius: 5px !important;
-    opacity: 1 !important;
+    height: 2.5em;
+    width: 2.5em;
     margin: 0 15px !important;
+    padding: 0.5em !important;
+    background: none !important;
+    border: 1px solid #fff !important;
+    border-radius: 50%!important;
+    opacity: 1 !important;
+}
+
+.gallery-carousel .splide__arrow svg {
+    fill: #fff !important;
 }
 
 .gallery-carousel-mobile .splide__arrow {
