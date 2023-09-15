@@ -2,34 +2,131 @@
 
 /* large monitor */
 @media only screen and (min-width: 1600px) {
-    .gallery-carousel-mobile {
-        display: none;
+    .intro h1 {
+        width: 75%;
+        padding-left: 100px;
+        font-size: 120px;
+    }
+
+    .splide__arrows {
+        width: 8%;
+        left: 46.9%;
+    }
+
+    .arrows-container {
+        width: 7%;
+        height: 37px;
+        bottom: -2px;
+        left: 46.9%;
+    }
+
+    #page-content {
+        padding: 2em 10em 1em 17em;
     }
 
     #page-content p {
         width: 60%;
+    }
+
+    .timeline-content h3 {
+        width: 60%;
+    }
+
+    .timeline-content {
+        width: 95%;
+    }
+
+    .card {
+        width: 30%;
     }
 }
 
 /* regular laptop */
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
-    .gallery-carousel-mobile {
-        display: none;
+    .closebtn {
+        font-size: 55px;
+    }
+
+    .intro h1 {
+        width: 80%;
+        padding-left: 100px;
+        font-size: 100px;
+    }
+
+    .kofi h1,
+    .rw-digital h1,
+    .witchs-brew h1,
+    .project-mammoth h1,
+    .eco-domes h1,
+    .witchs-brew h1,
+    .cp2077-level h1 {
+        width: 90%;
+        font-size: 90px;
+    }
+
+    .splide__arrows {
+        width: 10%;
+        left: 45.7%;
+    }
+
+    .arrows-container {
+        width: 9%;
+        height: 37px;
+        bottom: -2px;
+        left: 45.5%;
+    }
+
+    #page-content {
+        padding: 2em 10em 1em 17em;
     }
 
     #page-content p {
-        width: 60%;
+        width: 70%;
+    }
+
+    .timeline-content h3 {
+        width: 70%;
+    }
+
+    .timeline-content {
+        width: 90%;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 34.5%);
     }
 }
 
 /* small laptop */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .sidenav a {
+    .intro h1 {
+        width: 80%;
+        padding-left: 70px;
         font-size: 90px;
     }
 
-    .gallery-carousel-mobile {
-        display: none;
+    .splide__arrows {
+        width: 16%;
+        left: 42.6%;
+    }
+
+    .arrows-container {
+        width: 13%;
+        height: 38px;
+        bottom: -3px;
+        left: 43%;
+    }
+
+    .sidenav-icon img {
+        height: 60px;
+    }
+
+    .sidenav a {
+        font-size: 90px;
     }
 
     .kofi h1,
@@ -44,30 +141,70 @@
     }
 
     #page-content {
-        padding: 4em 0 4em 6em;
+        padding: 2em 8em 1em 8em;
     }
 
     #page-content h1 {
-        width: 80%;
+        width: 85%;
     }
 
     #page-content p {
-        width: 80%;
+        width: 85%;
     }
 
-    .carousel-triple {
-        grid-template-columns: repeat(2, 1fr);
+    .timeline-content h3 {
+        width: 85%;
+    }
+
+    .timeline-content {
+        width: 95%;
+    }
+
+    .card {
+        width: 60%;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 42%);
     }
 }
 
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .sidenav a {
-        font-size: 90px;
+    .intro h1 {
+        width: 80%;
+        padding-left: 70px;
+        font-size: 85px;
     }
 
-    .gallery-carousel-mobile {
-        display: none;
+    .kofi,
+    .rw-digital,
+    .witchs-brew,
+    .project-mammoth,
+    .eco-domes,
+    .witchs-brew,
+    .cp2077-level {
+        height: 98vh;
+    }
+
+    .splide__arrows {
+        width: 20%;
+        left: 40.8%;
+    }
+
+    .arrows-container {
+        width: 16%;
+        height: 38px;
+        bottom: -3px;
+        left: 41.5%;
+    }
+
+    .sidenav-icon img {
+        height: 60px;
+    }
+
+    .sidenav a {
+        font-size: 90px;
     }
 
     .kofi h1,
@@ -76,50 +213,76 @@
     .eco-domes h1,
     .witchs-brew h1,
     .cp2077-level h1 {
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
-        font-size: 90px;
+        font-size: 70px;
     }
 
     #page-content {
-        padding: 4em 0 4em 4em;
+        padding: 2em 4em 1em 4em;
     }
 
     #page-content h1 {
-        width: 90%;
+        width: 100%;
     }
 
     #page-content p {
-        width: 90%;
+        width: 100%;
     }
 
-    .image-padding {
-        margin: 2em;
+    .timeline-content h3 {
+        width: 100%;
     }
 
-    .image-double {
-        grid-template-columns: repeat(2, 1fr);
-        margin: 2em;
+    .timeline-content {
+        width: 100%;
     }
 
-    .image-triple {
-        grid-template-columns: repeat(3, 1fr);
-        margin: 1em;
+    .card {
+        width: 70%;
     }
 
-    .carousel-triple {
-        grid-template-columns: repeat(2, 1fr);
+    .card-grid {
+        grid-template-columns: repeat(2, 49%);
     }
 }
 
 /* landscape phone */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-    .sidenav a {
+    .intro h1 {
+        width: 80%;
+        padding-left: 50px;
         font-size: 70px;
     }
 
-    .gallery-carousel-mobile {
-        display: none;
+    .kofi,
+    .rw-digital,
+    .witchs-brew,
+    .project-mammoth,
+    .eco-domes,
+    .witchs-brew,
+    .cp2077-level {
+        height: 98vh;
+    }
+
+    .splide__arrows {
+        width: 25%;
+        left: 38.8%;
+    }
+
+    .arrows-container {
+        width: 20%;
+        height: 38px;
+        bottom: -3px;
+        left: 39.5%;
+    }
+
+    .sidenav-icon img {
+        height: 60px;
+    }
+
+    .sidenav a {
+        font-size: 70px;
     }
 
     .kofi h1,
@@ -134,59 +297,85 @@
     }
 
     #page-content {
-        display: block;
-        padding: 4em;
+        padding: 2em 3em 1em 3em;
     }
 
     #page-content h1 {
-        width: 90%;
+        width: 100%;
     }
 
     #page-content p {
-        display: block;
-        width: 90%;
+        width: 100%;
     }
 
-    .element {
-        margin-bottom: 1.5em;
+    .timeline-content h3 {
+        width: 100%;
     }
 
-    .about {
-        margin-top: -4em;
+    .timeline-content {
+        width: 100%;
     }
 
-    .image-padding {
-        margin: 1em;
+    .card {
+        width: 100%;
     }
 
-    .image-double {
-        display: block;
-        grid-template-columns: repeat(1, 1fr);
-        margin: 1em;
-    }
-
-    .image-triple {
-        display: block;
-        grid-template-columns: repeat(1, 1fr);
-        margin: 1em;
-    }
-
-    .carousel-triple {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .environments-carousel {
-        margin-top: 1em;
+    .card-grid {
+        grid-template-columns: repeat(1, 100%);
     }
 }
 
 /* phone */
 @media only screen and (max-width: 599px) {
+    .intro h1 {
+        width: 90%;
+        padding-left: 30px;
+        font-size: 50px;
+    }
+
+    .kofi,
+    .rw-digital,
+    .witchs-brew,
+    .project-mammoth,
+    .eco-domes,
+    .witchs-brew,
+    .cp2077-level {
+        height: 98vh;
+    }
+
+    .splide__arrows {
+        width: 38%;
+        left: 34.5%;
+    }
+
+    .arrows-container {
+        width: 30%;
+        height: 38px;
+        bottom: -3px;
+        left: 36%;
+    }
+
+    .sidenav-icon img {
+        height: 40px;
+    }
+
+    .sidenav a {
+        font-size: 70px;
+    }
+
+    .kofi h1,
+    .rw-digital h1,
+    .project-mammoth h1,
+    .eco-domes h1,
+    .witchs-brew h1,
+    .cp2077-level h1 {
+        margin: 0 auto;
+        padding: 0 30px;
+        font-size: 55px;
+    }
+
     .openbtn {
-        top: 5%;
-        right: 33px;
-        color: #fff;
-        font-size: 30px;
+        font-size: 28px;
         z-index: 100;
     }
 
@@ -194,92 +383,33 @@
         font-size: 55px;
     }
 
-    .gallery-carousel {
-        display: none;
-    }
-
-    .gallery-carousel-mobile {
-        display: block;
-    }
-
-    .gallery-carousel .splide__arrow {
-        color: #fff !important;
-        border-radius: 5px !important;
-        opacity: 1 !important;
-        margin: 0 8px !important;
-    }
-
-    .kofi,
-    .rw-digital,
-    .project-mammoth,
-    .eco-domes,
-    .witchs-brew,
-    .cp2077-level {
-        display: block;
-    }
-
-    .kofi h1,
-    .rw-digital h1,
-    .project-mammoth h1,
-    .eco-domes h1,
-    .witchs-brew h1,
-    .cp2077-level h1 {
-        font-size: 58px;
-        text-align: left;
-        position: absolute;
-        bottom: 8%;
-        left: 25px;
-    }
-
     #page-content {
-        display: block;
-        padding: 2.5em 2em 4em 2em;
+        padding: 0 2em 1em 2em;
     }
 
     #page-content h1 {
         width: 100%;
+        font-size: 50px;
     }
 
     #page-content p {
-        display: block;
         width: 100%;
         font-size: 17px;
     }
 
-    .element {
-        margin-bottom: 1.5em;
+    .timeline-content h3 {
+        width: 100%;
     }
 
-    .about {
-        margin-top: -2em;
+    .timeline-content {
+        width: 100%;
     }
 
-    .image-padding {
-        margin: 1em;
+    .card {
+        width: 100%;
     }
 
-    .image-double {
-        display: block;
-        grid-template-columns: repeat(1, 1fr);
-        margin: 1em;
-    }
-
-    .image-triple,
-    .carousel-triple {
-        display: block;
-        grid-template-columns: repeat(1, 1fr);
-        margin: 1em;
-    }
-
-    .rw-education2,
-    .rw-education3,
-    .rw-events,
-    .rw-testimonials,
-    .rw-holidays {
-        margin-top: 1em;
-    }
-
-    .environments-carousel {
-        margin-top: 1em;
+    .card-grid {
+        grid-template-columns: repeat(1, 100%);
     }
 }
