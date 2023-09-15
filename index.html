@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tany Dourev - Multimedia Designer</title>
-    <meta name="description" content="A multimedia designer and type nerd with a love for fonts and video games.">
+    <title>Tany Dourev</title>
+    <meta name="description" content="An interaction designer, gamer and type nerd based in Canada.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- stylesheets -->
@@ -19,11 +19,13 @@
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><b>&times;</b></a>
-        <p class="sidenav-title">🍊</p>
-        <a href="./">PORTFOLIO</a>
-        <a href="./about"><span class="stroked">ABOUT</span></a>
-        <a href="media/cv-tany-dourev.pdf" target="_blank"><span class="stroked">CV</span></a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p class="sidenav-icon">
+            <img src="img/molang.png">
+        </p>
+        <a href="./" class="sidenav-link">PORTFOLIO</a>
+        <a href="./about" class="sidenav-link"><span class="stroked">ABOUT</span></a>
+        <a href="media/cv-tany-dourev.pdf" target="_blank" class="sidenav-link"><span class="stroked">CV</span></a>
     </div>
 
     <div id="navigation">
@@ -33,74 +35,54 @@
         </div>
     </div>
 
-    <div class="splide gallery-carousel">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <div class="witchs-brew splide__slide">
-                    <a href="./the-witchs-brew">
-                        <h1>THE WITCH'S BREW<br><span class="stroked">→</span></h1>
-                    </a>
-                </div>
-                <div class="rw-digital splide__slide">
-                    <a href="./rw-digital">
-                        <h1>RW DIGITAL<br><span class="stroked">→</span></h1>
-                    </a>
-                </div>
-                <div class="kofi splide__slide">
-                    <a href="./kofi">
-                        <h1>KOFI<br><span class="stroked">→</span></h1>
-                    </a>
-                </div>
-                <div class="project-mammoth splide__slide">
-                    <a href="./project-mammoth">
-                        <h1>PROJECT MAMMOTH<br><span class="stroked">→</span></h1>
-                    </a>
-                </div>
-                <div class="eco-domes splide__slide">
-                    <a href="./eco-domes">
-                        <h1>ECO DOMES<br><span class="stroked">→</span></h1>
-                    </a>
-                </div>
-                <div class="cp2077-level splide__slide">
-                    <h1><span class="stroked">CP2077 LEVEL</span></h1>
-                </div>
-            </ul>
-        </div>
+    <div class="intro">
+        <h1>HI, I'M TANY.<br><span class="stroked">I'M AN INTERACTION DESIGNER, GAMER & TYPE NERD.</span><br>
+            <div style="padding-top: 50px;">↓</span>
+        </h1>
     </div>
 
-    <div class="splide gallery-carousel-mobile">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <div class="witchs-brew splide__slide">
-                    <a href="./the-witchs-brew">
-                        <h1>THE<br>WITCH'S<br>BREW<br><span class="stroked">→</span></h1>
-                    </a>
-                </div>
-                <div class="rw-digital splide__slide">
-                    <a href="./rw-digital">
-                        <h1>RW<br>DIGITAL<br><span class="stroked">→</span></h1>
-                    </a>
-                </div>
-                <div class="kofi splide__slide">
-                    <a href="./kofi">
-                        <h1>KOFI<br><span class="stroked">→</span></h1>
-                    </a>
-                </div>
-                <div class="project-mammoth splide__slide">
-                    <a href="./project-mammoth">
-                        <h1>PROJECT<br>MAMMOTH<br><span class="stroked">→</span></h1>
-                    </a>
-                </div>
-                <div class="eco-domes splide__slide">
-                    <a href="./eco-domes">
-                        <h1>ECO<br>DOMES<br><span class="stroked">→</span></h1>
-                    </a>
-                </div>
-                <div class="cp2077-level splide__slide">
-                    <h1><span class="stroked">CP2077<br>LEVEL</span></h1>
-                </div>
-            </ul>
+    <div class="splide gallery-carousel">
+        <div style="position: relative">
+            <div class="splide__arrows"></div>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <div class="witchs-brew splide__slide">
+                        <a href="./the-witchs-brew">
+                            <h1>THE WITCH'S BREW<br><span class="stroked-arrow">→</span></h1>
+                        </a>
+                    </div>
+                    <div class="rw-digital splide__slide">
+                        <a href="./rw-digital">
+                            <h1>RW DIGITAL<br><span class="stroked-arrow">→</span></h1>
+                        </a>
+                    </div>
+                    <div class="kofi splide__slide">
+                        <a href="./kofi">
+                            <h1>KOFI<br><span class="stroked-arrow">→</span></h1>
+                        </a>
+                    </div>
+                    <div class="project-mammoth splide__slide">
+                        <a href="./project-mammoth">
+                            <h1>PROJECT MAMMOTH<br><span class="stroked-arrow">→</span></h1>
+                        </a>
+                    </div>
+                    <div class="eco-domes splide__slide">
+                        <a href="./eco-domes">
+                            <h1>ECO DOMES<br><span class="stroked-arrow">→</span></h1>
+                        </a>
+                    </div>
+                    <div class="cp2077-level splide__slide">
+                        <h1><span class="stroked-arrow">CP2077 LEVEL</span></h1>
+                    </div>
+                </ul>
+            </div>
         </div>
+
+        <div class="arrows-container"></div>
+    </div>
+
+    <div class="gallery-controls"></div>
+    <div class="bottom"></div>
     </div>
 
     <!-- scripts -->
@@ -111,14 +93,21 @@
         var splide = new Splide('.gallery-carousel', {
             type: 'loop',
             speed: 800,
+            focus: 'center',
+            perPage: 2.5,
+            breakpoints: {
+                1199: {
+                    perPage: 2,
+                },
+                992: {
+                    perPage: 1.5,
+                },
+                600: {
+                    perPage: 1,
+                },
+            },
         });
         splide.mount();
-
-        var splide1 = new Splide('.gallery-carousel-mobile', {
-            direction: 'ttb',
-            height: '100vh',
-        });
-        splide1.mount();
     </script>
 </body>
 
