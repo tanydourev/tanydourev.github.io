@@ -9,15 +9,13 @@
     }
 
     .splide__arrows {
-        width: 8%;
-        left: 46.9%;
+        bottom: 5.5em;
+        right: 5.5em;
+        width: 10.5em !important;
     }
 
-    .arrows-container {
-        width: 7%;
-        height: 37px;
-        bottom: -2px;
-        left: 46.9%;
+    button p {
+        font-size: 9em !important;
     }
 
     #page-content {
@@ -65,15 +63,13 @@
     }
 
     .splide__arrows {
-        width: 10%;
-        left: 45.7%;
+        bottom: 5em;
+        right: 5em;
+        width: 9.5em !important;
     }
 
-    .arrows-container {
-        width: 9%;
-        height: 37px;
-        bottom: -2px;
-        left: 45.5%;
+    button p {
+        font-size: 8em !important;
     }
 
     #page-content {
@@ -109,18 +105,6 @@
         font-size: 90px;
     }
 
-    .splide__arrows {
-        width: 16%;
-        left: 42.6%;
-    }
-
-    .arrows-container {
-        width: 13%;
-        height: 38px;
-        bottom: -3px;
-        left: 43%;
-    }
-
     .sidenav-icon img {
         height: 60px;
     }
@@ -138,6 +122,16 @@
         width: 80%;
         margin: 0 auto;
         font-size: 90px;
+    }
+
+    .splide__arrows {
+        bottom: 5em;
+        right: 5em;
+        width: 9.2em !important;
+    }
+
+    button p {
+        font-size: 7.5em !important;
     }
 
     #page-content {
@@ -184,19 +178,7 @@
     .eco-domes,
     .witchs-brew,
     .cp2077-level {
-        height: 98vh;
-    }
-
-    .splide__arrows {
-        width: 20%;
-        left: 40.8%;
-    }
-
-    .arrows-container {
-        width: 16%;
-        height: 38px;
-        bottom: -3px;
-        left: 41.5%;
+        height: 100vh;
     }
 
     .sidenav-icon img {
@@ -216,6 +198,16 @@
         width: 70%;
         margin: 0 auto;
         font-size: 70px;
+    }
+
+    .splide__arrows {
+        bottom: 5em;
+        right: 4em;
+        width: 9.5em !important;
+    }
+
+    button p {
+        font-size: 8em !important;
     }
 
     #page-content {
@@ -262,19 +254,7 @@
     .eco-domes,
     .witchs-brew,
     .cp2077-level {
-        height: 98vh;
-    }
-
-    .splide__arrows {
-        width: 25%;
-        left: 38.8%;
-    }
-
-    .arrows-container {
-        width: 20%;
-        height: 38px;
-        bottom: -3px;
-        left: 39.5%;
+        height: 100vh;
     }
 
     .sidenav-icon img {
@@ -294,6 +274,16 @@
         width: 80%;
         margin: 0 auto;
         font-size: 70px;
+    }
+
+    .splide__arrows {
+        bottom: 5em;
+        right: 4em;
+        width: 9.5em !important;
+    }
+
+    button p {
+        font-size: 8em !important;
     }
 
     #page-content {
@@ -340,19 +330,7 @@
     .eco-domes,
     .witchs-brew,
     .cp2077-level {
-        height: 98vh;
-    }
-
-    .splide__arrows {
-        width: 38%;
-        left: 34.5%;
-    }
-
-    .arrows-container {
-        width: 30%;
-        height: 38px;
-        bottom: -3px;
-        left: 36%;
+        height: 100vh;
     }
 
     .sidenav-icon img {
@@ -372,6 +350,16 @@
         margin: 0 auto;
         padding: 0 30px;
         font-size: 55px;
+    }
+
+    .splide__arrows {
+        bottom: 3.5em;
+        right: 2em;
+        width: 7.2em !important;
+    }
+
+    button p {
+        font-size: 5em !important;
     }
 
     .openbtn {
