@@ -31,6 +31,28 @@ a {
     color: #151515;
 }
 
+/* ---------- SCROLLBAR ---------- */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #151515;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #e97f71;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #e06150;
+}
+
 /* ---------- FONTS & TEXT STYLES ---------- */
 
 @font-face {
@@ -122,11 +144,7 @@ a {
 /* ---------- GALLERY CONTENT ---------- */
 
 .gallery-carousel {
-    height: 98vh;
-}
-
-.gallery-carousel {
-    background: #151515;
+    height: 100vh;
 }
 
 .gallery-carousel a {
@@ -145,66 +163,66 @@ a {
 
 .witchs-brew {
     width: 100vw;
-    height: 98vh;
+    height: 100vh;
     display: grid;
     place-items: center;
     align-content: center;
-    background: url(../img/wb-thumbnail.png) center no-repeat;
+    background: url(../img/wb-thumbnail.jpg) center no-repeat;
     background-size: cover;
     counter-increment: carousel-cell;
 }
 
 .kofi {
     width: 100vw;
-    height: 98vh;
+    height: 100vh;
     display: grid;
     place-items: center;
     align-content: center;
-    background: url(../img/kf-thumbnail.png) center center no-repeat;
+    background: url(../img/kf-thumbnail.jpg) center center no-repeat;
     background-size: cover;
     counter-increment: carousel-cell;
 }
 
 .rw-digital {
     width: 100vw;
-    height: 98vh;
+    height: 100vh;
     display: grid;
     place-items: center;
     align-content: center;
-    background: url(../img/rw-thumbnail.png) center center no-repeat;
+    background: url(../img/rw-thumbnail.jpg) center center no-repeat;
     background-size: cover;
     counter-increment: carousel-cell;
 }
 
 .project-mammoth {
     width: 100vw;
-    height: 98vh;
+    height: 100vh;
     display: grid;
     place-items: center;
     align-content: center;
-    background: url(../img/pm-thumbnail.png) center center no-repeat;
+    background: url(../img/pm-thumbnail.jpg) center center no-repeat;
     background-size: cover;
     counter-increment: carousel-cell;
 }
 
 .eco-domes {
     width: 100vw;
-    height: 98vh;
+    height: 100vh;
     display: grid;
     place-items: center;
     align-content: center;
-    background: url(../img/ec-thumbnail.png) center center no-repeat;
+    background: url(../img/ec-thumbnail.jpg) center center no-repeat;
     background-size: cover;
     counter-increment: carousel-cell;
 }
 
 .cp2077-level {
     width: 100vw;
-    height: 98vh;
+    height: 100vh;
     display: grid;
     place-items: center;
     align-content: center;
-    background: url(../img/cp-thumbnail.png) center no-repeat;
+    background: url(../img/cp-thumbnail.jpg) center no-repeat;
     background-size: cover;
     counter-increment: carousel-cell;
 }
@@ -256,45 +274,23 @@ a {
 
 .splide__arrows {
     position: absolute;
-    bottom: 0.5em;
-}
-
-.arrows-container {
-    background-color: #151515;
-    position: absolute;
-    border-radius: 10px 10px 0 0;
-    border-top: 2px solid #e06150;
-    border-left: 2px solid #e06150;
-    border-right: 2px solid #e06150;
+    height: auto;
 }
 
 /* single arrow */
 .gallery-carousel .splide__arrow {
-    height: 2em;
-    width: 2em;
-    margin: 0 35px 0 15px !important;
-    padding: 0.5em !important;
     background: none !important;
-    border: 1px solid #fff !important;
-    border-radius: 50% !important;
     opacity: 1 !important;
+}
+
+button p {
+    font-family: Euclid Circular B Bold;
     transition: 0.3s ease-in-out;
 }
 
-.gallery-carousel .splide__arrow:hover {
-    background: #e06150 !important;
-}
-
-/* arrow icon */
-.gallery-carousel .splide__arrow svg {
-    fill: #fff !important;
-}
-
-/* bottom tab */
-.bottom {
-    height: 2vh;
-    background-color: #151515;
-    border-top: 2px solid #e06150;
+button p:hover {
+    color: #fff;
+    -webkit-text-stroke: none;
 }
 
 /* ---------- PROJECT CONTENT ---------- */
