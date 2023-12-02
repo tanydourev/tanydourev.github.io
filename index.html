@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tany Dourev</title>
-    <meta name="description" content="An interaction designer, gamer and type nerd based in Canada.">
+    <title>TANY DOUREV | Interaction Designer</title>
+    <meta name="description" content="A Canada-based interaction designer with a love for type & games.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/queries.css">
-    <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="stylesheet" href="css/scroll.css">
 
     <!-- favicon -->
     <link rel="icon" href="img/favicon/favicon.png">
@@ -19,99 +19,212 @@
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <img src="img/closebtn.png">
+        </a>
         <p class="sidenav-icon">
             <img src="img/molang.png">
         </p>
-        <a href="./" class="sidenav-link">PORTFOLIO</a>
-        <a href="./about" class="sidenav-link"><span class="stroked">ABOUT</span></a>
-        <a href="media/cv-tany-dourev.pdf" target="_blank" class="sidenav-link"><span class="stroked">CV</span></a>
+        <a href="index.html" class="sidenav-link">PORTFOLIO</a>
+        <a href="media/cv-tany-dourev.pdf" target="_blank" class="sidenav-link"><span class="stroked">RESUMÉ</span></a>
+        <a href="research.html" class="sidenav-link"><span class="stroked">RESEARCH</span></a>
     </div>
 
     <div id="navigation">
         <div class="logo"></div>
         <div id="menu">
-            <span onclick="openNav()" class="openbtn"><b>☰</b></span>
+            <span onclick="openNav()" class="openbtn">
+                <img src="img/openbtn.png">
+            </span>
         </div>
     </div>
 
-    <div class="intro">
-        <h1>HI, I'M TANY.<br><span class="stroked">I'M AN INTERACTION DESIGNER, GAMER & TYPE NERD.</span><br>
-            <div style="padding-top: 50px;">↓</span>
-        </h1>
+    <div id="scroll">
+        <div id="first" class="scroll_item">&nbsp;</div>
+        <div id="second" class="scroll_item">&nbsp;</div>
+        <div id="third" class="scroll_item">&nbsp;</div>
     </div>
 
-    <div class="splide gallery-carousel">
-        <div class="splide__arrows">
-            <button class="splide__arrow splide__arrow--prev">
-                <span class="stroked-arrow">
-                    <p>←</p>
-                </span>
-            </button>
-            <button class="splide__arrow splide__arrow--next">
-                <span class="stroked-arrow">
-                    <p>→</p>
-                </span>
-            </button>
+    <div id="first1" class="header">
+        <img src="img/glow-circle.png" class="glow-img">
+        <p class="header-text hidden">Hello there! I’m Tany, an interaction designer with a love for type & games.</p>
+        <img src="img/arrow.svg" class="arrow">
+    </div>
+
+    <div id="second1" class="portfolio hidden">
+        <p class="portfolio-title">Works & projects</p>
+        <div id="project-gallery">
+            <div>
+                <div class="project3"></div>
+                <p class="project-title">
+                    <a href="the-witchs-brew.html">The Witch's Brew <span class="inter">→</span></a>
+                </p>
+                <p class="project-description">Branding, graphic design, packaging.<br>Adobe / 2023</p>
+            </div>
+
+            <div class="star star1">
+                <img src="img/star.png" height="9%">
+            </div>
+
+            <div>
+                <div class="project2"></div>
+                <p class="project-title">
+                    <a href="rw-digital.html">RW Digital <span class="inter">→</span></a>
+                </p>
+                <p class="project-description">Graphic design, web design, branding.<br>2021 — Ongoing</p>
+            </div>
+
+            <div class="star star2">
+                <img src="img/star.png" height="9%">
+            </div>
+
+            <div>
+                <div class="project1"></div>
+                <p class="project-title">???</p>
+                <p class="project-description">Level & environmental design.<br>Unreal 5 / 2023</p>
+            </div>
+
+            <div class="star star3">
+                <img src="img/star.png" height="9%">
+            </div>
+
+            <div>
+                <div class="project4"></div>
+                <p class="project-title">
+                    <a href="project-mammoth.html">Project Mammoth <span class="inter">→</span></a>
+                </p>
+                <p class="project-description">Interaction design, installation.<br>2021 — 2022</p>
+            </div>
+
+            <div class="star star4">
+                <img src="img/star.png" height="9%">
+            </div>
+
+            <div>
+                <div class="project5"></div>
+                <p class="project-title">
+                    <a href="kofi.html">KOFI typeface <span class="inter">→</span></a>
+                </p>
+                <p class="project-description">Type design.<br>Adobe / 2023</p>
+            </div>
+
+            <div class="star star5">
+                <img src="img/star.png" height="9%">
+            </div>
+
+            <div>
+                <div class="empty">More to come!</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="third1" class="about">
+        <div class="arrow2-container">
+            <img src="img/arrow.svg" class="arrow2">
         </div>
 
-        <div class="splide__track">
-            <ul class="splide__list">
-                <div class="witchs-brew splide__slide">
-                    <a href="./the-witchs-brew">
-                        <h1>THE WITCH'S BREW</h1>
+        <div id="about-content" class="hidden">
+            <div class="about-img"></div>
+            <div class="about-text">
+                <div class="about-buttons">
+                    <button class="about-btn" onclick="showAbout()">ABOUT</button>
+                    <button class="connect-btn" onclick="showConnect()">CONNECT</button>
+                </div>
+
+                <div id="showAbout">
+                    <p class="about-title">Meet Tany</p>
+                    <p class="text"><b>Hello there!</b> I’m an interaction designer, gamer and type nerd based in
+                        Canada. My
+                        creative journey
+                        began with graphic/visual design, and has since expanded into typography, UX/UI design, 3D and
+                        game
+                        design. Much of my work is inspired by cyberpunk aesthetics, futuristic art and video games.
+                        <br><br>
+                        I currently work as a <b>Graphic Designer @ <a href="https://www.rwdigital.ca/"
+                            style="color: #fff;">RW Digitial Marketing Agency</a></b>. Outside of design, I
+                        enjoy a
+                        good cup of tea, listening to video game soundtracks and watching Star Wars ✨
+                    </p>
+                </div>
+
+                <div id="showConnect">
+                    <p class="connect-title">Let's connect</p>
+                    <p class="text">Whether it’s to chat about an upcoming project, a potential job opportunity or
+                        simply a
+                        second opinion, let’s get the conversation started!
+                    </p>
+
+                    <a href="mailto:tanydourev@gmail.com" style="text-decoration: none;">
+                        <div class="social-icon">
+                            <img src="https://img.icons8.com/fluency-systems-filled/96/000000/new-post.png" />
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tanydourev" style="text-decoration: none;">
+                        <div class="social-icon">
+                            <img src="https://img.icons8.com/fluency-systems-filled/96/linkedin.png" />
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/tanydourev" style="text-decoration: none;">
+                        <div class="social-icon">
+                            <img src="https://img.icons8.com/fluency-systems-filled/96/instagram-new.png" />
+                        </div>
                     </a>
                 </div>
-                <div class="rw-digital splide__slide">
-                    <a href="./rw-digital">
-                        <h1>RW DIGITAL</h1>
-                    </a>
-                </div>
-                <div class="kofi splide__slide">
-                    <a href="./kofi">
-                        <h1>KOFI</h1>
-                    </a>
-                </div>
-                <div class="project-mammoth splide__slide">
-                    <a href="./project-mammoth">
-                        <h1>PROJECT MAMMOTH</h1>
-                    </a>
-                </div>
-                <div class="eco-domes splide__slide">
-                    <a href="./eco-domes">
-                        <h1>ECO DOMES</h1>
-                    </a>
-                </div>
-                <div class="cp2077-level splide__slide">
-                    <h1><span class="stroked">CP2077 LEVEL</span></h1>
-                </div>
-            </ul>
+            </div>
         </div>
+    </div>
+
+    <div id="footer">
+        <footer>© Tany Dourev, 2023. All Rights Reserved.</footer>
     </div>
 
     <!-- scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
     <script src="scripts/splide.min.js"></script>
     <script src="scripts/scripts.js"></script>
 
     <script>
-        var splide = new Splide('.gallery-carousel', {
-            type: 'loop',
-            speed: 800,
-            focus: 'center',
-            perPage: 2.5,
-            breakpoints: {
-                1199: {
-                    perPage: 2,
-                },
-                992: {
-                    perPage: 1.5,
-                },
-                600: {
-                    perPage: 1,
-                },
-            },
+        $(document).ready(function () {
+
+            $("#first").addClass('scroll_item_active');
+            var main = main = $('#scroll');
+            $('.scroll_item').click(function (event) {
+
+                event.preventDefault();
+                var trgt = $(this).attr('id') + "1";
+                target_offset = $('#' + trgt).offset(),
+                    target_top = target_offset.top;
+                $('html, body').animate({
+                    scrollTop: target_top
+                }, 500);
+                main.children().removeClass('scroll_item_active');
+
+                $(this).addClass('scroll_item_active');
+
+            });
+
+            $(window).scroll(function (event) {
+                if ($("#first1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+                    $("#first").addClass('scroll_item_active');
+                    $("#second").removeClass('scroll_item_active');
+                    $("#third").removeClass('scroll_item_active');
+                }
+                if ($("#second1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+                    $("#second").addClass('scroll_item_active');
+                    $("#first").removeClass('scroll_item_active');
+                    $("#third").removeClass('scroll_item_active');
+
+                }
+                if ($("#third1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+                    $("#third").addClass('scroll_item_active');
+                    $("#first").removeClass('scroll_item_active');
+                    $("#second").removeClass('scroll_item_active');
+                }
+            });
         });
-        splide.mount();
     </script>
 </body>
 

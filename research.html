@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RESEARCH | Tany Dourev</title>
+    <meta name="description" content="A Canada-based interaction designer with a love for type & games.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/queries.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon/favicon.png">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <img src="img/closebtn.png">
+        </a>
+        <p class="sidenav-icon">
+            <img src="img/molang.png">
+        </p>
+        <a href="index.html" class="sidenav-link"><span class="stroked">PORTFOLIO</span></a>
+        <a href="media/cv-tany-dourev.pdf" target="_blank" class="sidenav-link"><span class="stroked">RESUMÉ</span></a>
+        <a href="research.html" class="sidenav-link">RESEARCH</span></a>
+    </div>
+
+    <div id="navigation">
+        <div class="logo"></div>
+        <div id="menu">
+            <span onclick="openNav()" class="openbtn">
+                <img src="img/openbtn.png">
+            </span>
+        </div>
+    </div>
+
+    <div class="project-header">
+        <p class="project-header-text hidden">RESEARCH</p>
+        <p class="project-header-subtitle hidden">💡🌱</p>
+    </div>
+
+    <div style="background-color: #f7f7f7;">
+
+        <div id="page-content">
+            <div class="description">
+                <p class="overview"><b><span class="quote">Signage Design & Wayfinding Systems: The Toronto Subway’s
+                            Fight For Credibility</span></b>This
+                    thesis examines the history of the Toronto Subway’s signage through a visual study
+                    supported by research on past signage design in the subway and wayfinding standards for
+                    public transportation. It analyzes the ambiguous origins of the subway’s custom typeface,
+                    highlights the inconsistent application of commercial typefaces such as <i>Univers</i> and
+                    <i>Helvetica</i> across stations, and reveals the TTC’s attempt to quietly disregard a
+                    professionally-designed and tested wayfinding system. The results derived from this
+                    study prove that travelers using the Toronto Subway will continue to be negatively
+                    impacted in the future should its managing authority refuse to acknowledge wayfinding
+                    concerns from users.
+                    <br>
+                    <button class="read-more">READ MORE <span class="inter">-></span></button>
+                </p>
+                <div class="details">
+                    <h4 class="details-title">O V E R V I E W</h4>
+                    <p>Signage & wayfinding, typography.</p>
+                    <p>Undergraduate thesis / 2022 — 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" style="margin-top: 40px;">
+        <footer>© Tany Dourev, 2023. All Rights Reserved.</footer>
+    </div>
+
+    <script src="scripts/scripts.js"></script>
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+    <script>
+        // With the above scripts loaded, you can call `tippy()` with a CSS
+        // selector and a `content` prop:
+        tippy('.read-more', {
+          content: 'Link coming soon!',
+          placement: 'right',
+        });
+      </script>
+</body>
+
+</html>
