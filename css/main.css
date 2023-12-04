@@ -31,15 +31,56 @@ a {
     color: #e06150;
 }
 
-
-
-.hidden {
-    opacity: 0;
-    transition: 0.5s ease-in-out;
+ol {
+    padding: 10px 0 10px 30px;
+    color: #151515;
 }
 
-.show {
-    opacity: 1;
+li {
+    padding-left: 5px;
+}
+
+
+/* ---------- FONTS & TEXT STYLES ---------- */
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-Medium.ttf);
+}
+
+.inter {
+    font-family: Inter;
+}
+
+@font-face {
+    font-family: Ninetea Regular;
+    src: url(../fonts/Ninetea-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ninetea Medium;
+    src: url(../fonts/Ninetea-Medium.ttf);
+}
+
+@font-face {
+    font-family: Ninetea Bold;
+    src: url(../fonts/Ninetea-Bold.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+.stroked {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.citation {
+    font-size: 60%;
+    vertical-align: super;
 }
 
 
@@ -103,41 +144,15 @@ a {
 }
 
 
-/* ---------- FONTS & TEXT STYLES ---------- */
+/* ---------- FADING ELEMENTS ---------- */
 
-@font-face {
-    font-family: Inter;
-    src: url(../fonts/Inter-Medium.ttf);
+.hidden {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
 }
 
-.inter {
-    font-family: Inter;
-}
-
-@font-face {
-    font-family: Ninetea Regular;
-    src: url(../fonts/Ninetea-Regular.ttf);
-}
-
-@font-face {
-    font-family: Ninetea Medium;
-    src: url(../fonts/Ninetea-Medium.ttf);
-}
-
-@font-face {
-    font-family: Ninetea Bold;
-    src: url(../fonts/Ninetea-Bold.ttf);
-}
-
-@font-face {
-    font-family: Raleway;
-    src: url(../fonts/Raleway-Regular.ttf);
-}
-
-.stroked {
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
-    transition: 0.3s ease-in-out;
+.show {
+    opacity: 1;
 }
 
 
@@ -552,24 +567,32 @@ footer {
 
 .split-img {
     display: grid;
-    grid-template-columns: repeat(1, 50% 50%);
-    padding: 0 35px 20px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px 20px 20px;
     gap: 15px;
 }
 
 .post-grid-3 {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 1em;
-    padding: 0 40px 20px 20px;
+    padding: 0 20px 20px 20px;
     gap: 15px;
 }
 
 .post-grid-4 {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    margin-top: 5em;
-    padding: 0 75px 20px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3em;
+    padding: 0 20px 20px 20px;
+    gap: 15px;
+}
+
+.post-grid-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 3em;
+    padding: 0;
     gap: 15px;
 }
 
@@ -632,3 +655,21 @@ footer {
     background-color: #f2eee7;
     color: #e06150;
 } */
+
+/* case study */
+.cs-quote {
+    border-left: 3px solid #e06150;
+    font-size: 90%;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    height: auto;
+    display: block;
+    line-height: 1.6em;
+}
+
+.caption {
+    font-size: 14px;
+    color: #909090;
+    margin-top: 10px;
+    font-family: Ninetea Regular;
+}
