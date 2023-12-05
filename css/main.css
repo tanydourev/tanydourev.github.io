@@ -131,7 +131,7 @@ li {
     background-color: #FFF;
 }
 
-#first1{
+#first1 {
     height: 100vh;
 }
 
@@ -139,7 +139,7 @@ li {
     height: auto;
 }
 
-#third1{
+#third1 {
     height: auto;
 }
 
@@ -375,7 +375,7 @@ li {
 
 .arrow2-container {
     position: relative;
-    
+
 }
 
 .arrow2 {
@@ -396,35 +396,9 @@ li {
     margin-top: 5em;
 }
 
-#showConnect {
-    display: none;
-}
-
-/* buttons */
-.about-btn,
-.connect-btn {
-    padding: 10px 25px 9px 25px;
-    font-size: 17px;
-    background-color: #e06150;
-    color: #fff;
-    border-radius: 30px;
-    border: 2px solid #fff;
-    text-align: center;
-    font-family: Ninetea Medium;
-    margin-right: 10px;
-    transition: 0.3s ease-in-out;
-}
-
-.about-buttons button:hover {
-    cursor: pointer;
-    background-color: #f2eee7;
-    color: #e06150;
-}
-
-.about-title,
-.connect-title {
+.about-title {
     font-size: 55px;
-    margin: 30px 0 10px 0;
+    margin: 15px 0 10px 0;
     color: #fff;
 }
 
@@ -618,13 +592,17 @@ footer {
     width: auto;
 }
 
-.client1, .client2, .client3 {
+.client1,
+.client2,
+.client3 {
     display: grid;
     justify-content: center;
     transition: 0.3s ease-in-out;
 }
 
-.client1:hover, .client2:hover, .client3:hover {
+.client1:hover,
+.client2:hover,
+.client3:hover {
     transform: scale(1.1);
 }
 
