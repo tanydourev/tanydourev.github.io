@@ -125,11 +125,6 @@
         <div id="about-content" class="hidden">
             <div class="about-img"></div>
             <div class="about-text">
-                <div class="about-buttons">
-                    <button class="about-btn" onclick="showAbout()">ABOUT</button>
-                    <button class="connect-btn" onclick="showConnect()">CONNECT</button>
-                </div>
-
                 <div id="showAbout">
                     <p class="about-title">Meet Tany</p>
                     <p class="text"><b>Hello there!</b> I’m an interaction designer, gamer and type nerd based in
@@ -140,31 +135,23 @@
                         design. Much of my work is inspired by cyberpunk aesthetics, futuristic art and video games.
                         <br><br>
                         I currently work as a <b>Graphic Designer @ <a href="https://www.rwdigital.ca/"
-                            style="color: #fff;">RW Digitial Marketing Agency</a></b>. Outside of design, I
+                                style="color: #fff;">RW Digital Marketing Agency</a></b>. Outside of design, I
                         enjoy a
                         good cup of tea, listening to video game soundtracks and watching Star Wars ✨
                     </p>
-                </div>
-
-                <div id="showConnect">
-                    <p class="connect-title">Let's connect</p>
-                    <p class="text">Whether it’s to chat about an upcoming project, a potential job opportunity or
-                        simply a
-                        second opinion, let’s get the conversation started!
-                    </p>
 
                     <a href="mailto:tanydourev@gmail.com" style="text-decoration: none;">
-                        <div class="social-icon">
+                        <div class="social-icon email">
                             <img src="https://img.icons8.com/fluency-systems-filled/96/000000/new-post.png" />
                         </div>
                     </a>
                     <a href="https://www.linkedin.com/in/tanydourev" style="text-decoration: none;">
-                        <div class="social-icon">
+                        <div class="social-icon linkedin">
                             <img src="https://img.icons8.com/fluency-systems-filled/96/linkedin.png" />
                         </div>
                     </a>
                     <a href="https://www.instagram.com/tanydourev" style="text-decoration: none;">
-                        <div class="social-icon">
+                        <div class="social-icon instagram">
                             <img src="https://img.icons8.com/fluency-systems-filled/96/instagram-new.png" />
                         </div>
                     </a>
@@ -182,8 +169,27 @@
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
         integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 
-    <script src="scripts/splide.min.js"></script>
     <script src="scripts/scripts.js"></script>
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+    <script>
+        tippy('.email', {
+            content: 'Email',
+            placement: 'bottom',
+        });
+
+        tippy('.linkedin', {
+            content: 'LinkedIn',
+            placement: 'bottom',
+        });
+
+        tippy('.instagram', {
+            content: 'Instagram',
+            placement: 'bottom',
+        });
+    </script>
 
     <script>
         $(document).ready(function () {
