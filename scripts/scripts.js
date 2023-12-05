@@ -13,17 +13,6 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-// about section buttons
-function showAbout() {
-    document.getElementById("showAbout").style.display = "block";
-    document.getElementById("showConnect").style.display = "none";
-}
-
-function showConnect() {
-    document.getElementById("showAbout").style.display = "none";
-    document.getElementById("showConnect").style.display = "block";
-}
-
 // fade elements
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
