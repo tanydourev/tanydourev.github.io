@@ -977,6 +977,8 @@ nav {
     #profile p,
     #thesis p {
         margin: 25px 0 20px 0;
+        font-size: 18px;
+        line-height: 1.4em;
     }
 
     /* project pages */
@@ -1031,6 +1033,7 @@ nav {
 
 /* phone */
 @media only screen and (max-width: 599px) {
+
     /* header */
     #header {
         height: 100vh;
@@ -1188,12 +1191,14 @@ nav {
     #profile p,
     #thesis p {
         margin: 25px 0 20px 0;
+        font-size: 18px;
+        line-height: 1.4em;
     }
 
     /* project pages */
     .project-title {
         width: 100%;
-        font-size: 60px;
+        font-size: 55px;
     }
 
     .page-content {
