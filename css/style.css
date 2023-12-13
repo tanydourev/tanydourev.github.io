@@ -1,0 +1,1238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    cursor: crosshair;
+}
+
+body {
+    background-color: #111;
+    font-family: Rajdhani;
+    background: #111;
+    background-image: radial-gradient(#2e2e2e 1px, transparent 0);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
+    opacity: 1;
+    transition: 1s opacity;
+    overflow-x: hidden;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+/* specific elements */
+button {
+    font-family: Rajdhani;
+    cursor: pointer;
+}
+
+/* fonts */
+@font-face {
+    font-family: Rajdhani;
+    src: url(../fonts/Rajdhani-Regular.ttf);
+}
+
+@font-face {
+    font-family: Rajdhani Bold;
+    src: url(../fonts/Rajdhani-Bold.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-Thin.ttf);
+}
+
+.inter {
+    font-family: Inter;
+    font-weight: bold;
+}
+
+#header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(../img/night-city.png) center center no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.header-text {
+    margin: 0;
+    padding-left: 4em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#header h1 {
+    font-size: 100px;
+    font-family: Rajdhani Bold;
+    text-transform: uppercase;
+    line-height: 0.8em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#header h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.header-button {
+    position: absolute;
+    bottom: 5em;
+    left: 4em;
+    width: auto;
+    padding: 9px 13px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: Inter;
+}
+
+#section1,
+#section2,
+#section3 {
+    transition: 0.5s ease-in-out;
+}
+
+.page-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* navigation */
+
+
+/* Navigation */
+.navigation-header {
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    margin-bottom: 6em;
+    padding: 20px 0;
+    -webkit-box-shadow: 0px 5px 6px -4px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 5px 6px -4px rgba(0, 0, 0, 0.8);
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav {
+    width: 85%;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-name a {
+    flex: 30%;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links-resp {
+    flex: 70%;
+    gap: 40px;
+}
+
+.nav-links-resp a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links-resp a:hover {
+    color: #bd2e60;
+}
+
+.hamburger {
+    display: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+
+#sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    margin-bottom: 6em;
+    padding: 20px 0;
+    -webkit-box-shadow: 0px 5px 6px -4px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 5px 6px -4px rgba(0, 0, 0, 0.8);
+    z-index: 100;
+}
+
+#nav-elements {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.nav-name {
+    flex: 30%;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    flex: 70%;
+    text-align: right;
+}
+
+#active a {
+    color: #bd2e60 !important;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #bd2e60;
+}
+
+.menu1,
+.menu2,
+.menu3,
+.menu4 {
+    display: inline;
+    margin-right: 30px;
+    width: auto;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.menu1:hover,
+.menu2:hover,
+.menu3:hover,
+.menu4:hover {
+    color: #bd2e60;
+    cursor: pointer;
+}
+
+#sticky-nav .icon {
+    display: none;
+}
+
+
+/* ---------- FADING ELEMENTS ---------- */
+
+.hidden {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+}
+
+
+
+
+
+#item1,
+#item2,
+#item3,
+#item4 {
+    display: flex;
+    position: relative;
+    margin-bottom: 6em;
+}
+
+#item2,
+#item4 {
+    text-align: right;
+}
+
+.images {
+    flex: 55%;
+}
+
+.text {
+    flex: 45%;
+}
+
+#item1 .images {
+    background: url(../img/header-cp.png) center center no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin-right: 50px;
+    transition: 0.6s ease-in-out;
+}
+
+#item2 .images {
+    background: url(../img/header-rw.png) center center no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin-left: 50px;
+    transition: 0.6s ease-in-out;
+}
+
+#item3 .images {
+    background: url(../img/header-twb.png) center center no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin-right: 50px;
+    transition: 0.6s ease-in-out;
+}
+
+#item4 .images {
+    background: url(../img/header-pm.png) center center no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin-left: 50px;
+    transition: 0.6s ease-in-out;
+}
+
+.images:hover {
+    transform: scale(1.05);
+}
+
+.text {
+    position: relative;
+}
+
+.text-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#item1 h1,
+#item2 h1,
+#item3 h1,
+#item4 h1 {
+    margin-bottom: 15px;
+    font-size: 50px;
+    font-family: Rajdhani Bold;
+    text-transform: uppercase;
+    line-height: 1em;
+    color: #fff;
+}
+
+#item1 p,
+#item2 p,
+#item3 p,
+#item4 p {
+    margin: 25px 0 30px 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+#item2 p,
+#item4 p {
+    padding-top: 20px;
+}
+
+#item2 .line,
+#item4 .line {
+    float: right;
+}
+
+
+.line {
+    height: 4px;
+    width: 75px;
+    background-color: #fff;
+    content: "";
+}
+
+#item1 button,
+#item2 button,
+#item3 button,
+#item4 button {
+    width: auto;
+    padding: 9px 13px;
+    border: 2px solid #bd2e60;
+    color: #fff;
+    background-color: #111;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+#item1 button:hover {
+    cursor: not-allowed;
+}
+
+#item1 button:hover,
+#item2 button:hover,
+#item3 button:hover,
+#item4 button:hover {
+    background-color: #bd2e60;
+    color: #fff;
+}
+
+#item1 a,
+#item2 a,
+#item3 a,
+#item4 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+    .swap-rep {
+        order: 1;
+    }
+
+    .text {
+        order: 2;
+    }
+}
+
+/* footer */
+.regular-footer {
+    height: auto;
+    width: 100%;
+    margin-top: 40px;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+.bottom-footer {
+    position: fixed;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* about */
+#profile {
+    display: flex;
+    position: relative;
+    margin-bottom: 6em;
+}
+
+#profile h1 {
+    margin-bottom: 15px;
+    font-size: 50px;
+    font-family: Rajdhani Bold;
+    text-transform: uppercase;
+    line-height: 1em;
+    color: #bd2e60;
+}
+
+#profile p {
+    margin: 25px 0 20px 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+#profile a {
+    color: #bd2e60;
+}
+
+.profile {
+    flex: 50%;
+    background: url(../img/profile.png) center center no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin-right: 50px;
+    transition: 0.6s ease-in-out;
+}
+
+.social-icon {
+    height: 30px;
+    filter: invert(1);
+}
+
+#profile button {
+    margin-right: 5px;
+    padding: 8px 8px 4px 8px;
+    background-color: #202020;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+#profile button:hover {
+    cursor: pointer;
+    background-color: #bd2e60;
+}
+
+/* research */
+#thesis {
+    display: flex;
+    position: relative;
+    margin-bottom: 6em;
+}
+
+#thesis h1 {
+    margin-bottom: 15px;
+    font-size: 50px;
+    font-family: Rajdhani Bold;
+    text-transform: uppercase;
+    line-height: 1em;
+    color: #bd2e60;
+}
+
+#thesis p {
+    margin: 25px 0 20px 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+.thesis {
+    flex: 50%;
+    background: url(../img/subway-thesis.png) center center no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin-right: 50px;
+    transition: 0.6s ease-in-out;
+}
+
+#section2,
+#section3 {
+    display: none;
+}
+
+
+.project-title {
+    width: 75%;
+    font-size: 90px;
+    font-family: Rajdhani Bold;
+    text-transform: uppercase;
+    line-height: 0.8em;
+    margin-bottom: 20px;
+    color: #bd2e60;
+}
+
+.project-arrow {
+    width: 53px;
+    margin-bottom: 50px;
+    padding: 9px 13px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: Inter;
+}
+
+.page-text {
+    width: 75%;
+    margin: 20px 0 30px 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.4em;
+}
+
+.page-content h3 {
+    width: 75%;
+    margin: 70px 0 10px 0;
+    color: #bd2e60;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.grid-1 {
+    margin-bottom: 7px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 10px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.project-buttons {
+    margin-top: -15px;
+}
+
+.project-buttons button {
+    width: auto;
+    padding: 9px 13px;
+    border: 2px solid #bd2e60;
+    color: #fff;
+    background-color: #111;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.project-buttons button:hover {
+    background-color: #bd2e60;
+    color: #fff;
+}
+
+.project-buttons a {
+    color: #fff;
+}
+
+#thesis button:hover {
+    cursor: not-allowed;
+}
+
+/* project mammoth cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card {
+    height: auto;
+    background-color: #202020;
+    border-radius: 10px;
+}
+
+.card-img {
+    border-radius: 10px 10px 0 0;
+}
+
+.card h4 {
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    color: #bd2e60;
+    padding: 20px 20px 5px 20px;
+}
+
+.card p {
+    color: #fff;
+    padding: 0 20px 20px 20px;
+    font-size: 17px;
+    line-height: 1.4em;
+}
+
+.credits {
+    color: #b3b3b3 !important;
+}
+
+
+/* media queries */
+
+/* large monitor */
+@media only screen and (min-width: 1600px) {
+    .nav-links-resp {
+        display: none;
+    }
+
+    .swap {
+        order: 2;
+    }
+
+    .text {
+        order: 1;
+    }
+
+    /* about & thesis */
+    .profile,
+    .thesis {
+        height: 500px;
+    }
+}
+
+/* regular laptop */
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .nav-links-resp {
+        display: none;
+    }
+
+    .swap {
+        order: 2;
+    }
+
+    .text {
+        order: 1;
+    }
+
+    /* project pages */
+    .page-text {
+        width: 80%;
+    }
+}
+
+/* small laptop */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .nav-links-resp {
+        display: none;
+    }
+
+    .swap {
+        order: 2;
+    }
+
+    .text {
+        order: 1;
+        flex: 40%;
+    }
+
+    .images {
+        flex: 60%;
+    }
+
+    #item1 .images,
+    #item2 .images,
+    #item3 .images,
+    #item4 .images {
+        height: 450px;
+    }
+
+    /* project pages */
+    .project-title {
+        width: 90%;
+    }
+
+    .page-text {
+        width: 85%;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    /* thesis */
+    #thesis {
+        display: block;
+    }
+
+    .thesis {
+        display: block;
+        height: auto;
+        height: 400px;
+        margin: -2em 0 3em 0;
+    }
+
+    #thesis .text-content {
+        position: initial;
+        margin-top: 30px;
+        transform: none;
+    }
+
+    #thesis p {
+        margin: 25px 0 20px 0;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* navigation */
+    .nav-links-resp {
+        display: none;
+    }
+
+    /* homepage projects */
+    .swap {
+        order: 2;
+    }
+
+    .text {
+        order: 1;
+        flex: 40%;
+    }
+
+    .images {
+        flex: 60%;
+    }
+
+    #item1,
+    #item2,
+    #item3,
+    #item4 {
+        margin-bottom: 8em;
+    }
+
+    #item1 .images,
+    #item2 .images,
+    #item3 .images,
+    #item4 .images {
+        height: 400px;
+    }
+
+    #item1 h1,
+    #item2 h1,
+    #item3 h1,
+    #item4 h1 {
+        font-size: 40px;
+    }
+
+    #item1 p,
+    #item2 p,
+    #item3 p,
+    #item4 p {
+        font-size: 18px;
+    }
+
+    /* about & thesis */
+    #profile,
+    #thesis {
+        display: block;
+        margin-bottom: 8em;
+    }
+
+    .profile,
+    .thesis {
+        display: block;
+        height: auto;
+        height: 400px;
+        margin: -2em 0 3em 0;
+    }
+
+    #profile .text-content,
+    #thesis .text-content {
+        position: initial;
+        margin-top: 30px;
+        padding-bottom: 5em;
+        transform: none;
+    }
+
+    #profile p,
+    #thesis p {
+        margin: 25px 0 20px 0;
+    }
+
+    /* project pages */
+    .project-title {
+        width: 90%;
+    }
+
+    .page-content {
+        width: 85%;
+    }
+
+    .page-text {
+        width: 100%;
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+/* landscape phone */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+    /* navigation */
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .hamburger #closeHam {
+        display: none;
+    }
+
+    .nav-links-resp {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 65px;
+        height: auto;
+        width: 100%;
+        padding: 30px 0 30px 0;
+        background-color: #202020;
+        text-align: center;
+        gap: 20px;
+        z-index: 99;
+    }
+
+    /* homepage projects */
+    .swap {
+        order: 2;
+    }
+
+    .text {
+        order: 1;
+        flex: 40%;
+    }
+
+    .images {
+        flex: 60%;
+    }
+
+    #item1,
+    #item2,
+    #item3,
+    #item4 {
+        margin-bottom: 8em;
+    }
+
+    #item1 .images,
+    #item2 .images,
+    #item3 .images,
+    #item4 .images {
+        height: 350px;
+    }
+
+    #item1 .images,
+    #item3 .images {
+        margin-right: 30px;
+    }
+
+    #item2 .images,
+    #item4 .images {
+        margin-left: 30px;
+    }
+
+    #item1 h1,
+    #item2 h1,
+    #item3 h1,
+    #item4 h1 {
+        font-size: 35px;
+    }
+
+    #item1 p,
+    #item2 p,
+    #item3 p,
+    #item4 p {
+        font-size: 18px;
+    }
+
+    /* about & thesis */
+    #profile,
+    #thesis {
+        display: block;
+    }
+
+    .profile {
+        display: block;
+        height: 300px;
+        margin: 0;
+        margin: -2em 0 3em 0;
+    }
+
+    .thesis {
+        display: block;
+        height: 300px;
+        margin: 0;
+        margin: -2em 0 3em 0;
+    }
+
+    #profile .text-content,
+    #thesis .text-content {
+        position: initial;
+        margin-top: 30px;
+        padding-bottom: 5em;
+        transform: none;
+    }
+
+    #profile p,
+    #thesis p {
+        margin: 25px 0 20px 0;
+    }
+
+    /* project pages */
+    .project-title {
+        width: 100%;
+    }
+
+    .page-content {
+        width: 85%;
+    }
+
+    .page-content h3 {
+        width: 100%;
+    }
+
+    .page-text {
+        width: 100%;
+    }
+
+    .grid-1 {
+        margin-bottom: 2px;
+    }
+
+    .grid-2 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .project-buttons button {
+        margin: 0 5px 10px 0;
+        font-size: 17px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+/* phone */
+@media only screen and (max-width: 599px) {
+    /* header */
+    #header {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background: url(../img/night-city.png) no-repeat;
+        background-position: 60% 75%;
+        background-size: cover;
+    }
+
+    .header-text {
+        padding-left: 2em;
+    }
+
+    #header h1 {
+        font-size: 75px;
+    }
+
+    .header-button {
+        bottom: 3em;
+        left: 2em;
+    }
+
+    /* navigation */
+    #sticky-nav {
+        margin-bottom: 4em;
+    }
+
+    .menu1,
+    .menu2,
+    .menu3,
+    .menu4 {
+        margin-right: 0;
+    }
+
+    .nav-links-resp {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 65px;
+        height: auto;
+        width: 100%;
+        padding: 30px 0 30px 0;
+        background-color: #202020;
+        text-align: center;
+        gap: 20px;
+        z-index: 99;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .hamburger #closeHam {
+        display: none;
+    }
+
+    /* homepage projects */
+    .swap {
+        order: 1;
+    }
+
+    .text {
+        order: 2;
+    }
+
+    #item1 {
+        display: block;
+    }
+
+    #item2 {
+        display: block;
+        text-align: left;
+    }
+
+    #item3 {
+        display: block;
+    }
+
+    #item4 {
+        display: block;
+        text-align: left;
+    }
+
+    #item2 .line,
+    #item4 .line {
+        float: none;
+    }
+
+    #item2 p,
+    #item4 p {
+        padding-top: 0;
+    }
+
+    #item1 .images,
+    #item2 .images,
+    #item3 .images,
+    #item4 .images {
+        height: 300px;
+        margin: 0;
+    }
+
+    .text-content {
+        position: initial;
+        margin-top: 30px;
+        transform: none;
+    }
+
+    #item1 p,
+    #item2 p,
+    #item3 p,
+    #item4 p {
+        margin: 25px 0 20px 0;
+    }
+
+    #item1 button,
+    #item2 button,
+    #item3 button,
+    #item4 button {
+        font-size: 18px;
+    }
+
+    /* about & thesis */
+    #profile,
+    #thesis {
+        display: block;
+    }
+
+    .profile {
+        display: block;
+        height: 300px;
+        margin: 0;
+    }
+
+    .thesis {
+        display: block;
+        height: 300px;
+        margin: 0;
+    }
+
+    #profile .text-content,
+    #thesis .text-content {
+        position: initial;
+        margin-top: 30px;
+        padding-bottom: 5em;
+        transform: none;
+    }
+
+    #profile p,
+    #thesis p {
+        margin: 25px 0 20px 0;
+    }
+
+    /* project pages */
+    .project-title {
+        width: 100%;
+        font-size: 70px;
+    }
+
+    .page-content {
+        width: 85%;
+    }
+
+    .page-content h3 {
+        width: 100%;
+    }
+
+    .page-text {
+        width: 100%;
+    }
+
+    .grid-1 {
+        margin-bottom: 2px;
+    }
+
+    .grid-2 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .project-buttons button {
+        margin: 0 5px 10px 0;
+        font-size: 17px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
