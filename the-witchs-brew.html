@@ -9,120 +9,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- stylesheets -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- favicon -->
     <link rel="icon" href="img/favicon/favicon.png">
 </head>
 
 <body>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-            <img src="img/closebtn.png">
-        </a>
-        <p class="sidenav-icon">
-            <img src="img/molang.png">
-        </p>
-        <a href="./" class="sidenav-link">PORTFOLIO</a>
-        <a href="media/cv-tany-dourev.pdf" target="_blank" class="sidenav-link"><span class="stroked">RESUMÉ</span></a>
-        <a href="./research" class="sidenav-link"><span class="stroked">RESEARCH</span></a>
-    </div>
+    <header id="sticky-nav" class="navigation-header">
+        <nav>
+            <div class="nav-name">
+                <b>Tany Dourev</b>
+            </div>
 
-    <div id="navigation">
-        <div class="logo"></div>
-        <div id="menu">
-            <span onclick="openNav()" class="openbtn">
-                <img src="img/openbtn.png">
-            </span>
-        </div>
-    </div>
-
-    <div class="project-header">
-        <p class="project-header-text hidden">THE WITCH'S BREW</p>
-        <p class="project-header-subtitle hidden">Turning the power of the cosmos into positive energy 🔮</p>
-    </div>
-
-    <div style="background-color: #f7f7f7;">
-
-        <div id="page-content">
-            <div class="description">
-                <p class="overview"><b>The Witch's Brew</b> is a playful and light-hearted tea brand inspired by
-                    astrology, witchcraft and spirituality. It encourages drinkers to embrace the power of the cosmos
-                    and combine it with the herbal goodness of tea. In addition to the standard set of teas, The Witch's Brew
-                    also features a specialty series based on the twelve signs of the zodiac, called the Zodiac
-                    Collection. Each sign is assigned a type of tea that corresponds to the nature of their element —
-                    water, earth, fire and air.</p>
-                <div class="details">
-                    <h4 class="details-title">O V E R V I E W</h4>
-                    <p>Branding, graphic design, packaging.</p>
-                    <p>Adobe / 2023</p>
+            <div class="nav-links">
+                <div class="menu1">
+                    <a href="index.html">Portfolio</a>
+                </div>
+                <div class="menu2">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="menu3">
+                    <a href="research.html">Research</a>
+                </div>
+                <div class="menu4">
+                    <a href="media/cv-tany-dourev.pdf">CV</a>
                 </div>
             </div>
-        </div>
+            
+            <!-- responsive navigation -->
+            <div class="nav-links-resp" id="navigation-items">
+                <div class="menu1">
+                    <a href="index.html">Portfolio</a>
+                </div>
+                <div class="menu2">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="menu3">
+                    <a href="research.html">Research</a>
+                </div>
+                <div class="menu4">
+                    <a href="media/cv-tany-dourev.pdf">CV</a>
+                </div>
+            </div>
 
-        <div id="page-images">
+            <div class="hamburger">
+                <span id="openHam">&#9776;</span>
+                <span id="closeHam">&#x2716;</span>
+            </div>
+        </nav>
+    </header>
 
-            <img class="single-img" src="img/twb-1.jpg" style="width: 100%">
+    <div id="page-container">
 
-            <div class="split-img">
+        <!-- portfolio -->
+        <div class="page-content">
+            <h1 class="project-title">The Witch's Brew tea</h1>
+            <div class="project-arrow">
+                <h2>&#8595;</h2>
+            </div>
+            <p class="page-text">
+                <b>The Witch's Brew</b> is a playful and light-hearted tea brand inspired by astrology, witchcraft and
+                spirituality. It encourages drinkers to embrace the power of the cosmos and combine it with the herbal
+                goodness of tea. In addition to the standard set of teas, The Witch's Brew also features a specialty
+                series based on the twelve signs of the zodiac, called the Zodiac Collection. Each sign is assigned a
+                type of tea that corresponds to the nature of their element — water, earth, fire and air.
+            </p>
+
+            <img class="grid-1" src="img/twb-1.jpg" style="width: 100%">
+
+            <div class="grid-2">
                 <img src="img/twb-2.png" style="width: 100%;">
                 <img src="img/twb-3.png" style="width: 100%;">
             </div>
 
-            <img class="single-img" src="img/twb-4.png" style="width: 100%;">
+            <img class="grid-1" src="img/twb-4.png" style="width: 100%;">
 
-            <div class="split-img">
+            <div class="grid-2">
                 <img src="img/twb-5.png" style="width: 100%;">
                 <img src="img/twb-6.png" style="width: 100%;">
             </div>
 
-            <div class="split-img">
+            <div class="grid-2">
                 <img src="img/twb-7.jpg" style="width: 100%;">
                 <img src="img/twb-8.jpg" style="width: 100%;">
             </div>
 
-            <img class="single-img" src="img/twb-9.jpg" style="width: 100%;">
+            <img class="grid-1" src="img/twb-9.jpg" style="width: 100%;">
 
-            <div class="split-img">
+            <div class="grid-2">
                 <img src="img/twb-10.jpg" style="width: 100%;">
                 <img src="img/twb-11.jpg" style="width: 100%;">
             </div>
 
-            <div class="split-img">
+            <div class="grid-2">
                 <img src="img/twb-12.jpg" style="width: 100%;">
                 <img src="img/twb-13.png" style="width: 100%;">
             </div>
 
-            <img class="single-img" src="img/twb-14.jpg" style="width: 100%;">
+            <img class="grid-1" src="img/twb-14.jpg" style="width: 100%;">
 
             <!-- zodiac collection -->
-            <img class="single-img" src="img/twb-15.png" style="width: 100%;">
+            <img class="grid-1" src="img/twb-15.png" style="width: 100%;">
 
-            <div class="split-img">
+            <div class="grid-2">
                 <img src="img/twb-16.png" style="width: 100%;">
                 <video width="100%" height="100%" autoplay loop style="object-fit: cover; align-content: start;">
                     <source src="media/witchs-brew-video.mp4" type="video/mp4">
                 </video>
             </div>
 
-            <img class="single-img" src="img/twb-17.jpg" style="width: 100%;">
+            <img class="grid-1" src="img/twb-17.jpg" style="width: 100%;">
 
-            <img class="single-img" src="img/twb-18.jpg" style="width: 100%;">
+            <img class="grid-1" src="img/twb-18.jpg" style="width: 100%;">
 
-            <img class="single-img" src="img/twb-19.jpg" style="width: 100%;">
+            <img class="grid-1" src="img/twb-19.jpg" style="width: 100%;">
 
-            <img class="single-img" src="img/twb-20.jpg" style="width: 100%;">
+            <img class="grid-1" src="img/twb-20.jpg" style="width: 100%;">
 
-            <div class="split-img">
+            <div class="grid-2">
                 <img src="img/twb-21.jpg" style="width: 100%;">
                 <img src="img/twb-22.jpg" style="width: 100%;">
             </div>
         </div>
-    </div>
 
-    <div id="footer" style="margin-top: 40px;">
-        <footer>© Tany Dourev, 2023. All Rights Reserved.</footer>
+        <div class="regular-footer">© 2023 Tany Dourev. All Rights Reserved.</div>
     </div>
 
     <script src="scripts/scripts.js"></script>
