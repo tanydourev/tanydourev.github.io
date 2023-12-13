@@ -9,227 +9,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- stylesheets -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- favicon -->
     <link rel="icon" href="img/favicon/favicon.png">
 </head>
 
 <body>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-            <img src="img/closebtn.png">
-        </a>
-        <p class="sidenav-icon">
-            <img src="img/molang.png">
-        </p>
-        <a href="./" class="sidenav-link">PORTFOLIO</a>
-        <a href="media/cv-tany-dourev.pdf" target="_blank" class="sidenav-link"><span class="stroked">RESUMÉ</span></a>
-        <a href="./research" class="sidenav-link"><span class="stroked">RESEARCH</span></a>
-    </div>
+    <div id="header">
+        <div class="header-text">
+            <h1>Hello there!<br>I'm Tany.</h1>
+            <h2>Interaction designer / Type nerd / Gamer</h2>
+        </div>
 
-    <div id="navigation">
-        <div class="logo"></div>
-        <div id="menu">
-            <span onclick="openNav()" class="openbtn">
-                <img src="img/openbtn.png">
-            </span>
+        <div class="header-button">
+            <h2>&#8595;</h2>
         </div>
     </div>
 
-    <div id="scroll">
-        <div id="first" class="scroll_item">&nbsp;</div>
-        <div id="second" class="scroll_item">&nbsp;</div>
-        <div id="third" class="scroll_item">&nbsp;</div>
-    </div>
-
-    <div id="first1" class="header">
-        <img src="img/glow-circle.png" class="glow-img">
-        <p class="header-text hidden">Hello there! I’m Tany, an interaction designer with a love for type & games.</p>
-        <img src="img/arrow.svg" class="arrow">
-    </div>
-
-    <div id="second1" class="portfolio hidden">
-        <p class="portfolio-title">Works & projects</p>
-        <div id="project-gallery">
-            <div>
-                <div class="project3"></div>
-                <p class="project-title">
-                    <a href="./the-witchs-brew">The Witch's Brew <span class="inter">→</span></a>
-                </p>
-                <p class="project-description">Branding, graphic design, packaging.<br>Adobe / 2023</p>
+    <header id="sticky-nav" class="navigation-header">
+        <nav>
+            <div class="nav-name">
+                <b>Tany Dourev</b>
             </div>
 
-            <div class="star star1">
-                <img src="img/star.png" height="9%">
+            <div class="nav-links">
+                <div id="active" class="menu1">
+                    <a href="./">Portfolio</a>
+                </div>
+                <div class="menu2">
+                    <a href="./about">About</a>
+                </div>
+                <div class="menu3">
+                    <a href="./research">Research</a>
+                </div>
+                <div class="menu4">
+                    <a href="media/cv-tany-dourev.pdf">CV</a>
+                </div>
             </div>
 
-            <div>
-                <div class="project2"></div>
-                <p class="project-title">
-                    <a href="./rw-digital">RW Digital <span class="inter">→</span></a>
-                </p>
-                <p class="project-description">Graphic design, web design, branding.<br>2021 — Ongoing</p>
+            <!-- responsive navigation -->
+            <div class="nav-links-resp" id="navigation-items">
+                <div id="active" class="menu1">
+                    <a href="./">Portfolio</a>
+                </div>
+                <div class="menu2">
+                    <a href="./about">About</a>
+                </div>
+                <div class="menu3">
+                    <a href="./research">Research</a>
+                </div>
+                <div class="menu4">
+                    <a href="media/cv-tany-dourev.pdf">CV</a>
+                </div>
             </div>
 
-            <div class="star star2">
-                <img src="img/star.png" height="9%">
+            <div class="hamburger">
+                <span id="openHam">&#9776;</span>
+                <span id="closeHam">&#x2716;</span>
+            </div>
+        </nav>
+    </header>
+
+    <div id="page-container">
+
+        <!-- portfolio -->
+        <div id="section1" class="page-content">
+            <div id="item1" class="hidden">
+                <div class="images"></div>
+                <div class="text">
+                    <div class="text-content">
+                        <h1>Cyberpsycho Sighting: Don't Look Up</h1>
+                        <div class="line"></div>
+                        <p><b>[ 2023 / UNREAL 5 ]</b><br>Playable level & environmental build for a cyberpsycho level;
+                            designed to be integrated into CD Projekt Red's <i>Cyberpunk 2077</i> title.</p>
+                        <button>Coming soon!</button>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <div class="project1"></div>
-                <p class="project-title">???</p>
-                <p class="project-description">Level & environmental design.<br>Unreal 5 / 2023</p>
+            <div id="item2" class="hidden">
+                <div class="images swap"></div>
+                <div class="text">
+                    <div class="text-content">
+                        <h1>RW Digital design & branding</h1>
+                        <div class="line"></div>
+                        <p><b>[ 2021 — PRESENT ]</b><br>Showcase of graphics created for social media; revamped agency
+                            branding and guidelines; client web design projects.</p>
+                        <a href="./rwdigital">
+                            <button>View more <span class="inter">→</span></button>
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="star star3">
-                <img src="img/star.png" height="9%">
+            <div id="item3" class="hidden">
+                <div class="images"></div>
+                <div class="text">
+                    <div class="text-content">
+                        <h1>The Witch's Brew tea</h1>
+                        <div class="line"></div>
+                        <p><b>[ 2023 / BRANDING ]</b><br>A playful and light-heared tea brand inspired by astrology,
+                            witchcraft & spirituality; combine the herbal goodness of nature with the power of the
+                            cosmos.</p>
+                        <a href="./the-witchs-brew">
+                            <button>View more <span class="inter">→</span></button>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <div class="project4"></div>
-                <p class="project-title">
-                    <a href="./project-mammoth">Project Mammoth <span class="inter">→</span></a>
-                </p>
-                <p class="project-description">Interaction design, installation.<br>2021 — 2022</p>
-            </div>
-
-            <div class="star star4">
-                <img src="img/star.png" height="9%">
-            </div>
-
-            <div>
-                <div class="project5"></div>
-                <p class="project-title">
-                    <a href="./kofi">KOFI typeface <span class="inter">→</span></a>
-                </p>
-                <p class="project-description">Type design.<br>Adobe / 2023</p>
-            </div>
-
-            <div class="star star5">
-                <img src="img/star.png" height="9%">
-            </div>
-
-            <div>
-                <div class="empty">More to come!</div>
-            </div>
-        </div>
-    </div>
-
-    <div id="third1" class="about">
-        <div class="arrow2-container">
-            <img src="img/arrow.svg" class="arrow2">
-        </div>
-
-        <div id="about-content" class="hidden">
-            <div class="about-img"></div>
-            <div class="about-text">
-                <div id="showAbout">
-                    <p class="about-title">Meet Tany</p>
-                    <p class="text"><b>Hello there!</b> I’m an interaction designer, gamer and type nerd based in
-                        Canada. My
-                        creative journey
-                        began with graphic/visual design, and has since expanded into typography, UX/UI design, 3D and
-                        game
-                        design. Much of my work is inspired by cyberpunk aesthetics, futuristic art and video games.
-                        <br><br>
-                        I currently work as a <b>Graphic Designer @ <a href="https://www.rwdigital.ca/"
-                                style="color: #fff;">RW Digital Marketing Agency</a></b>. Outside of design, I
-                        enjoy a
-                        good cup of tea, listening to video game soundtracks and watching Star Wars ✨
-                    </p>
-
-                    <a href="mailto:tanydourev@gmail.com" style="text-decoration: none;">
-                        <div class="social-icon email">
-                            <img src="https://img.icons8.com/fluency-systems-filled/96/000000/new-post.png" />
-                        </div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/tanydourev" style="text-decoration: none;">
-                        <div class="social-icon linkedin">
-                            <img src="https://img.icons8.com/fluency-systems-filled/96/linkedin.png" />
-                        </div>
-                    </a>
-                    <a href="https://www.instagram.com/tanydourev" style="text-decoration: none;">
-                        <div class="social-icon instagram">
-                            <img src="https://img.icons8.com/fluency-systems-filled/96/instagram-new.png" />
-                        </div>
-                    </a>
+            <div id="item4" class="hidden">
+                <div class="images swap"></div>
+                <div class="text">
+                    <div class="text-content">
+                        <h1>Project Mammoth hologram installation</h1>
+                        <div class="line"></div>
+                        <p><b>[ 2021 — 2022 ]</b><br>Process of creating Brock University's first hologram installation;
+                            educates viewers on the effects of biodiversity loss and climate change on marine species.
+                        </p>
+                        <a href="./project-mammoth">
+                            <button>View more <span class="inter">→</span></button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="regular-footer">© 2023 Tany Dourev. All Rights Reserved.</div>
     </div>
-
-    <div id="footer">
-        <footer>© Tany Dourev, 2023. All Rights Reserved.</footer>
-    </div>
-
-    <!-- scripts -->
-
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 
     <script src="scripts/scripts.js"></script>
 
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-
     <script>
-        tippy('.email', {
-            content: 'Email',
-            placement: 'bottom',
-        });
-
-        tippy('.linkedin', {
-            content: 'LinkedIn',
-            placement: 'bottom',
-        });
-
-        tippy('.instagram', {
-            content: 'Instagram',
-            placement: 'bottom',
-        });
-    </script>
-
-    <script>
-        $(document).ready(function () {
-
-            $("#first").addClass('scroll_item_active');
-            var main = main = $('#scroll');
-            $('.scroll_item').click(function (event) {
-
-                event.preventDefault();
-                var trgt = $(this).attr('id') + "1";
-                target_offset = $('#' + trgt).offset(),
-                    target_top = target_offset.top;
-                $('html, body').animate({
-                    scrollTop: target_top
-                }, 500);
-                main.children().removeClass('scroll_item_active');
-
-                $(this).addClass('scroll_item_active');
-
-            });
-
-            $(window).scroll(function (event) {
-                if ($("#first1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
-                    $("#first").addClass('scroll_item_active');
-                    $("#second").removeClass('scroll_item_active');
-                    $("#third").removeClass('scroll_item_active');
-                }
-                if ($("#second1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
-                    $("#second").addClass('scroll_item_active');
-                    $("#first").removeClass('scroll_item_active');
-                    $("#third").removeClass('scroll_item_active');
-
-                }
-                if ($("#third1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
-                    $("#third").addClass('scroll_item_active');
-                    $("#first").removeClass('scroll_item_active');
-                    $("#second").removeClass('scroll_item_active');
+        // fade elements
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry);
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
                 }
             });
         });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
     </script>
 </body>
 
