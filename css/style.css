@@ -994,6 +994,8 @@ nav {
 
     .page-text {
         width: 100%;
+        font-size: 18px;
+        line-height: 1.4em;
     }
 
     .grid-1 {
@@ -1191,7 +1193,7 @@ nav {
     /* project pages */
     .project-title {
         width: 100%;
-        font-size: 70px;
+        font-size: 60px;
     }
 
     .page-content {
@@ -1204,6 +1206,8 @@ nav {
 
     .page-text {
         width: 100%;
+        font-size: 18px;
+        line-height: 1.4em;
     }
 
     .grid-1 {
