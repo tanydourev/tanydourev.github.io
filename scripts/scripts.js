@@ -4,26 +4,17 @@ window.addEventListener('DOMContentLoaded', () => {
     document.body.classList.remove('fade-out');
 });
 
-// navigation triggers
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+// responsive navigation
+let openHam = document.querySelector('#openHam');
+let closeHam = document.querySelector('#closeHam');
+let navigationItems = document.querySelector('#navigation-items');
 
-// fade elements
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        console.log(entry);
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
-    });
-});
+const hamburgerEvent = (navigation, close, open) => {
+    navigationItems.style.display = navigation;
+    closeHam.style.display = close;
+    openHam.style.display = open;
+};
 
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
+closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
