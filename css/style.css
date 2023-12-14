@@ -1,3 +1,5 @@
+/* ---------- GENERAL STYLES ---------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -26,13 +28,17 @@ body.fade-out {
     transition: none;
 }
 
-/* specific elements */
+
+/* ---------- OVERRIDE STYLES ---------- */
+
 button {
     font-family: Rajdhani;
     cursor: pointer;
 }
 
-/* fonts */
+
+/* ---------- FONTS ---------- */
+
 @font-face {
     font-family: Rajdhani;
     src: url(../fonts/Rajdhani-Regular.ttf);
@@ -53,8 +59,11 @@ button {
     font-weight: bold;
 }
 
+
+/* ---------- HEADER ---------- */
+
 #header {
-    height: 100vh;
+    height: 96vh;
     width: 100%;
     position: relative;
     background: url(../img/night-city.png) center center no-repeat;
@@ -107,10 +116,9 @@ button {
     margin: 0 auto;
 }
 
-/* navigation */
 
+/* ---------- RESPONSIVE NAVIGATION ---------- */
 
-/* Navigation */
 .navigation-header {
     position: sticky;
     top: 0;
@@ -164,6 +172,9 @@ nav {
     font-weight: 800;
     color: white;
 }
+
+
+/* ---------- REGULAR NAVIGATION ---------- */
 
 #sticky-nav {
     position: sticky;
@@ -249,8 +260,7 @@ nav {
 }
 
 
-
-
+/* ---------- HOMEPAGE PROJECTS ---------- */
 
 #item1,
 #item2,
@@ -395,17 +405,9 @@ nav {
     text-decoration: none;
 }
 
-@media screen and (max-width: 500px) {
-    .swap-rep {
-        order: 1;
-    }
 
-    .text {
-        order: 2;
-    }
-}
+/* ---------- FOOTER ---------- */
 
-/* footer */
 .regular-footer {
     height: auto;
     width: 100%;
@@ -430,7 +432,9 @@ nav {
     text-align: center;
 }
 
-/* about */
+
+/* ---------- ABOUT ---------- */
+
 #profile {
     display: flex;
     position: relative;
@@ -484,7 +488,9 @@ nav {
     background-color: #bd2e60;
 }
 
-/* research */
+
+/* ---------- RESEARCH ---------- */
+
 #thesis {
     display: flex;
     position: relative;
@@ -516,11 +522,8 @@ nav {
     transition: 0.6s ease-in-out;
 }
 
-#section2,
-#section3 {
-    display: none;
-}
 
+/* ---------- PROJECT PAGES ---------- */
 
 .project-title {
     width: 75%;
@@ -651,7 +654,7 @@ nav {
 }
 
 
-/* media queries */
+/* ---------- MEDIA QUERIES ---------- */
 
 /* large monitor */
 @media only screen and (min-width: 1600px) {
