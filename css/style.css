@@ -63,7 +63,7 @@ button {
 /* ---------- HEADER ---------- */
 
 #header {
-    height: 96vh;
+    height: 100vh;
     width: 100%;
     position: relative;
     background: url(../img/night-city.png) center center no-repeat;
@@ -1039,7 +1039,7 @@ nav {
 
     /* header */
     #header {
-        height: 100vh;
+        height: 95vh;
         width: 100%;
         position: relative;
         background: url(../img/night-city.png) no-repeat;
