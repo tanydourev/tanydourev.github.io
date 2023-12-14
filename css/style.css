@@ -1039,7 +1039,7 @@ nav {
 
     /* header */
     #header {
-        height: 95vh;
+        height: 100vh;
         width: 100%;
         position: relative;
         background: url(../img/night-city.png) no-repeat;
