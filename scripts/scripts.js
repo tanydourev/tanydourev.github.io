@@ -4,17 +4,16 @@ window.addEventListener('DOMContentLoaded', () => {
     document.body.classList.remove('fade-out');
 });
 
+// open navigation
+function openNav() {
+    document.getElementById("nav-responsive").style.display = "block";
+    document.getElementById("open-button").style.display = "none";
+    document.getElementById("close-button").style.display = "block";
+}
 
-// responsive navigation
-let openHam = document.querySelector('#openHam');
-let closeHam = document.querySelector('#closeHam');
-let navigationItems = document.querySelector('#navigation-items');
-
-const hamburgerEvent = (navigation, close, open) => {
-    navigationItems.style.display = navigation;
-    closeHam.style.display = close;
-    openHam.style.display = open;
-};
-
-openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
-closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
+// close navigation
+function closeNav() {
+    document.getElementById("nav-responsive").style.display = "none";
+    document.getElementById("open-button").style.display = "block";
+    document.getElementById("close-button").style.display = "none";
+}
