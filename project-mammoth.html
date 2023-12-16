@@ -5,258 +5,255 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PROJECT MAMMOTH | Tany Dourev</title>
-    <meta name="description" content="A Canada-based interaction designer with a love for type & games.">
+    <meta name="description" content="Canada-based designer who creates interactive projects with an emphasis on merging design disciplines & user friendliness.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- stylesheets -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- favicon -->
-    <link rel="icon" href="img/favicon/favicon.png">
+    <link rel="stylesheet" href="css/queries.css">
 </head>
 
 <body>
-    <header id="sticky-nav" class="navigation-header">
-        <nav>
-            <div class="nav-name">
-                <b>Tany Dourev</b>
-            </div>
-
+    <navigation>
+        <div id="top-nav">
+            <div class="name">Tany Dourev</div>
             <div class="nav-links">
-                <div class="menu1">
-                    <a href="./">Portfolio</a>
-                </div>
-                <div class="menu2">
-                    <a href="./about">About</a>
-                </div>
-                <div class="menu3">
-                    <a href="./research">Research</a>
-                </div>
-                <div class="menu4">
-                    <a href="media/cv-tany-dourev.pdf">CV</a>
-                </div>
-            </div>
+                
+                <img id="open-button" width="30" height="30" src="https://img.icons8.com/windows/32/menu--v1.png" onclick="openNav()">
 
-            <!-- responsive navigation -->
-            <div class="nav-links-resp" id="navigation-items">
-                <div class="menu1">
-                    <a href="./">Portfolio</a>
+                <img id="close-button" width="30" height="30" src="https://img.icons8.com/windows/32/delete-sign.png" onclick="closeNav()">
+
+                <div class="link">
+                    <a href="cv.html">CV</a>
                 </div>
-                <div class="menu2">
-                    <a href="./about">About</a>
+                <div class="link">
+                    <a href="research.html">Research</a>
                 </div>
-                <div class="menu3">
-                    <a href="./research">Research</a>
+                <div class="link">
+                    <a href="about.html">About</a>
                 </div>
-                <div class="menu4">
-                    <a href="media/cv-tany-dourev.pdf">CV</a>
+                <div class="link">
+                    <a href="index.html">Portfolio</a>
                 </div>
             </div>
-
-            <div class="hamburger">
-                <span id="openHam">&#9776;</span>
-                <span id="closeHam">&#x2716;</span>
-            </div>
-        </nav>
-    </header>
-
-    <div id="page-container">
-
-        <!-- portfolio -->
-        <div class="page-content">
-            <h1 class="project-title">Project Mammoth hologram installation</h1>
-            <div class="project-arrow">
-                <h2>&#8595;</h2>
-            </div>
-            <p class="page-text">
-                <b>Project Mammoth</b> is an interactive hologram installation designed by Brock University's Project
-                Mammoth
-                student team. The installation is based on biodiversity loss and the impact of human activies on marine
-                species, aiming to providing a unique educational experience for all ages. Combining hologram technology
-                with audio/visual and motion components, it encourages educators to consider new methods of presenting
-                critical topics that would keep viewers more engaged than a traditional lecture or seminar.<br><br>
-
-                This installation is the first project of its kind to be created in Brock University's Interactive Arts
-                & Sciences program. It was put together by a team of twelve third-year students over a span of eight
-                months and displayed in the university's Digital Scholarship Lab. I was appointed project lead/manager
-                for the
-                installation and was part of the modelling team for asset creation.
-            </p>
-
-            <img class="grid-1" src="img/project-mammoth-1.jpg" style="width: 100%">
-
-            <div class="grid-2">
-                <img src="img/project-mammoth-2.png" style="width: 100%;">
-                <img src="img/project-mammoth-3.png" style="width: 100%;">
-            </div>
-
-            <h3>Origins & research</h3>
-            <p class="page-text">
-                The idea to create a hologram installation was based on videos of DIY holograms designed from plastic CD
-                cases and a phone. Our team decided it would be an interesting experiment to see whether we could
-                replicate the effects on a larger scale and integrate interactive elements. When selecting our topic for
-                the installation, we all believed biodiversity loss would be a good starting point in order to prove
-                that holograms served both an educational and interactive purpose. Instead
-                of focusing solely on endangered marine species that were well-known, we selected animals that were less
-                spoken about by the media and environmental groups, such as the blue-footed booby and the
-                <i>acropora jacquelinae</i> coral. We felt it was important to note that biodiversity loss was more
-                serious
-                than society was aware of, as most conservation efforts are generalized and the popularity of certain
-                animals overshadows others.
-            </p>
-
-            <h3>Modelling & assets</h3>
-            <p class="page-text">One of the key components of the installation was creating 3D models of the animals we
-                chose to showcase. The modelling team, which consisted of myself and three other members, selected a
-                low-poly style that was friendly and playful, while simultaneously allowing us to add physical details
-                and markings that were unique to each animal. Each model was created and textured in Blender, then
-                rendered for the project's website and design document using Cycles.</p>
-
-            <div class="cards">
-                <div class="card">
-                    <img class="card-img" src="img/animals-1.png" width="100%">
-                    <h4>African penguin</h4>
-                    <p>The African penguin is a currently listed as endangered on the IUCN Red List of Threatened
-                        Species. Their main threats are lack of food from overfishing and climate change. Since 1978,
-                        the population has dropped more than 50%.</p>
-                    <p class="credits">Model created by: Tany Dourev</p>
-                </div>
-                <div class="card">
-                    <img class="card-img" src="img/animals-2.png" width="100%">
-                    <h4>Striped smooth hound shark</h4>
-                    <p>Once calling the coast of southern Brazil home, the striped smooth hound shark is a species of shark known for its recognizable stripes. Due to significant pressure from commercial and artisanal fisheries, the species has become endangered.</p>
-                    <p class="credits">Model created by: Tany Dourev</p>
-                </div>
-                <div class="card">
-                    <img class="card-img" src="img/animals-3.png" width="100%">
-                    <h4>Blue-footed booby</h4>
-                    <p>The blue-footed booby is most known for its distinct blue feet. Their population has dropped 50%
-                        within the past 20 years due to lack of food and global warming. Overfishing has also affected
-                        the sardine population, which is a main source of food for this species.</p>
-                    <p class="credits">Model created by: Samantha Savage</p>
-                </div>
-                <div class="card">
-                    <img class="card-img" src="img/animals-4.png" width="100%">
-                    <h4>Española marine iguana</h4>
-                    <p>Found on the Galápagos Islands, the Espanola marine iguana is a unique species of lizard that can
-                        swim underwater and changes its colour throughout the mating season. Natural predators and
-                        climate change play a role in the reduced numbers of this species.</p>
-                    <p class="credits">Model created by: Samantha Savage</p>
-                </div>
-                <div class="card">
-                    <img class="card-img" src="img/animals-5.png" width="100%">
-                    <h4>North atlantic right whale</h4>
-                    <p>Today, there are less than 400 North Atlantic right whales left worldwide — less than 100 of
-                        which are breeding females. More than 10% of the species have gone extinct in the past three
-                        years, facing threats from entanglement in fishing gear and vessel strikes.</p>
-                    <p class="credits">Model created by: Yankeer Xu & Tany Dourev</p>
-                </div>
-                <div class="card">
-                    <img class="card-img" src="img/animals-6.png" width="100%">
-                    <h4>Acropora jacquelinae</h4>
-                    <p>The <i>acropora jacquelinae</i> species of coral is found in the eastern Indian Ocean, the central and
-                        the western Pacific Ocean. It currently faces endangerment due to coral bleaching, climate
-                        change, human activity, the crown-of-thorns starfish <i>(acanthaster planci)</i> and diseases.
-                    </p>
-                    <p class="credits">Model created by: Tany Dourev</p>
-                </div>
-                <div class="card">
-                    <img class="card-img" src="img/animals-7.png" width="100%">
-                    <h4>Polar bear</h4>
-                    <p>With the melting polar ice caps, it is estimated that the polar bear species will be extinct
-                        within the next 80 years unless substantial action is taken quickly. They are listed as
-                        vulnerable on the IUCN Red List of Threatened Species.</p>
-                    <p class="credits">Model created by: Tany Dourev</p>
-                </div>
-                <div class="card">
-                    <img class="card-img" src="img/animals-8.png" width="100%">
-                    <h4>Hawksbill sea turtle</h4>
-                    <p>Although climate change and plastic pollution in the ocean have contributed to the endangerment
-                        of the Hawksbill sea turtle, its biggest threat is shell poaching and being hunted for meat.
-                        Currently, there are approximately 8,000 female turtles left in the species.</p>
-                    <p class="credits">Model created by: Will Paskulin</p>
-                </div>
-            </div>
-
-            <p class="page-text" style="margin-top: 35px;">For the visual component of the hologram, the team decided to
-                create environmental
-                models for each animal. We felt it would be more beneficial in communicating our message of awareness if
-                habitats were included, as biodiversity loss often begins with the destruction of such areas. The
-                environments mimicked small domes or "terrariums", and opened to reveal the associated
-                animal. In order for the physics of the hologram to work, the animated domes were rendered
-                in video format from all four sides, then combined alongside narration and sound.</b>
-            </p>
-
-            <div class="grid-4">
-                <img src="img/enviro-1.png" style="width: 100%;">
-                <img src="img/enviro-2.png" style="width: 100%;">
-                <img src="img/enviro-3.png" style="width: 100%;">
-                <img src="img/enviro-4.png" style="width: 100%;">
-                <img src="img/enviro-5.png" style="width: 100%;">
-                <img src="img/enviro-6.png" style="width: 100%;">
-                <img src="img/enviro-7.png" style="width: 100%;">
-                <img src="img/enviro-8.png" style="width: 100%; margin-bottom: 15px;">
-            </div>
-
-            <h3>Interactive components</h3>
-            <p class="page-text">Interactivity was a part of the project that we refined through several
-                iterations. In order for viewers to operate the hologram, it had to receive a form of input that would
-                tell the Python program to switch the visuals to the next animal — this was achieved through the use of
-                a Raspberry Pi and a Flick motion sensor. The sensor was activated through gesture-based motions,
-                such as moving one's hand to the right for the next visual. Using familiar gestures that mimic how we
-                interact with other forms of media (ex. swiping right on a phone to see the next photo) meant younger
-                audiences would also be able to interact with the hologram in a simple manner and it would lessen the
-                confusion on how the sensor board itself worked.</p>
-
-            <h3>Branding</h3>
-            <p class="page-text">
-                Project Mammoth's branding was designed to encapsulate a playful approach to the installation. We
-                envisioned our project as something that would cater to audiences of all ages and encouraged education,
-                as opposed to presenting itself solely as a hologram experiment.</p>
-
-            <img class="grid-1" src="img/pm-branding-1.png" style="width: 100%;">
-
-            <div class="grid-2">
-                <img src="img/pm-branding-2.png" width="100%">
-                <img src="img/pm-branding-3.png" width="100%">
-                <img src="img/pm-branding-4.png" width="100%">
-                <img src="img/pm-branding-5.png" width="100%">
-            </div>
-
-            <div class="grid-3">
-                <img src="img/pm-branding-6.png" width="100%">
-                <img src="img/pm-branding-7.png" width="100%">
-                <img src="img/pm-branding-8.png" width="100%" style="margin-bottom: 15px;">
-            </div>
-
-            <p class="page-text">The decision to select a mammoth as the logo for Project Mammoth served as a direct
-                reference to the fates
-                of endangered animals. While mammoths are not classified as marine species, they are known for becoming
-                extinct due to habitat loss after the Ice Age and increased pressure from human hunting. If humanity
-                continues to ignore its impact on nature, both the marine species we showcased and all other animals we
-                share the planet with will share the same fate as mammoths did. The logo concept was questioned during
-                our
-                feedback sessions, however the team felt strongly that it represented our interest in raising awareness.
-            </p>
-
-            <h3>Credits</h3>
-            <p class="page-text">
-                <b>Project Lead:</b> Tany Dourev<br>
-                <b>Secondary Lead:</b> Samantha Savage<br>
-                <b>Research:</b> Kathleen MacDonald, Evan Mason, Will Paskulin, Rogo Jean<br>
-                <b>Modelling:</b> Tany Dourev, Will Paskulin, Samantha Savage, Xu Yankeer<br>
-                <b>Sound & Narration:</b> Evan Mason, Wu Dongjian, Rigel Quindipan, Xu Yankeer<br>
-                <b>Installation:</b> Kathleen MacDonald, Evan Mason, Rogo Jean, Rigel Quindipan, Shannon Kelly, Patrick
-                Arenas<br>
-                <b>Coding:</b> Shannon Kelly, Matthew McNeil<br>
-                <b>Branding:</b> Kathleen MacDonald, Samantha Savage, Will Paskulin
-                <br><br>
-                Thank you to Dr. Aaron Mauro of Brock University for his support and guidance throughout the project!
-            </p>
         </div>
 
-        <div class="regular-footer">© 2023 Tany Dourev. All Rights Reserved.</div>
+        <!-- responsive navigation (mobile, tablet) -->
+        <div id="nav-responsive">
+            <div class="responsive-links">
+                <div class="resp-link">
+                    <a href="index.html">Portfolio</a>
+                </div>
+                <div class="resp-link">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="resp-link">
+                    <a href="research.html">Research</a>
+                </div>
+                <div class="resp-link">
+                    <a href="cv.html">CV</a>
+                </div>
+            </div>
+        </div>
+    </navigation>
+
+    <h1 class="project-headliner"><span class="emoji">🐳 Project Mammoth installation
+    </h1>
+
+    <div id="page-text">
+        <p><b>Project Mammoth</b> is an interactive hologram installation designed by Brock University's Project Mammoth
+            student team. The installation is based on biodiversity loss and the impact of human activies on marine
+            species, aiming to providing a unique educational experience for all ages. Combining hologram technology
+            with audio/visual and motion components, it encourages educators to consider new methods of presenting
+            critical topics that would keep viewers more engaged than a traditional lecture or seminar.
+            <br><br>
+            I was appointed project lead/manager for the installation and was part of the modelling team for asset
+            creation. The project is the first of its kind to be created in Brock University's Interactive Arts &
+            Sciences program. It was put together by a team of twelve third-year students over a span of eight months
+            and displayed in the university's Digital Scholarship Lab.
+        </p>
     </div>
+
+    <img class="grid-1" src="img/project-mammoth/project-mammoth-1.jpg" width="100%" style="margin-top: 25px;">
+    <div class="grid-2">
+        <img src="img/project-mammoth/project-mammoth-2.png" width="100%">
+        <img src="img/project-mammoth/project-mammoth-3.png" width="100%">
+    </div>
+
+    <div id="page-text">
+        <h2>Origins & Research</h2>
+        <p>The idea to create a hologram installation was based on videos of DIY holograms designed from plastic CD
+            cases and a phone. Our team decided it would be an interesting experiment to see whether we could replicate
+            the effects on a larger scale and integrate interactive elements. When selecting our topic for the
+            installation, we all believed biodiversity loss would be a good starting point in order to prove that
+            holograms served both an educational and interactive purpose. Instead of focusing solely on endangered
+            marine species that were well-known, we selected animals that were less spoken about by the media and
+            environmental groups, such as the blue-footed booby and the acropora jacquelinae coral. We felt it was
+            important to note that biodiversity loss was more serious than society was aware of, as most conservation
+            efforts are generalized and the popularity of certain animals overshadows others.
+        </p>
+    </div>
+
+    <div id="page-text">
+        <h2>Modelling & Assets</h2>
+        <p>One of the key components of the installation was creating 3D models of the animals we chose to showcase. The
+            modelling team, which consisted of myself and three other members, selected a low-poly style that was
+            friendly and playful, while simultaneously allowing us to add physical details and markings that were unique
+            to each animal. Each model was created and textured in Blender, then rendered for the project's website and
+            design document using Cycles.
+        </p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <img class="card-img" src="img/project-mammoth/animals-1.png" width="100%">
+            <h4>African penguin</h4>
+            <p>The African penguin is a currently listed as endangered on the IUCN Red List of Threatened
+                Species. Their main threats are lack of food from overfishing and climate change. Since 1978,
+                the population has dropped more than 50%.</p>
+            <p class="credits">Model created by: Tany Dourev</p>
+        </div>
+        <div class="card">
+            <img class="card-img" src="img/project-mammoth/animals-2.png" width="100%">
+            <h4>Striped smooth hound shark</h4>
+            <p>Once calling the coast of southern Brazil home, the striped smooth hound shark is a species of shark
+                known for its recognizable stripes. Due to significant pressure from commercial and artisanal fisheries,
+                the species has become endangered.</p>
+            <p class="credits">Model created by: Tany Dourev</p>
+        </div>
+        <div class="card">
+            <img class="card-img" src="img/project-mammoth/animals-3.png" width="100%">
+            <h4>Blue-footed booby</h4>
+            <p>The blue-footed booby is most known for its distinct blue feet. Their population has dropped 50%
+                within the past 20 years due to lack of food and global warming. Overfishing has also affected
+                the sardine population, which is a main source of food for this species.</p>
+            <p class="credits">Model created by: Samantha Savage</p>
+        </div>
+        <div class="card">
+            <img class="card-img" src="img/project-mammoth/animals-4.png" width="100%">
+            <h4>Española marine iguana</h4>
+            <p>Found on the Galápagos Islands, the Espanola marine iguana is a unique species of lizard that can
+                swim underwater and changes its colour throughout the mating season. Natural predators and
+                climate change play a role in the reduced numbers of this species.</p>
+            <p class="credits">Model created by: Samantha Savage</p>
+        </div>
+        <div class="card">
+            <img class="card-img" src="img/project-mammoth/animals-5.png" width="100%">
+            <h4>North atlantic right whale</h4>
+            <p>Today, there are less than 400 North Atlantic right whales left worldwide — less than 100 of
+                which are breeding females. More than 10% of the species have gone extinct in the past three
+                years, facing threats from entanglement in fishing gear and vessel strikes.</p>
+            <p class="credits">Model created by: Yankeer Xu & Tany Dourev</p>
+        </div>
+        <div class="card">
+            <img class="card-img" src="img/project-mammoth/animals-6.png" width="100%">
+            <h4>Acropora jacquelinae</h4>
+            <p>The <i>acropora jacquelinae</i> species of coral is found in the eastern Indian Ocean, the central and
+                the western Pacific Ocean. It currently faces endangerment due to coral bleaching, climate
+                change, human activity, the crown-of-thorns starfish <i>(acanthaster planci)</i> and diseases.
+            </p>
+            <p class="credits">Model created by: Tany Dourev</p>
+        </div>
+        <div class="card">
+            <img class="card-img" src="img/project-mammoth/animals-7.png" width="100%">
+            <h4>Polar bear</h4>
+            <p>With the melting polar ice caps, it is estimated that the polar bear species will be extinct
+                within the next 80 years unless substantial action is taken quickly. They are listed as
+                vulnerable on the IUCN Red List of Threatened Species.</p>
+            <p class="credits">Model created by: Tany Dourev</p>
+        </div>
+        <div class="card">
+            <img class="card-img" src="img/project-mammoth/animals-8.png" width="100%">
+            <h4>Hawksbill sea turtle</h4>
+            <p>Although climate change and plastic pollution in the ocean have contributed to the endangerment
+                of the Hawksbill sea turtle, its biggest threat is shell poaching and being hunted for meat.
+                Currently, there are approximately 8,000 female turtles left in the species.</p>
+            <p class="credits">Model created by: Will Paskulin</p>
+        </div>
+    </div>
+
+    <div id="page-text">
+        <p>For the visual component of the hologram, the team decided to create environmental models for each animal. We
+            felt it would be more beneficial in communicating our message of awareness if habitats were included, as
+            biodiversity loss often begins with the destruction of such areas. The environments mimicked small domes or
+            "terrariums", and opened to reveal the associated animal. In order for the physics of the hologram to work,
+            the animated domes were rendered in video format from all four sides, then combined alongside narration and
+            sound.
+        </p>
+    </div>
+
+    <div class="grid-4" style="margin-top: 25px;">
+        <img src="img/project-mammoth/enviro-1.png" style="width: 100%;">
+        <img src="img/project-mammoth/enviro-2.png" style="width: 100%;">
+        <img src="img/project-mammoth/enviro-3.png" style="width: 100%;">
+        <img src="img/project-mammoth/enviro-4.png" style="width: 100%;">
+        <img src="img/project-mammoth/enviro-5.png" style="width: 100%;">
+        <img src="img/project-mammoth/enviro-6.png" style="width: 100%;">
+        <img src="img/project-mammoth/enviro-7.png" style="width: 100%;">
+        <img src="img/project-mammoth/enviro-8.png" style="width: 100%; margin-bottom: 15px;">
+    </div>
+
+    <div id="page-text">
+        <h2>Interactive Components</h2>
+        <p>Interactivity was a part of the project that we refined through several iterations. In order for viewers to
+            operate the hologram, it had to receive a form of input that would tell the Python program to switch the
+            visuals to the next animal — this was achieved through the use of a Raspberry Pi and a Flick motion sensor.
+            The sensor was activated through gesture-based motions, such as moving one's hand to the right for the next
+            visual. Using familiar gestures that mimic how we interact with other forms of media (ex. swiping right on a
+            phone to see the next photo) meant younger audiences would also be able to interact with the hologram in a
+            simple manner and it would lessen the confusion on how the sensor board itself worked.
+        </p>
+    </div>
+
+    <div id="page-text">
+        <h2>Branding</h2>
+        <p>Project Mammoth's branding was designed to encapsulate a playful approach to the installation. We envisioned
+            our project as something that would cater to audiences of all ages and encouraged education, as opposed to
+            presenting itself solely as a hologram experiment.
+        </p>
+    </div>
+
+    <div class="grid-3" style="margin-top: 25px;">
+        <img src="img/project-mammoth/pm-branding-1.png" width="100%">
+        <img src="img/project-mammoth/pm-branding-2.png" width="100%">
+        <img src="img/project-mammoth/pm-branding-3.png" width="100%">
+    </div>
+
+    <div class="grid-2" style="margin-top: 10px;">
+        <img src="img/project-mammoth/pm-branding-4.png" width="100%">
+        <img src="img/project-mammoth/pm-branding-5.png" width="100%">
+    </div>
+
+    <div class="grid-3">
+        <img src="img/project-mammoth/pm-branding-6.png" width="100%">
+        <img src="img/project-mammoth/pm-branding-7.png" width="100%">
+        <img src="img/project-mammoth/pm-branding-8.png" width="100%">
+    </div>
+
+    <div id="page-text" style="margin-top: 25px;">
+        <p>The decision to select a mammoth as the logo for Project Mammoth served as a direct reference to the fates of endangered animals. While mammoths are not classified as marine species, they are known for becoming extinct due to habitat loss after the Ice Age and increased pressure from human hunting. If humanity continues to ignore its impact on nature, both the marine species we showcased and all other animals we share the planet with will share the same fate as mammoths did. The logo concept was questioned during our feedback sessions, however the team felt strongly that it represented our interest in raising awareness.
+        </p>
+    </div>
+
+    <div id="page-text">
+        <h2>Credits</h2>
+        <p class="page-text">
+            <b>Project Lead:</b> Tany Dourev<br>
+            <b>Secondary Lead:</b> Samantha Savage<br>
+            <b>Research:</b> Kathleen MacDonald, Evan Mason, Will Paskulin, Rogo Jean<br>
+            <b>Modelling:</b> Tany Dourev, Will Paskulin, Samantha Savage, Xu Yankeer<br>
+            <b>Sound & Narration:</b> Evan Mason, Wu Dongjian, Rigel Quindipan, Xu Yankeer<br>
+            <b>Installation:</b> Kathleen MacDonald, Evan Mason, Rogo Jean, Rigel Quindipan, Shannon Kelly, Patrick
+            Arenas<br>
+            <b>Coding:</b> Shannon Kelly, Matthew McNeil<br>
+            <b>Branding:</b> Kathleen MacDonald, Samantha Savage, Will Paskulin
+            <br><br>
+            Thank you to Dr. Aaron Mauro of Brock University for his support and guidance throughout the project!
+        </p>
+    </div>
+
+
+    <div class="line"></div>
+
+    <div id="copyright">© 2023 Tany Dourev. All rights reserved.</div>
 
     <script src="scripts/scripts.js"></script>
 </body>

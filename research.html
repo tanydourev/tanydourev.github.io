@@ -5,86 +5,78 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>RESEARCH | Tany Dourev</title>
-    <meta name="description" content="A Canada-based interaction designer with a love for type & games.">
+    <meta name="description" content="Canada-based designer who creates interactive projects with an emphasis on merging design disciplines & user friendliness.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- stylesheets -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- favicon -->
-    <link rel="icon" href="img/favicon/favicon.png">
+    <link rel="stylesheet" href="css/queries.css">
 </head>
 
 <body>
-    <header id="sticky-nav" class="navigation-header">
-        <nav>
-            <div class="nav-name">
-                <b>Tany Dourev</b>
-            </div>
-
+    <navigation>
+        <div id="top-nav">
+            <div class="name">Tany Dourev</div>
             <div class="nav-links">
-                <div class="menu1">
-                    <a href="./">Portfolio</a>
-                </div>
-                <div class="menu2">
-                    <a href="./about">About</a>
-                </div>
-                <div id="active" class="menu3">
-                    <a href="./research">Research</a>
-                </div>
-                <div class="menu4">
-                    <a href="media/cv-tany-dourev.pdf">CV</a>
-                </div>
-            </div>
+                
+                <img id="open-button" width="30" height="30" src="https://img.icons8.com/windows/32/menu--v1.png" onclick="openNav()">
 
-            <!-- responsive navigation -->
-            <div class="nav-links-resp" id="navigation-items">
-                <div class="menu1">
-                    <a href="./">Portfolio</a>
-                </div>
-                <div class="menu2">
-                    <a href="./about">About</a>
-                </div>
-                <div id="active" class="menu3">
-                    <a href="./research">Research</a>
-                </div>
-                <div class="menu4">
-                    <a href="media/cv-tany-dourev.pdf">CV</a>
-                </div>
-            </div>
+                <img id="close-button" width="30" height="30" src="https://img.icons8.com/windows/32/delete-sign.png" onclick="closeNav()">
 
-            <div class="hamburger">
-                <span id="openHam">&#9776;</span>
-                <span id="closeHam">&#x2716;</span>
-            </div>
-        </nav>
-    </header>
-
-    <div id="page-container">
-
-        <div class="page-content">
-            <div id="thesis">
-                <div class="thesis"></div>
-                <div class="text">
-                    <div class="text-content">
-                        <h1>Signage Design & Wayfinding Systems: The Toronto Subway’s Fight For Credibility</h1>
-                        <div class="line"></div>
-                        <p>This thesis examines the history of the Toronto Subway’s signage through a visual study on
-                            past signage design in the subway and wayfinding standards for public transportation. It
-                            analyzes the ambiguous origins of the subway’s custom typeface, highlights the inconsistent
-                            application of commercial typefaces across stations, and reveals the TTC’s attempt to
-                            quietly disregard a professionally-designed and tested wayfinding system. </p>
-                        <br>
-                        <div class="project-buttons">
-                            <button class="inactive">Link coming soon!</button>
-                        </div>
-                    </div>
+                <div class="link">
+                    <a href="cv.html">CV</a>
+                </div>
+                <div class="active link">
+                    <a href="research.html">Research</a>
+                </div>
+                <div class="link">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="link">
+                    <a href="index.html">Portfolio</a>
                 </div>
             </div>
         </div>
 
-        <div class="bottom-footer">© 2023 Tany Dourev. All Rights Reserved.</div>
+        <!-- responsive navigation (mobile, tablet) -->
+        <div id="nav-responsive">
+            <div class="responsive-links">
+                <div class="resp-link">
+                    <a href="index.html">Portfolio</a>
+                </div>
+                <div class="resp-link">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="active resp-link">
+                    <a href="research.html">Research</a>
+                </div>
+                <div class="resp-link">
+                    <a href="cv.html">CV</a>
+                </div>
+            </div>
+        </div>
+    </navigation>
+
+    <h1 class="research-headliner"><span class="emoji">📑</span> Research & studies</h1>
+
+    <div id="page-text">
+        <p>A collection of research projects & studies done by me.</p>
+        <div class="research1">
+            <div class="research1-img">
+                <img src="img/subway-thesis.png">
+            </div>
+            <div class="research1-info">
+                <h3>Signage Design & Wayfinding Systems: The Toronto Subway's Fight for Credibility</h3>
+                <p style="color: #838383; font-size: 16px; padding-top: 5px;">Undergraduate Thesis (2022/23)</p>
+                <p style="padding-top: 10px;">Examines the history of the Toronto Subway’s signage  through a visual study on past signage design in the  subway and wayfinding standards for public transportation.</p>
+                <button class="inactive">Coming Soon!</button>
+
+                <!-- <span class="inter">→</span> -->
+            </div>
+        </div>
     </div>
+
+    <div class="line"></div>
+
+    <div id="copyright">© 2023 Tany Dourev. All rights reserved.</div>
 
     <script src="scripts/scripts.js"></script>
 </body>

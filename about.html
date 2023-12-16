@@ -5,128 +5,99 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ABOUT | Tany Dourev</title>
-    <meta name="description" content="A Canada-based interaction designer with a love for type & games.">
+    <meta name="description" content="Canada-based designer who creates interactive projects with an emphasis on merging design disciplines & user friendliness.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- stylesheets -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- favicon -->
-    <link rel="icon" href="img/favicon/favicon.png">
+    <link rel="stylesheet" href="css/queries.css">
 </head>
 
 <body>
-    <header id="sticky-nav" class="navigation-header">
-        <nav>
-            <div class="nav-name">
-                <b>Tany Dourev</b>
-            </div>
-
+    <navigation>
+        <div id="top-nav">
+            <div class="name">Tany Dourev</div>
             <div class="nav-links">
-                <div class="menu1">
-                    <a href="./">Portfolio</a>
-                </div>
-                <div id="active" class="menu2">
-                    <a href="./about">About</a>
-                </div>
-                <div class="menu3">
-                    <a href="./research">Research</a>
-                </div>
-                <div class="menu4">
-                    <a href="media/cv-tany-dourev.pdf">CV</a>
-                </div>
-            </div>
+                
+                <img id="open-button" width="30" height="30" src="https://img.icons8.com/windows/32/menu--v1.png" onclick="openNav()">
 
-            <!-- responsive navigation -->
-            <div class="nav-links-resp" id="navigation-items">
-                <div class="menu1">
-                    <a href="./">Portfolio</a>
+                <img id="close-button" width="30" height="30" src="https://img.icons8.com/windows/32/delete-sign.png" onclick="closeNav()">
+
+                <div class="link">
+                    <a href="cv.html">CV</a>
                 </div>
-                <div id="active" class="menu2">
-                    <a href="./about">About</a>
+                <div class="link">
+                    <a href="research.html">Research</a>
                 </div>
-                <div class="menu3">
-                    <a href="./research">Research</a>
+                <div class="active link">
+                    <a href="about.html">About</a>
                 </div>
-                <div class="menu4">
-                    <a href="media/cv-tany-dourev.pdf">CV</a>
-                </div>
-            </div>
-
-            <div class="hamburger">
-                <span id="openHam">&#9776;</span>
-                <span id="closeHam">&#x2716;</span>
-            </div>
-        </nav>
-    </header>
-
-    <div id="page-container">
-
-        <div class="page-content">
-            <div id="profile">
-                <div class="profile"></div>
-                <div class="text">
-                    <div class="text-content">
-                        <h1>Meet Tany</h1>
-                        <div class="line"></div>
-                        <p>Tany Dourev is an interaction designer, gamer & type nerd based in Canada. Currently, she works as a <b>Graphic Designer @ <a
-                            href="rwdigital.ca">RW Digital Marketing Agency</a></b>. Her creative
-                            journey began with graphic/visual design, and has since expanded into typography, UX/UI
-                            design, 3D and game design. Much of her work is inspired by cyberpunk aesthetics, futuristic
-                            art and video games. <br><br>
-
-                            Outside of design, she enjoys a good cup of tea, watching Star Wars, listening to ambient
-                            music and travelling through her cultural homeland of Bulgaria ✨
-                        </p>
-                        <a href="mailto:tanydourev@gmail.com" style="text-decoration: none;">
-                            <button class="email">
-                                <img class="social-icon"
-                                    src="https://img.icons8.com/fluency-systems-filled/96/000000/new-post.png" />
-                            </button>
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/tanydourev" style="text-decoration: none;">
-                            <button class="linkedin">
-                                <img class="social-icon"
-                                    src="https://img.icons8.com/fluency-systems-filled/96/linkedin.png" />
-                            </button>
-                        </a>
-
-                        <a href="https://www.instagram.com/tanydourev" style="text-decoration: none;">
-                            <button class="instagram">
-                                <img class="social-icon"
-                                    src="https://img.icons8.com/fluency-systems-filled/96/instagram-new.png" />
-                            </button>
-                        </a>
-                    </div>
+                <div class="link">
+                    <a href="index.html">Portfolio</a>
                 </div>
             </div>
         </div>
 
-        <div class="bottom-footer">© 2023 Tany Dourev. All Rights Reserved.</div>
+        <!-- responsive navigation (mobile, tablet) -->
+        <div id="nav-responsive">
+            <div class="responsive-links">
+                <div class="resp-link">
+                    <a href="index.html">Portfolio</a>
+                </div>
+                <div class="active resp-link">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="resp-link">
+                    <a href="research.html">Research</a>
+                </div>
+                <div class="resp-link">
+                    <a href="cv.html">CV</a>
+                </div>
+            </div>
+        </div>
+    </navigation>
+
+    <h1 class="about-headliner"><span class="emoji">✨</span>
+        Get to know <span style="color: #e06150;">Tany</span>
+    </h1>
+
+    <div id="page-text">
+        <p><b>Hello there!</b> I'm a Canada-based designer with a love for type and an avid gamer. My creative journey
+            started with graphic design and has expanded into other fields of the industry, such as UX/UI, branding, 3D
+            work and game design. A lot of my work is inspired by the idea of merging disciplines and pushing the
+            boundaries
+            of design — I create to take it the extra mile.</p>
+        <br>
+        <p>I graduated from Brock University with a <b>Bachelor of Arts in Interactive Arts & Sciences</b>. Prior to my
+            degree, I studied Interaction Design at the Sheridan College Institute of Technology.</p>
+        <br>
+        <p>Outside of design, I like a good cup of tea while watching Star Wars' <i>Andor</i> series or
+            listening to ambient music. Some of my favourite games include <i>Cyberpunk 2077</i>, <i>Detroit: Become
+                Human</i> and <i>Stray</i>.</p>
+        <br>
+        <p><b>Let's connect!</b>
+            <br>
+            <a href="mailto:tanydourev@gmail.com" style="text-decoration: none;">
+                <img class="social-icon" height="35" width="35"
+                    src="https://img.icons8.com/fluency-systems-regular/48/chat-message.png">
+            </a>
+
+            <a href="https://www.linkedin.com/in/tanydourev" style="text-decoration: none;">
+                <img class="social-icon" width="35" height="35"
+                    src="https://img.icons8.com/fluency-systems-regular/48/linkedin.png">
+            </a>
+
+            <a href="https://www.instagram.com/tanydourev" style="text-decoration: none;">
+                <img class="social-icon" width="35" height="35"
+                    src="https://img.icons8.com/fluency-systems-regular/48/000000/instagram-new--v1.png">
+            </a>
+
+        </p>
     </div>
 
+    <div class="line"></div>
+
+    <div id="copyright">© 2023 Tany Dourev. All rights reserved.</div>
+
     <script src="scripts/scripts.js"></script>
-
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-
-    <script>
-        tippy('.email', {
-            content: 'EMAIL',
-            placement: 'bottom',
-        });
-
-        tippy('.linkedin', {
-            content: 'LINKEDIN',
-            placement: 'bottom',
-        });
-
-        tippy('.instagram', {
-            content: 'INSTAGRAM',
-            placement: 'bottom',
-        });
-    </script>
 </body>
 
 </html>
