@@ -200,21 +200,21 @@ button:hover {
 
 .project1 {
     background: url(../img/thumbnail-rw.png) center center no-repeat;
-    background-size: 125%;
+    background-size: cover;
     height: 375px;
     transition: 0.3s ease-in-out;
 }
 
 .project2 {
     background: url(../img/thumbnail-twb.png) center center no-repeat;
-    background-size: 125%;
+    background-size: cover;
     height: 375px;
     transition: 0.3s ease-in-out;
 }
 
 .project3 {
     background: url(../img/thumbnail-pm.png) center center no-repeat;
-    background-size: 125%;
+    background-size: cover;
     height: 375px;
     transition: 0.3s ease-in-out;
 }
@@ -229,16 +229,9 @@ button:hover {
 
 .project5 {
     background: url(../img/thumbnail-kofi.png) center center no-repeat;
-    background-size: 125%;
+    background-size: cover;
     height: 375px;
     transition: 0.3s ease-in-out;
-}
-
-.project1:hover,
-.project2:hover,
-.project3:hover,
-.project5:hover {
-    background-size: 140%;
 }
 
 .project4:hover {
