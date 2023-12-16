@@ -1,0 +1,285 @@
+/* ---------- MEDIA QUERIES ---------- */
+
+/* large monitor */
+@media only screen and (min-width: 1600px) {
+    #open-button {
+        display: none;
+    }
+}
+
+/* regular laptop */
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    #open-button {
+        display: none;
+    }
+}
+
+/* small laptop */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #open-button {
+        display: none;
+    }
+
+    .headliner {
+        width: 85%;
+    }
+
+    #gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #top-nav {
+        grid-template-columns: 50% 50%;
+    }
+
+    .link {
+        display: none;
+    }
+
+    .headliner {
+        width: 90%;
+    }
+
+    #gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #gallery img {
+        height: 300px;
+    }
+
+    #page-text p {
+        width: 100%;
+    }
+
+    .about-headliner {
+        width: 100%;
+    }
+
+    .research-headliner {
+        width: 100%;
+    }
+
+    .research1 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .cv-timeline {
+        grid-template-columns: 8% 92%;
+    }
+
+    .cv-info {
+        width: 100%;
+    }
+
+    .project-headliner {
+        width: 100%;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+/* landscape phone */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    body {
+        width: 85%;
+    }
+
+    #top-nav {
+        grid-template-columns: 50% 50%;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .link {
+        display: none;
+    }
+
+    .headliner {
+        width: 100%;
+    }
+
+    #gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #gallery img {
+        height: 400px;
+    }
+
+    #page-text p {
+        width: 100%;
+    }
+
+    .about-headliner {
+        width: 100%;
+        padding: 75px 0 25px 0;
+    }
+
+    .research-headliner {
+        width: 100%;
+        padding: 75px 0 25px 0;
+    }
+
+    .research1 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .research1 img {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .research1-info {
+        padding: 20px;
+    }
+
+    .cv-timeline {
+        grid-template-columns: 10% 90%;
+    }
+
+    .cv-info {
+        width: 100%;
+    }
+
+    .project-headliner {
+        width: 100%;
+        padding: 75px 0 25px 0;
+    }
+
+    .grid-1 {
+        margin-bottom: 2px;
+    }
+
+    .grid-2 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+/* phone */
+@media only screen and (max-width: 599px) {
+    body {
+        width: 90%;
+    }
+
+    #top-nav {
+        grid-template-columns: 50% 50%;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .link {
+        display: none;
+    }
+
+    .headliner {
+        width: 100%;
+        padding: 75px 0;
+        font-size: 40px;
+        line-height: 1.2em;
+    }
+
+    #gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #page-text p {
+        width: 100%;
+    }
+
+    .research-headliner {
+        width: 100%;
+        padding: 75px 0 25px 0;
+    }
+
+    .research1 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .research1 img {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .research1-info {
+        padding: 20px;
+    }
+
+    .cv-timeline {
+        grid-template-columns: 15% 85%;
+    }
+
+    .cv-info {
+        width: 100%;
+    }
+
+    .project-headliner {
+        width: 100%;
+        padding: 75px 0 25px 0;
+    }
+
+    .grid-1 {
+        margin-bottom: 2px;
+    }
+
+    .grid-2 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
