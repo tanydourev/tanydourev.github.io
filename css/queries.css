@@ -230,9 +230,14 @@
         width: 100%;
     }
 
+    .about-headliner {
+        font-size: 45px;
+    }
+
     .research-headliner {
         width: 100%;
         padding: 75px 0 25px 0;
+        font-size: 45px;
     }
 
     .research1 {
@@ -260,6 +265,7 @@
     .project-headliner {
         width: 100%;
         padding: 75px 0 25px 0;
+        font-size: 45px;
     }
 
     .grid-1 {
