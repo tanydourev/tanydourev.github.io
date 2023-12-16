@@ -199,6 +199,10 @@
         width: 90%;
     }
 
+    button {
+        margin: 15px 0 -5px 0;
+    }
+
     #top-nav {
         grid-template-columns: 50% 50%;
     }
