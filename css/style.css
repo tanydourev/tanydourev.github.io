@@ -316,6 +316,13 @@ button:hover {
 
 /* ---- CV ---- */
 
+.cv-headliner {
+    width: 75%;
+    padding: 75px 0 25px 0;
+    font-size: 50px;
+    line-height: 1.2em;
+}
+
 .cv-timeline {
     display: grid;
     grid-template-columns: 5% 95%;
