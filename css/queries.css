@@ -74,6 +74,10 @@
         grid-template-columns: 50% 50%;
     }
 
+    .cv-headliner {
+        width: 100%;
+    }
+
     .cv-timeline {
         grid-template-columns: 8% 92%;
     }
@@ -152,6 +156,11 @@
 
     .research1-info {
         padding: 20px;
+    }
+
+    .cv-headliner {
+        width: 100%;
+        padding: 75px 0 0 0;
     }
 
     .cv-timeline {
@@ -252,6 +261,12 @@
 
     .research1-info {
         padding: 20px;
+    }
+
+    cv-headliner {
+        width: 100%;
+        padding: 75px 0 0 0;
+        font-size: 45px;
     }
 
     .cv-timeline {
