@@ -74,21 +74,24 @@
             <div class="project3"></div>
         </a>
 
+        <!-- cp2077 level -->
+        <div class="project4"></div>
+
         <a href="kofi.html">
             <div class="project5"></div>
         </a>
-
-        <!-- cp2077 level -->
-        <div class="project4"></div>
     </div>
 
     <div class="line"></div>
 
     <div id="copyright">© 2023 Tany Dourev. All rights reserved.</div>
 
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
     <script src="scripts/scripts.js"></script>
 
     <script>
+        // responsive navigation
         function myFunction() {
             var x = document.getElementById("links");
             if (x.style.display === "block") {
@@ -98,6 +101,32 @@
                 x.style.display
             }
         }
+
+        // tooltips
+        tippy('.project1', {
+            content: 'RW DIGITAL',
+            followCursor: true,
+        });
+
+        tippy('.project2', {
+            content: 'THE WITCH'S BREW',
+            followCursor: true,
+        });
+
+        tippy('.project3', {
+            content: 'PROJECT MAMMOTH',
+            followCursor: true,
+        });
+
+        tippy('.project5', {
+            content: 'KOFI',
+            followCursor: true,
+        });
+
+        tippy('.project4', {
+            content: 'COMING SOON!',
+            followCursor: true,
+        });
     </script>
 </body>
 
