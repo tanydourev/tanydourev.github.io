@@ -4,80 +4,122 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>KOFI | Tany Dourev</title>
-    <meta name="description" content="Hi! I'm a Canada-based interactive & multimedia designer.">
+    <title>KOFI — Tany Dourev</title>
+    <meta name="description" content="I help users explore the digital world through fun and out-of-the-box designs, combining mediums to create something unique :)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/queries.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon/favicon.png">
 </head>
 
 <body>
+
+    <!--  navigation -->
     <navigation>
-        <div id="top-nav">
-            <div class="name">Tany Dourev</div>
-            <div class="nav-links">
-                
-                <img id="open-button" width="30" height="30" src="https://img.icons8.com/windows/32/menu--v1.png" onclick="openNav()">
-
-                <img id="close-button" width="30" height="30" src="https://img.icons8.com/windows/32/delete-sign.png" onclick="closeNav()">
-
-                <div class="link">
-                    <a href="./cv">CV</a>
-                </div>
-                <div class="link">
-                    <a href="./research">Research</a>
-                </div>
-                <div class="link">
-                    <a href="./about">About</a>
-                </div>
-                <div class="link">
-                    <a href="./">Portfolio</a>
-                </div>
+        <div id="top-nav" style="padding-bottom: 10px;">
+            <div class="name">
+                <img height="35" src="img/logotype.png">
             </div>
-        </div>
+            <div class="nav-links">
 
-        <!-- responsive navigation (mobile, tablet) -->
-        <div id="nav-responsive">
-            <div class="responsive-links">
-                <div class="resp-link">
-                    <a href="./">Portfolio</a>
+                <!-- responsive nav trigger -->
+                <div class="link">
+                    <img id="open-button" width="30" height="30" src="img/nav-icons/open-menu.png" onclick="openNav()">
                 </div>
-                <div class="resp-link">
+
+                <!-- regular links -->
+                <div class="regular-link">
+                    <a href="media/cv-tany-dourev.pdf" target="_blank">Resumé</a>
+                </div>
+                <div class="regular-link">
                     <a href="./about">About</a>
                 </div>
-                <div class="resp-link">
-                    <a href="./research">Research</a>
+                <div class="regular-link">
+                    <a href="./">Works</a>
                 </div>
-                <div class="resp-link">
-                    <a href="./cv">CV</a>
+
+                <!-- responsive links -->
+                <div id="responsive-navigation" class="sidenav">
+                    <img id="close-button" width="30" height="30" src="img/nav-icons/close-menu.png" onclick="closeNav()">
+
+                    <div id="responsive-links">
+                        <img height="40" src="img/logotype.png" style="display: block; margin: auto auto; margin-bottom: 20px;">
+
+                        <img src="img/line.png" height="70" style="display: block; margin: auto auto; margin-bottom: 20px;">
+
+                        <div class="resp-link">
+                            <a href="./">works</a>
+                        </div>
+                        <div class="resp-link">
+                            <a href="./about">about</a>
+                        </div>
+                        <div class="resp-link">
+                            <a href="media/cv-tany-dourev.pdf" target="_blank">resumé</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </navigation>
 
-    <h1 class="project-headliner"><span class="emoji">☕ KOFI typeface
-    </h1>
-
-    <div id="page-text">
-        <p><b>KOFI</b> is a monoline display typeface inspired by the Kofi Aromo coffee franchise in Activision Blizzard's <i>Overwatch</i>. The original set of letterforms, which were featured as part of the Kofi Aromo logo, were expanded to a full alphabet, numbers and punctuation using shapes and curves that were prominent throughout the lettering itself. Given the coffee franchise and its associated logo were created for the sole purpose of set-dressing the in-game world of Numbani, I saw this as a fun opportunity to explore my love of typography and touch on the potential Kofi Aromo had for becoming a brand.
-        </p>
+    <!-- header image -->
+    <div id="project-header" class="hidden">
+        <img src="img/kofi/kofi-2.jpg" style="display: block;">
     </div>
 
-    <img class="grid-1" src="img/kofi/kofi-1.jpg" style="width: 100%; margin-top: 25px;">
-    <img class="grid-1" src="img/kofi/kofi-2.jpg" style="width: 100%;">
-    <img class="grid-1" src="img/kofi/kofi-3.jpg" style="width: 100%;">
-    <img class="grid-1" src="img/kofi/kofi-4.jpg" style="width: 100%;">
-    <img class="grid-1" src="img/kofi/kofi-5.jpg" style="width: 100%;">
-    <img class="grid-1" src="img/kofi/kofi-6.jpg" style="width: 100%;">
-    <img class="grid-1" src="img/kofi/kofi-7.jpg" style="width: 100%;">
-    <img class="grid-1" src="img/kofi/kofi-8.jpg" style="width: 100%;">
-    <img class="grid-1" src="img/kofi/kofi-9.jpg" style="width: 100%;">
+    <div style="background-color: #fff; padding-top: 30px;">
+        <div id="container" style="background-color: #fff;">
 
-    <div class="line"></div>
+            <!-- overview -->
+            <div id="project-page">
+                <div class="project-page-content">
+                    <h1>KOFI</h1>
+                    <h3>KOFI is a monoline display typeface inspired by the Kofi Aromo coffee franchise in Activision Blizzard's <i>Overwatch</i> and <i>Overwatch 2</i> titles.</h3>
+                </div>
 
-    <div id="copyright">© 2023 Tany Dourev. All rights reserved.</div>
+                <div class="div-line-2"></div>
+                <br><br>
 
-    <script src="scripts/scripts.js"></script>
+                <!-- behind the type -->
+                <h3 class="section-title">Behind The Type</h3>
+                <p class="project-page-text">KOFI's existence came about after I discovered the Kofi Aromo logo and watermark while playing the Numbani map in the first edition of <i>Overwatch</i>. Originally designed to set-dress the environment, the brand is marketed as an international coffee franchise with additional locations in Ayutthaya, Ilios, Oasis, Sydney, Toronto and Samoa. In Numbani, players can move through the cafe's physical location, but are unable to interact with it.
+                    <br><br>
+                    My interest in Kofi Aromo stemmed from the logo, which I believed had unused potential as simply a set piece for Numbani. Using the letterforms and shapes that already existed, I created a full uppercase alphabet, a complete numberset and punctuation.
+                </p>
+            </div>
+        </div>
+
+        <img class="grid-1" src="img/kofi/kofi-1.jpg" width="100%" style="padding-top: 50px; display: block;">
+        <img class="grid-1" src="img/kofi/kofi-2.jpg" width="100%" style="display: block;">
+        <img class="grid-1" src="img/kofi/kofi-3.jpg" width="100%" style="display: block;">
+        <img class="grid-1" src="img/kofi/kofi-4.jpg" width="100%" style="display: block;">
+        <img class="grid-1" src="img/kofi/kofi-5.jpg" width="100%" style="display: block;">
+        <img class="grid-1" src="img/kofi/kofi-6.jpg" width="100%" style="display: block;">
+        <img class="grid-1" src="img/kofi/kofi-7.jpg" width="100%" style="display: block;">
+        <img class="grid-1" src="img/kofi/kofi-8.jpg" width="100%" style="display: block;">
+        <img class="grid-1" src="img/kofi/kofi-9.jpg" width="100%" style="display: block;">
+
+        <!-- copyright -->
+        <div id="copyright" style="background-color: #fff; color: #0e2235; margin-top: 40px;">© 2023 Tany Dourev. All rights reserved.</div>
+
+        <script src="scripts/scripts.js"></script>
+
+        <script>
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('remove');
+                    }
+                });
+            });
+
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach((el) => observer.observe(el));
+        </script>
 </body>
 
 </html>
