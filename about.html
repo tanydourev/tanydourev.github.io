@@ -4,100 +4,133 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ABOUT | Tany Dourev</title>
-    <meta name="description" content="Hi! I'm a Canada-based interactive & multimedia designer.">
+    <title>About — Tany Dourev</title>
+    <meta name="description" content="I help users explore the digital world through fun and out-of-the-box designs, combining mediums to create something unique :)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/queries.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon/favicon.png">
 </head>
 
 <body>
+
+    <!--  navigation -->
     <navigation>
         <div id="top-nav">
-            <div class="name">Tany Dourev</div>
-            <div class="nav-links">
-                
-                <img id="open-button" width="30" height="30" src="https://img.icons8.com/windows/32/menu--v1.png" onclick="openNav()">
-
-                <img id="close-button" width="30" height="30" src="https://img.icons8.com/windows/32/delete-sign.png" onclick="closeNav()">
-
-                <div class="link">
-                    <a href="./cv">CV</a>
-                </div>
-                <div class="link">
-                    <a href="./research">Research</a>
-                </div>
-                <div class="active link">
-                    <a href="./about">About</a>
-                </div>
-                <div class="link">
-                    <a href="./">Portfolio</a>
-                </div>
+            <div class="name">
+                <img height="35" src="img/logotype.png">
             </div>
-        </div>
+            <div class="nav-links">
 
-        <!-- responsive navigation (mobile, tablet) -->
-        <div id="nav-responsive">
-            <div class="responsive-links">
-                <div class="resp-link">
-                    <a href="./">Portfolio</a>
+                <!-- responsive nav trigger -->
+                <div class="link">
+                    <img id="open-button" width="30" height="30" src="img/nav-icons/open-menu.png" onclick="openNav()">
                 </div>
-                <div class="active resp-link">
+
+                <!-- regular links -->
+                <div class="regular-link">
+                    <a href="media/cv-tany-dourev.pdf" target="_blank">Resumé</a>
+                </div>
+                <div class="active regular-link">
                     <a href="./about">About</a>
                 </div>
-                <div class="resp-link">
-                    <a href="./research">Research</a>
+                <div class="regular-link">
+                    <a href="./">Works</a>
                 </div>
-                <div class="resp-link">
-                    <a href="./cv">CV</a>
+
+                <!-- responsive links -->
+                <div id="responsive-navigation" class="sidenav">
+                    <img id="close-button" width="30" height="30" src="img/nav-icons/close-menu.png" onclick="closeNav()">
+
+                    <div id="responsive-links">
+                        <img height="40" src="img/logotype.png" style="display: block; margin: auto auto; margin-bottom: 20px;">
+
+                        <img src="img/line.png" height="70" style="display: block; margin: auto auto; margin-bottom: 20px;">
+
+                        <div class="resp-link">
+                            <a href="./">works</a>
+                        </div>
+                        <div class="active resp-link">
+                            <a href="./about">about</a>
+                        </div>
+                        <div class="resp-link">
+                            <a href="media/cv-tany-dourev.pdf" target="_blank">resumé</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </navigation>
 
-    <h1 class="about-headliner"><span class="emoji">✨</span>
-        Get to know <span style="color: #e06150;">Tany</span>
-    </h1>
+    <div id="container">
 
-    <div id="page-text">
-        <p><b>Hello there!</b> I'm a Canada-based designer with a love for type and an avid gamer. My creative journey
-            started with graphic design and has expanded into other fields of the industry, such as UX/UI, branding, 3D
-            work and game design. A lot of my work is inspired by the idea of merging disciplines and pushing the
-            boundaries
-            of design — I create to take it the extra mile.</p>
-        <br>
-        <p>I graduated from Brock University with a <b>Bachelor of Arts in Interactive Arts & Sciences</b>. Prior to my
-            degree, I studied Interaction Design at the Sheridan College Institute of Technology.</p>
-        <br>
-        <p>Outside of design, I like a good cup of tea while watching Star Wars' <i>Andor</i> series or
-            listening to ambient music. Some of my favourite games include <i>Cyberpunk 2077</i>, <i>Detroit: Become
-                Human</i> and <i>Stray</i>.</p>
-        <br>
-        <p><b>Let's connect!</b>
-            <br>
-            <a href="mailto:tanydourev@gmail.com" style="text-decoration: none;">
-                <img class="social-icon" height="35" width="35"
-                    src="https://img.icons8.com/fluency-systems-regular/48/chat-message.png">
-            </a>
+        <!-- about -->
+        <div id="about">
+            <div class="about-headshot hidden"></div>
+            <div class="about-content hidden">
+                <h1 class="hidden">Hiya, I'm Tany!</h1>
+                <h3 class="hidden">I'm a Canada-based designer with an interest in creating things that go beyond surface visuals. I enjoy seeing projects span from conception to production, following the process through to the very end and refining the little details. Outside of design, my interests include good cups of green tea, Star Wars, cyberpunk aesthetics and dystopian-space literature. My favourite games are <i>Cyberpunk 2077</i>, <i>Stray</i> and <i>Detroit: Become
+                        Human</i>.
+                    <br><br>
+                    Currently working as: <span class="blue">Graphic Designer @ <a href="https://www.rwdigital.ca">RW Digital Marketing Agency</a></span>
+                    <br><br>
+                    Let's have a chat!
+                    <br>
+                    <!-- social icons -->
+                    <div style="display: inline;" class="hidden">
+                        <a href="mailto:tanydourev@gmail.com" style="text-decoration: none; color: #bbd5ed;">
+                            <img class="social-icon" height="35" width="35" src="img/social-icons/icon-em.png">
+                        </a>
 
-            <a href="https://www.linkedin.com/in/tanydourev" style="text-decoration: none;">
-                <img class="social-icon" width="35" height="35"
-                    src="https://img.icons8.com/fluency-systems-regular/48/linkedin.png">
-            </a>
+                        <a href="https://www.linkedin.com/in/tanydourev" style="text-decoration: none;">
+                            <img class="social-icon" height="35" width="35" src="img/social-icons/icon-li.png">
+                        </a>
 
-            <a href="https://www.instagram.com/tanydourev" style="text-decoration: none;">
-                <img class="social-icon" width="35" height="35"
-                    src="https://img.icons8.com/fluency-systems-regular/48/000000/instagram-new--v1.png">
-            </a>
+                        <a href="https://www.instagram.com/tanydourev" style="text-decoration: none;">
+                            <img class="social-icon" height="35" width="35" src="img/social-icons/icon-ig.png">
+                        </a>
+                    </div>
+                </h3>
+            </div>
+        </div>
 
-        </p>
+        <div class="div-line"></div>
+
+        <div id="research">
+            <div class="research-content hidden">
+                <h1>Research —</h1>
+                <h3><span class="blue">Signage Design & Wayfinding Systems: The Toronto Subway's Fight for Credibility</span></h3>
+                <h3 style="color: #c0c0c0;">Undergraduate Thesis (2022/23)</h3>
+                <h3 style="margin-top: 10px; padding-left: 15px; border-left: 1px solid #bbd5ed;">Examines the history of the Toronto Subway’s signage through a visual study on past signage design in the subway and wayfinding standards for public transportation.</h3>
+
+                <button>Coming Soon!</button>
+            </div>
+        </div>
+
     </div>
 
-    <div class="line"></div>
 
+    <!-- copyright -->
     <div id="copyright">© 2023 Tany Dourev. All rights reserved.</div>
 
     <script src="scripts/scripts.js"></script>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('remove');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
 </body>
 
 </html>
