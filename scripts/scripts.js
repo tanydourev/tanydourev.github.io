@@ -4,16 +4,12 @@ window.addEventListener('DOMContentLoaded', () => {
     document.body.classList.remove('fade-out');
 });
 
-// open navigation
+// navigation triggers
 function openNav() {
-    document.getElementById("nav-responsive").style.display = "block";
-    document.getElementById("open-button").style.display = "none";
+    document.getElementById("responsive-navigation").style.width = "100%";
     document.getElementById("close-button").style.display = "block";
 }
 
-// close navigation
 function closeNav() {
-    document.getElementById("nav-responsive").style.display = "none";
-    document.getElementById("open-button").style.display = "block";
-    document.getElementById("close-button").style.display = "none";
+    document.getElementById("responsive-navigation").style.width = "0";
 }
