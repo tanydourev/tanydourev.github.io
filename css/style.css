@@ -212,6 +212,11 @@ button:hover {
     transition: 0.3s ease-in-out;
 }
 
+.resp-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .sidenav-link:hover,
 .sidenav-link .stroked:hover {
     color: #fff;
