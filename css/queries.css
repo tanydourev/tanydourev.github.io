@@ -2,309 +2,362 @@
 
 /* large monitor */
 @media only screen and (min-width: 1600px) {
+
+    #responsive-navigation,
     #open-button {
-        display: none;
+        display: none !important;
+    }
+
+    .work1-img,
+    .work2-img,
+    .work3-img,
+    .work4-img,
+    .work5-img,
+    .work6-img {
+        height: 350px !important;
+    }
+
+    #about {
+        grid-template-columns: 20% 80% !important;
+        margin: 0 auto;
+        padding-top: 70px !important;
     }
 }
 
 /* regular laptop */
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
+
+    #responsive-navigation,
     #open-button {
-        display: none;
+        display: none !important;
     }
 }
 
 /* small laptop */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    #responsive-navigation,
     #open-button {
-        display: none;
+        display: none !important;
     }
 
-    .headliner {
-        width: 85%;
+    #header h1 {
+        width: 50%;
+        font-size: 70px !important;
+        line-height: 1.2em;
+        text-align: center;
     }
 
-    #gallery {
-        grid-template-columns: repeat(2, 1fr);
+    #header h2 {
+        width: 80% !important;
+        font-size: 25px;
+        text-align: center;
+        line-height: 1.5em;
     }
 
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+    #works {
+        width: 80% !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .work1-img,
+    .work2-img,
+    .work3-img,
+    .work4-img,
+    .work5-img,
+    .work6-img {
+        height: 200px !important;
+    }
+
+    #about-home h3 {
+        width: 80% !important;
+        font-size: 22px !important;
+    }
+
+    #container {
+        width: 80% !important;
+    }
+
+    #about {
+        grid-template-columns: 32% 73% !important;
+        margin: 0 auto;
+        padding-top: 70px !important;
     }
 }
 
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    #top-nav {
-        grid-template-columns: 50% 50%;
+
+    #responsive-navigation,
+    #open-button {
+        display: none !important;
     }
 
-    .link {
-        display: none;
+    #header h1 {
+        width: 50%;
+        font-size: 70px !important;
+        line-height: 1.2em;
+        text-align: center;
     }
 
-    .headliner {
-        width: 90%;
+    #header h2 {
+        width: 80% !important;
+        font-size: 25px;
+        text-align: center;
+        line-height: 1.5em;
     }
 
-    #gallery {
-        grid-template-columns: repeat(2, 1fr);
+    #works {
+        width: 80% !important;
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 
-    #gallery img {
-        height: 300px;
+    .work1-img,
+    .work2-img,
+    .work3-img,
+    .work4-img,
+    .work5-img,
+    .work6-img {
+        height: 200px !important;
     }
 
-    #page-text p {
-        width: 100%;
+    #about-home h3 {
+        width: 80% !important;
+        font-size: 22px !important;
     }
 
-    .about-headliner {
-        width: 100%;
+    #container {
+        width: 85% !important;
     }
 
-    .research-headliner {
-        width: 100%;
+    #about {
+        grid-template-columns: repeat(1, 1fr) !important;
+        margin: 0 auto;
+        padding-top: 70px !important;
     }
 
-    .research1 {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 50% 50%;
+    .about-content {
+        padding-left: 0 !important;
     }
 
-    .cv-headliner {
-        width: 100%;
+    .about-headshot {
+        height: 300px !important;
+        width: 300px !important;
+        margin: 0 auto;
     }
 
-    .cv-timeline {
-        grid-template-columns: 8% 92%;
+    #about h1 {
+        margin-top: 30px;
+        font-size: 40px !important;
     }
 
-    .cv-info {
-        width: 100%;
+    #about h3 {
+        font-size: 22px !important;
     }
 
-    .project-headliner {
-        width: 100%;
+    #research h1 {
+        font-size: 30px !important;
+    }
+    
+    #research h3 {
+        font-size: 22px !important;
+    }
+
+    #project-header img {
+        height: 60vh !important;
+    }
+
+    p {
+        width: 100% !important;
     }
 
     .grid-4 {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
 }
 
 /* landscape phone */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-    body {
-        width: 85%;
+    .regular-link {
+        display: none !important;
     }
 
-    #top-nav {
-        grid-template-columns: 50% 50%;
+    #close-button {
+        right: 50px !important;
     }
 
-    .name {
-        font-size: 20px;
+    #header h1 {
+        width: 50%;
+        font-size: 50px !important;
+        line-height: 1.2em;
+        text-align: center;
     }
 
-    .link {
-        display: none;
+    #header h2 {
+        width: 80% !important;
+        font-size: 23px;
+        text-align: center;
+        line-height: 1.5em;
     }
 
-    .headliner {
-        width: 100%;
+    #works {
+        width: 80% !important;
+        grid-template-columns: repeat(1, 1fr) !important;
     }
 
-    #gallery {
-        grid-template-columns: repeat(1, 1fr);
+    #about-home h3 {
+        width: 80% !important;
+        font-size: 20px !important;
     }
 
-    #gallery img {
-        height: 400px;
+    #container {
+        width: 85% !important;
     }
 
-    #page-text p {
-        width: 100%;
+    #about {
+        grid-template-columns: repeat(1, 1fr) !important;
+        margin: 0 auto;
+        padding-top: 70px !important;
     }
 
-    .about-headliner {
-        width: 100%;
-        padding: 75px 0 25px 0;
+    .about-content {
+        padding-left: 0 !important;
     }
 
-    .research-headliner {
-        width: 100%;
-        padding: 75px 0 25px 0;
+    .about-headshot {
+        margin: 0 auto;
     }
 
-    .research1 {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+    #about h1 {
+        margin-top: 30px;
+        font-size: 40px !important;
     }
 
-    .research1 img {
-        border-radius: 5px 5px 0 0;
+    #about h3 {
+        font-size: 20px !important;
+    }
+    
+    #research h3 {
+        font-size: 20px !important;
     }
 
-    .research1-info {
-        padding: 20px;
+    #project-header img {
+        height: 35vh !important;
     }
 
-    .cv-headliner {
-        width: 100%;
-        padding: 75px 0 0 0;
-    }
-
-    .cv-timeline {
-        grid-template-columns: 10% 90%;
-    }
-
-    .cv-info {
-        width: 100%;
-    }
-
-    .project-headliner {
-        width: 100%;
-        padding: 75px 0 25px 0;
-    }
-
-    .grid-1 {
-        margin-bottom: 2px;
-    }
-
-    .grid-2 {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 8px;
-        margin-bottom: 8px;
+    p {
+        width: 100% !important;
     }
 
     .grid-3 {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 8px;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .grid-4 {
         grid-template-columns: repeat(2, 1fr);
         gap: 8px;
-    }
-
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
     }
 }
 
 /* phone */
 @media only screen and (max-width: 599px) {
-    body {
-        width: 90%;
+
+    #header h1 {
+        width: 50%;
+        font-size: 40px !important;
+        line-height: 1.2em;
+        text-align: center;
     }
 
-    button {
-        margin: 15px 0 -5px 0;
+    #header h2 {
+        width: 80% !important;
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.4em;
+    }
+
+    #works {
+        width: 80% !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .work1-img,
+    .work2-img,
+    .work3-img,
+    .work4-img,
+    .work5-img,
+    .work6-img {
+        height: 250px !important;
+    }
+
+    .about-img {
+        height: 200px !important;
+        width: 200px !important;
+    }
+
+    #about-home h3 {
+        width: 80% !important;
+        font-size: 18px !important;
     }
 
     #top-nav {
         grid-template-columns: 50% 50%;
+        padding: 25px 25px 10px 25px !important;
     }
 
-    .name {
-        font-size: 20px;
+    .name img {
+        height: 30px;
     }
 
-    .link {
-        display: none;
+    .regular-link {
+        display: none !important;
     }
 
-    .headliner {
-        width: 100%;
-        padding: 75px 0;
-        font-size: 40px;
-        line-height: 1.2em;
+    #container {
+        width: 85% !important;
     }
 
-    #gallery {
-        grid-template-columns: repeat(1, 1fr);
+    #about {
+        grid-template-columns: repeat(1, 1fr) !important;
+        margin: 0 auto;
+        padding-top: 70px !important;
     }
 
-    #page-text p {
-        width: 100%;
+    .about-content {
+        padding-left: 0 !important;
     }
 
-    .about-headliner {
-        font-size: 45px;
+    .about-headshot {
+        margin: 0 auto;
     }
 
-    .research-headliner {
-        width: 100%;
-        padding: 75px 0 25px 0;
-        font-size: 45px;
+    #about h1 {
+        margin-top: 30px;
+        font-size: 40px !important;
     }
 
-    .research1 {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+    #about h3 {
+        font-size: 18px !important;
+    }
+    
+    #research h3 {
+        font-size: 18px !important;
     }
 
-    .research1 img {
-        border-radius: 5px 5px 0 0;
+    #project-header img {
+        height: 35vh !important;
     }
 
-    .research1-info {
-        padding: 20px;
-    }
-
-    cv-headliner {
-        width: 100%;
-        padding: 75px 0 0 0;
-        font-size: 45px;
-    }
-
-    .cv-timeline {
-        grid-template-columns: 15% 85%;
-    }
-
-    .cv-info {
-        width: 100%;
-    }
-
-    .project-headliner {
-        width: 100%;
-        padding: 75px 0 25px 0;
-        font-size: 45px;
-    }
-
-    .grid-1 {
-        margin-bottom: 2px;
-    }
-
-    .grid-2 {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 8px;
-        margin-bottom: 8px;
+    p {
+        width: 100% !important;
     }
 
     .grid-3 {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 8px;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .grid-4 {
         grid-template-columns: repeat(2, 1fr);
         gap: 8px;
-    }
-
-    .cards {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
     }
 }
