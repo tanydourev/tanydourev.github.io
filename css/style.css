@@ -98,6 +98,7 @@ p {
 }
 
 ul {
+    width: 80%;
     margin-top: 5px;
     padding-inline-start: 30px;
 }
@@ -385,7 +386,7 @@ button:hover {
 
 .work3-img {
     height: 300px;
-    background: url(../img/thumbnail-tbd.png) center center no-repeat;
+    background: url(../img/thumbnail-mu.png) center center no-repeat;
     background-size: cover;
     margin-bottom: 20px;
     transition: 0.3s ease-in-out;
