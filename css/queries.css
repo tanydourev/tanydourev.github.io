@@ -352,6 +352,10 @@
         width: 100% !important;
     }
 
+    .grid-2-muji {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .grid-3 {
         grid-template-columns: repeat(3, 1fr);
     }
