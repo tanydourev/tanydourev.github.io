@@ -183,11 +183,11 @@ h1 {
 }
 
 .link a:hover {
-    color: #bbd5ed;
+    color: #ed564a;
 }
 
 .active a {
-    color: #bbd5ed !important;
+    color: #ed564a !important;
 }
 
 /* ---------- */
