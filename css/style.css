@@ -8,14 +8,14 @@
 
 html {
     height: 100%;
-    background-color: #0e2235;
+    background-color: #fff6ef;
 }
 
 body {
     height: 100%;
     margin: 0 auto;
-    color: #151515;
-    background-color: #0e2235;
+    color: #fff6ef;
+    background-color: #fff6ef;
     font-family: Sofia Pro UL;
     opacity: 1;
     transition: 1s opacity ease-in-out;
@@ -46,8 +46,8 @@ body.fade-out {
 }
 
 @font-face {
-    font-family: Jazmin;
-    src: url(../fonts/Jazmin-Light.otf);
+    font-family: Canela Thin;
+    src: url(../fonts/CanelaDeck-Thin.otf);
 }
 
 @font-face {
@@ -67,15 +67,15 @@ body.fade-out {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #bbd5ed;
+    background: #ed564a;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #bbd5ed;
+    background: #e77971;
 }
 
 /* ---------- */
@@ -98,6 +98,7 @@ p {
 }
 
 ul {
+    width: 80%;
     margin-top: 5px;
     padding-inline-start: 30px;
 }
@@ -111,22 +112,26 @@ li {
 
 button {
     margin: 20px 0;
-    padding: 10px 22px;
-    font-family: Sofia Pro Regular;
-    font-size: 18px;
+    padding: 12px 20px;
+    font-family: Sofia Pro Light;
+    font-size: 16px;
     text-transform: uppercase;
-    border: 0.5px solid #bbd5ed;
+    border: 0.5px solid #ed564a;
     border-radius: 50px;
-    color: #0e2235;
-    background-color: #bbd5ed;
+    color: #fff;
+    background-color: #ed564a;
     transition: 0.3s ease-in-out;
 }
 
-button:hover {
-    color: #bbd5ed;
-    background-color: #0e2235;
-    border: 1px solid #bbd5ed;
-    cursor: pointer;
+/* button:hover {
+    color: #333232;
+    background-color: #fff6ef;
+    border: 1px solid #ed564a;
+    cursor: not-allowed;
+} */
+
+h1 {
+    font-weight: 300;
 }
 
 /* ---------- */
@@ -141,7 +146,7 @@ button:hover {
 }
 
 .blue {
-    color: #bbd5ed;
+    color: #ed564a;
 }
 
 /* ---------- */
@@ -151,7 +156,7 @@ button:hover {
     grid-template-columns: 30% 70%;
     padding: 25px 50px 0px 50px;
     color: #fff;
-    background-color: #0e2235;
+    background-color: #fff6ef;
 }
 
 .name {
@@ -196,7 +201,7 @@ button:hover {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #071522;
+    background-color: #fff9f5;
     overflow-x: hidden;
     transition: 1s ease-in-out;
     z-index: 1000;
@@ -206,15 +211,15 @@ button:hover {
     display: block;
     color: #fff;
     font-size: 30px;
-    line-height: 1.1em;
+    line-height: 1.3em;
     text-align: center;
     text-decoration: none;
     transition: 0.3s ease-in-out;
 }
 
-.sidenav-link:hover,
-.sidenav-link .stroked:hover {
-    color: #fff;
+.resp-link a {
+    color: #333232;
+    text-decoration: none;
 }
 
 .openbtn img {
@@ -237,18 +242,20 @@ button:hover {
 /* ---- NAVIGATION ---- */
 
 #top-nav {
+    width: 100%;
     display: grid;
     grid-template-columns: 30% 70%;
-    padding: 25px 50px 0px 50px;
+    position: fixed;
+    top: 0;
+    padding: 20px 50px 10px 50px;
     color: #fff;
-    background-color: #0e2235;
+    background-color: #fff6ef;
+    z-index: 200;
 }
 
-.name {
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: lowercase;
+.name img {
+    height: 35px;
+    margin-top: -5px;
 }
 
 .regular-link {
@@ -262,17 +269,17 @@ button:hover {
 }
 
 .regular-link a {
-    color: #fff;
+    color: #333232;
     text-decoration: none;
     transition: 0.3s ease-in-out;
 }
 
 .regular-link a:hover {
-    color: #bbd5ed;
+    color: #ed564a;
 }
 
 .active a {
-    color: #bbd5ed !important;
+    color: #ed564a !important;
 }
 
 /* ---- RESPONSIVE NAVIGATION ---- */
@@ -291,34 +298,40 @@ button:hover {
     cursor: pointer;
 }
 
+/* ---------- */
+
 #container {
     width: 70%;
     margin: 0 auto;
-    background-color: #0e2235;
+    background-color: #fff6ef;
 }
 
 #header {
-    height: 95vh;
+    height: 100vh;
     width: 100%;
     display: grid;
     place-items: center;
     align-content: center;
     color: #fff;
-    background-color: #0e2235;
+    background-color: #fff6ef;
     z-index: 1;
 }
 
 #header h1 {
-    font-family: Jazmin;
-    font-size: 50px;
+    width: 70%;
+    font-family: Canela Thin;
+    font-size: 90px;
+    line-height: 1.1em;
+    text-align: center;
     padding-bottom: 10px;
-    color: #bbd5ed;
+    color: #333232;
 }
 
 #header h2 {
     width: 40%;
     text-align: center;
     line-height: 1.4em;
+    color: #333232;
 }
 
 /* ---------- */
@@ -332,24 +345,24 @@ button:hover {
     width: 70%;
     padding: 100px 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #ffffff;
     z-index: 100;
 }
 
 #work {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 #work a {
-    color: #0e2235;
+    color: #333232;
     text-decoration: none;
 }
 
 #work a:hover {
-    color: #0e2235;
+    color: #ed564a;
 }
 
 .work1-img {
@@ -361,8 +374,8 @@ button:hover {
 }
 
 .work1-img:hover {
-    -webkit-box-shadow: 0px 0px 12px -6px #0E2335;
-    box-shadow: 0px 0px 12px -6px #0E2335;
+    -webkit-box-shadow: 0px 0px 12px -6px #ed564a;
+    box-shadow: 0px 0px 12px -6px #ed564a;
 }
 
 .work2-img {
@@ -374,21 +387,21 @@ button:hover {
 }
 
 .work2-img:hover {
-    -webkit-box-shadow: 0px 0px 12px -6px #0E2335;
-    box-shadow: 0px 0px 12px -6px #0E2335;
+    -webkit-box-shadow: 0px 0px 12px -6px #ed564a;
+    box-shadow: 0px 0px 12px -6px #ed564a;
 }
 
 .work3-img {
     height: 300px;
-    background: url(../img/thumbnail-tbd.png) center center no-repeat;
+    background: url(../img/thumbnail-mu.png) center center no-repeat;
     background-size: cover;
     margin-bottom: 20px;
     transition: 0.3s ease-in-out;
 }
 
 .work3-img:hover {
-    -webkit-box-shadow: 0px 0px 12px -6px #0E2335;
-    box-shadow: 0px 0px 12px -6px #0E2335;
+    -webkit-box-shadow: 0px 0px 12px -6px #ed564a;
+    box-shadow: 0px 0px 12px -6px #ed564a;
 }
 
 .work4-img {
@@ -400,8 +413,8 @@ button:hover {
 }
 
 .work4-img:hover {
-    -webkit-box-shadow: 0px 0px 12px -6px #0E2335;
-    box-shadow: 0px 0px 12px -6px #0E2335;
+    -webkit-box-shadow: 0px 0px 12px -6px #ed564a;
+    box-shadow: 0px 0px 12px -6px #ed564a;
 }
 
 .work5-img {
@@ -413,8 +426,8 @@ button:hover {
 }
 
 .work5-img:hover {
-    -webkit-box-shadow: 0px 0px 12px -6px #0E2335;
-    box-shadow: 0px 0px 12px -6px #0E2335;
+    -webkit-box-shadow: 0px 0px 12px -6px #ed564a;
+    box-shadow: 0px 0px 12px -6px #ed564a;
 }
 
 .work6-img {
@@ -426,23 +439,23 @@ button:hover {
 }
 
 .work6-img:hover {
-    -webkit-box-shadow: 0px 0px 12px -6px #0E2335;
-    box-shadow: 0px 0px 12px -6px #0E2335;
+    -webkit-box-shadow: 0px 0px 12px -6px #ed564a;
+    box-shadow: 0px 0px 12px -6px #ed564a;
 }
 
 #works h3 {
-    font-family: Jazmin;
+    font-family: Canela Thin;
     font-size: 25px;
     text-align: center;
     padding-bottom: 3px;
-    color: #0e2235;
+    color: #ed564a;
 }
 
 #works h4 {
     font-size: 15px;
     text-transform: uppercase;
     text-align: center;
-    color: #0e2235;
+    color: #333232;
     letter-spacing: 0.2px;
 }
 
@@ -455,7 +468,7 @@ button:hover {
     place-items: center;
     align-content: center;
     color: #fff;
-    background-color: #0e2235;
+    background-color: #fff6ef;
     z-index: 1;
 }
 
@@ -470,14 +483,14 @@ button:hover {
 
 #about-home h3 {
     width: 50%;
-    color: #fff;
+    color: #333232;
     font-size: 19px;
     line-height: 1.5em;
     text-align: center;
 }
 
 #about-home a {
-    color: #bbd5ed;
+    color: #ed564a;
     transition: 0.3s ease-in-out;
 }
 
@@ -502,9 +515,8 @@ button:hover {
     display: grid;
     grid-template-columns: 25% 75%;
     margin: 0 auto;
-    padding-top: 100px;
-    color: #fff;
-    background-color: #0e2235;
+    padding-top: 150px;
+    background-color: #fff6ef;
     z-index: 1;
 }
 
@@ -522,39 +534,39 @@ button:hover {
 }
 
 #about h1 {
-    font-family: Jazmin;
+    font-family: Canela Thin;
     font-size: 50px;
-    color: #bbd5ed;
+    color: #ed564a;
     margin-bottom: 10px;
 }
 
 #about h3 {
-    color: #fff;
+    color: #333232;
     font-size: 19px;
     line-height: 1.5em;
 }
 
 #about a {
-    color: #bbd5ed;
+    color: #ed564a;
     transition: 0.3s ease-in-out;
 }
 
 #about a:hover {
-    color: #fff;
+    color: #333232;
 }
 
 .div-line {
     height: 1px;
     margin: 0 auto;
     margin: 40px 0;
-    background-color: #bbd5ed77;
+    background-color: #ed554a2f;
 }
 
 /* ---------- */
 
 #research {
     padding-bottom: 40px;
-    background-color: #0e2235;
+    background-color: #fff6ef;
 }
 
 .research-content {
@@ -563,8 +575,8 @@ button:hover {
 }
 
 #research h1 {
-    font-family: Jazmin;
-    color: #fff;
+    font-family: Canela Thin;
+    color: #333232;
     font-size: 25px;
     text-transform: uppercase;
     padding-bottom: 20px;
@@ -574,7 +586,7 @@ button:hover {
     font-size: 19px;
     letter-spacing: 0.2px;
     line-height: 1.5em;
-    color: #fff;
+    color: #333232;
 }
 
 /* ---------- */
@@ -618,8 +630,8 @@ button:hover {
 }
 
 #project-page h1 {
-    font-family: Jazmin;
-    color: #0e2235;
+    font-family: Canela Thin;
+    color: #333232;
     font-size: 30px;
     padding-bottom: 20px;
 }
@@ -628,22 +640,22 @@ button:hover {
     font-size: 21px;
     letter-spacing: 0.2px;
     line-height: 1.5em;
-    color: #0e2235;
+    color: #333232;
 }
 
 #project-page a {
-    color: #0e2235;
+    color: #ed564a;
 }
 
 .div-line-2 {
     height: 1px;
     margin: 0 auto;
-    background-color: #bbd5ed77;
+    background-color: #ed554a2f;
 }
 
 .section-title {
-    color: #0e2235;
-    font-family: Jazmin;
+    color: #ed564a;
+    font-family: Canela Thin;
     padding-bottom: 10px;
 }
 
@@ -651,8 +663,8 @@ button:hover {
 
 #copyright {
     padding: 15px 0 25px 0;
-    color: #bbd5ed;
-    background-color: #0e2235;
+    color: #333232;
+    background-color: #fff6ef;
     font-size: 13px;
     text-align: center;
 }
