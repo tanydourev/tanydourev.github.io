@@ -20,7 +20,7 @@
     #about {
         grid-template-columns: 20% 80% !important;
         margin: 0 auto;
-        padding-top: 70px !important;
+        padding-top: 150px !important;
     }
 }
 
@@ -42,7 +42,7 @@
     }
 
     #header h1 {
-        width: 50%;
+        width: 70%;
         font-size: 70px !important;
         line-height: 1.2em;
         text-align: center;
@@ -66,7 +66,7 @@
     .work4-img,
     .work5-img,
     .work6-img {
-        height: 200px !important;
+        height: 400px !important;
     }
 
     #about-home h3 {
@@ -81,7 +81,7 @@
     #about {
         grid-template-columns: 32% 73% !important;
         margin: 0 auto;
-        padding-top: 70px !important;
+        padding-top: 150px !important;
     }
 }
 
@@ -94,7 +94,7 @@
     }
 
     #header h1 {
-        width: 50%;
+        width: 70%;
         font-size: 70px !important;
         line-height: 1.2em;
         text-align: center;
@@ -118,7 +118,7 @@
     .work4-img,
     .work5-img,
     .work6-img {
-        height: 200px !important;
+        height: 300px !important;
     }
 
     #about-home h3 {
@@ -133,7 +133,7 @@
     #about {
         grid-template-columns: repeat(1, 1fr) !important;
         margin: 0 auto;
-        padding-top: 70px !important;
+        padding-top: 120px !important;
     }
 
     .about-content {
@@ -187,7 +187,7 @@
     }
 
     #header h1 {
-        width: 50%;
+        width: 70%;
         font-size: 50px !important;
         line-height: 1.2em;
         text-align: center;
@@ -217,7 +217,7 @@
     #about {
         grid-template-columns: repeat(1, 1fr) !important;
         margin: 0 auto;
-        padding-top: 70px !important;
+        padding-top: 120px !important;
     }
 
     .about-content {
@@ -263,8 +263,8 @@
 @media only screen and (max-width: 599px) {
 
     #header h1 {
-        width: 50%;
-        font-size: 40px !important;
+        width: 75%;
+        font-size: 45px !important;
         line-height: 1.2em;
         text-align: center;
     }
@@ -320,7 +320,7 @@
     #about {
         grid-template-columns: repeat(1, 1fr) !important;
         margin: 0 auto;
-        padding-top: 70px !important;
+        padding-top: 120px !important;
     }
 
     .about-content {
@@ -338,6 +338,10 @@
 
     #about h3 {
         font-size: 18px !important;
+    }
+
+    #research h1 {
+        font-size: 30px !important;
     }
     
     #research h3 {
