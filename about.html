@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>About — Tany Dourev</title>
-    <meta name="description" content="I help users explore the digital world through fun and out-of-the-box designs, combining mediums to create something unique :)">
+    <title>About Me — Tany Dourev</title>
+    <meta name="description" content="Canada-based interaction & visual designer. Exploring the digital world through fun and out-of-the-box designs.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/queries.css">
@@ -16,45 +16,47 @@
 
 <body>
 
-    <!--  navigation -->
     <navigation>
-        <div id="top-nav">
-            <div class="name">
-                <img src="img/logo.png">
-            </div>
-            <div class="nav-links">
+        <div id="topbar">
+            <div class="logo">TD</div>
+            <div class="topbar-links">
+                <div class="topbar-link">
+                    <a href="index.html">works</a>
+                </div>
+                <div class="topbar-link">
+                    <a href="playground.html">playground</a>
+                </div>
+                <div class="topbar-link">
+                    <a href="about.html" style="color: #EBE8DC;">about me</a>
+                </div>
+                <div class="topbar-link">
+                    <a href="media/cv-tany-dourev.pdf" target="_blank">resumé</a>
+                </div>
 
                 <!-- responsive nav trigger -->
                 <div class="link">
-                    <img id="open-button" width="30" height="30" src="img/nav-icons/open-menu.png" onclick="openNav()">
-                </div>
-
-                <!-- regular links -->
-                <div class="regular-link">
-                    <a href="media/cv-tany-dourev.pdf" target="_blank">Resumé</a>
-                </div>
-                <div class="active regular-link">
-                    <a href="./about">About</a>
-                </div>
-                <div class="regular-link">
-                    <a href="./">Works</a>
+                    <img id="open-button" width="35" height="35" src="img/nav-icons/open-menu.png" onclick="openNav()">
                 </div>
 
                 <!-- responsive links -->
                 <div id="responsive-navigation" class="sidenav">
-                    <img id="close-button" width="30" height="30" src="img/nav-icons/close-menu.png" onclick="closeNav()">
+                    <img id="close-button" width="35" height="35" src="img/nav-icons/close-menu.png" onclick="closeNav()">
 
-                    <div id="responsive-links">
-                        <img height="40" src="img/logo.png" style="display: block; margin: auto auto; margin-bottom: 20px;">
-
-                        <img src="img/line.png" height="70" style="display: block; margin: auto auto; margin-bottom: 20px;">
+                    <div id="responsive-links" style="padding: 100px 30px 0 0;">
+                        <h1 style="font-family: Fender; color: #C7FBA7; font-size: 60px; letter-spacing: normal; font-weight: 400;">TD</h1>
 
                         <div class="resp-link">
-                            <a href="./">works</a>
+                            <a href="index.html">works</a>
                         </div>
-                        <div class="active resp-link">
-                            <a href="./about">about</a>
+
+                        <div class="resp-link">
+                            <a href="playground.html">playground</a>
                         </div>
+
+                        <div class="resp-link">
+                            <a href="about.html" style="color: #E7FFD8 !important;">about me</a>
+                        </div>
+
                         <div class="resp-link">
                             <a href="media/cv-tany-dourev.pdf" target="_blank">resumé</a>
                         </div>
@@ -64,58 +66,205 @@
         </div>
     </navigation>
 
-    <div id="container">
+    <header class="about-header">
+        <div id="about-title" class="type-effect"></div>
+        <div id="about-subtitle" class="fade">A little something to help you get to know me better.<br>Curious? Keep scrolling ;)</div>
+    </header>
 
-        <!-- about -->
-        <div id="about">
-            <div class="about-headshot hidden"></div>
-            <div class="about-content hidden">
-                <h1 class="hidden">Hiya, I'm Tany!</h1>
-                <h3 class="hidden">👋🏻 I'm a Canada-based designer with an interest in helping users explore the digital world through fun and out-of-the-box designs. I like to combine mediums and see projects span from conception to production, following the process through to the very end and refining the little details. Outside of design, my hobbies include drinking tea, watching Star Wars, exploring cyberpunk worlds in games and reading dystopian-space literature (and re-coding my portfolio a million times... but we don't talk about that one). My favourite games are <i>Cyberpunk 2077</i>, <i>Stray</i> and <i>Detroit: Become Human</i>.
-                    <br><br>
-                    Currently working as: <span class="blue">Graphic Designer @ <a href="https://www.rwdigital.ca">RW Digital Marketing Agency</a></span>
-                    <br><br>
-                    Let's have a chat!
-                    <br>
-                    <!-- social icons -->
-                    <div style="display: inline;" class="hidden">
-                        <a href="mailto:tanydourev@gmail.com" style="text-decoration: none; color: #ed564a;">
-                            <img class="social-icon" height="35" width="35" src="img/social-icons/icon-em.png">
+    <div class="div-line"></div>
+
+    <div id="about">
+        <div class="about-section">
+            <h1 class="section-title">Hello there!</h1>
+            <div class="section-text">
+                <div class="text" style="color: #FFF; font-weight: 600;">My name is Tany; I'm a Canada-based interaction and visual designer. Nice to meet you! ✨</div>
+
+                <div class="text" style="padding-top: 20px;">I've studied interaction design at two institutions, graduating with a Bachelor of Arts and a specialization in digital prototyping. I currently work as a Graphic Designer at <a href="https://www.rwdigital.ca">RW Digital</a>, a Canadian digital marketing agency based in BC.</div>
+
+                <div class="text" style="padding-top: 20px;">My creative journey began with graphic design during my teenage years. Since then, I've broadened my knowledge of the industry and stepped into fields like branding, UX/UI, design research, 3D design and game dev. I like to combine mediums and see projects span from conception to production, often taking on multiple roles as a one-woman show to see the process through to the very end. I'm a huge stickler for details; if I don't fix
+                    that stray
+                    pixel, I won't stop noticing it.
+                </div>
+
+                <div class="text" style="padding-top: 20px;">Outside of design, I enjoy exploring video game worlds, watching Star Wars' <i>Andor</i> show and discovering new ambient tunes (and re-coding my portfolio a million times, but we don't talk about that one). I'm a green tea girlie all the way; jasmine, peppermint, regular green, I'm always down for a warm cuppa. My favourite video games are CD Projekt RED's <i>Cyberpunk 2077</i>, BlueTwelve Studio's <i>Stray</i> and Quantic Dream's
+                    <i>Detroit: Become Human</i>.
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="about-section">
+            <h1 class="section-title">Experience</h1>
+            <div class="section-text">
+                <div class="text" style="color: #FFF; font-weight: 600;">Graphic Designer</div>
+                <div class="text" style="color: #E7FFD8; font-weight: 400; padding-top: 0;">RW Digital</div>
+                <div class="text" style="color: #7e7e7e; font-weight: 400; padding-top: 0;">2021 — Present</div>
+
+                <div class="text" style="color: #FFF; font-weight: 600; padding-top: 20px;">Student Content Designer</div>
+                <div class="text" style="color: #E7FFD8; font-weight: 400; padding-top: 0;">Brock University</div>
+                <div class="text" style="color: #7e7e7e; font-weight: 400; padding-top: 0;">2021</div>
+
+                <div class="text" style="color: #FFF; font-weight: 600; padding-top: 20px;">Digital Archival Program Assistant</div>
+                <div class="text" style="color: #E7FFD8; font-weight: 400; padding-top: 0;">St. Catharines Museum & Welland Canals Centre</div>
+                <div class="text" style="color: #7e7e7e; font-weight: 400; padding-top: 0;">2020</div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="about-section">
+            <h1 class="section-title">Education</h1>
+            <div class="section-text">
+                <div class="text" style="color: #FFF; font-weight: 600;">Bachelor of Arts (Interactive Arts & Sciences)</div>
+                <div class="text" style="color: #E7FFD8; font-weight: 400; padding-top: 0;">Brock University</div>
+                <div class="text" style="color: #7e7e7e; font-weight: 400; padding-top: 0;">2021 — 2023</div>
+
+                <div class="text" style="color: #FFF; font-weight: 600; padding-top: 20px;">Interaction Design</div>
+                <div class="text" style="color: #E7FFD8; font-weight: 400; padding-top: 0;">Sheridan College Institute of Technology</div>
+                <div class="text" style="color: #7e7e7e; font-weight: 400; padding-top: 0;">2019 — 2021</div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="about-section">
+            <h1 class="section-title">Certifications</h1>
+            <div class="section-text">
+                <div class="text" style="color: #FFF; font-weight: 600;">Ethical Conduct for Research Involving Humans (TCPS 2: CORE)</div>
+                <div class="text" style="color: #E7FFD8; font-weight: 400; padding-top: 0;">Government of Canada</div>
+                <div class="text" style="color: #7e7e7e; font-weight: 400; padding-top: 0;">2020 — Present</div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="about-section">
+            <h1 class="section-title">Some inspirational words...</h1>
+            <div class="section-text">
+
+                <div class="text" style="color: #FFF; font-weight: 400; font-style: italic;">"Tany has been working at RW Digital as a graphic designer for nearly 3 years. During this time, she has consistently delivered professional and exceptional design work for clients and for RW Digital's internal marketing tasks. Tany is incredibly talented, as well as responsive, professional, and diligent. Moreover, she's empathetic and communicative, which makes her a terrific team member to work with.
+                    Thanks to her attention to detail, unrivalled talent, and diligence to present stunning and creative design work, Tany is an absolute asset to any team she works with."</div>
+                <div class="text" style="color: #E7FFD8; font-weight: 400; padding-top: 10px;">— Ray Wang</div>
+                <div class="text" style="color: #7e7e7e; font-weight: 400; padding-top: 0;">Principal @ RW Digital</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="scrolling-contact" style="margin-top: 100px;">
+        <div class="container">
+            <div class="horizontal-scrolling-items">
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact-links">
+        <div class="contact1">
+            <a href="https://www.instagram.com/tanydourev">
+                <img src="https://img.icons8.com/ios-filled/50/27232A/linkedin.png">
+            </a>
+        </div>
+        <div class="contact2">
+            <a href="https://www.linkedin.com/in/tanydourev">
+                <img src="https://img.icons8.com/ios-filled/50/27232A/instagram.png">
+            </a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="contact-background">
+            <div class="contact-details">
+                <div class="pfp-image">
+                    <img src="img/tanydourev.png" height="200px">
+                </div>
+                <div class="email">
+                    <div class="email-link">What's on your mind?</div>
+                    <div class="email-button">
+                        <h3>Let's talk about it! ✨</h3>
+                        <a href="mailto:tanydourev@gmail.com" style="text-decoration: none;">
+                            <h3 style="text-align: right;">→</h3>
                         </a>
-
-                        <a href="https://www.linkedin.com/in/tanydourev" style="text-decoration: none;">
-                            <img class="social-icon" height="35" width="35" src="img/social-icons/icon-li.png">
-                        </a>
-
-                        <a href="https://www.instagram.com/tanydourev" style="text-decoration: none;">
-                            <img class="social-icon" height="35" width="35" src="img/social-icons/icon-ig.png">
-                        </a>
-                    </div>
-                </h3>
-
-                <div class="div-line"></div>
-
-                <div id="research">
-                    <div class="research-content hidden">
-                        <h1>Research —</h1>
-                        <h3><span class="blue">Signage Design & Wayfinding Systems: The Toronto Subway's Fight for Credibility</span></h3>
-                        <h3 style="color: #828282;">Undergraduate Thesis (2022/23)</h3>
-                        <h3 style="margin-top: 10px; padding-left: 15px; border-left: 1px solid #ed564a;">Examines the history of the Toronto Subway's signage and wayfinding standards for public transporation. Analyzes the ambiguous origins of the subway’s custom typeface; highlights the inconsistent application of commercial typefaces across stations; and reveals the TTC’s attempt to quietly disregard a professionally-designed and tested wayfinding system for passengers.</h3>
-
-                        <button>Coming Soon!</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- copyright -->
-    <div id="copyright">© 2023 Tany Dourev. All rights reserved.</div>
+    <footer class="home-footer">
+        <div id="copyright1">© TANY, 2024</div>
+        <div id="copyright2">CRAFTED WITH LOVE ☆ミ</div>
+    </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="scripts/index.umd.js"></script>
+    <script src="scripts/fittext.js"></script>
     <script src="scripts/scripts.js"></script>
 
     <script>
-        const observer = new IntersectionObserver((entries) => {
+        document.addEventListener("DOMContentLoaded", function () {
+            new TypeIt("#about-title", {
+                strings: ["about"],
+                startDelay: 250,
+                speed: 150,
+            }).go();
+        });
+    </script>
+
+    <script>
+        const fadeSubtitle = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('show');
@@ -125,8 +274,12 @@
             });
         });
 
-        const hiddenElements = document.querySelectorAll('.hidden');
-        hiddenElements.forEach((el) => observer.observe(el));
+        const hiddenSubtitle = document.querySelectorAll('.fade');
+        hiddenSubtitle.forEach((el) => fadeSubtitle.observe(el));
+    </script>
+
+    <script>
+        window.fitText(document.getElementById("about-title"), 0.38);
     </script>
 </body>
 

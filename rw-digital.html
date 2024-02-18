@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>RW Digital — Tany Dourev</title>
-    <meta name="description" content="I help users explore the digital world through fun and out-of-the-box designs, combining mediums to create something unique :)">
+    <meta name="description" content="Using design to empower businesses and create approachable narratives to digital marketing.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/queries.css">
@@ -16,45 +16,47 @@
 
 <body>
 
-    <!--  navigation -->
     <navigation>
-        <div id="top-nav">
-            <div class="name">
-                <img src="img/logo.png">
-            </div>
-            <div class="nav-links">
+        <div id="topbar">
+            <div class="logo">TD</div>
+            <div class="topbar-links">
+                <div class="topbar-link">
+                    <a href="index.html">works</a>
+                </div>
+                <div class="topbar-link">
+                    <a href="playground.html">playground</a>
+                </div>
+                <div class="topbar-link">
+                    <a href="about.html";">about me</a>
+                </div>
+                <div class="topbar-link">
+                    <a href="media/cv-tany-dourev.pdf" target="_blank">resumé</a>
+                </div>
 
                 <!-- responsive nav trigger -->
                 <div class="link">
-                    <img id="open-button" width="30" height="30" src="img/nav-icons/open-menu.png" onclick="openNav()">
-                </div>
-
-                <!-- regular links -->
-                <div class="regular-link">
-                    <a href="media/cv-tany-dourev.pdf" target="_blank">Resumé</a>
-                </div>
-                <div class="regular-link">
-                    <a href="./about">About</a>
-                </div>
-                <div class="regular-link">
-                    <a href="./">Works</a>
+                    <img id="open-button" width="35" height="35" src="img/nav-icons/open-menu.png" onclick="openNav()">
                 </div>
 
                 <!-- responsive links -->
                 <div id="responsive-navigation" class="sidenav">
-                    <img id="close-button" width="30" height="30" src="img/nav-icons/close-menu.png" onclick="closeNav()">
+                    <img id="close-button" width="35" height="35" src="img/nav-icons/close-menu.png" onclick="closeNav()">
 
-                    <div id="responsive-links">
-                        <img height="40" src="img/logo.png" style="display: block; margin: auto auto; margin-bottom: 20px;">
-
-                        <img src="img/line.png" height="70" style="display: block; margin: auto auto; margin-bottom: 20px;">
+                    <div id="responsive-links" style="padding: 100px 30px 0 0;">
+                        <h1 style="font-family: Fender; color: #C7FBA7; font-size: 60px; letter-spacing: normal; font-weight: 400;">TD</h1>
 
                         <div class="resp-link">
-                            <a href="./">works</a>
+                            <a href="index.html">works</a>
                         </div>
+
                         <div class="resp-link">
-                            <a href="./about">about</a>
+                            <a href="playground.html">playground</a>
                         </div>
+
+                        <div class="resp-link">
+                            <a href="about.html">about me</a>
+                        </div>
+
                         <div class="resp-link">
                             <a href="media/cv-tany-dourev.pdf" target="_blank">resumé</a>
                         </div>
@@ -64,110 +66,242 @@
         </div>
     </navigation>
 
-    <!-- header image -->
-    <div id="project-header" class="hidden">
-        <img src="img/rw-digital/rw-5.png" style="display: block;">
-    </div>
+    <header class="project-header">
+        <div id="project-page-title" class="hidden">RW Digital</div>
 
-    <div style="background-color: #fff; padding-top: 30px;">
-        <div id="container" style="background-color: #fff;">
+        <div id="project-subtitle" class="hidden">Using design to empower businesses and create approachable narratives to digital marketing.</div>
 
-            <!-- overview -->
-            <div id="project-page">
-                <div class="project-page-content">
-                    <h1>RW Digital</h1>
-                    <h3>RW Digital is a digital marketing agency based in Richmond, British Columbia. I joined the team in 2021 as a Graphic Designer, growing the agency through social media marketing, revamped branding strategies and supporting website creation for clients.</h3>
+        <div id="arrow-down" class="hidden">↓</div>
+    </header>
+
+    <div id="about">
+        <div class="about-section hidden">
+            <div class="project-div-line resp"></div>
+
+            <h1 class="section-title">Overview</h1>
+            <div class="section-text">
+                <div class="text project-details-desktop" style="color: #FFF; font-weight: 600;">
+                    <div>
+                        <h5 style="font-weight: 400; color: #7e7e7e;">PROJECT TYPE</h5>
+                        <p style="color: #E7FFD8; font-weight: 500;">Social media marketing, branding, web</p>
+                    </div>
+                    <div>
+                        <h5 style="font-weight: 400; color: #7e7e7e;">ROLES</h5>
+                        <p style="color: #E7FFD8; font-weight: 500;">Graphic designer, web designer</p>
+                    </div>
+                    <div>
+                        <h5 style="font-weight: 400; color: #7e7e7e;">YEAR</h5>
+                        <p style="color: #E7FFD8; font-weight: 500;">2021 — Present</p>
+                    </div>
+                    <div>
+                        <h5 style="font-weight: 400; color: #7e7e7e;">DELIVERABLES</h5>
+                        <p style="color: #E7FFD8; font-weight: 500;">Social media graphics, digital content, websites</p>
+                    </div>
                 </div>
 
-                <div class="div-line-2"></div>
-                <br><br>
+                <div class="project-div-line"></div>
 
-                <!-- social media marketing -->
-                <h3 class="section-title">Social Media Marketing</h3>
-                <p class="project-page-text">Prior to joining the agency, RW Digital already had an established visual and branding identity for its graphical assets. The goal with my involvement was to emphasize the branding standards for social media and help grow the agency's online presence. Over the course of a year, I collaborated alongside the agency Principal to experiment with various combinations of colours and arrangements for posts, as well as utilize the Instagram feed as a tool to
-                    visually unify content. It was important to find a balance between visually-engaging content and accessibility, as most viewers access social media platforms through mobile and tablet applications.
-                    <br><br>
-                    Since becoming part of the team, I've created posts for topics such as educational content on digital marketing (tutorials, trends, industry updates); testimonials and client feedback for services; holidays and community events; and showcases for client projects.
-                </p>
-
-                <div class="grid-4" style="padding: 25px 0;">
-                    <img src="img/rw-digital/lunar-new-year-23.jpg" style="width: 100%;">
-                    <img src="img/rw-digital/thanksgiving-23.png" style="width: 100%;">
-                    <img src="img/rw-digital/vpl-testimonial.png" style="width: 100%;">
-                    <img src="img/rw-digital/arts-connection-testimonial.png" style="width: 100%;">
-                    <img src="img/rw-digital/sharing-farm.png" style="width: 100%;">
-                    <img src="img/rw-digital/seo-bounce-rate.png" style="width: 100%;">
-                    <img src="img/rw-digital/rw-alberta.png" style="width: 100%;">
-                    <img src="img/rw-digital/ga4-shopify-audiences.png" style="width: 100%;">
-                    <img src="img/rw-digital/vissa-showcase.png" style="width: 100%;">
-                    <img src="img/rw-digital/langley-testimonial.png" style="width: 100%;">
-                    <img src="img/rw-digital/ga4-calculated-metrics.png" style="width: 100%;">
-                    <img src="img/rw-digital/seo-hotel-chains.png" style="width: 100%;">
-                    <img src="img/rw-digital/google-privacy-lawsuit.png" style="width: 100%;">
-                    <img src="img/rw-digital/rw-scholarship.png" style="width: 100%;">
-                    <img src="img/rw-digital/trinity-western-talk.png" style="width: 100%;">
-                    <img src="img/rw-digital/sbt-showcase.png" style="width: 100%;">
-                </div>
-
-                <p class="project-page-text">To view more of my designs for RW Digital, visit the agency's Instagram page at <a href="https://www.instagram.com/digital.rw/">@digital.rw</a>.</p>
-
-                <br><br>
-                <div class="div-line-2"></div>
-
-                <!-- client websites -->
-                <div id="project-page">
-                    <h3 class="section-title">Client Websites</h3>
-                    <p class="project-page-text">As part of RW Digital's analytics and SEO performance services, I am tasked with designing client websites through WordPress and creating graphic assets to showcase finished products. When redesigning a website, the workflow begins with a visual consultation with the agency Principal to identify necessary changes and usability issues. Existing content is transferred to the new website, then stylized according to client branding guidelines and
-                        accessibility standards.
-                        <br><br>
-                        — <a href="https://www.rwdigital.ca/">RW Digital</a>
-                        <br>
-                        — <a href="https://silverbonestattoo.com/">Silver Bones Tattoo</a>
-                        <br>
-                        — <a href="https://vissa.ca/">Vancouver Island Self-Storage Association (VISSA)</a>
-                    </p>
-                </div>
-
-                <br><br>
-                <div class="div-line-2"></div>
-
-                <!-- agency branding -->
-                <div id="project-page">
-                    <h3 class="section-title">Agency Branding</h3>
-                    <p class="project-page-text">Through social media marketing and re-designing the agency website, I clarified the branding guidelines for RW Digital and established a standard for all content moving forward. The agency aims to present itself as credible and informative with its services, while simultaneously encouraging a friendly and welcoming approach to digital marketing.
-                        <br><br>
-                        Graphical content relies strongly on patterned backgrounds, gradients, and marketing/business illustrations; testimonials are designed to creatively represent clients and their fields of work. The agency website features similar layouts for groupings of pages, a strict colour palette based on the agency logo, and is routinely checked for accessibility.
-                    </p>
-                </div>
-
-                <img class="grid-1" src="img/rw-digital/rw-1.png" width="100%" style="padding-top: 50px;">
-                <img class="grid-1" src="img/rw-digital/rw-2.png" width="100%">
-                <img class="grid-1" src="img/rw-digital/rw-3.png" width="100%">
-                <img class="grid-1" src="img/rw-digital/rw-4.png" width="100%">
+                <div class="text" style="color: #FFF; font-weight: 600;">RW Digital is a digital marketing agency based in Richmond, British Columbia. I joined the team in 2021 as a Graphic Designer, growing the agency through social media marketing, revamped branding strategies and supporting website creation for clients.</div>
             </div>
         </div>
+    </div>
 
+    <br><br><br>
 
+    <div class="about-section hidden">
+        <h1 class="section-title">Marketing</h1>
+        <div class="section-text">
+            <div class="text">Prior to joining the agency, RW Digital already had an established visual and branding identity for its graphical assets. The goal with my involvement was to emphasize the branding standards for social media and help grow the agency's online presence. Over the course of a year, I collaborated alongside the agency Principal to experiment with various combinations of colours and arrangements for posts, as well as utilize the Instagram
+                feed as a tool to visually unify content. It was important to find a balance between visually-engaging content and accessibility, as most viewers access social media platforms through mobile and tablet applications.</div>
 
-        <!-- copyright -->
-        <div id="copyright" style="background-color: #fff; color: #0e2235; margin-top: 40px;">© 2023 Tany Dourev. All rights reserved.</div>
+            <div class="text" style="padding-top: 20px;">Since becoming part of the team, I've created posts for topics such as educational content on digital marketing (tutorials, trends, industry updates); testimonials and client feedback for services; holidays and community events; and showcases for client projects.</div>
 
-        <script src="scripts/scripts.js"></script>
+            <div class="text" style="padding-top: 20px;">To view more of my designs for RW Digital, visit the agency's Instagram page at <a href="https://www.instagram.com/digital.rw/">@digital.rw</a>.
 
-        <script>
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('show');
-                    } else {
-                        entry.target.classList.remove('remove');
-                    }
-                });
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="grid-4" style="padding: 25px 30px;">
+        <img src="img/rw-digital/lunar-new-year-23.jpg" style="width: 100%;">
+        <img src="img/rw-digital/thanksgiving-23.png" style="width: 100%;">
+        <img src="img/rw-digital/vpl-testimonial.png" style="width: 100%;">
+        <img src="img/rw-digital/lunar-new-year-2024.png" style="width: 100%;">
+        <img src="img/rw-digital/arts-connection-testimonial.png" style="width: 100%;">
+        <img src="img/rw-digital/sharing-farm.png" style="width: 100%;">
+        <img src="img/rw-digital/seo-bounce-rate.png" style="width: 100%;">
+        <img src="img/rw-digital/rw-alberta.png" style="width: 100%;">
+        <img src="img/rw-digital/ga4-shopify-audiences.png" style="width: 100%;">
+        <img src="img/rw-digital/vissa-showcase.png" style="width: 100%;">
+        <img src="img/rw-digital/langley-testimonial.png" style="width: 100%;">
+        <img src="img/rw-digital/ga4-calculated-metrics.png" style="width: 100%;">
+        <img src="img/rw-digital/seo-hotel-chains.png" style="width: 100%;">
+        <img src="img/rw-digital/google-privacy-lawsuit.png" style="width: 100%;">
+        <img src="img/rw-digital/rw-scholarship.png" style="width: 100%;">
+        <img src="img/rw-digital/trinity-western-talk.png" style="width: 100%;">
+    </div>
+
+    <br><br>
+
+    <div class="about-section hidden">
+        <h1 class="section-title">Client Websites</h1>
+        <div class="section-text">
+            <div class="text">As part of RW Digital's analytics and SEO performance services, I am tasked with designing client websites through WordPress and creating graphic assets to showcase finished products. When redesigning a website, the workflow begins with a visual consultation with the agency Principal to identify necessary changes and usability issues. Existing content is transferred to the new website, then stylized according to client branding guidelines
+                and accessibility standards.</div>
+
+            <div class="text" style="padding-top: 20px;">
+                — <a href="https://www.rwdigital.ca/">RW Digital</a>
+                <br>
+                — <a href="https://silverbonestattoo.com/">Silver Bones Tattoo</a>
+                <br>
+                — <a href="https://vissa.ca/">Vancouver Island Self-Storage Association (VISSA)</a>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="about-section hidden">
+        <h1 class="section-title">Agency Branding</h1>
+        <div class="section-text">
+            <div class="text">Through social media marketing and re-designing the agency website, I clarified the branding guidelines for RW Digital and established a standard for all content moving forward. The agency aims to present itself as credible and informative with its services, while simultaneously encouraging a friendly and welcoming approach to digital marketing. Graphical content relies strongly on patterned backgrounds, gradients, and marketing/business
+                illustrations; testimonials are designed to creatively represent clients and their fields of work. The agency website features similar layouts for groupings of pages, a strict colour palette based on the agency logo, and is routinely checked for accessibility.</div>
+        </div>
+    </div>
+
+    <div id="scrolling-contact" style="margin-top: 100px;">
+        <div class="container">
+            <div class="horizontal-scrolling-items">
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+
+                <div class="horizontal-scrolling-items__item">CONNECT</div>
+
+                <div class="horizontal-scrolling-items__item">
+                    <img src="img/scroll-globe.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact-links">
+        <div class="contact1">
+            <a href="https://www.instagram.com/tanydourev">
+                <img src="https://img.icons8.com/ios-filled/50/27232A/linkedin.png">
+            </a>
+        </div>
+        <div class="contact2">
+            <a href="https://www.linkedin.com/in/tanydourev">
+                <img src="https://img.icons8.com/ios-filled/50/27232A/instagram.png">
+            </a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="contact-background">
+            <div class="contact-details">
+                <div class="pfp-image">
+                    <img src="img/tanydourev.png" height="200px">
+                </div>
+                <div class="email">
+                    <div class="email-link">What's on your mind?</div>
+                    <div class="email-button">
+                        <h3>Let's talk about it! ✨</h3>
+                        <a href="mailto:tanydourev@gmail.com" style="text-decoration: none;">
+                            <h3 style="text-align: right;">→</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="home-footer">
+        <div id="copyright1">© TANY, 2024</div>
+        <div id="copyright2">CRAFTED WITH LOVE ☆ミ</div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="scripts/index.umd.js"></script>
+    <script src="scripts/fittext.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+    <script>
+        const fadeSubtitle = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('remove');
+                }
             });
+        });
 
-            const hiddenElements = document.querySelectorAll('.hidden');
-            hiddenElements.forEach((el) => observer.observe(el));
-        </script>
+        const hiddenSubtitle = document.querySelectorAll('.fade');
+        hiddenSubtitle.forEach((el) => fadeSubtitle.observe(el));
+    </script>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('remove');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
 </body>
 
 </html>
