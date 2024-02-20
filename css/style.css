@@ -24,7 +24,8 @@ body.fade-out {
     transition: none;
 }
 
-a, a:visited {
+a,
+a:visited {
     color: #C7FBA7;
     transition: 0.3s ease-in-out;
 }
@@ -37,7 +38,7 @@ a:hover {
 
 .fade {
     opacity: 0;
-    transition-delay: 1.2s !important;
+    transition-delay: 1.5s !important;
     transition: all 1s;
 }
 
@@ -133,10 +134,10 @@ a:hover {
 .resp-link {
     display: block;
     color: #fff;
-    font-size: 50px;
-    font-weight: 500;
+    font-size: 45px;
+    font-weight: 400;
     letter-spacing: 0.5px;
-    line-height: 1.3em;
+    line-height: 1.2em;
     text-decoration: none;
     transition: 0.3s ease-in-out;
 }
@@ -146,17 +147,14 @@ a:hover {
     text-decoration: none;
 }
 
-#open-button {
-    margin-top: 5px;
-}
-
-#open-button:hover, #close-button:hover {
+#open-button:hover,
+#close-button:hover {
     cursor: pointer;
 }
 
 #close-button {
     position: absolute;
-    top: 25px;
+    top: 20px;
     right: 30px;
 }
 
@@ -169,14 +167,14 @@ header {
 
 #big-name {
     font-family: Fender;
-    font-size: 450px;
+    font-size: 30em;
+    font-weight: 400;
     color: #C7FBA7;
     text-align: center;
 }
 
-:root {
-    --ti-cursor-transform: translateX(0em);
-    --ti-cursor-transform: translateY(-0.07em);
+.ml13 .letter {
+    display: inline-block;
 }
 
 #header-subtitle {
@@ -228,7 +226,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin: 0 30px 80px 30px;
+    margin: 0 30px 50px 30px;
 }
 
 #project {
@@ -309,92 +307,39 @@ header {
     color: #EBE8DC;
 }
 
-#contact-links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.contact1 {
-    height: 75px;
-    background-color: #C7FBA7;
-    display: grid;
-    place-items: center;
-}
-
-.contact1 img,
-.contact2 img {
-    height: 40px;
-}
-
-.contact2 {
-    height: 75px;
-    background-color: #E7FFD8;
-    display: grid;
-    place-items: center;
-}
-
-#contact {
-    height: auto;
-    background-color: #27232A;
-}
-
-.contact-background {
-    background: url(../img/contact-background.png) center center no-repeat;
-    background-size: cover;
-}
-
-.contact-details {
-    display: grid;
-    grid-template-columns: auto 85%;
-    width: 60%;
-    margin: 0 auto;
-    padding: 120px 0;
-}
-
-.pfp-image img {
-    margin-right: 30px;
-    border-radius: 50%;
-}
-
-.email {
-    margin-top: 15px;
-    height: auto;
-}
-
-.email-link {
-    font-size: 75px;
-    font-weight: 300;
-    color: #E7FFD8;
-    margin-left: -5px;
-}
-
-.light-green {
-    color: #E7FFD8;
-}
-
-.email-button {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    border-bottom: 2px solid #C7FBA7;
-    width: 89%;
-    padding: 10px 0;
-    letter-spacing: 0.2px;
-}
-
-.email-button h3 {
-    font-weight: 500;
-}
-
 .home-footer {
     height: auto;
-    background-color: #181619;
-    display: grid;
-    grid-template-columns: 50% 50%;
     width: 100%;
-    padding: 10px 30px 8px 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 30px 5px 30px;
+    color: #EBE8DC;
+    background-color: #0f0f0f;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    text-align: center;
 }
 
-#copyright2 {
+.social-links {
+    height: auto;
+    width: 100%;
+    padding-top: 5px;
+    text-align: left;
+    background-color: #0f0f0f;
+}
+
+.social-link {
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+}
+
+.social-link img {
+    height: 28px;
+    width: 28px;
+}
+
+.copyrights {
     text-align: right;
 }
 
@@ -406,10 +351,10 @@ header {
 
 #about-title {
     font-family: Fender;
-    font-size: 300px;
+    font-size: 24em;
+    font-weight: 400;
     color: #C7FBA7;
     text-align: center;
-    margin-top: 25px;
 }
 
 :root {
@@ -545,6 +490,29 @@ li {
     font-size: 18px;
     line-height: 1.5em;
     color: #EBE8DC;
+}
+
+#footer-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 100px 0 50px 0;
+    width: 88%;
+    margin: 0 auto;
+}
+
+.prev-project {
+    font-size: 20px;
+}
+
+.next-project {
+    font-size: 20px;
+    text-align: right;
+}
+
+.prev-project h4, .next-project h4 {
+    color: #7e7e7e;
+    font-size: 14px;
+    padding-bottom: 5px;
 }
 
 /* ---------- */
