@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/queries.css">
 
+    <!-- social icons -->
+    <script src="https://kit.fontawesome.com/42cd5d7a7f.js" crossorigin="anonymous"></script>
+
     <!-- favicon -->
     <link rel="icon" href="img/favicon/favicon.png">
 </head>
@@ -18,19 +21,20 @@
 
     <navigation>
         <div id="topbar">
-            <div class="logo">TD</div>
+            <div class="logo">
+                <img src="img/nav-icons/logo.png" height="40">
+            </div>
             <div class="topbar-links">
                 <div class="topbar-link">
-                    <a href="index.html">works</a>
+                    <a href="index.html" style="color: #A6A6A6;">works</a>
                 </div>
+
                 <div class="topbar-link">
-                    <a href="playground.html">playground</a>
+                    <a href="about.html" style="color: #A6A6A6;">about</a>
                 </div>
+
                 <div class="topbar-link">
-                    <a href="about.html" ;">about me</a>
-                </div>
-                <div class="topbar-link">
-                    <a href="media/cv-tany-dourev.pdf" target="_blank">resumé</a>
+                    <a href="media/cv-tany-dourev.pdf" target="_blank" style="color: #A6A6A6;">resumé</a>
                 </div>
 
                 <!-- responsive nav trigger -->
@@ -43,22 +47,18 @@
                     <img id="close-button" width="30" height="30" src="img/nav-icons/close-menu.png" onclick="closeNav()">
 
                     <div id="responsive-links" style="padding: 100px 30px 0 0;">
-                        <h1 style="font-family: Fender; color: #C7FBA7; font-size: 60px; letter-spacing: normal; font-weight: 400;">TD</h1>
+                        <img src="img/nav-icons/logo.png" height="60">
 
                         <div class="resp-link">
-                            <a href="index.html">works</a>
+                            <a href="index.html" style="color: #A6A6A6;">works</a>
                         </div>
 
                         <div class="resp-link">
-                            <a href="playground.html">playground</a>
+                            <a href="about.html" style="color: #A6A6A6;">about</a>
                         </div>
 
                         <div class="resp-link">
-                            <a href="about.html">about me</a>
-                        </div>
-
-                        <div class="resp-link">
-                            <a href="media/cv-tany-dourev.pdf" target="_blank">resumé</a>
+                            <a href="media/cv-tany-dourev.pdf" target="_blank" style="color: #A6A6A6;">resumé</a>
                         </div>
                     </div>
                 </div>
@@ -66,269 +66,300 @@
         </div>
     </navigation>
 
-    <header class="project-header">
-        <div id="project-page-title" class="hidden">Muji</div>
+    <div class="header-image hidden" style="background-image: url(img/muji/muji-1.png); background-position: center; background-repeat: no-repeat; background-size: cover;""></div>
 
-        <div id="project-subtitle" class="hidden">Encouraging music lovers around the world to collaborate on theme-based playlists and discover new tunes.</div>
+    <header class=" project-header">
+        <div id="project-titles">
+            <div>
+                <div id="project-page-title" class="hidden">Muji</div>
 
-        <div id="arrow-down" class="hidden">↓</div>
-    </header>
+                <div id="project-subtitle" class="hidden">Encouraging music lovers around the world to collaborate on theme-based playlists and discover new tunes.</div>
+            </div>
+            <div>
+                <div id="arrow-down" class="hidden">↓</div>
+            </div>
+        </div>
+        </header>
 
-    <div id="about">
         <div class="about-section hidden">
-            <div class="project-div-line resp"></div>
-
-            <h1 class="section-title">Overview</h1>
+            <div class="project-div-line"></div>
             <div class="section-text">
                 <div class="text project-details-desktop" style="color: #FFF; font-weight: 600;">
                     <div>
                         <h5 style="font-weight: 400; color: #7e7e7e;">PROJECT TYPE</h5>
-                        <p style="color: #E7FFD8; font-weight: 500;">Mobile UX/UI</p>
+                        <p style="color: #FFF; font-weight: 500;">UX/UI case study</p>
                     </div>
+
                     <div>
-                        <h5 style="font-weight: 400; color: #7e7e7e;">ROLES</h5>
-                        <p style="color: #E7FFD8; font-weight: 500;">Market researcher, UI designer</p>
+                        <h5 style="font-weight: 400; color: #7e7e7e;">TIMELINE</h5>
+                        <p style="color: #FFF; font-weight: 500;">2024</p>
                     </div>
+
                     <div>
-                        <h5 style="font-weight: 400; color: #7e7e7e;">YEAR</h5>
-                        <p style="color: #E7FFD8; font-weight: 500;">2021/22, 2024</p>
-                    </div>
-                    <div>
-                        <h5 style="font-weight: 400; color: #7e7e7e;">DELIVERABLE</h5>
-                        <p style="color: #E7FFD8; font-weight: 500;">App concept</p>
+                        <h5 style="font-weight: 400; color: #7e7e7e;">CONTRIBUTIONS</h5>
+                        <p style="color: #FFF; font-weight: 500;">Market researcher, UI designer</p>
                     </div>
                 </div>
 
                 <div class="project-div-line"></div>
 
-                <div class="text" style="color: #FFF; font-weight: 600;">Muji is a music-sharing platform that encourages users to collaborate on playlists and share their love for music. Playlists are based on prompts or themes provided each day, which can in turn be exported to preferred music-streaming/listening services.</div>
+                <h3 class="section-title">Overview</h3>
+                <div class="text" style="color: #FFF; font-weight: 400;">Muji is a music-sharing platform that encourages users to collaborate on playlists and share their love for music. Playlists are based on prompts or themes provided each day, which can in turn be exported to preferred music-streaming/listening services.</div>
+            </div>
+        </div>
 
-                <div class="grid-2-muji grid-2" style="padding-top: 25px; gap: 10px;">
-                    <div height="100%">
-                        <img src="img/muji/muji-2.png" style="width: 100%;">
-                        <img src="img/muji/muji-3.png" style="width: 100%;">
+        <div id="brief" class="hidden">
+            <h3 class="section-title" style="text-align: center;">The Brief:</h3>
+            <div class="brief-text">How can we encourage people to share music in a collaborative way?</div>
+        </div>
+
+        <div class="content-section hidden">
+            <h3 class="section-title">Behind The Idea</h3>
+            <div class="section-text">
+                <div class="text">As part of my journey to explore UX design in mobile apps, I was inspired to create a concept that would combine music with the simplicity of <a href="https://bereal.com/en/">BeReal</a>, a French photo-sharing app. BeReal gained traction for the authenticity in its goal: to remove the "fakeness" of social media and share in-the-moment snapshots of daily life. I was passionate about seeing how this approach could extend to music, and how
+                    users could be encouraged to contribute to something that didn't rely on algorithms or curated profiles.</div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="content-section hidden">
+            <h3 class="section-title">Market Research</h3>
+            <div class="section-text">
+                <div class="text">I began by conducting market research on existing music-sharing apps and music-streaming platforms to identify how users interact with each other. Sharing music in the style of BeReal (one song per day) was much less popular than sending a link or sharing to a social media app; however, there were two apps that stood out:</div>
+
+                <ul style="padding-top: 10px; width: 100%;">
+                    <li><b><a href="https://apps.apple.com/us/app/ensemble-share-music/id1633128167">ensemble</a></b></li>
+                    <ul style="padding-bottom: 5px;">
+                        <li>Created by MySound Inc. / 2022 / iOS only.</li>
+                        <li>Users share one song per day based on a theme.</li>
+                        <li>A "fire" reaction can be given to show approval of song choices made by friends.</li>
+                    </ul>
+
+                    <li><b><a href="https://apps.apple.com/us/app/cadenza-public-playlists/id6451266370">cadenza</a></b></li>
+                    <ul>
+                        <li>Created by Mike Tibollo / 2023 / iOS only.</li>
+                        <li>Designed to help create playlists without the use of an algorithm for suggestions.</li>
+                        <li>Users can collaborate on playlists with others.</li>
+                    </ul>
+                </ul>
+
+                <div class="grid-2" style="padding: 25px 0; gap: 10px;">
+                    <img src="img/muji/ensemble.png" style="width: 100%;">
+                    <img src="img/muji/cadenza.png" style="width: 100%;">
+                </div>
+
+                <p style="font-size: 14px; color: #7e7e7e; width: 90%; margin-top: -10px;">Left to right: ensemble, cadenza.</p>
+
+                <div class="text" style="padding-top: 20px;">Both apps had very few reviews and downloads compared to streaming giants, which can be attributed to the following factors: lack of funding or resources for development; being overshadowed by more popular music apps; or the app's theme is not as popular with users than expected.</div>
+            </div>
+        </div>
+
+        <div class="muji-section-split hidden">
+            <div id="brief-split">
+                <h3 class="section-title">Market research (cont'd)</h3>
+                <div class="emphasis-text" style="text-align: left;">What do major music-streaming services do?</div>
+                <div class="text">
+                    Major music-streaming services provide a feature for users to share songs directly to other social media platforms. This is done via a card/widget that contains the song title, artist and cover art; the UI style varies from app to app.</div>
+
+                <br><br>
+
+                <p style="font-size: 14px; color: #A6A6A6; width: 90%; margin-top: -10px;">Left to right: Share to Instagram story via Spotify, Apple Music and SoundCloud.</p>
+            </div>
+
+            <img src="img/muji/ig-share.png" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+
+        <br><br><br>
+
+        <div class="content-section hidden">
+            <h1 class="section-title">Breaking Down BeReal</h1>
+            <div class="section-text">
+                <div class="text">Given BeReal was a highly influential part of developing Muji’s concept, I wanted to understand what drew users to it as opposed to other social media apps. I started by analyzing its functionality as a photo-sharing platform; based on reviews from users, I identified four key issues:</div>
+
+                <div class="mu-issues">
+                    <div class="issue">
+                        <h3>01</h3>
+                        <p>After an extended period of time, many users found BeReal to be too repetitive and boring. <span style="color: #A6A6A6;">They felt the moments being shared from their lives were "too mundane" compared to others.</span></p>
                     </div>
 
-                    <video width="100%" height="94%" controls style="object-fit: cover; align-content: start;">
-                        <source src="media/muji-prototype.mp4" type="video/mp4">
-                    </video>
+                    <div class="issue">
+                        <h3>02</h3>
+                        <p>The removal of the "Discovery" feature isolated users from the rest of the world. <span style="color: #A6A6A6;">They no longer felt connected to others when they couldn't see what was being shared.</span></p>
+                    </div>
+
+                    <div class="issue">
+                        <h3>03</h3>
+                        <p>The removal of the "Memories" feature prevented users from accessing past moments shared with friends/family. <span style="color: #A6A6A6;">Unless the photos were saved to the device's local storage, there was no way to recover them.</span></p>
+                    </div>
+
+                    <div class="issue">
+                        <h3>04</h3>
+                        <p>The app itself is not optimized for mobile devices and users experienced several technical issues. <span style="color: #A6A6A6;">Frequent problems with notifications, camera access and in-app functions were reported.</span></p>
+                    </div>
+                </div>
+
+                <div class="text" style="padding-top: 20px;">Considering popular music-streaming services hold positions of monopoly over the industry, Muji needed to maintain a unique approach to sharing music that would allow it to stand out amongst its market competitors. Simultaneously, it faced the challenge of emphasizing user friendliness and learning from BeReal's biggest mistake: removing the ability to look back to the past.</div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="content-section hidden">
+            <h3 class="section-title">User Flow</h3>
+            <div class="section-text">
+                <div class="text">Determines the possible interactions and sub-interactions connected to each screen of the app.</div>
+
+                <div class="grid-1" style="padding: 25px 0; gap: 5px;">
+                    <img src="img/muji/user-flow.png" style="width: 100%;">
                 </div>
             </div>
         </div>
-    </div>
 
-    <br><br>
+        <br>
 
-    <div class="about-section hidden">
-        <h1 class="section-title">The Brief</h1>
-        <div class="section-text">
-            <div class="text">As part of my journey to explore UX design in mobile apps, I was inspired to create a concept that would combine music with the simplicity of <a href="https://bereal.com/en/">BeReal</a>, a French photo-sharing app. BeReal gained traction for the authenticity in its goal: to remove the "fakeness" of social media and share in-the-moment snapshots of daily life. I was passionate about seeing how this approach could extend to music, and how
-                users could be encouraged to contribute to something that didn't rely on algorithms or curated profiles.</div>
-        </div>
-    </div>
+        <div class="content-section hidden">
+            <h3 class="section-title">Wireframes</h3>
+            <div class="section-text">
+                <div class="text">With the user flow as a guide, I generated two levels of wireframes and a final mockup. While transitioning between versions, I found myself removing and re-adjusting elements with each level of fidelity. I wanted to incorporate the simplicity of BeReal's UI, while simultaneously drawing from the structure of Spotify and Apple Music.</div>
 
-    <br><br><br>
+                <div class="grid-1" style="padding: 25px 0; gap: 5px;">
+                    <img src="img/muji/muji-wireframes.png" style="width: 100%;">
+                </div>
 
-    <div class="about-section hidden">
-        <h1 class="section-title">Market Research</h1>
-        <div class="section-text">
-            <div class="text">To begin, I conducted market research on existing music-sharing apps and music-streaming platforms to identify how users interact with each other. Sharing music in the style of BeReal — one song per day — was much less popular than sending a link or sharing to a social media app; however, there were two apps that stood out:</div>
-
-            <ul style="padding-top: 10px; width: 100%;">
-                <li><b><a href="https://apps.apple.com/us/app/ensemble-share-music/id1633128167">ensemble</a></b></li>
-                <ul style="padding-bottom: 5px;">
-                    <li>Created by MySound Inc. / 2022 / iOS only.</li>
-                    <li>Users share one song per day based on a theme.</li>
-                    <li>A "fire" reaction can be given to show approval of song choices made by friends.</li>
-                </ul>
-
-                <li><b><a href="https://apps.apple.com/us/app/cadenza-public-playlists/id6451266370">cadenza</a></b></li>
-                <ul>
-                    <li>Created by Mike Tibollo / 2023 / iOS only.</li>
-                    <li>Designed to help create playlists without the use of an algorithm for suggestions.</li>
-                    <li>Users can collaborate on playlists with others.</li>
-                </ul>
-            </ul>
-
-            <div class="grid-2" style="padding: 25px 0; gap: 10px;">
-                <img src="img/muji/ensemble.png" style="width: 100%;">
-                <img src="img/muji/cadenza.png" style="width: 100%;">
-            </div>
-
-            <p style="font-size: 14px; color: #7e7e7e; width: 90%; margin-top: -10px;">Left to right: ensemble, cadenza.</p>
-
-            <div class="text" style="padding-top: 20px;">Both apps had very few reviews and downloads compared to streaming giants, which can be attributed to the following factors: lack of funding or resources for development; being overshadowed by more popular music apps; or the app's theme is not as popular with users than expected.</div>
-
-            <div class="text" style="padding-top: 20px;">Major music-streaming services provide a feature for users to share songs directly to other social media platforms. This is done via a card/widget that contains the song title, artist and cover art; the UI style varies from app to app, as seen below:</div>
-
-            <div class="grid-3" style="padding: 25px 0; gap: 5px;">
-                <img src="img/muji/ig-spotify.png" style="width: 100%;">
-                <img src="img/muji/ig-applemusic.png" style="width: 100%;">
-                <img src="img/muji/ig-soundcloud.png" style="width: 100%;">
-            </div>
-
-            <p style="font-size: 14px; color: #7e7e7e; width: 90%; margin-top: -10px;">Left to right: Share to Instagram story via Spotify, Apple Music and SoundCloud.</p>
-        </div>
-    </div>
-
-    <br><br><br>
-
-    <div class="about-section hidden">
-        <h1 class="section-title">Breaking Down BeReal</h1>
-        <div class="section-text">
-            <div class="text">Given BeReal was a highly influential part of developing Muji’s concept, I wanted to understand what drew users to it as opposed to other social media apps. I started by analyzing its functionality as a photo-sharing platform; based on reviews from users, I identified four key issues:</div>
-
-            <ol style="padding-top: 10px;">
-                <li style="color: #E7FFD8;"><b>After an extended period of time, many users found BeReal to be too repetitive and boring.</b> They felt the moments being shared from their lives were "too mundane" compared to others.</li>
-
-                <li style="color: #E7FFD8;"><b>The removal of the "Discovery" feature isolated users from the rest of the world.</b> They no longer felt connected to others when they couldn't see what was being shared.</li>
-
-                <li style="color: #E7FFD8;"><b>The removal of the "Memories" feature prevented users from accessing past moments shared with friends/family.</b> Unless the photos were saved to the device's local storage, there was no way to recover them.</li>
-
-                <li style="color: #E7FFD8;"><b>The app itself is not optimized for mobile devices and users experienced several technical issues.</b> Frequent problems with notifications, camera access and in-app functions were reported.</li>
-            </ol>
-        </div>
-    </div>
-
-    <br><br><br>
-
-    <div class="about-section hidden">
-        <h1 class="section-title">The Problem</h1>
-        <div class="section-text">
-            <div class="text">Using the information gathered from my market research and analyzing BeReal, I drafted the following problem statement: <b style="color: #E7FFD8;">how can we encourage people to share music in a collaborative way?</b> Considering popular music-streaming services hold positions of monopoly over the industry, Muji needed to maintain a unique approach to sharing music that would allow it to stand out amongst its market competitors. At the same time, its features had to
-                be user-friendly and easy to use, placing the focus on collaboration as opposed to battling functionality issues.</div>
-        </div>
-    </div>
-
-    <br><br><br>
-
-    <div class="about-section hidden">
-        <h1 class="section-title">The User Process</h1>
-        <div class="section-text">
-            <div class="text">The first step to tackling my problem question was defining what a user could do with Muji and possible interactions through the form of a user flow:</div>
-
-            <div class="grid-1" style="padding: 25px 0; gap: 5px;">
-                <img src="img/muji/user-flow.png" style="width: 100%;">
-            </div>
-
-            <div class="text">One of the interactions available to users is being able to preview a song shared by others or on a playlist. During the planning phase, I outlined my intent to avoid turning Muji into a music-playing app; instead, I wanted the focus to be on sharing songs and collaboration. Previews would give users the opportunity to hear snippets of songs, but would ultimately hear the full track on their preferred music-streaming service if the song is featured in an exported
-                playlist. In turn, artists would also be supported by streams and plays of their music on platforms where their songs have been uploaded — Muji is simply the middle man.</div>
-        </div>
-    </div>
-
-    <br><br><br>
-
-    <div class="about-section hidden">
-        <h1 class="section-title">Wireframes</h1>
-        <div class="section-text">
-            <div class="text">With the user flow as a guide, I generated two levels of wireframes and a final mockup. While transitioning between versions, I found myself removing and re-adjusting elements with each level of fidelity. I wanted to incorporate the simplicity of BeReal's UI, while simultaneously drawing from the structure of Spotify and Apple Music.</div>
-
-            <div class="grid-1" style="padding: 25px 0; gap: 5px;">
-                <img src="img/muji/muji-wireframes.png" style="width: 100%;">
-            </div>
-
-            <div class="text">Notably, simplifications were made on the Home screen; instead of relying on a scroll-first page, I divided the content into three individual sections that could be accessed via buttons at the top. Songs shared by friends were moved to the Home screen, while the Friends screen focused primarily on friends lists. The "leaderboards" element on the Community screen was removed in the final design; while I considered it to be a fun way of seeing how active users are
-                from different parts of the world, I opted for its removal as it would require access to location data.</div>
-        </div>
-    </div>
-
-    <br><br><br>
-
-    <div class="about-section hidden">
-        <h1 class="section-title">Visual Identity</h1>
-        <div class="section-text">
-            <div class="text">Muji's visual identity and UI incorporates dark themes and an accent colour of peach-red (#DB504A). The logo combines two variations of eighth notes: a regular note and a beamed note. The bridge that forms the beamed note also forms the letter 'M', standing for Muji.</div>
-
-            <br>
-
-            <img class="grid-1" src="img/muji/muji-branding-1.png" style="display: block; margin-bottom: 5px;">
-            <img class="grid-1" src="img/muji/muji-branding-2.png" style="display: block; margin-bottom: 5px;">
-            <img class="grid-1" src="img/muji/muji-branding-3.png" style="display: block;">
-        </div>
-    </div>
-
-    <div id="footer-nav">
-        <div class="prev-project">
-            <h4>← PREVIOUS PROJECT</h4>
-            <div>
-                <a href="project-mammoth.html">Project Mammoth</a>
-            </div>
-        </div>
-        <div class="next-project">
-            <h4>NEXT PROJECT →</h4>
-            <div>
-                <a href="kofi.html">KOFI</a>
-            </div>
-        </div>
-    </div>
-
-    <footer class="home-footer">
-        <div class="social-links">
-            <div class="social-link linkedin">
-                <a href="https://www.linkedin.com/in/tanydourev">
-                    <img src="https://img.icons8.com/ios-glyphs/50/FFFFFF/linkedin-2--v1.png">
-                </a>
-            </div>
-            <div class="social-link instagram">
-                <a href="https://www.instagram.com/tanydourev">
-                    <img src="https://img.icons8.com/ios-glyphs/50/FFFFFF/instagram.png">
-                </a>
-            </div>
-            <div class="social-link mail">
-                <a href="mailto:tanydourev@gmail.com?subject=Inquiry%20From%20Portfolio">
-                    <img src="https://img.icons8.com/ios-glyphs/50/FFFFFF/email.png">
-                </a>
+                <div class="text">Simplifications were made on the Home screen; instead of relying on a scroll-first page, I divided the content into three individual sections that could be accessed via buttons at the top. Songs shared by friends were moved to the Home screen, while the Friends screen focused primarily on friends lists. The "leaderboards" element on the Community screen was removed in the final design; while I considered it to be a fun way of seeing how active users are
+                    from different parts of the world, I opted for its removal as it would require access to location data.</div>
             </div>
         </div>
 
-        <div class="copyrights">
-            <div id="copyright1">© TANY DOUREV, 2024</div>
-            <div id="copyright2">CRAFTED WITH LOVE ☆ミ</div>
+        <div class="content-section-split hidden">
+            <img src="img/muji/muji-2.png" style="width: 100%; height: 100%; object-fit: cover;">
+
+            <div id="brief-split">
+                <h3 class="section-title">How come this isn't a music player app?</h3>
+                <div class="emphasis-text" style="text-align: left;">Muji is designed to bring exposure to new and upcoming artists; a true wingman in the world of music.</div>
+                <div class="text">
+                    App stores on both Android and iOS are oversaturated with music player apps, which renders Muji's goal obsolete if it were marketed as such. Instead, Muji provides the ability for users to hear snippets of songs; full tracks can be played via the preferred music-streaming service of choice. This way, artists are supported by streams of their music in places where their songs have been uploaded and are licensed to be played.</div>
+                <br>
+                <h3 class="section-title"><b>Muji is simply the monkey in the middle.</b></h3>
+            </div>
         </div>
-    </footer>
 
-    <!-- scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <div class="muji-prototype-split hidden" style="margin-top: -70px;">
+            <div id="brief-split">
+                <h3 class="section-title">Prototype:</h3>
+                <div class="text">Designed in Figma.</div>
+                <br>
+                <video width="100%" height="700px" controls style="object-fit: cover; align-content: start;">
+                    <source src="media/muji-prototype.mp4" type="video/mp4">
+                </video>
+            </div>
 
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+            <img src="img/muji/mockup-headphones.jpeg" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
 
-    <script src="scripts/scripts.js"></script>
+        <br><br><br>
 
-    <script>
-        // regular fade-in
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                } else {
-                    entry.target.classList.remove('remove');
-                }
+        <div class="content-section hidden">
+            <h1 class="section-title">Visual Identity</h1>
+            <div class="section-text">
+                <div class="text">Muji's visual identity and UI incorporates dark themes and an accent colour of peach-red (#DB504A). The logo combines two variations of eighth notes: a regular note and a beamed note. The bridge that forms the beamed note also forms the letter 'M', standing for Muji.</div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <img class="grid-1" src="img/muji/muji-branding-1.png" style="display: block; margin-bottom: 0;">
+        <img class="grid-1" src="img/muji/muji-branding-2.png" style="display: block; margin-bottom: 0;">
+        <img class="grid-1" src="img/muji/muji-branding-3.png" style="display: block;">
+
+        <div id="footer-nav">
+            <div class="prev-project">
+                <h4>← PREVIOUS PROJECT</h4>
+                <div>
+                    <a href="the-witchs-brew.html">The Witch's Brew</a>
+                </div>
+            </div>
+            <div class="next-project">
+                <h4>NEXT PROJECT →</h4>
+                <div>
+                    <a href="project-mammoth.html">Project Mammoth</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="home-footer">
+            <div class="social-links">
+                <div class="social-link mail">
+                    <a href="mailto:tanydourev@gmail.com?subject=Inquiry%20From%20Portfolio">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </a>
+                </div>
+
+                <div class="social-link linkedin">
+                    <a href="https://www.linkedin.com/in/tanydourev">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+                <div class="social-link instagram">
+                    <a href="https://www.instagram.com/tanydourev">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+
+                <div class="social-link github">
+                    <a href="https://www.github.com/tanydourev">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="copyrights">
+                <div class="copyright1">© TANY DOUREV, 2024 ☆ミ</div>
+            </div>
+        </footer>
+
+        <!-- scripts -->
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+        <script src="scripts/scripts.js"></script>
+
+        <script>
+            // regular fade-in
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('remove');
+                    }
+                });
             });
-        });
 
-        const hiddenElements = document.querySelectorAll('.hidden');
-        hiddenElements.forEach((el) => observer.observe(el));
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach((el) => observer.observe(el));
 
-        // tooltips for socials
-        tippy('.linkedin', {
-            content: 'LINKEDIN',
-            placement: 'top',
-            arrow: true,
-        });
+            // tooltips for socials
+            tippy('.linkedin', {
+                content: 'LINKEDIN',
+                placement: 'top',
+                arrow: true,
+            });
 
-        tippy('.instagram', {
-            content: 'INSTAGRAM',
-            placement: 'top',
-            arrow: true,
-        });
+            tippy('.instagram', {
+                content: 'INSTAGRAM',
+                placement: 'top',
+                arrow: true,
+            });
 
-        tippy('.mail', {
-            content: 'EMAIL',
-            placement: 'top',
-            arrow: true,
-        });
-    </script>
+            tippy('.mail', {
+                content: 'EMAIL',
+                placement: 'top',
+                arrow: true,
+            });
+        </script>
 </body>
 
 </html>

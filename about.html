@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/queries.css">
 
+    <!-- social icons -->
+    <script src="https://kit.fontawesome.com/42cd5d7a7f.js" crossorigin="anonymous"></script>
+
     <!-- favicon -->
     <link rel="icon" href="img/favicon/favicon.png">
 </head>
@@ -18,19 +21,20 @@
 
     <navigation>
         <div id="topbar">
-            <div class="logo">TD</div>
+            <div class="logo">
+                <img src="img/nav-icons/logo.png" height="40">
+            </div>
             <div class="topbar-links">
                 <div class="topbar-link">
-                    <a href="index.html">works</a>
+                    <a href="index.html" style="color: #A6A6A6;">works</a>
                 </div>
+
                 <div class="topbar-link">
-                    <a href="playground.html">playground</a>
+                    <a href="about.html" style="color: #FFF;">about</a>
                 </div>
+
                 <div class="topbar-link">
-                    <a href="about.html" style="color: #EBE8DC;">about me</a>
-                </div>
-                <div class="topbar-link">
-                    <a href="media/cv-tany-dourev.pdf" target="_blank">resumé</a>
+                    <a href="media/cv-tany-dourev.pdf" target="_blank" style="color: #A6A6A6;">resumé</a>
                 </div>
 
                 <!-- responsive nav trigger -->
@@ -43,22 +47,18 @@
                     <img id="close-button" width="30" height="30" src="img/nav-icons/close-menu.png" onclick="closeNav()">
 
                     <div id="responsive-links" style="padding: 100px 30px 0 0;">
-                        <h1 style="font-family: Fender; color: #C7FBA7; font-size: 60px; letter-spacing: normal; font-weight: 400;">TD</h1>
+                        <img src="img/nav-icons/logo.png" height="60">
 
                         <div class="resp-link">
-                            <a href="index.html">works</a>
+                            <a href="index.html" style="color: #A6A6A6;">works</a>
                         </div>
 
                         <div class="resp-link">
-                            <a href="playground.html">playground</a>
+                            <a href="about.html" style="color: #FFF !important;">about</a>
                         </div>
 
                         <div class="resp-link">
-                            <a href="about.html" style="color: #E7FFD8 !important;">about me</a>
-                        </div>
-
-                        <div class="resp-link">
-                            <a href="media/cv-tany-dourev.pdf" target="_blank">resumé</a>
+                            <a href="media/cv-tany-dourev.pdf" target="_blank" style="color: #A6A6A6;">resumé</a>
                         </div>
                     </div>
                 </div>
@@ -66,122 +66,103 @@
         </div>
     </navigation>
 
-    <header class="project-header">
-        <div id="project-page-title" class="hidden">About Me</div>
+    <header id="about">
+        <div class="about-icon"></div>
 
-        <div id="project-subtitle" class="hidden">A little something to help you get to know me better :)</div>
-
-        <div id="arrow-down" class="hidden">↓</div>
+        <div id="about-subtitle" class="hidden"><span style="color: #FFF;">Hi, I’m Tany! I’m a freelance interaction & visual designer based in Canada.</span> Specializing in designing fun user experiences through prototyping and exploring new solutions to creative problems. A one-woman show, characterized by intense attention to detail and a goal to always be learning.
+            <br><br>
+            Currently working as a <span style="color: #FFF;">Graphic Designer @ RW Digital</span>.
+            <br><br>
+            Enjoys exploring video game worlds, drinking green tea, listening to ambient tunes and re-coding her portfolio constantly. Recommends playing <i>Cyberpunk 2077</i>, <i>Stray</i> and <i>Detroit: Become Human</i>. Looking forward to season two of Star Wars’ <i>Andor</i> series. Trinket-collector and waffle-lover.
+        </div>
     </header>
 
-    <div id="about">
-        <div class="about-section hidden">
-            <h1 class="section-title">Hello there!</h1>
-            <div class="section-text">
-                <div class="text" style="color: #FFF; font-weight: 600;">My name is Tany; I'm a Canada-based interaction and visual designer. Nice to meet you! 👋🏼</div>
+    <div id="arrow-about" class="hidden">↓</div>
 
-                <div class="text" style="padding-top: 20px;">I've studied interaction design at two institutions, graduating with a Bachelor of Arts and a specialization in digital prototyping. I currently work as a Graphic Designer at <a href="https://www.rwdigital.ca">RW Digital</a>, a Canadian digital marketing agency based in BC.</div>
+    <div class="services-section-split hidden">
+        <div id="services-split">
+            <h3 class="section-title">Thinking of a starting a new project?</h3>
+            <div class="emphasis-text" style="text-align: left;">Let's grab a virtual tea and chat about it!</div>
+            <div class="text">
+                Here are some of the services I offer as a freelance designer:</div>
 
-                <div class="text" style="padding-top: 20px;">My creative journey began with graphic design during my teenage years. Since then, I've broadened my knowledge of the industry and stepped into fields like branding, UX/UI, design research, 3D design and game dev. I like to combine mediums and see projects span from conception to production, often taking on multiple roles as a one-woman show to see the process through to the very end. I'm a huge stickler for details; if I don't fix
-                    that stray
-                    pixel, I won't stop noticing it.
+            <div class="services">
+                <div class="service">
+                    <img width="40" height="40" src="https://img.icons8.com/ios/50/FFFFFF/color-palette.png">
+                    <h3>BRAND DESIGN</h3>
+                    <p>Whether it's getting your business set up or planning a revamp, let's bring that vision for your new brand to life.</p>
                 </div>
 
-                <div class="text" style="padding-top: 20px;">Outside of design, I enjoy exploring video game worlds, watching Star Wars' <i>Andor</i> show and discovering new ambient tunes (and re-coding my portfolio a million times, but we don't talk about that one). I'm a green tea girlie all the way; jasmine, peppermint, regular green, I'm always down for a warm cuppa. My favourite video games are CD Projekt RED's <i>Cyberpunk 2077</i>, BlueTwelve Studio's <i>Stray</i> and Quantic Dream's
-                    <i>Detroit: Become Human</i>.
+                <div class="service">
+                    <img width="40" height="40" src="https://img.icons8.com/ios/50/FFFFFF/instagram-verification-badge.png">
+                    <h3>SOCIAL MEDIA DESIGN</h3>
+                    <p>Flaunt your services on social media platforms with high-quality graphics and strategies designed to boost engagement.</p>
+                </div>
+
+                <div class="service">
+                    <img width="40" height="40" src="https://img.icons8.com/ios/50/FFFFFF/tags--v1.png">
+                    <h3>PACKAGING DESIGN</h3>
+                    <p>Your products need a coat - what better wardrobe than packaging that catches the eye and pulls at the wallets of your customers?</p>
+                </div>
+
+                <div class="service">
+                    <img width="40" height="40" src="https://img.icons8.com/ios/50/FFFFFF/customer-insight--v1.png">
+                    <h3>UX / PROTOTYPING</h3>
+                    <p>The world is your oyester and so are the goals of your users. Break it down to the fundamentals and work your way up with a user-first approach to your product.</p>
+                </div>
+
+                <div class="service">
+                    <img width="40" height="40" src="https://img.icons8.com/ios/50/FFFFFF/circled-menu.png">
+                    <h3>UI DESIGN</h3>
+                    <p>Your product is more than just pretty colours. Let's make those design systems consistent and connected for future use.</p>
+                </div>
+
+                <div class="service">
+                    <img width="40" height="40" src="https://img.icons8.com/ios/50/FFFFFF/love-potion--v1.png">
+                    <h3>A HELPING HAND</h3>
+                    <p>In need of a second pair of eyes to look at a project or design? We designers stick together, so send it over and let's brainstorm together.</p>
                 </div>
             </div>
+            <br><br>
+            <h3 class="section-title">Please email all inquiries about services to <a href="mailto:tanydourev@gmail.com?subject=Inquiry%20From%20Portfolio">tanydourev@gmail.com</a>, thank you! ^-^</h3>
         </div>
 
-        <br><br><br>
-
-        <div class="about-section hidden">
-            <h1 class="section-title">Experience</h1>
-            <div class="section-text">
-                <div class="text" style="color: #FFF; font-weight: 600;">Graphic Designer</div>
-                <div class="text" style="color: #E7FFD8; font-weight: 400; padding-top: 0;">RW Digital</div>
-                <div class="text" style="color: #7e7e7e; font-weight: 400; padding-top: 0;">2021 — Present</div>
-
-                <div class="text" style="color: #FFF; font-weight: 600; padding-top: 20px;">Student Content Designer</div>
-                <div class="text" style="color: #E7FFD8; font-weight: 400; padding-top: 0;">Brock University</div>
-                <div class="text" style="color: #7e7e7e; font-weight: 400; padding-top: 0;">2021</div>
-
-                <div class="text" style="color: #FFF; font-weight: 600; padding-top: 20px;">Digital Archival Program Assistant</div>
-                <div class="text" style="color: #E7FFD8; font-weight: 400; padding-top: 0;">St. Catharines Museum & Welland Canals Centre</div>
-                <div class="text" style="color: #7e7e7e; font-weight: 400; padding-top: 0;">2020</div>
-            </div>
-        </div>
-
-        <br><br><br>
-
-        <div class="about-section hidden">
-            <h1 class="section-title">Education</h1>
-            <div class="section-text">
-                <div class="text" style="color: #FFF; font-weight: 600;">Bachelor of Arts (Interactive Arts & Sciences)</div>
-                <div class="text" style="color: #E7FFD8; font-weight: 400; padding-top: 0;">Brock University</div>
-                <div class="text" style="color: #7e7e7e; font-weight: 400; padding-top: 0;">2021 — 2023</div>
-
-                <div class="text" style="color: #FFF; font-weight: 600; padding-top: 20px;">Interaction Design</div>
-                <div class="text" style="color: #E7FFD8; font-weight: 400; padding-top: 0;">Sheridan College Institute of Technology</div>
-                <div class="text" style="color: #7e7e7e; font-weight: 400; padding-top: 0;">2019 — 2021</div>
-            </div>
-        </div>
-
-        <br><br><br>
-
-        <div class="about-section hidden">
-            <h1 class="section-title">Certifications</h1>
-            <div class="section-text">
-                <div class="text" style="color: #FFF; font-weight: 600;">Ethical Conduct for Research Involving Humans (TCPS 2: CORE)</div>
-                <div class="text" style="color: #E7FFD8; font-weight: 400; padding-top: 0;">Government of Canada</div>
-                <div class="text" style="color: #7e7e7e; font-weight: 400; padding-top: 0;">2020 — Present</div>
-            </div>
-        </div>
-
-        <br><br><br>
-
-        <div class="about-section hidden">
-            <h1 class="section-title">Some inspirational words...</h1>
-            <div class="section-text">
-
-                <div class="text" style="color: #FFF; font-weight: 400; font-style: italic;">"Tany has been working at RW Digital as a graphic designer for nearly 3 years. During this time, she has consistently delivered professional and exceptional design work for clients and for RW Digital's internal marketing tasks. Tany is incredibly talented, as well as responsive, professional, and diligent. Moreover, she's empathetic and communicative, which makes her a terrific team member to work with.
-                    Thanks to her attention to detail, unrivalled talent, and diligence to present stunning and creative design work, Tany is an absolute asset to any team she works with."</div>
-                <div class="text" style="color: #E7FFD8; font-weight: 400; padding-top: 10px;">— Ray Wang</div>
-                <div class="text" style="color: #7e7e7e; font-weight: 400; padding-top: 0;">Principal @ RW Digital</div>
-            </div>
-        </div>
-
-        <br><br><br>
+        <img src="img/abstract-services.jpg" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
 
     <footer class="home-footer">
         <div class="social-links">
-            <div class="social-link linkedin">
-                <a href="https://www.linkedin.com/in/tanydourev">
-                    <img src="https://img.icons8.com/ios-glyphs/50/FFFFFF/linkedin-2--v1.png">
-                </a>
-            </div>
-            <div class="social-link instagram">
-                <a href="https://www.instagram.com/tanydourev">
-                    <img src="https://img.icons8.com/ios-glyphs/50/FFFFFF/instagram.png">
-                </a>
-            </div>
             <div class="social-link mail">
                 <a href="mailto:tanydourev@gmail.com?subject=Inquiry%20From%20Portfolio">
-                    <img src="https://img.icons8.com/ios-glyphs/50/FFFFFF/email.png">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </a>
+            </div>
+
+            <div class="social-link linkedin">
+                <a href="https://www.linkedin.com/in/tanydourev">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <div class="social-link instagram">
+                <a href="https://www.instagram.com/tanydourev">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+            <div class="social-link github">
+                <a href="https://www.github.com/tanydourev">
+                    <i class="fa-brands fa-github"></i>
                 </a>
             </div>
         </div>
 
-        <div class="copyrights">
-            <div id="copyright1">© TANY DOUREV, 2024</div>
-            <div id="copyright2">CRAFTED WITH LOVE ☆ミ</div>
+        <div id="copyrights">
+            <div class="copyright1">© TANY DOUREV, 2024 ☆ミ</div>
         </div>
     </footer>
 
     <!-- scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 
