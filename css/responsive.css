@@ -1,0 +1,690 @@
+/* large monitor */
+@media only screen and (min-width: 1600px) {
+    /* ----- NAVIGATION ----- */
+
+    .nav-link {
+        display: inline-block;
+    }
+
+    .menu-nav-link {
+        display: none;
+    }
+
+    /* ----- RESPONSIVE HOMEPAGE CONTENT ----- */
+
+    #resp-home-content {
+        display: none;
+    }
+
+    /* ----- IMAGES ----- */
+
+    .square-img {
+        height: 800px;
+        object-fit: cover;
+    }
+
+    .extra-inner-img {
+        padding: 50px;
+    }
+
+    /* ----- PROJECT PAGE ----- */
+
+    #project-page-content {
+        height: 100%;
+        width: 68%;
+    }
+
+    hr {
+        width: 10%;
+        margin: 60px auto;
+    }
+
+    /* ----- MUJI APP ----- */
+
+    .muji-cards {
+        padding-bottom: 30px;
+    }
+
+    /* ----- ABOUT PAGE ----- */
+
+    #about-content {
+        grid-template-columns: 25% auto;
+    }
+
+    .about-img {
+        height: 100%;
+    }
+}
+
+/* regular laptop */
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    /* ----- NAVIGATION ----- */
+
+    .nav-link {
+        display: inline-block;
+    }
+
+    .menu-nav-link {
+        display: none;
+    }
+
+    /* ----- RESPONSIVE HOMEPAGE CONTENT ----- */
+
+    #resp-home-content {
+        display: none;
+    }
+
+    /* ----- IMAGES ----- */
+
+    .square-img {
+        height: 700px;
+        object-fit: cover;
+    }
+
+    .extra-inner-img {
+        padding: 50px;
+    }
+}
+
+/* small laptop */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* ----- HEADER ----- */
+
+    #header-title {
+        width: 90%;
+        font-size: 150px;
+    }
+
+    /* ----- NAVIGATION ----- */
+
+    .nav-link {
+        display: inline-block;
+    }
+
+    .menu-nav-link {
+        display: none;
+    }
+
+    /* ----- RESPONSIVE HOMEPAGE CONTENT ----- */
+
+    .resp-project-info {
+        padding: 20px 50px;
+    }
+
+    /* ----- HOMEPAGE CONTENT ----- */
+
+    #gallery-scroll-container {
+        display: none;
+    }
+
+    /* ----- PROJECT PAGE ----- */
+
+    #project-details,
+    #project-page-name {
+        font-size: 14.5px;
+    }
+
+    .info {
+        display: inline-block;
+        padding-inline: 20px;
+    }
+
+    #project-page-content {
+        height: 100%;
+        width: 80%;
+    }
+
+    hr {
+        width: 15%;
+        margin: 60px auto;
+    }
+
+    /* ----- MUJI ----- */
+
+    .inner {
+        padding: 0;
+        gap: 20px;
+    }
+
+    .ex-1,
+    .ex-2 {
+        margin: -20px 0 15px 0;
+    }
+
+    .ex-1-title,
+    .ex-2-title {
+        margin-top: 0;
+    }
+
+    .muji-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        row-gap: 30px;
+        margin: 0 0 25px 0;
+    }
+
+    .square-img {
+        height: 600px;
+        object-fit: cover;
+    }
+
+    /* ----- ABOUT PAGE ----- */
+
+    #about-content {
+        grid-template-columns: 35% auto;
+    }
+
+    .about-img {
+        height: 100%;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* ----- HEADER ----- */
+
+    #header-title {
+        width: 100%;
+        padding: 55px 20px 55px 20px;
+        font-size: 100px;
+    }
+
+    /* ----- NAVIGATION ----- */
+
+    #navbar {
+        padding: 20px 20px;
+        grid-template-columns: 80% 20%;
+        font-size: 14.5px;
+        border-top: 1px solid #181818;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .menu-nav-link {
+        display: block;
+        padding-inline: 0;
+    }
+
+    /* ----- HOMEPAGE CONTENT ----- */
+
+    #gallery-scroll-container {
+        display: none;
+    }
+
+    /* ----- BOTTOM CONTENT ----- */
+
+    #bottom-content {
+        width: 100%;
+        padding: 50px 50px 20px 50px;
+    }
+
+    #bottom-about {
+        font-size: 80px;
+        line-height: 1.1em;
+    }
+
+    #bottom-connect {
+        padding-top: 30px;
+        font-size: 80px;
+        line-height: 1.1em;
+    }
+
+    .copyright {
+        padding-top: 80px;
+        text-align: center;
+    }
+
+    /* ----- PROJECT PAGE ----- */
+
+    #project-details {
+        padding: 20px 20px;
+        display: block;
+        font-size: 14.5px;
+    }
+
+    #project-page-name {
+        display: none;
+    }
+
+    #project-info {
+        text-align: center;
+    }
+
+    .info {
+        display: inline-block;
+        padding-inline: 20px;
+    }
+
+    #project-page-content {
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    hr {
+        width: 15%;
+        margin: 50px auto;
+    }
+
+    /* ----- RW DIGITAL ----- */
+
+    .rw-posts {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ----- MUJI ----- */
+
+    .inner {
+        padding: 0;
+        gap: 20px;
+    }
+
+    .ex-1,
+    .ex-2 {
+        margin: -60px 0 15px 0;
+    }
+
+    .ex-1-title,
+    .ex-2-title {
+        margin-top: -55px;
+    }
+
+    .muji-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        row-gap: 30px;
+        margin: 0 0 25px 0;
+    }
+
+    .inner-img {
+        padding: 50px 80px;
+    }
+
+    .square-img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .extra-inner-img {
+        padding: 30px;
+    }
+
+    /* ----- ABOUT PAGE ----- */
+
+    #about-content {
+        grid-template-columns: 40% auto;
+        gap: 30px;
+    }
+
+    .about-img {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        padding-top: 10px;
+    }
+
+    .about-skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* landscape phone */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    /* ----- TAGS ----- */
+
+    p {
+        font-size: 16px;
+    }
+
+    /* ----- HEADER ----- */
+
+    #header-title {
+        width: 100%;
+        padding: 55px 20px 55px 10px;
+        font-size: 75px;
+    }
+
+    /* ----- NAVIGATION ----- */
+
+    #navbar {
+        padding: 20px 20px;
+        grid-template-columns: 80% 20%;
+        font-size: 14.5px;
+        border-top: 1px solid #181818;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .menu-nav-link {
+        display: block;
+        padding-inline: 0;
+    }
+
+    /* ----- HOMEPAGE CONTENT ----- */
+
+    #gallery-scroll-container {
+        display: none;
+    }
+
+    /* ----- BOTTOM CONTENT ----- */
+
+    #bottom-content {
+        width: 100%;
+        padding: 50px 20px 20px 20px;
+    }
+
+    #bottom-about {
+        font-size: 70px;
+        line-height: 1.1em;
+        text-align: center;
+    }
+
+    #bottom-connect {
+        padding-top: 50px;
+        font-size: 70px;
+        line-height: 1.1em;
+        text-align: center;
+    }
+
+    .copyright {
+        padding-top: 80px;
+        text-align: center;
+    }
+
+    /* ----- PROJECT PAGE ----- */
+
+    #project-details {
+        padding: 20px 20px;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 14.5px;
+    }
+
+    #project-page-name {
+        display: none;
+    }
+
+    #project-info {
+        text-align: center;
+    }
+
+    .info {
+        display: block;
+    }
+
+    #project-page-content {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    hr {
+        width: 40%;
+        margin: 50px auto;
+    }
+
+    /* ----- RW DIGITAL ----- */
+
+    .rw-posts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ----- MUJI ----- */
+
+    .grid-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .img-big-gap {
+        gap: 20px;
+        margin-top: 10px;
+    }
+
+    .inner {
+        padding: 0;
+        gap: 0;
+    }
+
+    .ex-1 {
+        margin-top: -55px;
+    }
+
+    .ex-2 {
+        margin: -35px 0 15px 0;
+    }
+
+    .ex-1-title,
+    .ex-2-title {
+        margin-top: -45px;
+    }
+
+    .muji-cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .fullscreen-img {
+        padding: 0 20px 5px 20px !important;
+    }
+
+    .inner-img {
+        padding: 0 20px;
+    }
+
+    .square-img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    /* ----- ABOUT PAGE ----- */
+
+    #about-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .about-img {
+        height: 250px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        padding-top: 20px;
+    }
+
+    .about-skills {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* phone */
+@media only screen and (max-width: 599px) {
+    /* ----- TAGS ----- */
+
+    p {
+        font-size: 16px;
+    }
+
+    /* ----- HEADER ----- */
+
+    #header-title {
+        width: 100%;
+        padding: 55px 20px 55px 10px;
+        font-size: 74px;
+    }
+
+    /* ----- NAVIGATION ----- */
+
+    #navbar {
+        padding: 20px 20px;
+        grid-template-columns: 80% 20%;
+        font-size: 14.5px;
+        border-top: 1px solid #181818;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .menu-nav-link {
+        display: block;
+        padding-inline: 0;
+    }
+
+    /* ----- HOMEPAGE CONTENT ----- */
+
+    #gallery-scroll-container {
+        display: none;
+    }
+
+    /* ----- BOTTOM CONTENT ----- */
+
+    #bottom-content {
+        width: 100%;
+        padding: 50px 20px 20px 20px;
+    }
+
+    #bottom-about {
+        font-size: 60px;
+        line-height: 1.1em;
+        text-align: center;
+    }
+
+    #bottom-connect {
+        padding-top: 50px;
+        font-size: 60px;
+        line-height: 1.1em;
+        text-align: center;
+    }
+
+    .copyright {
+        padding-top: 80px;
+        text-align: center;
+    }
+
+    /* ----- PROJECT PAGE ----- */
+
+    #project-details {
+        padding: 20px 20px;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 14.5px;
+    }
+
+    #project-page-name {
+        display: none;
+    }
+
+    #project-info {
+        text-align: center;
+    }
+
+    .info {
+        display: block;
+    }
+
+    #project-page-content {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    hr {
+        width: 40%;
+        margin: 50px auto;
+    }
+
+    /* ----- RW DIGITAL ----- */
+
+    .rw-posts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ----- MUJI ----- */
+
+    .grid-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .img-big-gap {
+        gap: 20px;
+        margin-top: 10px;
+    }
+
+    .inner {
+        padding: 0;
+        gap: 0;
+    }
+
+    .ex-1 {
+        margin-top: -55px;
+    }
+
+    .ex-2 {
+        margin: -35px 0 15px 0;
+    }
+
+    .ex-1-title,
+    .ex-2-title {
+        margin-top: -45px;
+    }
+
+    .muji-cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding-bottom: 25px;
+    }
+
+    .fullscreen-img {
+        padding: 10px 20px 10px 20px;
+    }
+
+    .inner-img {
+        padding: 0 20px;
+    }
+
+    .square-img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    /* ----- ABOUT PAGE ----- */
+
+    #about-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .about-img {
+        height: 350px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        padding-top: 20px;
+    }
+
+    .about-skills {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,8 +1,10 @@
-// body fade-in on load
+// page fade-in
 document.body.classList.add('fade-out');
+
 window.addEventListener('DOMContentLoaded', () => {
     document.body.classList.remove('fade-out');
 });
+
 
 // navigation triggers
 function openNav() {
