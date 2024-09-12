@@ -5,222 +5,332 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tany Dourev — Interaction & Visual Designer</title>
-    <meta name="description" content="Canada-based interaction & visual designer. Exploring the digital world through fun and out-of-the-box designs.">
+    <meta name="description" content="Hi! I'm a multidisciplinary interaction and visual designer based in Canada. I specialize in designing intuitive and accessible solutions to creative problems through research.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- social icons -->
+    <!-- stylesheets -->
     <script src="https://kit.fontawesome.com/42cd5d7a7f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
 
-    <!-- favicon -->
-    <link rel="icon" href="img/favicon/favicon.png">
+    <!-- AOS transitions -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+    <container>
 
-    <navigation>
-        <div id="topbar">
-            <div class="logo">
-                <img src="img/nav-icons/logo.png" height="40">
+        <!-- header -->
+        <header>
+            <div id="header-title" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                <span class="blue">Hello there, sunshine;</span><br><span class="red">I'm Tany, nice to meet ya!</span>
             </div>
-            <div class="topbar-links">
-                <div class="topbar-link">
-                    <a href="index.html" style="color: #FFF;">works</a>
-                </div>
+        </header>
 
-                <div class="topbar-link">
-                    <a href="about.html" style="color: #A6A6A6;">about</a>
-                </div>
-
-                <div class="topbar-link">
-                    <a href="media/cv-tany-dourev.pdf" target="_blank" style="color: #A6A6A6;">resumé</a>
-                </div>
-
-                <!-- responsive nav trigger -->
-                <div class="link">
-                    <img id="open-button" width="30" height="30" src="img/nav-icons/open-menu.png" onclick="openNav()">
-                </div>
-
-                <!-- responsive links -->
-                <div id="responsive-navigation" class="sidenav">
-                    <img id="close-button" width="30" height="30" src="img/nav-icons/close-menu.png" onclick="closeNav()">
-
-                    <div id="responsive-links" style="padding: 100px 30px 0 0;">
-                        <img src="img/nav-icons/logo.png" height="60">
-
-                        <div class="resp-link">
-                            <a href="index.html" style="color: #FFF !important;">works</a>
-                        </div>
-
-                        <div class="resp-link">
-                            <a href="about.html" style="color: #A6A6A6;">about</a>
-                        </div>
-
-                        <div class="resp-link">
-                            <a href="media/cv-tany-dourev.pdf" target="_blank" style="color: #A6A6A6;">resumé</a>
-                        </div>
+        <!-- navigation -->
+        <navigation>
+            <div id="navbar">
+                <div id="name">Tany Dourev</div>
+                <div id="nav-links">
+                    <a href="/">
+                        <div class="nav-link active">Works</div>
+                    </a>
+                    <a href="/about">
+                        <div class="nav-link">About</div>
+                    </a>
+                    <a href="media/Resume_TanyDourev.pdf" target="_blank">
+                        <div class="nav-link">CV</div>
+                    </a>
+                    <a href="/read-me">
+                        <div class="nav-link">Read.Me</div>
+                    </a>
+                    <div class="menu-nav-link">
+                        <i class="fa-solid fa-bars" onclick="openNav()"></i>
                     </div>
                 </div>
             </div>
-        </div>
-    </navigation>
+        </navigation>
 
-    <header>
-        <div id="header-title"><span style="color: #FFF;">Tany Dourev</span> is an interaction and graphic designer at RW Digital.<br><br>She specializes in designing fun user experiences through prototyping and exploring new solutions to creative problems.
-        </div>
+        <!-- responsive links -->
+        <div id="responsive-navigation" class="sidenav">
+            <i class="fa-solid fa-xmark" id="close-button" onclick="closeNav()"></i>
 
-        <div id="contact">
-            <div class="contact-icon mail">
-                <a href="mailto:tanydourev@gmail.com?subject=Inquiry%20From%20Portfolio">
-                    <i class="fa-solid fa-paper-plane"></i>
-                </a>
-            </div>
+            <div id="responsive-links" style="padding: 100px 30px 0 0;">
 
-            <div class="contact-icon linkedin">
-                <a href="https://www.linkedin.com/in/tanydourev">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-            </div>
+                <div class="resp-link">
+                    <span style="font-family: Inter Extrabold;">→</span>
+                </div>
 
-            <div class="contact-icon instagram">
-                <a href="https://www.instagram.com/tanydourev">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
+                <div class="resp-link">
+                    <a href="/">Works</a>
+                </div>
 
-            <div class="contact-icon github">
-                <a href="https://www.github.com/tanydourev">
-                    <i class="fa-brands fa-github"></i>
-                </a>
+                <div class="resp-link">
+                    <a href="/about">About</a>
+                </div>
+
+                <div class="resp-link">
+                    <a href="media/Resume_TanyDourev.pdf" target="_blank">CV</a>
+                </div>
+
+                <div class="resp-link">
+                    <a href="/read-me">Read.Me</a>
+                </div>
             </div>
         </div>
-    </header>
 
-    <div id="project-showcase">
-        <div id="project" class="hidden">
-            <a href="rw-digital.html">
-                <div class="project1"></div>
+        <!-- responsive gallery -->
+        <div id="resp-home-content">
+            <!-- project 1 -->
+            <a href="/rw-digital-socials">
+                <div>
+                    <img src="img/resp-thumbnails/resp-rw-thumbnail.png" height="350px" width="100%" style="display: block; object-fit: cover;">
+                    <div class="resp-project-info">
+                        <div class="resp-project-name">RW Digital Socials</div>
+                        <div class="resp-arrow"><span style="font-family: Inter Semibold;">→</span></div>
+                    </div>
+                </div>
             </a>
-            <h1 class="project-title">RW Digital</h1>
-            <div class="project-description" style="color: #A6A6A6;">→ SOCIAL MEDIA MARKETING / BRANDING / WEB</div>
-        </div>
 
-        <div id="project" class="hidden">
-            <a href="project-mammoth.html">
-                <div class="project4"></div>
+            <!-- project 2 -->
+            <a href="/the-witchs-brew">
+                <div>
+                    <img src="img/resp-thumbnails/resp-twb-thumbnail.png" height="350px" width="100%" style="display: block; object-fit: cover;">
+                    <div class="resp-project-info">
+                        <div class="resp-project-name">The Witch's Brew</div>
+                        <div class="resp-arrow"><span style="font-family: Inter Semibold;">→</span></div>
+                    </div>
+                </div>
             </a>
-            <h1 class="project-title">Project Mammoth</h1>
-            <div class="project-description" style="color: #A6A6A6;">→ INTERACTIVE INSTALLATION</div>
-        </div>
 
-        <div id="project" class="hidden">
-            <a href="recess-mode-for-zoom.html">
-                <div class="project3"></div>
+            <!-- project 3 -->
+            <div>
+                <img src="img/resp-thumbnails/resp-vinna-thumbnail.png" height="350px" width="100%" style="display: block; object-fit: cover;">
+                <div class="resp-project-info">
+                    <div class="resp-project-name">Vinna</div>
+                    <div class="resp-arrow"><span style="font-family: Inter Semibold;">???</span></div>
+                </div>
+            </div>
+
+            <!-- project 4 -->
+            <a href="/rw-digital-website">
+                <div>
+                    <img src="img/resp-thumbnails/resp-rw-website-thumbnail.png" height="350px" width="100%" style="display: block; object-fit: cover;">
+                    <div class="resp-project-info">
+                        <div class="resp-project-name">rw digital.ca</div>
+                        <div class="resp-arrow"><span style="font-family: Inter Semibold;">→</span></div>
+                    </div>
+                </div>
             </a>
-            <h1 class="project-title">Recess Mode for Zoom</h1>
-            <div class="project-description" style="color: #A6A6A6;">→ UX/UI CASE STUDY</div>
-        </div>
 
-        <div id="project" class="hidden">
-            <a href="the-witchs-brew.html">
-                <div class="project2"></div>
+            <!-- project 5 -->
+            <a href="/muji-app">
+                <div>
+                    <img src="img/resp-thumbnails/resp-muji-thumbnail.png" height="350px" width="100%" style="display: block; object-fit: cover;">
+                    <div class="resp-project-info">
+                        <div class="resp-project-name">Muji App</div>
+                        <div class="resp-arrow"><span style="font-family: Inter Semibold;">→</span></div>
+                    </div>
+                </div>
             </a>
-            <h1 class="project-title">The Witch's Brew</h1>
-            <div class="project-description" style="color: #A6A6A6;">→ BRANDING</div>
-        </div>
 
-        <div id="project" class="hidden">
-            <a href="muji.html">
-                <div class="project5"></div>
+            <!-- project 6 -->
+            <div>
+                <img src="img/resp-thumbnails/resp-pm-thumbnail.png" height="350px" width="100%" style="display: block; object-fit: cover;">
+                <div class="resp-project-info">
+                    <div class="resp-project-name">Project Mammoth</div>
+                    <!-- <div class="resp-arrow"><span style="font-family: Inter Semibold;">→</span></div> -->
+                    <div class="resp-arrow"><span style="font-family: Inter Semibold;">???</span></div>
+                </div>
+            </div>
+
+            <!-- project 7 -->
+            <div>
+                <img src="img/resp-thumbnails/resp-rm-thumbnail.png" height="350px" width="100%" style="display: block; object-fit: cover;">
+                <div class="resp-project-info">
+                    <div class="resp-project-name">Recess Mode</div>
+                    <!-- <div class="resp-arrow"><span style="font-family: Inter Semibold;">→</span></div> -->
+                    <div class="resp-arrow"><span style="font-family: Inter Semibold;">???</span></div>
+                </div>
+            </div>
+
+            <!-- project 8 -->
+            <a href="/kelly-kirby-website">
+                <div>
+                    <img src="img/resp-thumbnails/resp-kelly-kirby-thumbnail.png" height="350px" width="100%" style="display: block; object-fit: cover;">
+                    <div class="resp-project-info">
+                        <div class="resp-project-name">kelly kirby.com</div>
+                        <div class="resp-arrow"><span style="font-family: Inter Semibold;">→</span></div>
+                    </div>
+                </div>
             </a>
-            <h1 class="project-title">Muji</h1>
-            <div class="project-description" style="color: #A6A6A6;">→ MOBILE UX/UI</div>
         </div>
 
-        <div id="project" class="hidden">
-            <div class="project6"></div>
-            <h1 class="project-title">VINNA</h1>
-            <div class="project-description" style="color: #A6A6A6;">→ COMING SOON!</div>
-        </div>
-    </div>
+        <!-- gallery -->
+        <div id="gallery-scroll-container">
 
-    <footer class="home-footer">
-        <div class="social-links">
-            <div class="social-link mail">
-                <a href="mailto:tanydourev@gmail.com?subject=Inquiry%20From%20Portfolio">
-                    <i class="fa-solid fa-paper-plane"></i>
+            <!-- project 1 -->
+            <section class="panel">
+                <div class="scroll-project-container">
+                    <a href="/rw-digital-socials">
+                        <div class="scroll-project-title">RW Digital Socials
+                            <span style="color: #FFF; font-family: Inter Semibold; font-size: 14.5px; text-transform: uppercase; letter-spacing: 2px; display: block;">Social Media Marketing / Graphic Design</span>
+                        </div>
+                    </a>
+                    <img src="img/rw-thumbnail.png" style="height: 100%; object-fit: cover;">
+                </div>
+            </section>
+
+            <!-- project 2 -->
+            <section class="panel">
+                <div class="scroll-project-container">
+                    <a href="/the-witchs-brew">
+                        <div class="scroll-project-title">The Witch's Brew
+                            <span style="color: #FFF; font-family: Inter Semibold; font-size: 14.5px; text-transform: uppercase; letter-spacing: 2px; display: block;">Brand Design / Packaging</span>
+                        </div>
+                    </a>
+                    <img src="img/twb-thumbnail.png" style="height: 100%; object-fit: cover;">
+                </div>
+            </section>
+
+            <!-- project 3 -->
+            <section class="panel">
+                <div class="scroll-project-container">
+                    <div class="scroll-project-title">Vinna
+                        <span style="color: #FFF; font-family: Inter Semibold; font-size: 14.5px; text-transform: uppercase; letter-spacing: 2px; display: block;">Coming Soon!</span>
+                    </div>
+                    <img src="img/vinna-thumbnail.png" style="height: 100%; object-fit: cover;">
+                </div>
+            </section>
+
+            <!-- project 4 -->
+            <section class="panel">
+                <div class="scroll-project-container">
+                    <a href="/rw-digital-website">
+                        <div class="scroll-project-title">rw digital.ca
+                            <span style="color: #FFF; font-family: Inter Semibold; font-size: 14.5px; text-transform: uppercase; letter-spacing: 2px; display: block;">Web Dev / Agency</span>
+                        </div>
+                    </a>
+                    <img src="img/rw-website-thumbnail.png" style="height: 100%; object-fit: cover;">
+                </div>
+            </section>
+
+            <!-- project 5 -->
+            <section class="panel">
+                <div class="scroll-project-container">
+                    <a href="/muji-app">
+                        <div class="scroll-project-title">Muji App
+                            <span style="color: #FFF; font-family: Inter Semibold; font-size: 14.5px; text-transform: uppercase; letter-spacing: 2px; display: block;">UX/UI Design / Case Study</span>
+                        </div>
+                    </a>
+                    <img src="img/muji-thumbnail.png" style="height: 100%; object-fit: cover;">
+                </div>
+            </section>
+
+            <!-- project 6 -->
+            <section class="panel">
+                <div class="scroll-project-container">
+                    <!-- <a href="project-mammoth"> -->
+                    <div class="scroll-project-title">Project Mammoth
+                        <!-- <span style="color: #FFF; font-family: Inter Semibold; font-size: 14.5px; text-transform: uppercase; letter-spacing: 2px; display: block;">Interaction Design / Installation</span> -->
+                        <span style="color: #FFF; font-family: Inter Semibold; font-size: 14.5px; text-transform: uppercase; letter-spacing: 2px; display: block;">Coming Soon!</span>
+                    </div>
+                    <!-- </a> -->
+                    <img src="img/pm-thumbnail.png" style="height: 100%; object-fit: cover;">
+                </div>
+            </section>
+
+            <!-- project 7 -->
+            <section class="panel">
+                <div class="scroll-project-container">
+                    <!-- <a href="recess-mode"> -->
+                    <div class="scroll-project-title">Recess Mode
+                        <!-- <span style="color: #FFF; font-family: Inter Semibold; font-size: 14.5px; text-transform: uppercase; letter-spacing: 2px; display: block;">UX/UI Design / Case Study</span> -->
+                        <span style="color: #FFF; font-family: Inter Semibold; font-size: 14.5px; text-transform: uppercase; letter-spacing: 2px; display: block;">Coming Soon!</span>
+                    </div>
+                    <!-- </a> -->
+                    <img src="img/rm-thumbnail.png" style="height: 100%; object-fit: cover;">
+                </div>
+            </section>
+
+            <!-- project 8 -->
+            <section class="panel">
+                <div class="scroll-project-container">
+                    <a href="/kelly-kirby-website">
+                        <div class="scroll-project-title">kelly kirby.com
+                            <span style="color: #FFF; font-family: Inter Semibold; font-size: 14.5px; text-transform: uppercase; letter-spacing: 2px; display: block;">Web Dev / Agency</span>
+                        </div>
+                    </a>
+                    <img src="img/kelly-kirby-thumbnail.png" style="height: 100%; object-fit: cover;">
+                </div>
+            </section>
+
+        </div>
+
+        <!-- bottom links -->
+        <div id="bottom-content">
+            <div id="bottom-about" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                <a href="/about">
+                    <span style="font-family: Inter Extrabold;">→</span><br>About
+                </a>
+            </div>
+            <div id="bottom-connect" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                <a href="media/Resume_TanyDourev.pdf">
+                    <span style="font-family: Inter Extrabold;">←</span><br>CV
                 </a>
             </div>
 
-            <div class="social-link linkedin">
-                <a href="https://www.linkedin.com/in/tanydourev">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-            </div>
-
-            <div class="social-link instagram">
-                <a href="https://www.instagram.com/tanydourev">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
-
-            <div class="social-link github">
-                <a href="https://www.github.com/tanydourev">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </div>
+            <div class="copyright">© Tany Dourev, 2024.</div>
         </div>
-
-        <div id="copyrights">
-            <div class="copyright1">© TANY DOUREV, 2024 ☆ミ</div>
-        </div>
-    </footer>
+    </container>
 
     <!-- scripts -->
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-
     <script src="scripts/scripts.js"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // regular fade-in
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                } else {
-                    entry.target.classList.remove('remove');
-                }
-            });
+        AOS.init({
+            offset: 20,
         });
+    </script>
 
-        const hiddenElements = document.querySelectorAll('.hidden');
-        hiddenElements.forEach((el) => observer.observe(el));
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script>
+        const lenis = new Lenis()
 
-        // tooltips for socials
-        tippy('.mail', {
-            content: 'EMAIL',
-            placement: 'bottom',
-            arrow: true,
-        });
+        lenis.on('scroll', (e) => {
+            console.log(e)
+        })
 
-        tippy('.linkedin', {
-            content: 'LINKEDIN',
-            placement: 'bottom',
-            arrow: true,
-        });
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
 
-        tippy('.instagram', {
-            content: 'INSTAGRAM',
-            placement: 'bottom',
-            arrow: true,
-        });
+        requestAnimationFrame(raf)
+    </script>
 
-        tippy('.github', {
-            content: 'GITHUB',
-            placement: 'bottom',
-            arrow: true,
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        let sections = gsap.utils.toArray(".panel");
+
+        gsap.to(sections, {
+            xPercent: -100 * (sections.length - 1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: "#gallery-scroll-container",
+                pin: true,
+                scrub: 1,
+                // snap: 1 / (sections.length - 1),
+                // base vertical scrolling on how wide the container is so it feels more natural.
+                end: "+=3500",
+            }
         });
     </script>
 </body>
