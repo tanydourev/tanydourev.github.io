@@ -312,6 +312,21 @@
         padding: 30px;
     }
 
+    /* ----- PROJECT MAMMOTH ----- */
+
+    .pm-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .pm-animals {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .environments {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     /* ----- ABOUT PAGE ----- */
 
     #about-content {
@@ -486,6 +501,17 @@
     .square-img {
         height: 400px;
         object-fit: cover;
+    }
+
+    /* ----- PROJECT MAMMOTH ----- */
+
+    .pm-cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .environments {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* ----- ABOUT PAGE ----- */
@@ -665,6 +691,17 @@
     .square-img {
         height: 400px;
         object-fit: cover;
+    }
+
+    /* ----- PROJECT MAMMOTH ----- */
+
+    .pm-cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .environments {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* ----- ABOUT PAGE ----- */
