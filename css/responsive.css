@@ -1,5 +1,15 @@
 /* large monitor */
 @media only screen and (min-width: 1600px) {
+
+    /* -----  HEADER ----- */
+    #header-title {
+        padding: 30px 500px 50px 50px;
+    }
+
+    #header-subtitle {
+        padding: 0 50px 150px 500px;
+    }
+
     /* ----- NAVIGATION ----- */
 
     .nav-link {
@@ -14,6 +24,16 @@
 
     #resp-home-content {
         display: none;
+    }
+
+    /* ----- BOTTOM CONTENT ----- */
+
+    #bottom-content {
+        padding: 100px 50px 30px 50px;
+    }
+
+    #bottom-subheading {
+        padding: 0 50px 150px 300px;
     }
 
     /* ----- IMAGES ----- */
@@ -43,16 +63,6 @@
 
     .muji-cards {
         padding-bottom: 30px;
-    }
-
-    /* ----- ABOUT PAGE ----- */
-
-    #about-content {
-        grid-template-columns: 25% auto;
-    }
-
-    .about-img {
-        height: 100%;
     }
 }
 
@@ -88,11 +98,24 @@
 
 /* small laptop */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* ----- HOME SOCIALS ----- */
+
+    .home-socials {
+        margin: 30px 20px 0 0 !important;
+        text-align: right;
+    }
+
     /* ----- HEADER ----- */
 
     #header-title {
-        width: 90%;
-        font-size: 150px;
+        padding: 80px 100px 80px 50px;
+        font-size: 100px;
+    }
+
+    #header-subtitle {
+        padding: 0 50px 150px 150px;
+        font-size: 50px;
+        line-height: 1.5em;
     }
 
     /* ----- NAVIGATION ----- */
@@ -107,14 +130,140 @@
 
     /* ----- RESPONSIVE HOMEPAGE CONTENT ----- */
 
-    .resp-project-info {
-        padding: 20px 50px;
+    .works-title {
+        margin: 50px 0 -30px -300px;
+        font-size: 150px;
+        overflow: hidden;
+    }
+
+    .project-1 {
+        height: 700px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-rw-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 50px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-2 {
+        height: 700px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-twb-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-3 {
+        height: 700px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-vinna-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-4 {
+        height: 700px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-rw-website-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-5 {
+        height: 700px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-muji-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-6 {
+        height: 700px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-pm-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-7 {
+        height: 700px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-rm-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+    }
+
+    .project-8 {
+        height: 700px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-kelly-kirby-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-1:hover,
+    .project-2:hover,
+    .project-3:hover,
+    .project-4:hover,
+    .project-5:hover,
+    .project-6:hover,
+    .project-7:hover,
+    .project-8:hover {
+        transform: translateX(-12px) translateY(-12px);
+        -webkit-box-shadow: 12px 12px 0px 0px #272030;
+        box-shadow: 12px 12px 0px 0px #272030;
+    }
+
+    .scroll-project-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px 50px 80px 50px;
     }
 
     /* ----- HOMEPAGE CONTENT ----- */
 
     #gallery-scroll-container {
         display: none;
+    }
+
+    /* ----- BOTTOM CONTENT -----*/
+
+    #bottom-content {
+        height: auto;
+        margin-top: 80px;
+        padding: 50px 50px 30px 50px;
+        background-color: #C79A99;
+    }
+
+    #bottom-heading {
+        height: auto;
+        padding: 80px 0;
+        font-family: Tan Memories;
+        font-size: 100px;
+        line-height: 1.3em;
+        text-align: left;
+        color: #3B0A0A;
+    }
+
+    #bottom-subheading {
+        height: auto;
+        padding: 0 0 100px 200px;
+        font-family: Tan Memories;
+        font-size: 50px;
     }
 
     /* ----- PROJECT PAGE ----- */
@@ -181,30 +330,152 @@
 
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* ----- HOME SOCIALS ----- */
+
+    .home-socials {
+        margin: 30px 20px 0 0 !important;
+        text-align: right;
+    }
+
     /* ----- HEADER ----- */
 
     #header-title {
-        width: 100%;
-        padding: 55px 20px 55px 20px;
-        font-size: 100px;
+        padding: 80px 100px 80px 50px;
+        font-size: 80px;
+    }
+
+    #header-subtitle {
+        padding: 0 50px 100px 90px;
+        font-size: 35px;
+        line-height: 1.5em;
+    }
+
+    .icon {
+        height: 25px;
     }
 
     /* ----- NAVIGATION ----- */
 
-    #navbar {
-        padding: 20px 20px;
-        grid-template-columns: 80% 20%;
-        font-size: 14.5px;
-        border-top: 1px solid #181818;
-    }
-
     .nav-link {
-        display: none;
+        display: inline-block;
     }
 
     .menu-nav-link {
-        display: block;
-        padding-inline: 0;
+        display: none;
+    }
+
+    /* ----- RESPONSIVE HOMEPAGE CONTENT ----- */
+
+    .works-title {
+        margin: 20px 0 -30px -300px;
+        font-size: 150px;
+        overflow: hidden;
+    }
+
+    .project-1 {
+        height: 600px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-rw-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 50px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-2 {
+        height: 600px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-twb-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-3 {
+        height: 600px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-vinna-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-4 {
+        height: 600px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-rw-website-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-5 {
+        height: 600px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-muji-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-6 {
+        height: 600px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-pm-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-7 {
+        height: 600px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-rm-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+    }
+
+    .project-8 {
+        height: 600px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-kelly-kirby-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-1:hover,
+    .project-2:hover,
+    .project-3:hover,
+    .project-4:hover,
+    .project-5:hover,
+    .project-6:hover,
+    .project-7:hover,
+    .project-8:hover {
+        transform: translateX(-12px) translateY(-12px);
+        -webkit-box-shadow: 12px 12px 0px 0px #272030;
+        box-shadow: 12px 12px 0px 0px #272030;
+    }
+
+    .scroll-project-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px 35px 50px 35px;
+    }
+
+    .scroll-project-title {
+        font-size: 28px;
+    }
+
+    .smaller-project-title {
+        line-height: 1.4em;
     }
 
     /* ----- HOMEPAGE CONTENT ----- */
@@ -213,27 +484,20 @@
         display: none;
     }
 
-    /* ----- BOTTOM CONTENT ----- */
+    /* ----- BOTTOM CONTENT -----*/
 
     #bottom-content {
-        width: 100%;
-        padding: 50px 50px 20px 50px;
+        padding: 50px 50px 30px 50px;
     }
 
-    #bottom-about {
+    #bottom-heading {
         font-size: 80px;
-        line-height: 1.1em;
+        padding: 80px 0;
     }
 
-    #bottom-connect {
-        padding-top: 30px;
-        font-size: 80px;
-        line-height: 1.1em;
-    }
-
-    .copyright {
-        padding-top: 80px;
-        text-align: center;
+    #bottom-subheading {
+        padding: 0 0 100px 150px;
+        font-size: 40px;
     }
 
     /* ----- PROJECT PAGE ----- */
@@ -357,30 +621,156 @@
         font-size: 16px;
     }
 
+    /* ----- HOME SOCIALS ----- */
+
+    .home-socials {
+        margin: 30px 20px 0 0 !important;
+        text-align: right;
+    }
+
     /* ----- HEADER ----- */
 
     #header-title {
-        width: 100%;
-        padding: 55px 20px 55px 10px;
-        font-size: 75px;
+        padding: 80px 15px 40px 15px;
+        font-size: 45px;
+        text-align: center;
     }
 
-    /* ----- NAVIGATION ----- */
-
-    #navbar {
-        padding: 20px 20px;
-        grid-template-columns: 80% 20%;
-        font-size: 14.5px;
-        border-top: 1px solid #181818;
+    #header-subtitle {
+        padding: 0 15px 50px 15px;
+        font-size: 25px;
+        line-height: 1.5em;
+        text-align: center;
     }
 
-    .nav-link {
-        display: none;
+    .icon {
+        height: 16px;
     }
 
-    .menu-nav-link {
-        display: block;
-        padding-inline: 0;
+    /* ----- RESPONSIVE HOMEPAGE CONTENT ----- */
+
+    .works-title {
+        margin: 0 0 -30px -50px;
+        font-size: 80px;
+        overflow: hidden;
+    }
+
+    .project-1 {
+        height: 400px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-rw-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 50px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-2 {
+        height: 400px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-twb-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-3 {
+        height: 400px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-vinna-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-4 {
+        height: 400px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-rw-website-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-5 {
+        height: 400px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-muji-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-6 {
+        height: 400px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-pm-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-7 {
+        height: 400px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-rm-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+    }
+
+    .project-8 {
+        height: 400px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-kelly-kirby-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-1:hover,
+    .project-2:hover,
+    .project-3:hover,
+    .project-4:hover,
+    .project-5:hover,
+    .project-6:hover,
+    .project-7:hover,
+    .project-8:hover {
+        transform: translateX(-12px) translateY(-12px);
+        -webkit-box-shadow: 12px 12px 0px 0px #272030;
+        box-shadow: 12px 12px 0px 0px #272030;
+    }
+
+    .scroll-project-info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px 20px 50px 20px;
+    }
+
+    .scroll-project-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .smaller-project-title {
+        font-size: 14px;
+        line-height: 1.4em;
+        text-align: center;
+    }
+
+    .project-tags {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .project-tag {
+        font-size: 13px;
     }
 
     /* ----- HOMEPAGE CONTENT ----- */
@@ -389,29 +779,27 @@
         display: none;
     }
 
-    /* ----- BOTTOM CONTENT ----- */
+    /* ----- BOTTOM CONTENT -----*/
 
     #bottom-content {
-        width: 100%;
-        padding: 50px 20px 20px 20px;
+        margin-top: 50px;
+        padding: 20px 20px 30px 20px;
     }
 
-    #bottom-about {
-        font-size: 70px;
-        line-height: 1.1em;
-        text-align: center;
+    #bottom-heading {
+        font-size: 40px;
+        padding: 80px 0 40px 0;
     }
 
-    #bottom-connect {
-        padding-top: 50px;
-        font-size: 70px;
-        line-height: 1.1em;
-        text-align: center;
+    #bottom-subheading {
+        padding: 0 0 80px 0;
+        font-size: 30px;
     }
 
-    .copyright {
-        padding-top: 80px;
-        text-align: center;
+    /* ----- HOMEPAGE CONTENT ----- */
+
+    #gallery-scroll-container {
+        display: none;
     }
 
     /* ----- PROJECT PAGE ----- */
@@ -544,12 +932,179 @@
         font-size: 16px;
     }
 
+    /* ----- HOME SOCIALS ----- */
+
+    .home-socials {
+        margin: 30px 20px 0 0 !important;
+        text-align: right;
+    }
+
     /* ----- HEADER ----- */
 
     #header-title {
-        width: 100%;
-        padding: 55px 20px 55px 10px;
-        font-size: 70px;
+        padding: 80px 15px 40px 15px;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    #header-subtitle {
+        padding: 0 15px 50px 15px;
+        font-size: 25px;
+        line-height: 1.5em;
+        text-align: center;
+    }
+
+    .icon {
+        height: 16px;
+    }
+
+    /* ----- RESPONSIVE HOMEPAGE CONTENT ----- */
+
+    .works-title {
+        margin: 0 0 -30px -50px;
+        font-size: 80px;
+        overflow: hidden;
+    }
+
+    .project-1 {
+        height: 400px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-rw-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 50px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-2 {
+        height: 400px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-twb-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-3 {
+        height: 400px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-vinna-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-4 {
+        height: 400px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-rw-website-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-5 {
+        height: 400px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-muji-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-6 {
+        height: 400px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-pm-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-7 {
+        height: 400px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-rm-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+    }
+
+    .project-8 {
+        height: 400px;
+        width: 92%;
+        background: url(../img/resp-thumbnails/resp-kelly-kirby-thumbnail.png) center center no-repeat;
+        background-size: cover;
+        margin: 30px auto 0 auto;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .project-1:hover,
+    .project-2:hover,
+    .project-3:hover,
+    .project-4:hover,
+    .project-5:hover,
+    .project-6:hover,
+    .project-7:hover,
+    .project-8:hover {
+        transform: translateX(-12px) translateY(-12px);
+        -webkit-box-shadow: 12px 12px 0px 0px #272030;
+        box-shadow: 12px 12px 0px 0px #272030;
+    }
+
+    .scroll-project-info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px 20px 50px 20px;
+    }
+
+    .scroll-project-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .smaller-project-title {
+        font-size: 14px;
+        line-height: 1.4em;
+        text-align: center;
+    }
+
+    .project-tags {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .project-tag {
+        font-size: 13px;
+    }
+
+    /* ----- HOMEPAGE CONTENT ----- */
+
+    #gallery-scroll-container {
+        display: none;
+    }
+
+    /* ----- BOTTOM CONTENT -----*/
+
+    #bottom-content {
+        margin-top: 50px;
+        padding: 20px 20px 30px 20px;
+    }
+
+    #bottom-heading {
+        font-size: 40px;
+        padding: 80px 0 40px 0;
+    }
+
+    #bottom-subheading {
+        padding: 0 0 80px 0;
+        font-size: 30px;
     }
 
     /* ----- NAVIGATION ----- */
@@ -574,31 +1129,6 @@
 
     #gallery-scroll-container {
         display: none;
-    }
-
-    /* ----- BOTTOM CONTENT ----- */
-
-    #bottom-content {
-        width: 100%;
-        padding: 50px 20px 20px 20px;
-    }
-
-    #bottom-about {
-        font-size: 60px;
-        line-height: 1.1em;
-        text-align: center;
-    }
-
-    #bottom-connect {
-        padding-top: 50px;
-        font-size: 60px;
-        line-height: 1.1em;
-        text-align: center;
-    }
-
-    .copyright {
-        padding-top: 80px;
-        text-align: center;
     }
 
     /* ----- PROJECT PAGE ----- */
@@ -681,7 +1211,7 @@
     }
 
     .fullscreen-img {
-        padding: 10px 20px 10px 20px;
+        padding: 5px 20px 5px 20px;
     }
 
     .inner-img {
