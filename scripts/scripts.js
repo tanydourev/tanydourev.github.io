@@ -18,6 +18,5 @@ function closeNav() {
 // preloader
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
-    document.getElementById("preloader").style.opacity = 0;
-    document.getElementById("container").style.opacity = 1;
+    document.getElementById("preloader").style.visibility = "hidden";
 })
