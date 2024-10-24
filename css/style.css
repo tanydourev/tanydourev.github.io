@@ -4,7 +4,6 @@
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: 1000;
     margin-top: -20px;
     display: grid;
     place-items: center;
@@ -149,11 +148,6 @@ hr {
 }
 
 /* ----- HEADER ----- */
-
-#container {
-    opacity: 0;
-    z-index: 100;
-}
 
 header {
     height: auto;
