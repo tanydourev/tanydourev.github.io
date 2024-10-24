@@ -1,3 +1,39 @@
+/* ----- PRELOADER ----- */
+
+#preloader {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    margin-top: -20px;
+    display: grid;
+    place-items: center;
+    background-color: #3B0A0A;
+    overflow-y: hidden;
+    scroll-behavior: none;
+}
+
+.preloader-icon {
+    margin-top: -30px;
+    animation-name: load;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
 /* ----- ESSENTIALS ----- */
 
 * {
@@ -8,7 +44,11 @@
 
 body {
     color: #181818;
-    background-color: #FFFAF6;
+    background-image: url(../img/texture.png);
+    background-position: 0 0;
+    background-size: 40vw;
+
+    background-color: #F5F2E6;
     font-family: Inter;
     overscroll-behavior: none;
     overflow-x: hidden;
@@ -25,11 +65,6 @@ body.fade-out {
 /* ----- FONTS ----- */
 
 @font-face {
-    font-family: Kilimanjaro;
-    src: url(../fonts/KilimanjaroSans-Regular.ttf);
-}
-
-@font-face {
     font-family: Inter;
     src: url(../fonts/Inter-Light.ttf);
 }
@@ -44,20 +79,25 @@ body.fade-out {
     src: url(../fonts/Inter-ExtraBold.ttf);
 }
 
+@font-face {
+    font-family: Tan Memories;
+    src: url(../fonts/TAN\ MEMORIES-Regular.otf);
+}
+
 /* ----- TAGS ----- */
 
 a {
-    color: #EA5555;
+    color: #C79A99;
     text-decoration: none;
     transition: 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #A5C3FF;
+    color: #3B0A0A;
 }
 
 a:visited {
-    color: #EA5555;
+    color: #C79A99;
 }
 
 p {
@@ -90,25 +130,73 @@ hr {
     opacity: 0.3;
 }
 
+/* ----- HOME SOCIALS ----- */
+
+.home-socials {
+    text-align: right;
+    margin: 20px 20px 0 0;
+}
+
+.home-social-icon {
+    display: inline-block;
+    padding-right: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.home-social-icon:hover {
+    transform: scale(1.1);
+}
+
 /* ----- HEADER ----- */
+
+#container {
+    z-index: 100;
+}
+
+header {
+    height: auto;
+}
 
 #header-title {
     height: auto;
-    width: 70%;
-    padding: 65px 0 80px 50px;
-    font-family: Kilimanjaro;
-    font-size: 160px;
-    text-transform: uppercase;
-    line-height: 0.9em;
+    padding: 30px 0 50px 50px;
+    font-family: Tan Memories;
+    font-size: 90px;
+    line-height: 1.2em;
+    color: #C79A99;
+}
+
+#header-subtitle {
+    height: auto;
+    padding: 0 50px 150px 350px;
+    font-family: Tan Memories;
+    font-size: 40px;
+    line-height: 1.3em;
+    text-align: right;
+    color: #272030;
+}
+
+.cherry {
+    font-family: Tan Memories;
+    font-style: italic;
+    color: #3B0A0A;
 }
 
 .blue {
-    color: #A5C3FF;
+    font-family: Tan Memories;
+    color: #272030;
 }
 
-.red {
-    color: #EA5555;
+.mauve {
+    font-family: Tan Memories;
+    font-style: italic;
+    color: #C79A99;
 }
+
+.icon {
+    height: 35px;
+}
+
 
 /* ----- NAVIGATION ----- */
 
@@ -119,7 +207,7 @@ hr {
     display: grid;
     grid-template-columns: 30% 70%;
     color: #FFF;
-    background-color: #181818;
+    background-color: #272030;
     font-family: Inter Semibold;
     font-size: 14.5px;
     text-transform: uppercase;
@@ -135,11 +223,11 @@ hr {
 }
 
 #nav-links a {
-    color: #FFF !important;
+    color: #F5F2E6 !important;
 }
 
 #nav-links a:hover {
-    color: #EA5555 !important;
+    color: #C79A99 !important;
 }
 
 .nav-link {
@@ -148,7 +236,12 @@ hr {
 }
 
 .active {
-    color: #A5C3FF;
+    color: #C79A99;
+}
+
+.nav-star-icon {
+    height: 12px;
+    vertical-align: middle;
 }
 
 .menu-nav-link {
@@ -163,7 +256,7 @@ hr {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #A5C3FF;
+    background-color: #C79A99;
     overflow-x: hidden;
     transition: 1s ease-in-out;
     z-index: 1000;
@@ -171,21 +264,20 @@ hr {
 
 .resp-link {
     display: block;
-    font-family: Kilimanjaro;
-    font-size: 75px;
-    text-transform: uppercase;
-    line-height: 0.9em;
+    font-family: Tan Memories;
+    font-size: 50px;
+    line-height: 1.4em;
     text-decoration: none;
-    text-align: right;
-    color: #FFF;
+    font-style: italic;
+    text-align: center;
+    color: #3B0A0A;
 
     transition: 0.3s ease-in-out;
     padding-bottom: 10px;
-
 }
 
 .resp-link a {
-    color: #FFF;
+    color: #3B0A0A;
     text-decoration: none;
 }
 
@@ -199,7 +291,7 @@ hr {
     top: 20px;
     right: 20px;
     font-size: 20px;
-    color: #FFF;
+    color: #3B0A0A;
 }
 
 /* ----- RESPONSIVE HOMEPAGE CONTENT ----- */
@@ -230,99 +322,115 @@ hr {
 
 /* ----- HOMEPAGE CONTENT ----- */
 
+.works-title {
+    margin: 0 0 -180px -190px;
+    padding: 80px 0 0 0;
+    font-family: Tan Memories;
+    font-size: 280px;
+    line-height: 1.3em;
+    font-style: italic;
+    color: #272030;
+}
+
 #gallery-scroll-container {
     overscroll-behavior: none;
     width: auto;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     flex-wrap: nowrap;
-    background-color: #181818;
+    padding: 0 0 0 60px;
+    gap: 50px;
 }
 
 #gallery-scroll-container section {
     display: flex;
     width: 100%;
+    margin-top: 50px;
 }
 
-.scroll-project {
-    height: 100%;
-    padding: 20px 30px;
+.scroll-project-image {
+    transition: 0.3s ease-in-out;
+}
+
+.scroll-project-image:hover {
+    transform: translateX(-12px) translateY(-12px);
+    -webkit-box-shadow: 12px 12px 0px 0px #272030;
+    box-shadow: 12px 12px 0px 0px #272030;
+}
+
+.scroll-project-info {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    background-color: #FFFAF6;
-    border-right: 1px solid #000;
-    border-left: 1px solid #000;
-
-    position: sticky;
-    left: 0;
-    z-index: 100;
-}
-
-.scroll-project-arrow {
-    color: #181818;
-    font-family: Inter Semibold;
-    font-size: 14.5px;
-    text-align: right;
-}
-
-.scroll-project-name {
-    color: #181818;
-    font-family: Inter Semibold;
-    font-size: 14.5px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    transform: rotateZ(180deg);
-}
-
-.scroll-project-container {
-    position: relative;
-    text-align: center;
-    transition: 0.5s ease-in-out;
-}
-
-.scroll-project-container:hover {
-    transform: scale(0.9);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
 .scroll-project-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: Kilimanjaro;
-    font-size: 90px;
+    padding: 15px 0 5px 0;
+    font-family: Tan Memories;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-align: left;
+    font-style: italic;
+    color: #272030;
+}
+
+.smaller-project-title {
+    font-family: Inter Semibold;
+    font-size: 14px;
+    text-align: left;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    line-height: 0.9em;
-    color: #FFF;
+    color: #272030;
+    opacity: 0.7;
+}
+
+.project-tags {
+    display: inline-block;
+    text-align: right;
+    margin-top: 25px;
+}
+
+.project-tag {
+    display: inline;
+    padding: 12px 15px;
+    font-family: Inter Semibold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #272030;
+    background-color: #FFF;
+    color: #272030;
 }
 
 /* ----- BOTTOM CONTENT ----- */
 
 #bottom-content {
     height: auto;
-    padding: 100px 50px 30px 50px;
-    background-color: #A5C3FF;
+    margin-top: 180px;
+    padding: 50px 50px 30px 50px;
+    background-color: #C79A99;
 }
 
-#bottom-about {
-    font-family: Kilimanjaro;
-    font-size: 160px;
-    text-transform: uppercase;
-    line-height: 0.9em;
-    color: #FFF;
-    text-align: right;
-}
-
-#bottom-connect {
-    font-family: Kilimanjaro;
-    font-size: 160px;
-    text-transform: uppercase;
-    line-height: 0.9em;
-    color: #FFF;
+#bottom-heading {
+    height: auto;
+    padding: 80px 400px 80px 50px;
+    font-family: Tan Memories;
+    font-size: 90px;
+    line-height: 1.3em;
     text-align: left;
+    color: #3B0A0A;
+}
+
+#bottom-subheading {
+    height: auto;
+    padding: 0 50px 100px 300px;
+    font-family: Tan Memories;
+    font-size: 40px;
+    line-height: 1.3em;
+    text-align: right;
+    color: #3B0A0A;
 }
 
 #bottom-content a {
@@ -332,7 +440,7 @@ hr {
 }
 
 #bottom-content a:hover {
-    color: #EA5555;
+    color: #3B0A0A;
 }
 
 .copyright {
@@ -341,45 +449,8 @@ hr {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-align: right;
-    color: #FFF;
-}
-
-/* ----- ABOUT PAGE ----- */
-
-#about-content {
-    display: grid;
-    grid-template-columns: 30% auto;
-    gap: 30px;
-}
-
-.about-img {
-    height: 100%;
-    width: 100%;
-    background: url(../img/headshot.png) center center no-repeat;
-    background-size: cover;
-    border-radius: 8px;
-}
-
-.about-text {
-    padding-top: 10px;
-}
-
-.about-skills {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    row-gap: 5px;
-}
-
-.social-icon {
-    display: inline-block;
-    padding-right: 10px;
-    transition: 0.3s ease-in-out;
-}
-
-.social-icon:hover {
-    transform: scale(1.1);
+    text-align: center;
+    color: #3B0A0A;
 }
 
 /* ----- IMAGES ----- */
@@ -413,7 +484,7 @@ hr {
 
 /* for fullscreen images */
 .fullscreen-img {
-    padding: 0 30px 20px 30px;
+    padding: 0 30px 5px 30px;
 }
 
 .img-big-gap {
@@ -456,7 +527,7 @@ hr {
 
 .section-title {
     padding: 15px 0;
-    color: #EA5555;
+    color: #C79A99;
     font-family: Inter Semibold;
     font-size: 14.5px;
     text-transform: uppercase;
@@ -572,3 +643,5 @@ hr {
     font-size: 15px;
     line-height: 1.4em;
 }
+
+/* ----- VINNA ----- */
