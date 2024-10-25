@@ -943,19 +943,23 @@
 
     #header-title {
         padding: 80px 15px 40px 15px;
-        font-size: 45px;
+        font-size: 40px;
         text-align: center;
     }
 
     #header-subtitle {
-        padding: 0 15px 50px 15px;
-        font-size: 25px;
-        line-height: 1.5em;
+        padding: 0 20px 50px 20px;
+        font-size: 20px;
+        line-height: 1.6em;
         text-align: center;
     }
 
     .icon {
-        height: 16px;
+        height: 12px;
+    }
+
+    .social-icon-img {
+        height: 26px;
     }
 
     /* ----- RESPONSIVE HOMEPAGE CONTENT ----- */
@@ -967,7 +971,7 @@
     }
 
     .project-1 {
-        height: 400px;
+        height: 350px;
         width: 92%;
         background: url(../img/resp-thumbnails/resp-rw-thumbnail.png) center center no-repeat;
         background-size: cover;
@@ -977,7 +981,7 @@
     }
 
     .project-2 {
-        height: 400px;
+        height: 350px;
         width: 92%;
         background: url(../img/resp-thumbnails/resp-twb-thumbnail.png) center center no-repeat;
         background-size: cover;
@@ -987,7 +991,7 @@
     }
 
     .project-3 {
-        height: 400px;
+        height: 350px;
         width: 92%;
         background: url(../img/resp-thumbnails/resp-vinna-thumbnail.png) center center no-repeat;
         background-size: cover;
@@ -997,7 +1001,7 @@
     }
 
     .project-4 {
-        height: 400px;
+        height: 350px;
         width: 92%;
         background: url(../img/resp-thumbnails/resp-rw-website-thumbnail.png) center center no-repeat;
         background-size: cover;
@@ -1007,7 +1011,7 @@
     }
 
     .project-5 {
-        height: 400px;
+        height: 350px;
         width: 92%;
         background: url(../img/resp-thumbnails/resp-muji-thumbnail.png) center center no-repeat;
         background-size: cover;
@@ -1017,7 +1021,7 @@
     }
 
     .project-6 {
-        height: 400px;
+        height: 350px;
         width: 92%;
         background: url(../img/resp-thumbnails/resp-pm-thumbnail.png) center center no-repeat;
         background-size: cover;
@@ -1027,7 +1031,7 @@
     }
 
     .project-7 {
-        height: 400px;
+        height: 350px;
         width: 92%;
         background: url(../img/resp-thumbnails/resp-rm-thumbnail.png) center center no-repeat;
         background-size: cover;
@@ -1036,7 +1040,7 @@
     }
 
     .project-8 {
-        height: 400px;
+        height: 350px;
         width: 92%;
         background: url(../img/resp-thumbnails/resp-kelly-kirby-thumbnail.png) center center no-repeat;
         background-size: cover;
@@ -1065,23 +1069,23 @@
     }
 
     .scroll-project-title {
-        font-size: 24px;
+        font-size: 22px;
         text-align: center;
     }
 
     .smaller-project-title {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.4em;
         text-align: center;
     }
 
     .project-tags {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     .project-tag {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     /* ----- HOMEPAGE CONTENT ----- */

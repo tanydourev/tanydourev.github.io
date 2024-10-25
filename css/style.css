@@ -111,6 +111,10 @@ hr {
     transform: scale(1.1);
 }
 
+.social-icon-img {
+    height: 35px;
+}
+
 /* ----- HEADER ----- */
 
 header {
