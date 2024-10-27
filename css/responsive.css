@@ -883,7 +883,7 @@
     }
 
     .fullscreen-img {
-        padding: 0 20px 5px 20px !important;
+        padding: 0 20px;
     }
 
     .inner-img {
@@ -1219,7 +1219,7 @@
     }
 
     .fullscreen-img {
-        padding: 5px 20px 5px 20px;
+        padding: 0 20px;
     }
 
     .inner-img {
