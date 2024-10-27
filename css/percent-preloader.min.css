@@ -18,8 +18,8 @@
     -moz-transition: all 1.5s ease-in-out;
     transition-duration: 1.5s;
     -webkit-transition-duration: 1.5s;
-    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-    -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 0.4);
+    -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 0.4);
     z-index: 99;
     transition-delay: 0.65s;
 }
@@ -46,33 +46,21 @@
     border-color: transparent #C79A99 transparent transparent;
 }
 
-.preloader:after {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    right: -200px;
-    top: 0;
-    border-style: solid;
-    border-width: 100vh 0 0 200px;
-    border-color: transparent transparent transparent #C79A99;
-}
-
 .preloader * {
     transition: all 0.7s ease;
     -webkit-transition: all 0.7s ease;
     -moz-transition: all 0.7s ease;
     transition-duration: 0.7s;
     -webkit-transition-duration: 0.7s;
-    transition-timing-function: ease-in-out;
-    -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1)
+    transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
 }
 
 .transition-overlay {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    right: calc(-100% - 200px);
+    right: 0;
     bottom: 0;
     background: #C79A99;
     transition: all .3s ease;
@@ -80,8 +68,8 @@
     -moz-transition: all .3s ease;
     transition-duration: .5s;
     -webkit-transition-duration: .5s;
-    transition-timing-function: ease-in-out;
-    -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
     visibility: hidden;
     z-index: 9999;
 }
@@ -95,6 +83,7 @@
     font-size: 30px;
     text-align: center;
     color: #F5F2E6;
+    opacity: 0.4;
     transition-delay: 0.1s;
 }
 
