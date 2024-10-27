@@ -8,10 +8,6 @@
 
 body {
     color: #181818;
-    background-image: url(../img/texture.png);
-    background-position: 0 0;
-    background-size: 40vw;
-
     background-color: #F5F2E6;
     font-family: Inter;
     overscroll-behavior: none;
@@ -93,6 +89,9 @@ hr {
     border: 0.5px solid #181818;
     opacity: 0.3;
 }
+
+/* ----- PRELOADER ----- */
+
 
 /* ----- HOME SOCIALS ----- */
 
@@ -448,7 +447,7 @@ header {
 
 /* for fullscreen images */
 .fullscreen-img {
-    padding: 0 30px 5px 30px;
+    padding: 0 30px;
 }
 
 .img-big-gap {
