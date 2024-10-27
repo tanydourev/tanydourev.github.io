@@ -18,8 +18,8 @@
     -moz-transition: all 1.5s ease-in-out;
     transition-duration: 1.5s;
     -webkit-transition-duration: 1.5s;
-    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 0.4);
-    -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 0.4);
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 0.8);
+    -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 0.8);
     z-index: 99;
     transition-delay: 0.65s;
 }
