@@ -3,6 +3,7 @@
  * @author JDM Digital - https://jdmdigital.co
  * Copyright (c) 2022
  */
+
 var counting = setInterval(function () {
 	var loader = document.getElementById("percentage");
 	var currval = parseInt(loader.innerHTML);
