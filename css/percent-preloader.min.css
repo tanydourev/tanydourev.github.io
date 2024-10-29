@@ -11,7 +11,7 @@
     margin: auto;
     width: 100vw;
     height: 100vh;
-    background: #C79A99;
+    background: #121219;
     opacity: 1;
     transition: all 1.5s ease-in-out;
     -webkit-transition: all 1.5s ease-in-out;
@@ -62,7 +62,7 @@
     position: fixed;
     right: 0;
     bottom: 0;
-    background: #C79A99;
+    background: #121219;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -82,7 +82,7 @@
     font-family: Tan Memories;
     font-size: 30px;
     text-align: center;
-    color: #F5F2E6;
+    color: #2C2C3C;
     opacity: 0.4;
     transition-delay: 0.1s;
 }
