@@ -118,6 +118,14 @@
         line-height: 1.5em;
     }
 
+    #arrow-down {
+        margin: -150px 0 0 80px;
+    }
+    
+    .arrow-down {
+        height: 270px;
+    }
+
     /* ----- NAVIGATION ----- */
 
     .nav-link {
@@ -243,26 +251,17 @@
     /* ----- BOTTOM CONTENT -----*/
 
     #bottom-content {
-        height: auto;
         margin-top: 80px;
         padding: 50px 50px 30px 50px;
-        background-color: #C79A99;
     }
 
     #bottom-heading {
-        height: auto;
         padding: 80px 0;
-        font-family: Tan Memories;
         font-size: 100px;
-        line-height: 1.3em;
-        text-align: left;
-        color: #3B0A0A;
     }
 
     #bottom-subheading {
-        height: auto;
         padding: 0 0 100px 200px;
-        font-family: Tan Memories;
         font-size: 50px;
     }
 
@@ -352,6 +351,14 @@
 
     .icon {
         height: 25px;
+    }
+
+    #arrow-down {
+        margin: -80px 0 0 50px;
+    }
+    
+    .arrow-down {
+        height: 200px;
     }
 
     /* ----- NAVIGATION ----- */
@@ -649,6 +656,10 @@
 
     .social-icon-img {
         height: 26px;
+    }
+
+    #arrow-down {
+        display: none;
     }
 
     /* ----- RESPONSIVE HOMEPAGE CONTENT ----- */
@@ -964,6 +975,10 @@
 
     .social-icon-img {
         height: 26px;
+    }
+
+    #arrow-down {
+        display: none;
     }
 
     /* ----- RESPONSIVE HOMEPAGE CONTENT ----- */
