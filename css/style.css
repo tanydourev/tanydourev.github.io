@@ -8,7 +8,7 @@
 
 body {
     color: #181818;
-    background-color: #F5F2E6;
+    background: linear-gradient(23deg, rgba(17, 17, 23, 1) 0%, rgba(23, 23, 37, 1) 100%);
     font-family: Inter;
     overscroll-behavior: none;
     overflow-x: hidden;
@@ -47,17 +47,18 @@ body.fade-out {
 /* ----- TAGS ----- */
 
 a {
-    color: #C79A99;
+    color: #27203095;
     text-decoration: none;
+    font-weight: 500;
     transition: 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #3B0A0A;
+    color: #2C2C3C;
 }
 
 a:visited {
-    color: #C79A99;
+    color: #2C2C3C;
 }
 
 p {
@@ -102,7 +103,10 @@ hr {
 
 .home-social-icon {
     display: inline-block;
-    padding-right: 10px;
+    margin-left: 5px;
+    padding: 5px 5px 0 5px;
+    border-radius: 5px;
+    background-color: #2C2C3C;
     transition: 0.3s ease-in-out;
 }
 
@@ -111,7 +115,7 @@ hr {
 }
 
 .social-icon-img {
-    height: 35px;
+    height: 30px;
 }
 
 /* ----- HEADER ----- */
@@ -122,42 +126,44 @@ header {
 
 #header-title {
     height: auto;
-    padding: 30px 0 50px 50px;
+    padding: 40px 0 50px 50px;
     font-family: Tan Memories;
     font-size: 90px;
     line-height: 1.2em;
-    color: #C79A99;
+    color: #CDF3F6;
 }
 
 #header-subtitle {
     height: auto;
-    padding: 0 50px 150px 350px;
+    padding: 0 50px 100px 350px;
     font-family: Tan Memories;
     font-size: 40px;
     line-height: 1.3em;
     text-align: right;
-    color: #272030;
+    color: #CDF3F6;
 }
 
-.cherry {
+.lilac {
     font-family: Tan Memories;
     font-style: italic;
-    color: #3B0A0A;
+    color: #D7DBF4;
 }
 
 .blue {
     font-family: Tan Memories;
-    color: #272030;
-}
-
-.mauve {
-    font-family: Tan Memories;
-    font-style: italic;
-    color: #C79A99;
+    color: #CDF3F6;
 }
 
 .icon {
     height: 35px;
+}
+
+#arrow-down {
+    margin: -120px 0 0 80px;
+}
+
+.arrow-down {
+    height: 270px;
 }
 
 
@@ -166,6 +172,7 @@ header {
 #navbar {
     height: auto;
     width: 100%;
+    margin-top: -1px;
     padding: 20px 50px;
     display: grid;
     grid-template-columns: 30% 70%;
@@ -190,7 +197,7 @@ header {
 }
 
 #nav-links a:hover {
-    color: #C79A99 !important;
+    color: #CDF3F6 !important;
 }
 
 .nav-link {
@@ -199,7 +206,7 @@ header {
 }
 
 .active {
-    color: #C79A99;
+    color: #D7DBF4;
 }
 
 .nav-star-icon {
@@ -219,7 +226,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #C79A99;
+    background-color: #121219;
     overflow-x: hidden;
     transition: 1s ease-in-out;
     z-index: 1000;
@@ -233,14 +240,14 @@ header {
     text-decoration: none;
     font-style: italic;
     text-align: center;
-    color: #3B0A0A;
+    color: #CDF3F6;
 
     transition: 0.3s ease-in-out;
     padding-bottom: 10px;
 }
 
 .resp-link a {
-    color: #3B0A0A;
+    color: #CDF3F6;
     text-decoration: none;
 }
 
@@ -254,7 +261,7 @@ header {
     top: 20px;
     right: 20px;
     font-size: 20px;
-    color: #3B0A0A;
+    color: #CDF3F6;
 }
 
 /* ----- RESPONSIVE HOMEPAGE CONTENT ----- */
@@ -292,7 +299,11 @@ header {
     font-size: 280px;
     line-height: 1.3em;
     font-style: italic;
-    color: #272030;
+    color: #98DBEE;
+
+    background: url(../img/gradient-kda.png);
+    background-clip: text;
+    color: rgb(0 0 0 / 1%);
 }
 
 #gallery-scroll-container {
@@ -317,8 +328,8 @@ header {
 
 .scroll-project-image:hover {
     transform: translateX(-12px) translateY(-12px);
-    -webkit-box-shadow: 12px 12px 0px 0px #272030;
-    box-shadow: 12px 12px 0px 0px #272030;
+    -webkit-box-shadow: 12px 12px 0px 0px #D7DBF4;
+    box-shadow: 12px 12px 0px 0px #D7DBF4;
 }
 
 .scroll-project-info {
@@ -334,7 +345,7 @@ header {
     letter-spacing: 1px;
     text-align: left;
     font-style: italic;
-    color: #272030;
+    color: #CDF3F6;
 }
 
 .smaller-project-title {
@@ -343,7 +354,7 @@ header {
     text-align: left;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #272030;
+    color: #CDF3F6;
     opacity: 0.7;
 }
 
@@ -362,9 +373,9 @@ header {
     font-size: 13px;
     text-align: center;
     border-radius: 50px;
-    border: 1px solid #272030;
-    background-color: #FFF;
-    color: #272030;
+    border: 1px solid #CDF3F6;
+    background-color: none;
+    color: #CDF3F6;
 }
 
 /* ----- BOTTOM CONTENT ----- */
@@ -373,17 +384,17 @@ header {
     height: auto;
     margin-top: 180px;
     padding: 50px 50px 30px 50px;
-    background-color: #C79A99;
+    background-color: #D7DBF4;
 }
 
 #bottom-heading {
     height: auto;
-    padding: 80px 400px 80px 50px;
+    padding: 80px 300px 80px 50px;
     font-family: Tan Memories;
     font-size: 90px;
     line-height: 1.3em;
     text-align: left;
-    color: #3B0A0A;
+    color: #121219;
 }
 
 #bottom-subheading {
@@ -393,7 +404,7 @@ header {
     font-size: 40px;
     line-height: 1.3em;
     text-align: right;
-    color: #3B0A0A;
+    color: #121219;
 }
 
 #bottom-content a {
@@ -403,7 +414,7 @@ header {
 }
 
 #bottom-content a:hover {
-    color: #3B0A0A;
+    color: #121219;
 }
 
 .copyright {
@@ -413,7 +424,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    color: #3B0A0A;
+    color: #121219;
 }
 
 /* ----- IMAGES ----- */
@@ -490,7 +501,7 @@ header {
 
 .section-title {
     padding: 15px 0;
-    color: #C79A99;
+    color: #2C2C3C;
     font-family: Inter Semibold;
     font-size: 14.5px;
     text-transform: uppercase;
