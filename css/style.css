@@ -81,7 +81,7 @@ li {
 blockquote {
     font-family: Inter Semibold;
     font-size: 26px;
-    line-height: 1.6em;
+    line-height: 1.4em;
 }
 
 hr {
@@ -130,7 +130,7 @@ header {
     font-family: Tan Memories;
     font-size: 90px;
     line-height: 1.2em;
-    color: #CDF3F6;
+    color: #C2EAFC;
 }
 
 #header-subtitle {
@@ -140,7 +140,7 @@ header {
     font-size: 40px;
     line-height: 1.3em;
     text-align: right;
-    color: #CDF3F6;
+    color: #C2EAFC;
 }
 
 .lilac {
@@ -151,7 +151,7 @@ header {
 
 .blue {
     font-family: Tan Memories;
-    color: #CDF3F6;
+    color: #C2EAFC;
 }
 
 .icon {
@@ -197,7 +197,7 @@ header {
 }
 
 #nav-links a:hover {
-    color: #CDF3F6 !important;
+    color: #C2EAFC !important;
 }
 
 .nav-link {
@@ -240,14 +240,14 @@ header {
     text-decoration: none;
     font-style: italic;
     text-align: center;
-    color: #CDF3F6;
+    color: #C2EAFC;
 
     transition: 0.3s ease-in-out;
     padding-bottom: 10px;
 }
 
 .resp-link a {
-    color: #CDF3F6;
+    color: #C2EAFC;
     text-decoration: none;
 }
 
@@ -261,7 +261,7 @@ header {
     top: 20px;
     right: 20px;
     font-size: 20px;
-    color: #CDF3F6;
+    color: #C2EAFC;
 }
 
 /* ----- RESPONSIVE HOMEPAGE CONTENT ----- */
@@ -328,8 +328,8 @@ header {
 
 .scroll-project-image:hover {
     transform: translateX(-12px) translateY(-12px);
-    -webkit-box-shadow: 12px 12px 0px 0px #D7DBF4;
-    box-shadow: 12px 12px 0px 0px #D7DBF4;
+    -webkit-box-shadow: 12px 12px 0px 0px #2C2C3C;
+    box-shadow: 12px 12px 0px 0px #2C2C3C;
 }
 
 .scroll-project-info {
@@ -345,7 +345,7 @@ header {
     letter-spacing: 1px;
     text-align: left;
     font-style: italic;
-    color: #CDF3F6;
+    color: #C2EAFC;
 }
 
 .smaller-project-title {
@@ -354,7 +354,7 @@ header {
     text-align: left;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #CDF3F6;
+    color: #C2EAFC;
     opacity: 0.7;
 }
 
@@ -373,9 +373,9 @@ header {
     font-size: 13px;
     text-align: center;
     border-radius: 50px;
-    border: 1px solid #CDF3F6;
+    border: 1px solid #C2EAFC;
     background-color: none;
-    color: #CDF3F6;
+    color: #C2EAFC;
 }
 
 /* ----- BOTTOM CONTENT ----- */
