@@ -232,8 +232,8 @@
     .project-7:hover,
     .project-8:hover {
         transform: translateX(-12px) translateY(-12px);
-        -webkit-box-shadow: 12px 12px 0px 0px #272030;
-        box-shadow: 12px 12px 0px 0px #272030;
+        -webkit-box-shadow: 12px 12px 0px 0px #2C2C3C;
+        box-shadow: 12px 12px 0px 0px #2C2C3C;
     }
 
     .scroll-project-info {
@@ -467,8 +467,8 @@
     .project-7:hover,
     .project-8:hover {
         transform: translateX(-12px) translateY(-12px);
-        -webkit-box-shadow: 12px 12px 0px 0px #272030;
-        box-shadow: 12px 12px 0px 0px #272030;
+        -webkit-box-shadow: 12px 12px 0px 0px #2C2C3C;
+        box-shadow: 12px 12px 0px 0px #2C2C3C;
     }
 
     .scroll-project-info {
@@ -758,8 +758,8 @@
     .project-7:hover,
     .project-8:hover {
         transform: translateX(-12px) translateY(-12px);
-        -webkit-box-shadow: 12px 12px 0px 0px #272030;
-        box-shadow: 12px 12px 0px 0px #272030;
+        -webkit-box-shadow: 12px 12px 0px 0px #2C2C3C;
+        box-shadow: 12px 12px 0px 0px #2C2C3C;
     }
 
     .scroll-project-info {
@@ -957,16 +957,16 @@
     /* ----- HEADER ----- */
 
     #header-title {
-        padding: 80px 15px 40px 15px;
+        padding: 60px 20px 40px 20px;
         font-size: 40px;
-        text-align: center;
+        text-align: left;
     }
 
     #header-subtitle {
         padding: 0 20px 50px 20px;
-        font-size: 20px;
+        font-size: 25px;
         line-height: 1.6em;
-        text-align: center;
+        text-align: left;
     }
 
     .icon {
@@ -1077,8 +1077,8 @@
     .project-7:hover,
     .project-8:hover {
         transform: translateX(-12px) translateY(-12px);
-        -webkit-box-shadow: 12px 12px 0px 0px #272030;
-        box-shadow: 12px 12px 0px 0px #272030;
+        -webkit-box-shadow: 12px 12px 0px 0px #2C2C3C;
+        box-shadow: 12px 12px 0px 0px #2C2C3C;
     }
 
     .scroll-project-info {
