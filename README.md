@@ -1,3 +1,3 @@
 # TANY DOUREV - PORTFOLIO
-Portfolio website to showcase work.<br>
-© Tany Dourev, 2023. All Rights Reserved.
+UX & Visual Designer based in Canada.<br>
+© Tany Dourev 2024. All Rights Reserved.
