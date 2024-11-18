@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------<br><br>
 
-Tany Dourev --- Design Portfolio<br>
+# Tany Dourev --- Design Portfolio<br>
 Lovingly coded by yours truly.
 <br><br>
 © Tany Dourev, 2024. All Rights Reserved.<br>
