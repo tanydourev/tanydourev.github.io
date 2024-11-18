@@ -1,4 +1,17 @@
-/* ----- ESSENTIALS ----- */
+/* ---------------------------------------------------------------------------------
+Tany Dourev — Design Portfolio
+Lovingly coded by yours truly.
+___   __  ___  ____  ___   __  __    __  __  
+(  ,\ /  \(  ,)(_  _)(  _) /  \(  )  (  )/  \ 
+ ) _/( () ))  \  )(   ) _)( () ))(__  )(( () )
+(_)   \__/(_)\_)(__) (_)   \__/(____)(__)\__/ 
+
+© Tany Dourev, 2024. All Rights Reserved.
+Do not re-post, re-produce or claim credit for the works posted on this website.
+Failure to respect content credit policies makes you a bad internet citizen :]
+--------------------------------------------------------------------------------- */
+
+/* ----- DEFAULT STYLING ----- */
 
 * {
     margin: 0;
@@ -7,226 +20,192 @@
 }
 
 body {
-    color: #181818;
-    background: linear-gradient(23deg, rgba(17, 17, 23, 1) 0%, rgba(23, 23, 37, 1) 100%);
-    font-family: Inter;
-    overscroll-behavior: none;
+    height: auto;
+    width: 100%;
+    color: #444;
+    background-color: #FAFAFA;
     overflow-x: hidden;
-
-    opacity: 1;
-    transition: 1s opacity;
 }
 
-body.fade-out {
-    opacity: 0;
-    transition: none;
+/* ----- TEXT SELECTOR ----- */
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: #FFF;
+    background: #644A7570;
+}
+
+::selection {
+    color: #FFF;
+    background: #644A7570;
+}
+
+/* ----- SCROLLBAR ----- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #FFFFFF10;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #644A7570;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #644A75;
+}
+
+/* ----- LINKS ----- */
+
+a {
+    color: #644A75;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #644A7570;
+}
+
+a:visited {
+    color: #644A75;
 }
 
 /* ----- FONTS ----- */
 
 @font-face {
-    font-family: Inter;
-    src: url(../fonts/Inter-Light.ttf);
+    font-family: Neue Montreal;
+    src: url(/fonts/NeueMontreal-Regular.otf);
 }
 
 @font-face {
-    font-family: Inter Semibold;
-    src: url(../fonts/Inter-SemiBold.ttf);
+    font-family: Neue Montreal Medium;
+    src: url(/fonts/NeueMontreal-Medium.otf);
 }
 
 @font-face {
-    font-family: Inter Extrabold;
-    src: url(../fonts/Inter-ExtraBold.ttf);
+    font-family: Neue Montreal Light;
+    src: url(/fonts/NeueMontreal-Light.otf);
 }
 
 @font-face {
-    font-family: Tan Memories;
-    src: url(../fonts/TAN\ MEMORIES-Regular.otf);
+    font-family: PP Editorial New;
+    src: url(/fonts/PPEditorialNew-Regular.otf);
 }
 
-/* ----- TAGS ----- */
-
-a {
-    color: #27203095;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s ease-in-out;
+@font-face {
+    font-family: PP Editorial New Italic;
+    src: url(/fonts/PPEditorialNew-Italic.otf);
 }
 
-a:hover {
-    color: #2C2C3C;
+@font-face {
+    font-family: Calling Code;
+    src: url(/fonts/CallingCode-Regular.otf);
 }
 
-a:visited {
-    color: #2C2C3C;
+/* ----- SPAN CLASSES ----- */
+
+.serif-italic {
+    font-family: PP Editorial New Italic;
+    color: #644A75;
 }
 
-p {
-    color: #181818;
-    font-family: Inter;
-    font-size: 17px;
+.purple-fill {
+    color: #FFF;
+    background-color: #644A75;
+    padding: 5px 10px;
+}
+
+.medium-bold {
+    font-family: Neue Montreal Medium;
+}
+
+.code {
+    font-family: Calling Code;
+    font-size: 15px;
+    line-height: 1.2em;
+}
+
+/* ----- TEXT CLASSES ----- */
+
+.caption {
+    font-family: Neue Montreal;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #999;
+}
+
+.quote {
+    font-family: PP Editorial New;
+    font-size: 30px;
     line-height: 1.5em;
+    color: #444;
 }
+
+/* ----- LISTS ----- */
 
 ul {
-    padding-inline-start: 20px;
+    padding-inline-start: 10px;
     padding-top: 10px;
-    list-style-type: square;
+    list-style-type: "⁕";
 }
 
 li {
     line-height: 1.5em;
+    text-align: left;
+    padding-left: 10px;
 }
 
-blockquote {
-    font-family: Inter Semibold;
-    font-size: 26px;
-    line-height: 1.4em;
+/* ----- CONTAINER ----- */
+
+#container {
+    margin: 60px 0 0 0;
 }
 
-hr {
-    width: 15%;
-    margin: 60px auto;
-    border: 0.5px solid #181818;
-    opacity: 0.3;
-}
+/* ----- TOP GRADIENT ----- */
 
-/* ----- PRELOADER ----- */
-
-
-/* ----- HOME SOCIALS ----- */
-
-.home-socials {
-    text-align: right;
-    margin: 20px 20px 0 0;
-}
-
-.home-social-icon {
-    display: inline-block;
-    margin-left: 5px;
-    padding: 5px 5px 0 5px;
-    border-radius: 5px;
-    background-color: #2C2C3C;
-    transition: 0.3s ease-in-out;
-}
-
-.home-social-icon:hover {
-    transform: scale(1.1);
-}
-
-.social-icon-img {
-    height: 30px;
+#top-gradient img {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* ----- HEADER ----- */
 
 header {
-    height: auto;
-}
-
-#header-title {
-    height: auto;
-    padding: 40px 0 50px 50px;
-    font-family: Tan Memories;
-    font-size: 90px;
-    line-height: 1.2em;
-    color: #C2EAFC;
-}
-
-#header-subtitle {
-    height: auto;
-    padding: 0 50px 100px 350px;
-    font-family: Tan Memories;
-    font-size: 40px;
-    line-height: 1.3em;
-    text-align: right;
-    color: #C2EAFC;
-}
-
-.lilac {
-    font-family: Tan Memories;
-    font-style: italic;
-    color: #D7DBF4;
-}
-
-.blue {
-    font-family: Tan Memories;
-    color: #C2EAFC;
-}
-
-.icon {
-    height: 35px;
-}
-
-#arrow-down {
-    margin: -120px 0 0 80px;
-}
-
-.arrow-down {
-    height: 270px;
-}
-
-
-/* ----- NAVIGATION ----- */
-
-#navbar {
-    height: auto;
-    width: 100%;
-    margin-top: -1px;
-    padding: 20px 50px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    color: #FFF;
-    background-color: #272030;
-    font-family: Inter Semibold;
-    font-size: 14.5px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-
-    position: sticky;
-    top: 0;
+    position: relative;
     z-index: 100;
 }
 
-#nav-links {
-    text-align: right;
+/* ----- NAVIGATION ----- */
+
+#navigation-links {
+    text-align: center;
 }
 
-#nav-links a {
-    color: #F5F2E6 !important;
-}
-
-#nav-links a:hover {
-    color: #C2EAFC !important;
-}
-
-.nav-link {
+.navigation-link {
+    font-family: Calling Code;
     display: inline-block;
-    padding-inline: 20px;
+    padding-inline: 30px;
+    text-transform: uppercase;
 }
 
 .active {
-    color: #D7DBF4;
-}
-
-.nav-star-icon {
-    height: 12px;
-    vertical-align: middle;
-}
-
-.menu-nav-link {
-    padding-inline: 20px;
+    color: #644A75;
 }
 
 /* ----- RESPONSIVE NAVIGATION ----- */
 
 .sidenav {
-    height: 100%;
+    height: 100dvh;
     width: 0;
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #121219;
+    background-color: #FAFAFA;
     overflow-x: hidden;
     transition: 1s ease-in-out;
     z-index: 1000;
@@ -234,21 +213,35 @@ header {
 
 .resp-link {
     display: block;
-    font-family: Tan Memories;
-    font-size: 50px;
-    line-height: 1.4em;
+    font-family: PP Editorial New Italic;
+    font-size: 40px;
+    line-height: 1.2em;
+    letter-spacing: 0.2px;
     text-decoration: none;
-    font-style: italic;
     text-align: center;
-    color: #C2EAFC;
+    color: #644A75;
 
     transition: 0.3s ease-in-out;
     padding-bottom: 10px;
 }
 
 .resp-link a {
-    color: #C2EAFC;
+    color: #644A75;
     text-decoration: none;
+}
+
+#open-button {
+    display: inline-block;
+    font-size: 30px;
+    color: #644A75;
+}
+
+#close-button {
+    position: absolute;
+    top: 28px;
+    right: 19px;
+    font-size: 35px;
+    color: #644A75;
 }
 
 #open-button:hover,
@@ -256,366 +249,644 @@ header {
     cursor: pointer;
 }
 
-#close-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 20px;
-    color: #C2EAFC;
+/* ----- INTRO TEXT ----- */
+
+#intro-text {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 80px;
+
+    position: relative;
+    z-index: 100;
 }
 
-/* ----- RESPONSIVE HOMEPAGE CONTENT ----- */
-
-.resp-project-info {
-    padding: 20px 20px;
-    display: grid;
-    grid-template-columns: 80% 20%;
-    background-color: #FFFAF6;
-    border-top: 1px solid #181818;
-    border-bottom: 1px solid #181818;
+.home-title {
+    font-family: Neue Montreal;
+    font-size: 38px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
 }
 
-.resp-project-name {
-    color: #181818;
-    font-family: Inter Semibold;
-    font-size: 14.5px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.home-subtitle {
+    margin-top: 40px;
+    font-family: Calling Code;
+    font-size: 16px;
+    line-height: 143%;
+    float: right;
+    color: #555;
 }
 
-.resp-arrow {
-    color: #181818;
-    font-family: Inter Semibold;
-    font-size: 14.5px;
-    text-align: right;
-}
-
-/* ----- HOMEPAGE CONTENT ----- */
-
-.works-title {
-    margin: 0 0 -180px -190px;
-    padding: 80px 0 0 0;
-    font-family: Tan Memories;
-    font-size: 280px;
-    line-height: 1.3em;
-    font-style: italic;
-    color: #98DBEE;
-
-    background: url(../img/gradient-kda.png);
-    background-clip: text;
-    color: rgb(0 0 0 / 1%);
-}
-
-#gallery-scroll-container {
-    overscroll-behavior: none;
-    width: auto;
-    height: 85vh;
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 0 0 0 60px;
-    gap: 50px;
-}
-
-#gallery-scroll-container section {
-    display: flex;
+#side-scroll {
+    position: fixed;
+    white-space: nowrap;
     width: 100%;
-    margin-top: 50px;
+    top: 50px;
+    left: 0px;
+    margin-bottom: 100px;
+    overflow-x: hidden;
+    font-family: PP Editorial New Italic;
+    font-size: 128px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #FFF;
+    text-align: center;
+
+    position: relative;
+    z-index: 100;
 }
 
-.scroll-project-image {
-    transition: 0.3s ease-in-out;
+/* ----- IMAGE GRIDS ----- */
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
 }
 
-.scroll-project-image:hover {
-    transform: translateX(-12px) translateY(-12px);
-    -webkit-box-shadow: 12px 12px 0px 0px #2C2C3C;
-    box-shadow: 12px 12px 0px 0px #2C2C3C;
-}
-
-.scroll-project-info {
+.grid-2,
+.project-grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
-.scroll-project-title {
-    padding: 15px 0 5px 0;
-    font-family: Tan Memories;
-    font-size: 25px;
-    letter-spacing: 1px;
-    text-align: left;
-    font-style: italic;
-    color: #C2EAFC;
+.grid-3,
+.project-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
-.smaller-project-title {
-    font-family: Inter Semibold;
-    font-size: 14px;
-    text-align: left;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #C2EAFC;
-    opacity: 0.7;
+.grid-4,
+.project-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* for image grids that are uneven split (ex. 60/40) */
+.grid-split {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 10px;
+}
+
+.grid-split img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* ----- PORTFOLIO GALLERY ----- */
+
+#project-gallery {
+    height: auto;
+    width: 78%;
+    margin: 0 auto;
+    padding-bottom: 120px;
+    position: relative;
+    z-index: 100;
+}
+
+.project::before {
+    content: '';
+    width: auto;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: linear-gradient(rgba(21, 21, 21, 0.2), rgba(21, 21, 21, 0.9));
+    border-radius: 15px;
+    z-index: 2;
 }
 
 .project-tags {
-    display: inline-block;
-    text-align: right;
-    margin-top: 25px;
+    position: relative;
+    top: 20px;
+    right: 20px;
+    float: right;
+    z-index: 3;
 }
 
 .project-tag {
-    display: inline;
-    padding: 12px 15px;
-    font-family: Inter Semibold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 13px;
-    text-align: center;
-    border-radius: 50px;
-    border: 1px solid #C2EAFC;
-    background-color: none;
-    color: #C2EAFC;
-}
-
-/* ----- BOTTOM CONTENT ----- */
-
-#bottom-content {
-    height: auto;
-    margin-top: 180px;
-    padding: 50px 50px 30px 50px;
-    background-color: #D7DBF4;
-}
-
-#bottom-heading {
-    height: auto;
-    padding: 80px 300px 80px 50px;
-    font-family: Tan Memories;
-    font-size: 90px;
-    line-height: 1.3em;
-    text-align: left;
-    color: #121219;
-}
-
-#bottom-subheading {
-    height: auto;
-    padding: 0 50px 100px 300px;
-    font-family: Tan Memories;
-    font-size: 40px;
-    line-height: 1.3em;
-    text-align: right;
-    color: #121219;
-}
-
-#bottom-content a {
+    font-family: Calling Code;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px 18px;
     color: #FFF;
-    text-decoration: none;
+    background-color: rgba(68, 68, 68, 0.8);
+    border: 2px solid #FFF;
+    border-radius: 50px;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.project-info {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    z-index: 3;
+}
+
+.project-title {
+    font-family: PP Editorial New;
+    font-size: 48px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #FFF;
+}
+
+.project-subtitle {
+    font-family: Neue Montreal Medium;
+    font-size: 16px;
+    line-height: 124%;
+    letter-spacing: 0.4px;
+    color: #FFF;
+    width: 500px;
+}
+
+/* ----- PROJECTS ----- */
+.project-1 {
+    background-image:
+        linear-gradient(to bottom, rgba(21, 21, 21, 0), rgba(21, 21, 21, 0.9)),
+        url(/img/vinna-thumbnail.webp);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
     transition: 0.3s ease-in-out;
 }
 
-#bottom-content a:hover {
-    color: #121219;
+.project-2 {
+    background-image:
+        linear-gradient(to bottom, rgba(21, 21, 21, 0), rgba(21, 21, 21, 0.9)),
+        url(/img/duolingo-thumbnail.webp);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    position: relative;
 }
 
-.copyright {
-    padding-top: 20px;
-    font-family: Inter Semibold;
-    font-size: 12px;
+.project-3 {
+    background-image:
+        linear-gradient(to bottom, rgba(21, 21, 21, 0), rgba(21, 21, 21, 0.9)),
+        url(/img/rw-digital-thumbnail.webp);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.project-4 {
+    background-image:
+        linear-gradient(to bottom, rgba(21, 21, 21, 0), rgba(21, 21, 21, 0.9)),
+        url(/img/muji-thumbnail.webp);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.project-5 {
+    background-image:
+        linear-gradient(to bottom, rgba(21, 21, 21, 0), rgba(21, 21, 21, 0.9)),
+        url(/img/project-mammoth-thumbnail.webp);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.project-6 {
+    background-image:
+        linear-gradient(to bottom, rgba(21, 21, 21, 0), rgba(21, 21, 21, 0.9)),
+        url(/img/the-witchs-brew-thumbnail.webp);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* ----- EXPERIENCE ----- */
+
+#experience {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    width: 78%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.experience-title {
+    font-family: Calling Code;
+    font-size: 20px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-    color: #121219;
+    color: #644A75;
 }
 
-/* ----- IMAGES ----- */
+.role {
+    font-family: Neue Montreal;
+    font-size: 20px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    padding-bottom: 5px;
+}
 
-/* split in 2 */
-.grid-2 {
+.details {
+    font-family: Neue Montreal;
+    font-size: 17px;
+    line-height: 143%;
+    padding-bottom: 10px;
+    color: #555;
+}
+
+.year {
+    font-family: Calling Code;
+    font-size: 14px;
+    line-height: 143%;
+    color: #A6A6A6;
+}
+
+/* ----- EXTRA PROJECTS ----- */
+
+#extra-projects {
+    width: 78%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.extra-projects-title {
+    font-family: PP Editorial New Italic;
+    font-size: 36px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding-bottom: 5px;
+    color: #644A75;
+}
+
+.extra-projects-subtitle {
+    font-family: Neue Montreal;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.extra-project {
+    background-image:
+        linear-gradient(to bottom, rgba(21, 21, 21, 0), rgba(21, 21, 21, 0.9)),
+        url(/img/cp2077-level-thumbnail.webp);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* ----- BOTTOM GRADIENT ----- */
+
+#bottom-gradient img {
+    display: block;
+    margin-top: -800px;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 100;
+}
+
+#footer-name {
+    font-family: PP Editorial New Italic;
+    font-size: 128px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#copyright {
+    font-family: Calling Code;
+    font-size: 14px;
+    line-height: 143%;
+    text-align: right;
+    padding-top: 70px;
+    color: #644A75;
+}
+
+/* ----- ABOUT ----- */
+
+#about-intro-text {
+    width: 70%;
+    margin: 0 auto;
+    padding: 80px 0 50px 0;
+
+    position: relative;
+    z-index: 100;
+}
+
+.about-title {
+    font-family: PP Editorial New Italic;
+    font-size: 64px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #644A75;
+}
+
+.about-text {
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.about-info {
+    font-family: Neue Montreal;
+    font-size: 17px;
+    line-height: 1.5em;
+    padding: 0 50px 10px 10px;
+    color: #555;
+}
+
+.about-image img {
+    width: 100%;
+    border: 2px solid #FFF;
+    border-radius: 15px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icon ion-icon {
+    font-size: 25px;
+}
+
+.social-icon:hover {
+    color: #644A7570;
+}
+
+#experience-about {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    margin: 0 auto;
+    padding: 80px 0 50px 0;
+
+    position: relative;
+    z-index: 100;
+}
+
+#education-about {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    margin: 0 auto;
+    padding: 0 0 50px 0;
+
+    position: relative;
+    z-index: 100;
+}
+
+#research {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 0 60px 0;
+
+    position: relative;
+    z-index: 100;
+}
+
+.research-about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    gap: 15px;
+    margin: 0 auto;
+    padding-top: 15px;
 }
 
-/* split in 3 */
-.grid-3 {
+.research-card {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    grid-template-columns: auto 75%;
+    padding: 20px;
+    background-color: #FFFFFF70;
+    border: 2px solid #F6F6F6;
+    border-radius: 15px;
 }
 
-/* split in 4 */
-.grid-4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+.research-card-image {
+    height: 100%;
 }
 
-/* inner "box" padding */
-.inner-img {
-    padding: 80px 120px;
-    gap: 20px;
+.research-card-text {
+    padding-left: 20px;
 }
 
-/* for fullscreen images */
-.fullscreen-img {
-    padding: 0 30px;
+.about-polaroids {
+    height: 750px;
 }
 
-.img-big-gap {
-    gap: 50px;
+/* ----- 404 ----- */
+
+#error-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.error-title {
+    font-family: PP Editorial New;
+    font-size: 64px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #644A75;
+}
+
+.error-text {
+    font-family: PP Editorial New Italic;
+    font-size: 24px;
+    line-height: 124%;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #444;
+}
+
+.error-code {
+    font-family: Calling Code;
+    font-size: 16px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #555;
+    padding-top: 15px;
 }
 
 /* ----- PROJECT PAGE ----- */
 
-#project-details {
-    height: auto;
-    width: 100%;
-    padding: 20px 50px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    color: #181818;
-    background-color: #FFFAF6;
-    font-family: Inter Semibold;
-    font-size: 14.5px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-top: 1px solid #181818;
-    border-bottom: 1px solid #181818;
-}
-
-#project-info {
-    text-align: right;
-}
-
-.info {
-    display: inline-block;
-    padding-inline: 20px;
-}
-
-#project-page-content {
-    height: 100%;
-    width: 65%;
+#project-intro-text {
+    width: 70%;
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 60px 0 50px 0;
+
+    position: relative;
+    z-index: 100;
+}
+
+.project-page-title {
+    font-family: PP Editorial New;
+    font-size: 64px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #644A75;
+}
+
+.project-page-subtitle {
+    font-family: PP Editorial New Italic;
+    font-size: 24px;
+    line-height: 124%;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #444;
+}
+
+.project-page-tags {
+    margin-top: 25px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.project-page-tag {
+    font-family: Calling Code;
+    display: inline-block;
+    padding-inline: 30px;
+    color: #555;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
 }
 
 .section-title {
-    padding: 15px 0;
-    color: #2C2C3C;
-    font-family: Inter Semibold;
-    font-size: 14.5px;
+    font-family: Neue Montreal Medium;
+    font-size: 18px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    color: #644A7570;
+
+    padding-bottom: 10px;
 }
 
-/* ----- RW DIGITAL ----- */
+.text {
+    font-family: Neue Montreal;
+    font-size: 17px;
+    line-height: 1.5em;
+    letter-spacing: 0.2px;
+    padding: 0 50px 10px 10px;
+    color: #555;
 
-.rw-posts {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    margin: 25px 0;
-}
-
-/* ----- RW WEBSITE ----- */
-
-#rw-gifs {
-    width: 100%;
+    width: 65%;
     margin: 0 auto;
-}
 
-/* ----- MUJI APP ----- */
-
-/* for text elements, NOT images */
-.inner {
-    padding: 0 20px 20px 20px;
-    gap: 20px;
-}
-
-.muji-share {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-    margin: 25px 0;
-}
-
-.caption {
-    font-size: 12px;
-    margin-top: -15px;
-    color: #181818;
-    opacity: 0.6;
-}
-
-.muji-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    row-gap: 35px;
-}
-
-.muji-card {
-    height: auto;
-    padding: 20px;
-    border: 1px solid #181818;
     position: relative;
+    z-index: 100;
 }
 
-.muji-card h5 {
-    font-family: Inter Semibold;
+.text a {
+    text-decoration: underline;
+}
+
+/* ----- WIP TAG ----- */
+
+.wip-tag {
+    font-family: Calling Code;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 18px;
+    color: #644A75;
+    background-color: #FFFFFF70;
+    border: 2px solid #FFF;
+    border-radius: 50px;
     font-size: 15px;
-    letter-spacing: 2px;
-    background-color: #FFFAF6;
-    width: 40%;
-    margin: -30px auto 15px auto;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    text-align: center;
+
+    position: relative;
+    z-index: 100;
+}
+
+/* ----- PROBLEM STATEMENTS ----- */
+
+.problem-statement {
+    padding: 20px;
+    background-color: #FFFFFF70;
+    border: 2px solid #F6F6F6;
+    border-radius: 15px;
+}
+
+.problem-title {
+    font-family: Calling Code;
+    font-size: 15px;
+    line-height: 1.2em;
+    padding-bottom: 8px;
+}
+
+.actual-problem {
+    font-family: PP Editorial New Italic;
+    font-size: 20px;
+    line-height: 1.4em;
+    color: #644A75;
+}
+
+/* ----- CARDS ----- */
+
+.card {
+    padding: 20px;
+    background-color: #FFFFFF70;
+    border: 2px solid #F6F6F6;
+    border-radius: 15px;
     text-align: center;
 }
 
-.muji-card p {
-    font-size: 16px;
-}
-
-/* ----- PROJECT MAMMOTH ----- */
-
-.pm-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    row-gap: 35px;
-}
-
-.pm-card {
-    height: auto;
-    display: grid;
-    place-items: center;
-    padding: 20px;
-    border: 1px solid #181818;
-}
-
-.pm-card img {
-    margin-bottom: 15px;
-}
-
-.pm-animals {
-    display: grid;
-    gap: 30px !important;
-    row-gap: 40px !important;
-    margin-top: 25px;
-}
-
-.pm-animal h4 {
-    padding: 15px 0 10px 0;
-    color: #181818;
-    font-family: Inter Semibold;
-    font-size: 14.5px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.pm-animal p {
-    color: #181818;
-    font-family: Inter;
-    font-size: 15px;
+.card-title {
+    font-family: PP Editorial New Italic;
+    font-size: 20px;
     line-height: 1.4em;
+    padding-bottom: 5px;
+    color: #644A75;
 }
 
-/* ----- VINNA ----- */
+.card-text {
+    font-family: Neue Montreal;
+    font-size: 16px;
+    line-height: 1.4em;
+    color: #555;
+}
