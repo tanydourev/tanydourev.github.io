@@ -1,0 +1,145 @@
+<!-- ---------------------------------------------------------------------------------
+Tany Dourev — Design Portfolio
+Lovingly coded by yours truly.
+___   __  ___  ____  ___   __  __    __  __  
+(  ,\ /  \(  ,)(_  _)(  _) /  \(  )  (  )/  \ 
+ ) _/( () ))  \  )(   ) _)( () ))(__  )(( () )
+(_)   \__/(_)\_)(__) (_)   \__/(____)(__)\__/ 
+
+© Tany Dourev, 2024. All Rights Reserved.
+Do not re-post, re-produce or claim credit for the works posted on this website.
+Failure to respect content credit policies makes you a bad internet citizen :]
+--------------------------------------------------------------------------------- -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CP2077 LEVEL DESIGN — Tany Dourev</title>
+    <meta name="description" content="Designing a cyberpsycho level in UE5 for CDPR’s Cyberpunk 2077.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- lenis smooth scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+
+    <!-- AOS transitions -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="/img/favicon/favicon.png">
+</head>
+
+<body>
+    <div id="container">
+        <div id="top-gradient">
+            <img src="img/backgrounds/top-gradient.webp" style="display: block; width: 100%; height: 110vh;">
+        </div>
+
+        <header>
+            <navigation>
+                <div id="navigation-links">
+                    <div class="navigation-link">☆ミ</div>
+                    <div class="navigation-link">
+                        <a href="/">Home</a>
+                    </div>
+                    <div class="navigation-link">
+                        <a href="/about">About</a>
+                    </div>
+                    <div class="navigation-link">
+                        <a href="media/Resume_TanyDourev">Resume</a>
+                    </div>
+                    <div id="open-button" class="sidenav-toggle" onclick="openNav()">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </div>
+                </div>
+            </navigation>
+        </header>
+
+        <div id="responsive-navigation" class="sidenav">
+            <ion-icon id="close-button" onclick="closeNav()" name="close-outline"></ion-icon>
+
+            <div id="responsive-links" style="padding: 200px 0 0 0;">
+
+                <div class="resp-link">⁕</div>
+
+                <div class="resp-link">
+                    <a href="/">home</a>
+                </div>
+
+                <div class="resp-link">
+                    <a href="/about">about</a>
+                </div>
+
+                <div class="resp-link">
+                    <a href="media/Resume_TanyDourev.pdf" target="_blank">resume</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="project">
+            <div id="project-intro-text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                <div class="project-page-title">CP2077 Level Design</div>
+
+                <div class="project-page-subtitle">Designing a cyberpsycho level in UE5 for CDPR’s Cyberpunk 2077.</div>
+
+                <div class="project-page-tags">
+                    <div class="project-page-tag">+ Level Design</div>
+                    <div class="project-page-tag">+ Unreal Engine 5</div>
+                    <div class="project-page-tag">+ 🔒 WIP</div>
+                </div>
+            </div>
+
+            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                The <span class="medium-bold">CP2077 Level Design</span> project is a venture into the process of designing levels for video games and making blockouts in Unreal Engine 5. The level is based on a prototype cyberpsycho level blockout originally created in Unity Engine for a university course; since re-visting the project in 2024, it has been overhauled and expanded to include game assets from CD Projekt Red's <i>Cyberpunk 2077</i> title.
+                <br><br>
+                <span class="medium-bold">Current Status:</span> Importing game assets into whitebox v2! ^-^
+            </div>
+
+            <div style="text-align: center;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                <div class="wip-tag">🔒 This project is still in progress. Nothing to share yet...</div>
+            </div>
+
+            <div>
+                <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 60px auto 0 auto; z-index: 100; position: relative;">
+
+                <footer style="display: block; padding-bottom: 20px;">
+                    <div id="copyright" style="text-align: center;">© Tany Dourev, 2024. All Rights Reserved.<br><span style="color: #644A7570;">+ Lovingly coded by yours truly.</span></div>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts/scripts.js" async defer></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 20,
+        });
+    </script>
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script>
+        const lenis = new Lenis()
+        lenis.on('scroll', (e) => {
+            console.log(e)
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
+</body>
+
+</html>

@@ -1,30 +1,43 @@
+<!-- ---------------------------------------------------------------------------------
+Tany Dourev — Design Portfolio
+Lovingly coded by yours truly.
+___   __  ___  ____  ___   __  __    __  __  
+(  ,\ /  \(  ,)(_  _)(  _) /  \(  )  (  )/  \ 
+ ) _/( () ))  \  )(   ) _)( () ))(__  )(( () )
+(_)   \__/(_)\_)(__) (_)   \__/(____)(__)\__/ 
+
+© Tany Dourev, 2024. All Rights Reserved.
+Do not re-post, re-produce or claim credit for the works posted on this website.
+Failure to respect content credit policies makes you a bad internet citizen :]
+--------------------------------------------------------------------------------- -->
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>The Witch's Brew — Tany Dourev</title>
-    <meta name="description" content="A playful and creative tea brand that draws from astrology and spirituality.">
+    <title>THE WITCH'S BREW — Tany Dourev</title>
+    <meta name="description" content="Combining the herbal goodness of tea with the power of the cosmos.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/media.css">
 
-    <!-- stylesheets -->
-    <script src="https://kit.fontawesome.com/42cd5d7a7f.js" crossorigin="anonymous"></script>
+    <!-- lenis smooth scroll -->
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
 
     <!-- AOS transitions -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- favicon -->
     <link rel="icon" href="/img/favicon/favicon.png">
 
     <style>
         video {
-
             width: 100% !important;
             object-fit: cover !important;
             align-content: start !important;
+            border-radius: 15px;
         }
 
         @media only screen and (max-width: 599px) {
@@ -53,192 +66,216 @@
 
         @media only screen and (min-width: 1200px) and (max-width: 1599px) {
             video {
-                height: 700px !important;
+                height: 100% !important;
             }
         }
 
         @media only screen and (min-width: 1600px) {
             video {
-                height: 800px !important;
+                height: 100% !important;
             }
         }
     </style>
-
-    <!-- stylesheets -->
-    <script src="https://kit.fontawesome.com/42cd5d7a7f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
-
-    <!-- AOS transitions -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <link rel="icon" href="/img/favicon/favicon.png">
 </head>
 
-<body style="background: #FFFAF6 !important;">
-    <container>
+<body>
+    <div id="container">
+        <div id="top-gradient">
+            <img src="img/backgrounds/top-gradient.webp" style="display: block; width: 100%; height: 110vh;">
+        </div>
 
-        <!-- header -->
-        <header style="background-color: #121219;">
-            <div id="header-title" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                <span class="blue">Works;</span><br><span class="lilac">The Witch's Brew.</span>
-            </div>
-        </header>
-
-        <!-- navigation -->
-        <navigation data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-            <div id="navbar">
-                <div id="name">Tany Dourev</div>
-                <div id="nav-links">
-                    <img class="nav-star-icon nav-link" src="img/star-2.svg">
-                    <a href="/">
-                        <div class="nav-link active">Works</div>
-                    </a>
-                    <a href="media/Resume_TanyDourev.pdf" target="_blank">
-                        <div class="nav-link">CV</div>
-                    </a>
-                    <div class="menu-nav-link">
-                        <i class="fa-solid fa-bars" onclick="openNav()"></i>
+        <header>
+            <navigation>
+                <div id="navigation-links">
+                    <div class="navigation-link">☆ミ</div>
+                    <div class="navigation-link">
+                        <a href="/">Home</a>
+                    </div>
+                    <div class="navigation-link">
+                        <a href="/about">About</a>
+                    </div>
+                    <div class="navigation-link">
+                        <a href="media/Resume_TanyDourev.pdf">Resume</a>
+                    </div>
+                    <div id="open-button" class="sidenav-toggle" onclick="openNav()">
+                        <ion-icon name="menu-outline"></ion-icon>
                     </div>
                 </div>
-            </div>
-        </navigation>
+            </navigation>
+        </header>
 
-        <!-- responsive links -->
         <div id="responsive-navigation" class="sidenav">
-            <i class="fa-solid fa-xmark" id="close-button" onclick="closeNav()"></i>
+            <ion-icon id="close-button" onclick="closeNav()" name="close-outline"></ion-icon>
 
-            <div id="responsive-links" style="padding: 300px 0 0 0;">
+            <div id="responsive-links" style="padding: 200px 0 0 0;">
+
+                <div class="resp-link">⁕</div>
 
                 <div class="resp-link">
-                    <a href="/">Works</a>
+                    <a href="/">home</a>
                 </div>
 
                 <div class="resp-link">
-                    <a href="media/Resume_TanyDourev.pdf" target="_blank">CV</a>
+                    <a href="/about">about</a>
+                </div>
+
+                <div class="resp-link">
+                    <a href="media/Resume_TanyDourev.pdf" target="_blank">resume</a>
                 </div>
             </div>
         </div>
 
-        <!-- page header -->
-        <div id="project-page-header" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-            <img src="img/twb-thumbnail.png" height="350px" width="100%" style="object-fit: cover; display: block;">
-        </div>
+        <div id="project">
+            <div id="project-intro-text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                <div class="project-page-title">The Witch's Brew</div>
 
-        <!-- project details -->
-        <div id="project-details" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800">
-            <div id="project-page-name">The Witch's Brew</div>
-            <div id="project-info">
-                <div class="info">2023</div>
-                <div class="info">Brand Design</div>
-                <div class="info">Packaging</div>
+                <div class="project-page-subtitle">Combining the herbal goodness of tea with the power of the cosmos.</div>
+
+                <div class="project-page-tags">
+                    <div class="project-page-tag">+ Branding</div>
+                    <div class="project-page-tag">+ Packaging Design</div>
+                </div>
             </div>
-        </div>
 
-        <div id="project-page-content">
+            <!-- summary -->
+            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                <span class="medium-bold">The Witch's Brew</span> is a playful and creative tea brand that draws from astrology and spirituality. Encouraging drinkers to harness the power of the cosmos, it infuses the herbal goodness of tea to inspire positive energy in one's life. The brand's sister line, the Zodiac Collection, is a set of twelve teas designed for each sign of the zodiac.
+            </div>
 
-            <!-- overview -->
-            <section data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800">
-                <div class="section-title">Overview</div>
-                <p class="text">The Witch's Brew is a playful and creative tea brand that draws from astrology and spirituality. Encouraging drinkers to harness the power of the cosmos, it infuses the herbal goodness of tea to inspire positive energy in one's life. The brand's sister line, the Zodiac Collection, is a set of twelve teas designed for each sign of the zodiac.</p>
-            </section>
+            <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 50px auto; z-index: 100; position: relative;">
 
-            <hr>
-
-            <!-- origins -->
-            <section data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800">
+            <!-- social media marketing -->
+            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 25px;">
                 <div class="section-title">Behind The Brand</div>
-                <p class="text">Creating a tea brand like The Witch's Brew presented a unique opportunity to explore packaging design and typography hierarchies for consumers. With a topic as ambiguous as astrology, I was challenged to create a visual style that not only expressed tea as a natural remedy, but represented the zodiac signs as types of tea. To solve this, I matched signs to their cardinal elements (earth, air, water, fire) to determine which category of tea would be suitable (ex.
-                    earth signs = green teas, fire signs = black teas).</p>
+                Creating a tea brand like The Witch's Brew presented a unique opportunity to explore packaging design and typography hierarchies for consumers. With a topic as ambiguous as astrology, I was challenged to create a visual style that not only expressed tea as a natural remedy, but represented the zodiac signs as types of tea. To solve this, I matched signs to their cardinal elements (earth, air, water, fire) to determine which category of tea would be suitable (ex. earth signs =
+                green teas, fire signs = black teas).
+                <br><br>
+                The brand is aimed at two generational demographics that research shows astrology is popular with: Gen Z and Millennials. I viewed The Witch's Brew as an extension of not only the growing astrology community, but of society's emphasis on self-care and healing from within — whether it be physically, mentally or emotionally. Astrology is shown to be a path to self-discovery for those who feel a strong connection to the universe as an explanation for events around them or in their
+                own lives.
+                <br><br>
+                <div class="problem-statement">
+                    <div class="problem-title">WHAT'S YOUR SIGN?</div>
+                    <div class="actual-problem">♑ Capricorn ⁕ ♒ Aquarius ⁕ ♓ Pisces ⁕ ♈ Taurus ⁕ ♉ Aries ⁕ ♊ Gemini ⁕ ♋ Cancer ⁕ ♌ Leo ⁕ ♍ Virgo ⁕ ♎ Libra ⁕ ♏ Scorpio ⁕ ♐ Sagittarius</div>
+                </div>
                 <br>
-                <p class="text">The brand is aimed at two generational demographics that research shows astrology is popular with: Gen Z and Millennials. I viewed The Witch's Brew as an extension of not only the growing astrology community, but of society's emphasis on self-care and healing from within — whether it be physically, mentally or emotionally. Astrology is shown to be a path to self-discovery for those who feel a strong connection to the universe as an explanation for events around
-                    them or in their own lives.</p>
-                <br>
-                <p class="text">And of course, who doesn't want a delicious tea made specially for them? Cheers! 🍵</p>
-            </section>
+                And of course, who doesn't want a delicious tea made specially for them? Cheers! 🍵
+
+                <div class="grid-1" style="margin-top: 25px;">
+                    <img src="img/the-witchs-brew/twb-1.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="project-grid-2" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
+                    <img src="img/the-witchs-brew/twb-5.webp" style="width: 100%; border-radius: 15px;">
+                    <img src="img/the-witchs-brew/twb-6.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="grid-1" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
+                    <img src="img/the-witchs-brew/twb-7.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="project-grid-2" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
+                    <img src="img/the-witchs-brew/twb-2.webp" style="width: 100%; border-radius: 15px;">
+                    <img src="img/the-witchs-brew/twb-3.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="grid-1" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
+                    <img src="img/the-witchs-brew/twb-4.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="grid-1" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
+                    <img src="img/the-witchs-brew/twb-10.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="project-grid-2" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
+                    <img src="img/the-witchs-brew/twb-11.webp" style="width: 100%; border-radius: 15px;">
+                    <img src="img/the-witchs-brew/twb-12.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="project-grid-3" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px; gap: 20px; width: 100%;">
+                    <img src="img/the-witchs-brew/ig-post-4.webp" style="width: 100%; border-radius: 15px;">
+                    <img src="img/the-witchs-brew/ig-post-5.webp" style="width: 100%; border-radius: 15px;">
+                    <img src="img/the-witchs-brew/ig-post-2.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="project-grid-2" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
+                    <img src="img/the-witchs-brew/twb-8.webp" style="width: 100%; border-radius: 15px;">
+                    <img src="img/the-witchs-brew/twb-9.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="grid-1" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
+                    <img src="img/the-witchs-brew/twb-15.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <!-- --- zodiac collection --- -->
+                <div class="project-grid-2" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
+                    <img src="img/the-witchs-brew/twb-16.webp" style="width: 100%; border-radius: 15px;">
+                    <video id="twb-video" autoplay loop>
+                        <source src="media/witchs-brew-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="grid-1" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
+                    <img src="img/the-witchs-brew/twb-18.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="grid-1" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
+                    <img src="img/the-witchs-brew/twb-19.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="grid-1" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
+                    <img src="img/the-witchs-brew/twb-20.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="grid-1" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
+                    <img src="img/the-witchs-brew/twb-21.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="grid-1" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
+                    <img src="img/the-witchs-brew/twb-17.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="project-grid-3" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px; gap: 20px; width: 100%;">
+                    <img src="img/the-witchs-brew/twb-poster-1.webp" style="width: 100%; border-radius: 15px;">
+                    <img src="img/the-witchs-brew/twb-poster-2.webp" style="width: 100%; border-radius: 15px;">
+                    <img src="img/the-witchs-brew/twb-poster-3.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="project-grid-2" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
+                    <img src="img/the-witchs-brew/twb-tote-bag.webp" style="width: 100%; border-radius: 15px; height: 100%; object-fit: cover;">
+                    <img src="img/the-witchs-brew/twb-buttons.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="grid-1" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
+                    <img src="img/the-witchs-brew/twb-22.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+            </div>
+
+            <div>
+                <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 60px auto 0 auto; z-index: 100; position: relative;">
+
+                <footer style="display: block; padding-bottom: 20px;">
+                    <div id="copyright" style="text-align: center;">© Tany Dourev, 2024. All Rights Reserved.<br><span style="color: #644A7570;">+ Lovingly coded by yours truly.</span></div>
+                </footer>
+            </div>
         </div>
 
-        <br>
+    </div>
 
-        <img src="img/the-witchs-brew/twb-1.webp" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800" class="fullscreen-img" style="width: 100%; margin: 5px 0; display: block;">
+    <script src="scripts/scripts.js" async defer></script>
 
-        <div class="grid-2 fullscreen-img" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800">
-            <img src="img/the-witchs-brew/twb-5.webp" style="width: 100%;">
-            <img src="img/the-witchs-brew/twb-6.webp" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-        <img src="img/the-witchs-brew/twb-7.webp" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800" class="fullscreen-img" style="width: 100%; margin: 5px 0; display: block;">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 20,
+        });
+    </script>
 
-        <div class="grid-2 fullscreen-img" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800">
-            <img src="img/the-witchs-brew/twb-2.webp" class="extra-inner-img" style="width: 100%;">
-            <img src="img/the-witchs-brew/twb-3.webp" style="width: 100%;">
-        </div>
-
-        <img src="img/the-witchs-brew/twb-4.webp" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800" class="fullscreen-img" style="width: 100%; margin: 5px 0; display: block;">
-
-        <img src="img/the-witchs-brew/twb-10.webp" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800" class="fullscreen-img" style="width: 100%; margin: 5px 0; display: block;">
-
-        <div class="grid-2 fullscreen-img" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800">
-            <img src="img/the-witchs-brew/twb-11.webp" style="width: 100%;">
-            <img src="img/the-witchs-brew/twb-12.webp" style="width: 100%;">
-        </div>
-
-        <div class="grid-3 inner-img img-big-gap" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800">
-            <img src="img/the-witchs-brew/ig-post-4.webp" style="width: 100%;">
-            <img src="img/the-witchs-brew/ig-post-5.webp" style="width: 100%;">
-            <img src="img/the-witchs-brew/ig-post-2.webp" style="width: 100%;">
-        </div>
-
-        <div class="grid-2 fullscreen-img" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800">
-            <img src="img/the-witchs-brew/twb-8.webp" style="width: 100%;">
-            <img src="img/the-witchs-brew/twb-9.webp" style="width: 100%;">
-        </div>
-
-        <img src="img/the-witchs-brew/twb-15.webp" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800" class="fullscreen-img" style="width: 100%; margin: 5px 0; display: block;">
-
-        <!-- --- zodiac collection --- -->
-        <div class="grid-2 fullscreen-img" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800">
-            <img class="square-img" src="img/the-witchs-brew/twb-16.webp" style="width: 100%;">
-            <video id="twb-video" autoplay loop>
-                <source src="media/witchs-brew-video.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <img src="img/the-witchs-brew/twb-18.webp" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800" class="fullscreen-img" style="width: 100%; margin: 5px 0; display: block;">
-
-        <img src="img/the-witchs-brew/twb-19.webp" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800" class="fullscreen-img" style="width: 100%; margin: 5px 0; display: block;">
-
-        <img src="img/the-witchs-brew/twb-20.webp" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800" class="fullscreen-img" style="width: 100%; margin: 5px 0; display: block;">
-
-        <img src="img/the-witchs-brew/twb-21.webp" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800" class="fullscreen-img" style="width: 100%; margin: 5px 0; display: block;">
-
-        <img src="img/the-witchs-brew/twb-17.webp" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800" class="fullscreen-img" style="width: 100%; margin: 5px 0; display: block;">
-
-        <div class="grid-3 inner-img img-big-gap" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800">
-            <img src="img/the-witchs-brew/twb-poster-1.webp" style="width: 100%;">
-            <img src="img/the-witchs-brew/twb-poster-2.webp" style="width: 100%;">
-            <img src="img/the-witchs-brew/twb-poster-3.webp" style="width: 100%;">
-        </div>
-
-        <div class="grid-2 fullscreen-img" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800">
-            <img class="square-img" src="img/the-witchs-brew/twb-tote-bag.webp" style="width: 100%;">
-            <img class="square-img" src="img/the-witchs-brew/twb-buttons.webp" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-
-        <img class="inner-img fullscreen-img" src="img/the-witchs-brew/twb-22.webp" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800" style="width: 100%; margin: 5px 0; display: block;">
-
-        <br><br>
-
-        <!-- copyright -->
-        <div id="bottom-content" style="padding: 10px 20px 25px 20px; margin-top: 0;">
-            <div class="copyright">© Tany Dourev, 2024.<br>(Crafted with love & patience)</div>
-        </div>
-    </container>
-
-    <script src="scripts/scripts.js"></script>
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script>
         const lenis = new Lenis()
-
         lenis.on('scroll', (e) => {
             console.log(e)
         })
@@ -249,13 +286,6 @@
         }
 
         requestAnimationFrame(raf)
-    </script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 20,
-        });
     </script>
 </body>
 
