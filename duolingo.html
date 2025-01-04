@@ -1,0 +1,445 @@
+<!-- ---------------------------------------------------------------------------------
+Tany Dourev — Design Portfolio
+Lovingly coded by yours truly.
+___   __  ___  ____  ___   __  __    __  __  
+(  ,\ /  \(  ,)(_  _)(  _) /  \(  )  (  )/  \ 
+ ) _/( () ))  \  )(   ) _)( () ))(__  )(( () )
+(_)   \__/(_)\_)(__) (_)   \__/(____)(__)\__/ 
+
+© Tany Dourev, 2024. All Rights Reserved.
+Do not re-post, re-produce or claim credit for the works posted on this website.
+Failure to respect content credit policies makes you a bad internet citizen :]
+--------------------------------------------------------------------------------- -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DUOLINGO — Tany Dourev</title>
+    <meta name="description" content="Creating engaging and research-supported user experiences for language learning.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- lenis smooth scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+
+    <!-- AOS transitions -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="/img/favicon/favicon.png">
+</head>
+
+<body>
+    <div id="container">
+        <div id="top-gradient">
+            <img src="img/backgrounds/top-gradient.webp" style="display: block; width: 100%; height: 110vh;">
+        </div>
+
+        <header>
+            <navigation>
+                <div id="navigation-links">
+                    <div class="navigation-link">☆ミ</div>
+                    <div class="navigation-link">
+                        <a href="/">Home</a>
+                    </div>
+                    <div class="navigation-link">
+                        <a href="/about">About</a>
+                    </div>
+                    <div class="navigation-link">
+                        <a href="media/Resume_TanyDourev.pdf">Resume</a>
+                    </div>
+                    <div id="open-button" class="sidenav-toggle" onclick="openNav()">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </div>
+                </div>
+            </navigation>
+        </header>
+
+        <div id="responsive-navigation" class="sidenav">
+            <ion-icon id="close-button" onclick="closeNav()" name="close-outline"></ion-icon>
+
+            <div id="responsive-links" style="padding: 200px 0 0 0;">
+
+                <div class="resp-link">⁕</div>
+
+                <div class="resp-link">
+                    <a href="/">home</a>
+                </div>
+
+                <div class="resp-link">
+                    <a href="/about">about</a>
+                </div>
+
+                <div class="resp-link">
+                    <a href="media/Resume_TanyDourev.pdf" target="_blank">resume</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="project">
+            <div id="project-intro-text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                <div class="project-page-title">Duolingo</div>
+
+                <div class="project-page-subtitle">Creating engaging and research-supported user experiences for language learning.</div>
+
+                <div class="project-page-tags">
+                    <div class="project-page-tag">+ Case Study</div>
+                    <div class="project-page-tag">+ UX/UI</div>
+                    <div class="project-page-tag">+ Product Design</div>
+                </div>
+            </div>
+
+            <!-- summary -->
+            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                As part of my Masters studies in UX and service design, I explored the process of improving the user experience of mobile-assisted language-learning (MALL) apps — specifically, examining the functionality of <span class="medium-bold">Duolingo</span> and its features. This case study introduces two new concepted features: <i>Duolingo Notes</i> and <i>Learning with Friends</i>. Supplemented by research on MALL apps, and supported by data derived from user interviews/testing, the
+                features provide an intuitive and fresh approach to learning languages through engaging methods.
+
+                <div class="grid-1" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 25px;">
+                    <img src="img/duolingo/duolingo-header.png" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="problem-statement" style="margin: 25px 0;">
+                    <div class="card-title" style="text-align: left; padding-bottom: 5px;">
+                        Case Study Contents:
+                    </div>
+
+                    <span class="code"><a href="#mall-101">+ MALL 101</a> — <span style="color: #A6A6A6;">Contextual information on language learning apps</span></span>
+                    <br>
+                    <span class="code"><a href="#connecting-with-users">+ Connecting with Users</a> — <span style="color: #A6A6A6;">Takeaways from user interviews</span></span>
+                    <br>
+                    <span class="code"><a href="#the-problem-statement">+ The Problem Statement</a> — <span style="color: #A6A6A6;">The issue addressed by this case study</span></span>
+                    <br>
+                    <span class="code"><a href="#prioritizing-changes">+ Prioritizing Changes</a> — <span style="color: #A6A6A6;">Identifying key touchpoints for re-design</span></span>
+                    <br>
+                    <span class="code"><a href="#duolingo-notes">+ Prototyping #1: Duolingo Notes</a> — <span style="color: #A6A6A6;">An integrated note-taking system for learning</span></span>
+                    <br>
+                    <span class="code"><a href="#learning-with-friends">+ Prototyping #2: Learning with Friends</a> — <span style="color: #A6A6A6;">An expanded system for learning with friends</span></span>
+                    <br>
+                    <span class="code"><a href="#figma-prototype">+ Figma Prototype</a> — <span style="color: #A6A6A6;">Exploring the new features **</span></span>
+                    <br>
+                    <span class="code"><a href="#visual-interface">+ Visual Interface</a> — <span style="color: #A6A6A6;">Replicating the Duolingo UI</span></span>
+                    <br>
+                    <span class="code"><a href="#user-testing">+ User Testing</a> — <span style="color: #A6A6A6;">Results of prototype testing with users</span></span>
+                    <br>
+                    <span class="code"><a href="#final-thoughts">+ Final Thoughts</a> — <span style="color: #A6A6A6;">A reflection on the process</span></span>
+                </div>
+
+                PDF version of the Duolingo case study:
+                <div style="text-align: left;">
+                    <div class="pdf-tag">
+                        <ion-icon name="cloud-download-outline" style="font-size: 20px; vertical-align: middle; padding-right: 5px;"></ion-icon> 
+                        <a href="media/Creating-Engaging-User-Experiences-Duolingo_Case-Study_Tany-Dourev">Download PDF version</a></div>
+                </div>
+            </div>
+
+            <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 50px auto; z-index: 100; position: relative;">
+
+            <!-- mall apps -->
+            <div id="mall-101" class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 25px;">
+                <div class="section-title">MALL 101</div>
+                Mobile-assisted language learning (or MALL for short) is a teaching method for language studies that integrates mobile technology (ex. phones, tablets, personal digital/AI assistants). While MALL apps allow users to learn at their own pace and brush up on skills without needing a classroom setting, linguistics researchers have noticed that designers are ignoring the basic fundamentals of language learning theory. Duolingo is no exception — the app strongly promotes itself as a
+                service that adheres to international learning standards for its courses, but it exhibits signs of the exact issues that are highlighted by researchers.
+                <br><br>
+                <span class="code">Key takeaways from research:</span>
+
+                <div class="project-grid-2" style="margin: 25px 0;">
+                    <div class="card">
+                        <div class="card-title" style="text-align: left; padding-bottom: 5px;">
+                            Vocabulary 📚
+                        </div>
+                        <div class="card-text" style="text-align: left;">
+                            Duolingo relies too much on teaching vocabulary in isolated contexts and doesn’t provide any information on how to apply the words/phrases in real-life contexts.
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-title" style="text-align: left; padding-bottom: 5px;">
+                            Error Assistance ⛔
+                        </div>
+                        <div class="card-text" style="text-align: left;">
+                            There is little to no instruction on grammar and the rules of the language, leading learners to develop their own understandings through trial/error.
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-title" style="text-align: left; padding-bottom: 5px;">
+                            Skill Matching 📈
+                        </div>
+                        <div class="card-text" style="text-align: left;">
+                            Many apps claim that their content is suitable for learners of all levels, however there is no evidence to support this statement.
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-title" style="text-align: left; padding-bottom: 5px;">
+                            Gamification 🎮
+                        </div>
+                        <div class="card-text" style="text-align: left;">
+                            Duolingo’s high level of gamification can be a strong motivator for consistency, however this technique doesn't always prove to be useful for all learners.
+                        </div>
+                    </div>
+                </div>
+
+                From here, the first problem statement was generated: <span class="medium-bold">How can we design MALL apps
+                    that allow users to learn languages through methods that are supported by linguistics research and engaging
+                    for long-term learning?</span>
+            </div>
+
+            <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 50px auto; z-index: 100; position: relative;">
+
+            <!-- interviews -->
+            <div id="connecting-with-users" class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 25px;">
+                <div class="section-title">Connecting with Users</div>
+                To better address the topic of Duolingo’s current user experience, I gathered feedback and opinions from a group of Duolingo users in the form of interviews. Four (4) participants agreed to be part of the study, providing information on their experiences and suggestions for improvement. Participants were selected using the criteria that they were using a MALL app to learn a language, with the common app being Duolingo.
+                <br><br>
+                The interviews revealed the following insights:
+
+                <ul style="margin: 0 0 15px 0; padding-inline-start: 20px;">
+                    <span class="medium-bold">
+                        <li>User unanimously agreed that the app doesn't provide explanations for mistakes and forced learners to make their own assumptions.</li>
+                        <li>A way to record lessons concepts and languages rules for future use was a commonly-mentioned idea for improvement, as it matched the learning style of several participants.</li>
+                        <li>Some users weren't as motivated by the current state of gamified elements (ex. leaderboards), but believed there to be potential for improvements that could encourage them to be more motivated.</li>
+                        <li>The app could benefit from more interactions with added friends, given the current state is highly lacking and renders the concept of having friends useless.</li>
+                    </span>
+                </ul>
+            </div>
+
+            <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 50px auto; z-index: 100; position: relative;">
+
+            <!-- problem statement -->
+            <div id="the-problem-statement" class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 50px;">
+                <div class="problem-statement">
+                    <div class="problem-title">THE NEW PROBLEM STATEMENT:</div>
+                    <div class="quote">How can we create <span class="serif-italic">engaging and research-supported</span> user experiences for Duolingo?</div>
+                    <div class="problem-title" style="margin-top: 20px;">WHY THE CHANGE?</div>
+                    <div class="problem-title" style="line-height: 143%; color: #644A75;">By addressing a smaller portion of the app, as opposed to trying to change everything, I could achieve a solution that focused on improving engagement through research-supported methods and was more feasible for a solo designer with my current timeline.</div>
+                </div>
+            </div>
+
+            <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 50px auto; z-index: 100; position: relative;">
+
+            <!-- features -->
+            <div id="prioritizing-changes" class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 25px;">
+                <div class="section-title">Prioritizing Changes</div>
+                Given the variety of issues noted by both Duolingo users and linguistics researchers, the next step was to identify and prioritize changes that could be made to the app's design. While I did have an interest in re-working lesson formats and learning content, I didn't have access to the databases and lesson structures used by Duolingo; this would require the assistance of a linguistics expert, which wouldn't be feasible for this project. However, it would be possible to develop
+                engaging features outside of the lessons to provide an improved user experience.
+
+                <div class="grid-1" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 25px;">
+                    <img src="img/duolingo/service-blueprint.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="caption">
+                    Designing a service blueprint for language learning apps to visualize the entire system's connections.
+                </div>
+
+                <div class="project-grid-2" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 25px;">
+                    <img src="img/duolingo/priority-matrix.webp" style="width: 100%; border-radius: 15px;">
+                    <div>
+                        <img src="img/duolingo/feature-changes.webp" style="width: 100%; border-radius: 15px;">
+                        <div class="caption">
+                            Identifying changes based on feedback from user interviews and current issues through a priority matrix.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 50px auto; z-index: 100; position: relative;">
+
+            <!-- in-app notes -->
+            <div id="duolingo-notes" class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 25px;">
+                <div class="section-title">Prototype #1: Duolingo Notes</div>
+                The integrated note-taking system, titled <span class="medium-bold">Duolingo Notes</span>, is the first of two features that I chose to implement as a solution to my revised problem statement and research. The feature is based on the concept of students writing their own notes to assist with learning, as note-taking is encouraged by every educational system and comes in various methods (ex. Cornell notes). Duolingo Notes uses the same visual style and interactions as a basic
+                notepad or notes app, as found on many phones. Tags can be added to categorize notes, completely user-controlled and definable according to their needs. Not only does a note-taking system better help users retain learning material, but also re-introduces habits that were present during their education.
+
+                <div class="grid-1" style="margin-top: 25px;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                    <img src="img/duolingo/dn-hfd.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="grid-1" style="margin-top: 10px;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                    <img src="img/duolingo/dn-figma-page.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="project-grid-2" style="margin-top: 10px;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                    <img src="img/duolingo/duo-notes.webp" style="width: 100%; border-radius: 15px;">
+                    <img src="img/duolingo/dn-icons.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <br><br>
+                <span class="code">User Flow:</span>
+
+                <div class="grid-1" style="margin-top: 10px;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                    <img src="img/duolingo/dn-userflow.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+            </div>
+
+            <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 50px auto; z-index: 100; position: relative;">
+
+            <!-- learning with friends -->
+            <div id="learning-with-friends" class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 25px;">
+                <div class="section-title">Prototype #2: Learning With Friends</div>
+                <span class="medium-bold">Learning with Friends</span> is the second feature for this case study, focusing on expanding the current system for using Duolingo with added friends. It was noted that although Duolingo allows you to add friends, there isn’t much to do with them aside from app-controlled challenges/quests and maintaining a streak; conversely, having no friends on the app means users miss out on collaborative learning experiences. With the expanded system, users can now
+                select custom challenges and invite their friends to participate; healthy competition and rivalry is encouraged through a friends-only leaderboard.
+
+                <div class="grid-1" style="margin: 25px 0;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                    <img src="img/duolingo/lwf-hfd.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                The feature also caters to users who don't have added friends, enabling the app's cast of characters to step forward as challenge/quest partners. The progress made by the app’s characters would be dependent on their personalities. For example, Zari is depicted as a studious person who is eager to learn; she is more likely to contribute more to a quest than someone like Junior, who is depicted as a young child and easily distracted by other interests.
+
+                <div class="grid-1" style="margin-top: 10px;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                    <img src="img/duolingo/duolingo-characters.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="project-grid-2" style="margin-top: 20px;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                    <img src="img/duolingo/learning-with-friends.webp" style="width: 100%; border-radius: 15px;">
+                    <img src="img/duolingo/lwf-icons.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="grid-1" style="margin-top: 10px;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                    <img src="img/duolingo/lwf-figma-page.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <br><br>
+                <span class="code">User Flow:</span>
+
+                <div class="grid-1" style="margin-top: 10px;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                    <img src="img/duolingo/lwf-userflow.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+            </div>
+
+            <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 50px auto; z-index: 100; position: relative;">
+
+            <!-- visual UI -->
+            <div id="figma-prototype" class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 25px;">
+                <div class="section-title">Figma Prototype</div>
+
+                <iframe style="margin-top: 10px; border-radius: 15px; border: none;" width="100%" height="700" src="https://embed.figma.com/design/zGFFAhLSxHv9WwreZtcBKX/Duolingo-Prototypes---Tany-Dourev?node-id=2001-9870&embed-host=share" allowfullscreen data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000"></iframe>
+            </div>
+
+            <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 50px auto; z-index: 100; position: relative;">
+
+            <!-- visual UI -->
+            <div id="visual-interface" class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 25px;">
+                <div class="section-title">Visual Interface</div>
+                Duolingo is a highly visual brand, relying on bright colours, rounded typography and shapes, cartoon-like characters and a sense of approachability that makes learning fun. Given I was designing the new features as an extension of what already exists, it was important to replicate the Duolingo interface as closely as possible. Although Duolingo's brand kit provided visual guidelines for its material, many interactive elements were designed by hand. Using the Developer Console, I
+                was able to find high-quality SVGs of icons and images within the code structures that were native to the Duolingo UI. Layout designs and placement of elements referenced screenshots of the app's Android version.
+
+                <div class="grid-1" style="margin-top: 25px;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                    <img src="img/duolingo/fonts.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="project-grid-2" style="margin-top: 10px;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                    <img src="img/duolingo/icons.webp" style="width: 100%; border-radius: 15px;">
+                    <img src="img/duolingo/moodboard.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="grid-1" style="margin-top: 10px;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                    <img src="img/duolingo/colours.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="grid-1" style="margin-top: 10px;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                    <img src="img/duolingo/duolingo-feature-compare.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="grid-1" style="margin-top: 10px;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                    <img src="img/duolingo/duolingo-console.webp" style="width: 100%; border-radius: 15px;">
+                </div>
+
+                <div class="caption" style="margin-bottom: 25px;">
+                    Gathering icons and imagery from the Duolingo web version.
+                </div>
+            </div>
+
+            <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 50px auto; z-index: 100; position: relative;">
+
+            <!-- user testing -->
+            <div id="user-testing" class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 25px;">
+                <div class="section-title">User Testing</div>
+                The prototypes for Duolingo Notes and Learning with Friends were tested by a group of users who had existing knowledge of Duolingo and language learning apps. Each tester was given a series of tasks to complete using a combined Figma prototype with both features. The ease of use and any difficulties experiences were evaluated using a testing rubric with a section for notes/feedback; testing was done both syncronously and asyncronously, depending on the availabilities of the
+                tester.
+
+                <div class="project-grid-2" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin: 25px 0;">
+                    <div>
+                        <span class="code">Duolingo Notes:</span>
+                        <img src="img/duolingo/dn-testing-rubric.webp" style="width: 100%; border-radius: 15px; margin-top: 10px;">
+                    </div>
+                    <img src="img/duolingo/dn-results.webp" style="width: 100%; border-radius: 15px; margin-top: 10px;">
+                </div>
+
+                <div class="project-grid-2" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin: 25px 0;">
+                    <div>
+                        <span class="code">Duolingo Notes:</span>
+                        <img src="img/duolingo/lwf-testing-rubric.webp" style="width: 100%; border-radius: 15px; margin-top: 10px;">
+                    </div>
+                    <img src="img/duolingo/lwf-results.webp" style="width: 100%; border-radius: 15px; margin-top: 10px;">
+                </div>
+
+                Across both prototypes, opinions were highly positive with testers expressing interest in a possible implementation of the new features. Testers experienced near to no difficulties with Duolingo Notes; the only suggestion provided was to change the text input area to a box instead of per line. Greater difficulties were noted when toggling between the modes in Learning with Friends; feedback suggested a change in the design of the toggle, which would assist in the ability to
+                visually recognize and associate the element with switching modes.
+
+                <div class="project-grid-2" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin: 25px 0;">
+                    <img src="img/duolingo/dn-changes.webp" style="width: 100%; border-radius: 15px;">
+                    <div>
+                        <img src="img/duolingo/lwf-changes.webp" style="width: 100%; border-radius: 15px;">
+                        <div class="caption">
+                            <span class="medium-bold">ABOVE:</span> Original vs. re-designed version of the toggle to switch between learning with friends and learning with the app's characters.
+                            <br><br>
+                            <span class="medium-bold">LEFT:</span> Original vs. re-designed text input areas for Duolingo Notes.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- final thoughts -->
+            <div id="final-thoughts" class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 25px;">
+                <div class="section-title">Final Thoughts</div>
+                Taking on the challenge to analyze Duolingo and language learning apps was one that I thoroughly enjoyed throughout the four-month span of this project. While my initial plans had been to improve on the learning content, I found myself more interested in suggesting improvements to features outside of the lessons that could still contribute to a more positive and engaging user experience. Through user feedback and testing, it was clear that learners view Duolingo as a strong asset
+                for learning languages; however, many feel that the app lacks a personalized touch and hinders their ability to customize their learning journeys. With the integrated notes system and more ways to learn with friends, the control is placed back into the users' hands; this was ultimately my bigger goal: <span class="medium-bold">to help learners grow a passion for learning languages in a way that is engaging, intuitive and fun.</span>
+                <br><br>
+                <span class="code">(Now, remember to do your daily Duolingo... or Duo will hunt you down!)</span>
+            </div>
+
+            <div>
+                <img src=" img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 60px auto 0 auto; z-index: 100; position: relative;">
+
+                <footer style="display: block; padding-bottom: 20px;">
+                    <div id="copyright" style="text-align: center;">© Tany Dourev, 2024. All Rights Reserved.<br><span style="color: #644A7570;">+ Lovingly coded by yours truly.</span></div>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts/scripts.js" async defer></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 20,
+        });
+    </script>
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script>
+        const lenis = new Lenis()
+        lenis.on('scroll', (e) => {
+            console.log(e)
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
+</body>
+
+</html>
