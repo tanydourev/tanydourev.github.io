@@ -206,7 +206,7 @@ a {
 }
 
 .section-title {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 14px;
     letter-spacing: 1px;
     color: #FFFFFF50;
@@ -218,7 +218,7 @@ a {
 }
 
 .design-challenge {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-family: SF Pro Bold;
     font-size: 22px;
     background: linear-gradient(90deg, #e9f7df 0%, #b0ee81 100%);
