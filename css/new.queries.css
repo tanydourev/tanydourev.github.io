@@ -1,0 +1,28 @@
+/* ----- LARGE MONITOR ----- */
+@media only screen and (min-width: 1600px) {
+
+    #navigation {
+        margin-bottom: 80px;
+    }
+
+    #home-content {
+        grid-template-columns: 30% 70%;
+    }
+
+    .big-texst {
+        font-size: 90px;
+    }
+
+    .project {
+        grid-template-columns: auto 15%;
+        margin-bottom: -30px;
+    }
+
+    #project-content {
+        height: 77dvh;
+        width: 84%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        padding-right: 30px;
+    }
+}
