@@ -6,7 +6,7 @@ ___   __  ___  ____  ___   __  __    __  __
  ) _/( () ))  \  )(   ) _)( () ))(__  )(( () )
 (_)   \__/(_)\_)(__) (_)   \__/(____)(__)\__/ 
 
-© Tany Dourev, 2024. All Rights Reserved.
+© Tany Dourev, 2025. All Rights Reserved.
 Do not re-post, re-produce or claim credit for the works posted on this website.
 Failure to respect content credit policies makes you a bad internet citizen :]
 --------------------------------------------------------------------------------- -->
@@ -17,17 +17,11 @@ Failure to respect content credit policies makes you a bad internet citizen :]
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tany Dourev — PORTFOLIO</title>
-    <meta name="description" content="👋🏻 Hi! I'm a UX & visual designer creating digital products and experiences with a focus on accessible and intuitive solutions.">
+    <title>Tany Dourev | UX & Visual Designer</title>
+    <meta name="description" content="Canada-based UX & visual designer crafting intuitive user experiences and human-centered designs that resonate.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-
-    <!-- lenis smooth scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
-
-    <!-- AOS transitions -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/new.style.css">
+    <link rel="stylesheet" href="css/new.queries.css">
 
     <!-- favicon -->
     <link rel="icon" href="/img/favicon/favicon.png">
@@ -35,245 +29,110 @@ Failure to respect content credit policies makes you a bad internet citizen :]
 
 <body>
     <div id="container">
-        <div id="top-gradient">
-            <img src="img/backgrounds/top-gradient.webp" style="display: block; width: 100%;">
-        </div>
+        <div id="navigation">
+            <div class="home-name">
+                <a href="index.html">tany.io</a>
+            </div>
 
-        <header>
-            <navigation>
-                <div id="navigation-links">
-                    <div class="navigation-link">☆ミ</div>
-                    <div class="navigation-link">
-                        <a href="/">Home</a>
-                    </div>
-                    <div class="navigation-link">
-                        <a href="/about">About</a>
-                    </div>
-                    <div class="navigation-link">
-                        <a href="media/Resume_TanyDourev.pdf">Resume</a>
-                    </div>
-                    <div id="open-button" class="sidenav-toggle" onclick="openNav()">
-                        <ion-icon name="menu-outline"></ion-icon>
-                    </div>
+            <div class="navigation-links">
+                <div class="link">
+                    <a href="about.html">about & cv ↗</a>
                 </div>
-            </navigation>
-        </header>
-
-        <div id="responsive-navigation" class="sidenav">
-            <ion-icon id="close-button" onclick="closeNav()" name="close-outline"></ion-icon>
-
-            <div id="responsive-links" style="padding: 200px 0 0 0;">
-
-                <div class="resp-link">⁕</div>
-
-                <div class="resp-link">
-                    <a href="/">home</a>
-                </div>
-
-                <div class="resp-link">
-                    <a href="/about">about</a>
-                </div>
-
-                <div class="resp-link">
-                    <a href="media/Resume_TanyDourev.pdf" target="_blank">resume</a>
-                </div>
+                <div class="link" style="color: #FFFFFF50;">research ↗</div>
             </div>
         </div>
 
-        <div id="intro-text">
-            <div class="home-title" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">👋🏻 I’m Tany, a <span class="serif-italic">UX & visual designer</span> creating digital products and experiences with a <span class="purple-fill">focus on accessible and intuitive solutions.</span>&nbsp;I’m currently leading graphics operations and client projects at <span class="serif-italic">RW Digital</span>; in my spare time, I moonlight as a community & marketing designer for <span
-                    class="serif-italic">WolfPack Games</span>.</div>
+        <div id="home-content">
+            <div id="profile">
+                <img src="img/headshot-2025.png" style="height: 75px; width: 75px;">
 
-            <div class="home-subtitle" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                + Cyberpunk enthusiast<br>
-                + Enjoys green tea & cheese<br>
-                + Ambient music & EDM
-            </div>
-        </div>
-
-        <div id="side-scroll" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">portfolio ⁕ portfolio ⁕ portfolio ⁕ portfolio ⁕ portfolio ⁕ portfolio</div>
-
-        <div id="project-gallery">
-
-            <div>
-                <a href="/duolingo">
-                    <div class="project-1 project" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                        <div class="project-tags">
-                            <div class="project-tag">+ Case Study</div>
-                            <div class="project-tag">+ UX/UI</div>
-                            <div class="project-tag">+ Product Design</div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-title">Duolingo ↗</div>
-                            <div class="project-subtitle">Creating engaging & research-supported user experiences.</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="grid-2">
-                <a href="/vinna">
-                    <div class="project-2" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                        <div class="project-tags">
-                            <div class="project-tag">+ Branding</div>
-                            <div class="project-tag">+ Product Design</div>
-                            <div class="project-tag">+ 🔒 WIP</div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-title">VINNA</div>
-                            <div class="project-subtitle">Bold. Sensual. Defiant. The classic rouge, re-imagined.</div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="/rw-digital">
-                    <div class="project-3" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                        <div class="project-tags">
-                            <div class="project-tag">+ Graphic Design</div>
-                            <div class="project-tag">+ Web Design</div>
-                            <div class="project-tag">+ Agency</div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-title">RW Digital ↗</div>
-                            <div class="project-subtitle">Empowering businesses with digital marketing.</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="grid-2">
-                <a href="/muji">
-                    <div class="project-4" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                        <div class="project-tags">
-                            <div class="project-tag">+ Case Study</div>
-                            <div class="project-tag">+ UX/UI</div>
-                            <div class="project-tag">+ Product Design</div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-title">Muji ↗</div>
-                            <div class="project-subtitle">Bringing together music lovers around the world to collaborate on daily theme-based playlists.</div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="/project-mammoth">
-                    <div class="project-5" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                        <div class="project-tags">
-                            <div class="project-tag">+ UX</div>
-                            <div class="project-tag">+ Installation</div>
-                            <div class="project-tag">+ 3D Design</div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-title">Project Mammoth ↗</div>
-                            <div class="project-subtitle">Raising awareness for marine biodiversity loss through hologram technology.</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div>
-                <a href="/the-witchs-brew">
-                    <div class="project-6" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                        <div class="project-tags">
-                            <div class="project-tag">+ Branding</div>
-                            <div class="project-tag">+ Packaging Design</div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-title">The Witch's Brew ↗</div>
-                            <div class="project-subtitle">Combining the herbal goodness of tea with the power of the cosmos.</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <div id="experience">
-            <div class="experience-title" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">+ Experience</div>
-
-            <div class="experience-details">
-                <div style="margin-bottom: 20px;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                    <div class="role"><span class="medium-bold">Community & Marketing Designer</span> @ WolfPack Games</div>
-                    <div class="details">Collaborating with the Community & Marketing team to establish guidelines for the studio’s graphical assets, brand visual identity and marketing material for the studio’s external communication channels.</div>
-                    <div class="year">2024 - Present</div>
+                <div class="bio">Tany is a Canada-based UX & visual designer with an interest in bridging gaps between design disciplines. She crafts intuitive user experiences and human-centered designs that resonate.
+                    <br><br><span style="color: #FFFFFF50;">She also likes cheese — marble and brie, to be precise.</span>
                 </div>
 
-                <div style="margin-bottom: 20px;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                    <div class="role"><span class="medium-bold">Graphic Designer</span> @ RW Digital Marketing Agency</div>
-                    <div class="details">Developing engaging multimedia content for the agency’s social media platforms. Enhancing brand growth strategies via analytics and impactful design. Designing and launching responsive, brand-adherent websites for clients.</div>
-                    <div class="year">2021 - Present</div>
+                <p>Currently @ <a href="https://rwdigital.ca/">RW Digital</a> and <a href="https://www.wolfpackgamedesign.com/">WolfPack Game Design</a>.<br>
+                    Studying UX @ MTU.<br><br>
+                    <a href="https://www.linkedin.com/in/tanydourev/">LinkedIn ↗</a><br>
+                    <a href="https://www.instagram.com/tanydourev/">Instagram ↗</a><br>
+                    <a href="mailto:tanydourev@gmail.com">Connect ↗</a>
+                </p>
+            </div>
+
+            <div id="project-list">
+                <div class="project">
+                    <h1 class="big-text">
+                        <a href="duolingo.html">DUOLINGO</a><sup>↗</sup>
+                    </h1>
+                    <p>UX/UI<p>
                 </div>
 
-                <div style="margin-bottom: 20px;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                    <div class="role"><span class="medium-bold">Student Content Designer</span> @ Brock University</div>
-                    <div class="year">2021</div>
+                <div class="project">
+                    <h1 class="big-text">
+                        <a href="caosa.html">CAOSA</a><sup>↗</sup>
+                    </h1>
+                    <p>MASTERS / WIP<p>
                 </div>
 
-                <div data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                    <div class="role"><span class="medium-bold">Digital Archival Program Assistant</span> @ St. Catharines Museum & Welland Canals Centre</div>
-                    <div class="year">2020</div>
+                <div class="project">
+                    <h1 class="big-text">
+                        <a href="rw-digital.html">RW DIGITAL</a><sup>↗</sup>
+                    </h1>
+                    <p>GRAPHIC DES. / WEB</p>
+                </div>
+
+                <div class="project extra-space">
+                    <h1 class="big-text">
+                        <a href="project-mammoth.html">PROJECT MAMMOTH</a><sup>↗</sup>
+                    </h1>
+                    <p>IXD<p>
+                </div>
+
+                <div class="project">
+                    <h1 class="big-text">
+                        <a href="muji.html">MUJI</a><sup>↗</sup>
+                    </h1>
+                    <p>UX/UI<p>
+                </div>
+
+                <div class="project">
+                    <h1 class="big-text">
+                        <a href="vinna.html">VINNA</a><sup>↗</sup>
+                    </h1>
+                    <p>PRODUCT DES. / WIP<p>
+                </div>
+
+                <div class="project">
+                    <h1 class="big-text" style="color: #FFFFFF50 !important;">
+                        <a style="color: #FFFFFF50 !important;">MORE WORK</a><sup>↗</sup>
+                    </h1>
+                    <p>OTHER
+                    <p>
                 </div>
             </div>
         </div>
 
-        <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin-left: auto; margin-right: auto;">
-
-        <div style="background: url(img/backgrounds/bottom-gradient.webp) center center no-repeat; background-size: cover;">
-
-            <div id="extra-projects" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                <div class="extra-projects-title">In the meantime...</div>
-                <div class="extra-projects-subtitle">Things I'm working on for fun !</div>
-
-                <div>
-                    <a href="/cp2077-level-design">
-                        <div class="extra-project">
-                            <div class="project-tags">
-                                <div class="project-tag">+ Level Design</div>
-                                <div class="project-tag">+ Unreal Engine 5</div>
-                                <div class="project-tag">+ 🔒 WIP</div>
-                            </div>
-                            <div class="project-info">
-                                <div class="project-title">CP2077 Level Design ↗</div>
-                                <div class="project-subtitle">Designing a cyberpsycho level in UE5 for CDPR’s <i>Cyberpunk 2077</i>.</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <footer>
-                <div id="footer-name">tany dourev ⁕</div>
-                <div id="copyright">© Tany Dourev, 2024. All Rights Reserved.<br><span style="color: #644A7570;">+ Lovingly coded by yours truly.</span></div>
-            </footer>
+        <div id="copyright">
+            <p style="color: #FFFFFF50; font-size: 13px;">© Tany Dourev, 2025.<br>— v8.1 / ∞</p>
         </div>
-
     </div>
 
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <!-- scripts -->
     <script src="scripts/scripts.js" async defer></script>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- page fade -->
     <script>
-        AOS.init({
-            offset: 20,
+        document.body.classList.add('fade-out');
+
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
         });
     </script>
 
-    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-    <script>
-        const lenis = new Lenis()
-        lenis.on('scroll', (e) => {
-            console.log(e)
-        })
-
-        function raf(time) {
-            lenis.raf(time)
-            requestAnimationFrame(raf)
-        }
-
-        requestAnimationFrame(raf)
+    <!-- ion icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </script>
-</body>
 
 </html>
