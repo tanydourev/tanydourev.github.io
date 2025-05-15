@@ -18,15 +18,37 @@
             overflow-y: visible;
         }
 
+        hr {
+            width: 20%;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 0;
+        }
+
         @media only screen and (min-width: 1600px) {
             #home-content {
                 grid-template-columns: 30% 70%;
+            }
+
+            #about-information {
+                gap: 50px;
             }
         }
 
         @media only screen and (min-width: 1200px) and (max-width: 1599px) {
             #home-content {
                 grid-template-columns: 30% 70% !important;
+            }
+        }
+
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            #copyright {
+                position: inherit;
             }
         }
     </style>
@@ -62,52 +84,69 @@
 
             <div id="about-content">
                 <div id="about-information">
+
+                    <!-- column 1 -->
                     <section id="section">
                         <p class="page-text">WolfPack Game Design</p>
                         <p class="page-text" style="color: #FFFFFF50; font-size: 14px;">2025 • Web designer</p>
-                        <p class="page-text" style="color: #FFFFFF50;">Created a new website adhering to studio needs and responsive design guidelines.</p>
-                        <img src="img/more-work/wolfpack-1.webp" style="width: 100%; margin: 15px 0 20px 0; border-radius: 15px; object-fit: cover;">
+                        <p class="page-text" style="color: #FFFFFF50;">Created a new website to showcase studio members and World Soul development, adhering to responsive design guidelines.</p>
+                        <img src="img/more-work/wolfpack-header-v2" style="height: 300px; width: 100%; margin-top: 15px; border-radius: 15px; object-fit: cover;">
 
-                        <br><br>
+                        <hr>
+
+                        <p class="page-text">Silver Bones Tattoo</p>
+                        <p class="page-text" style="color: #FFFFFF50; font-size: 14px;">2023 • Web designer</p>
+                        <p class="page-text" style="color: #FFFFFF50;">Created a new website adhering to client needs and responsive design guidelines.</p>
+                        <img src="img/more-work/silver-bones-tattoo-1.webp" style="height: 300px; width: 100%; margin-top: 15px; border-radius: 15px; object-fit: cover;">
+
+                        <hr>
+
+                        <img src="img/more-work/chrome.webp" style="width: 100%; margin-bottom: 8px; border-radius: 15px; object-fit: cover;">
+                        <p class="page-text" style="color: #FFFFFF50; font-size: 14px;"><i>Retro-futurism, Soriyama-inspired.</i></p>
+
+                        <hr>
+                    </section>
+
+                    <!-- column 2 -->
+                    <section id="section">
+                        <img src="img/more-work/anthropocene.webp" style="width: 100%; margin-bottom: 8px; border-radius: 15px; object-fit: cover;">
+                        <p class="page-text" style="color: #FFFFFF50; font-size: 14px;"><i>"The eyes never lie, chica."</i></p>
+
+                        <hr>
 
                         <p class="page-text">U-Lock Mini Storage Ltd.</p>
                         <p class="page-text" style="color: #FFFFFF50; font-size: 14px;">2024 - 2025 • Brand & visual designer</p>
                         <p class="page-text" style="color: #FFFFFF50;">Developed a full set of branding guidelines for the company; created templates for social media posts and online communication channels.</p>
 
-                        <br><br>
+                        <hr>
 
-                        <p class="page-text">Silver Bones Tattoo</p>
-                        <p class="page-text" style="color: #FFFFFF50; font-size: 14px;">2023 • Web designer</p>
-                        <p class="page-text" style="color: #FFFFFF50;">Created a new website adhering to client needs and responsive design guidelines.</p>
-                        <img src="img/more-work/silver-bones-tattoo-2.webp" style="width: 100%; margin: 15px 0 20px 0; border-radius: 15px; object-fit: cover;">
-                    </section>
-
-                    <section id="section">
                         <p class="page-text">Kelly Kirby</p>
                         <p class="page-text" style="color: #FFFFFF50; font-size: 14px;">2024 • Web designer</p>
                         <p class="page-text" style="color: #FFFFFF50;">Created a new website adhering to client needs and responsive design guidelines.</p>
-                        <img src="img/more-work/kelly-kirby-2.webp" style="width: 100%; margin: 15px 0 20px 0; border-radius: 15px; object-fit: cover;">
+                        <img src="img/more-work/kelly-kirby-2.webp" style="height: 300px; width: 100%; margin-top: 15px; border-radius: 15px; object-fit: cover;">
 
-                        <br><br>
+                        <hr>
 
                         <p class="page-text">Brock University</p>
                         <p class="page-text" style="color: #FFFFFF50; font-size: 14px;">2021 • Visual designer</p>
                         <p class="page-text" style="color: #FFFFFF50;">Developed print and digital marketing material for the PhD in Interdisciplinary Humanities program.</p>
+
+                        <hr>
                     </section>
 
                     <!-- <section id="section">
                         <p class="section-title">PLAYGROUND</p>
                         <div class="masonry">
                             <div class="mItem">
-                                <img src="img/more-work/anthropocene.webp" style="width: 100%; margin: 15px 0 20px 0; border-radius: 15px;">
+                                <img src="img/more-work/anthropocene.webp" style="width: 100%; margin-top: 15px; border-radius: 15px;">
                             </div>
 
                             <div class="mItem">
-                                <img src="img/more-work/chrome.webp" style="width: 100%; margin: 15px 0 20px 0; border-radius: 15px;">
+                                <img src="img/more-work/chrome.webp" style="width: 100%; margin-top: 15px; border-radius: 15px;">
                             </div>
 
                             <div class="mItem">
-                                <img src="img/more-work/chrome.webp" style="width: 100%; margin: 15px 0 20px 0; border-radius: 15px;">
+                                <img src="img/more-work/chrome.webp" style="width: 100%; margin-top: 15px; border-radius: 15px;">
                             </div>
                         </div>
                     </section> -->

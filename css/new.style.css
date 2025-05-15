@@ -208,54 +208,6 @@ a:hover {
 
 /* -------------------------------------------------------------------------------- */
 
-/* ----- MORE WORK ----- */
-
-#project-gallery {
-    height: 75dvh;
-    width: 95%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    padding-right: 30px;
-}
-
-.mItem img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.masonry {
-    width: 100%;
-    column-count: 2;
-    column-gap: 20px;
-}
-
-.masonry .mItem {
-    width: 100%;
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-@media (max-width: 1199px) {
-    .masonry {
-        column-count: 3;
-    }
-}
-
-@media (max-width: 991px) {
-    .masonry {
-        column-count: 2;
-    }
-}
-
-@media (max-width: 767px) {
-    .masonry {
-        column-count: 2;
-    }
-}
-
-
-/* -------------------------------------------------------------------------------- */
-
 /* ----- PROJECT PAGES ----- */
 
 #page-content {
