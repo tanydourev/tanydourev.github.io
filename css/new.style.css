@@ -358,10 +358,11 @@ a:hover {
 /* ----- ABOUT ----- */
 
 #about-content {
-    display: grid;
-    grid-template-columns: 35% 65%;
-    gap: 60px;
+    height: 75dvh;
     width: 95%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding-right: 30px;
 }
 
 #about-information {
