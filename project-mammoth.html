@@ -6,7 +6,7 @@ ___   __  ___  ____  ___   __  __    __  __
  ) _/( () ))  \  )(   ) _)( () ))(__  )(( () )
 (_)   \__/(_)\_)(__) (_)   \__/(____)(__)\__/ 
 
-© Tany Dourev, 2024. All Rights Reserved.
+© Tany Dourev, 2025. All Rights Reserved.
 Do not re-post, re-produce or claim credit for the works posted on this website.
 Failure to respect content credit policies makes you a bad internet citizen :]
 --------------------------------------------------------------------------------- -->
@@ -17,381 +17,327 @@ Failure to respect content credit policies makes you a bad internet citizen :]
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PROJECT MAMMOTH — Tany Dourev</title>
+    <title>PROJECT MAMMOTH | Tany Dourev</title>
     <meta name="description" content="Raising awareness for marine biodiversity loss through hologram technology.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-
-    <!-- lenis smooth scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
-
-    <!-- AOS transitions -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/new.style.css">
+    <link rel="stylesheet" href="css/new.queries.css">
 
     <!-- favicon -->
     <link rel="icon" href="/img/favicon/favicon.png">
+
+    <style>
+        body {
+            overflow-y: visible;
+        }
+
+        .design-challenge {
+            margin-bottom: 10px;
+            font-family: SF Pro Bold;
+            font-size: 22px;
+            background: linear-gradient(90deg, #e3f5ff 0%, #99daff 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @media only screen and (min-width: 600px) and (max-width: 767px) {
+            .grid-4 {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .big-text {
+                line-height: 1em;
+            }
+        }
+
+        @media only screen and (max-width: 599px) {
+            .grid-4 {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .big-text {
+                line-height: 1em;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div id="container">
-        <div id="top-gradient">
-            <img src="img/backgrounds/top-gradient.webp" style="display: block; width: 100%; height: 110vh;">
-        </div>
+        <div id="navigation">
+            <div class="home-name">
+                <a href="/">tany.io</a>
+            </div>
 
-        <header>
-            <navigation>
-                <div id="navigation-links">
-                    <div class="navigation-link">☆ミ</div>
-                    <div class="navigation-link">
-                        <a href="/">Home</a>
-                    </div>
-                    <div class="navigation-link">
-                        <a href="/about">About</a>
-                    </div>
-                    <div class="navigation-link">
-                        <a href="media/Resume_TanyDourev.pdf">Resume</a>
-                    </div>
-                    <div id="open-button" class="sidenav-toggle" onclick="openNav()">
-                        <ion-icon name="menu-outline"></ion-icon>
-                    </div>
+            <div class="navigation-links">
+                <div class="link">
+                    <a href="/about">about & cv ↗</a>
                 </div>
-            </navigation>
-        </header>
-
-        <div id="responsive-navigation" class="sidenav">
-            <ion-icon id="close-button" onclick="closeNav()" name="close-outline"></ion-icon>
-
-            <div id="responsive-links" style="padding: 200px 0 0 0;">
-
-                <div class="resp-link">⁕</div>
-
-                <div class="resp-link">
-                    <a href="/">home</a>
-                </div>
-
-                <div class="resp-link">
-                    <a href="/about">about</a>
-                </div>
-
-                <div class="resp-link">
-                    <a href="media/Resume_TanyDourev.pdf" target="_blank">resume</a>
-                </div>
+                <div class="link" style="color: #FFFFFF50;">research ↗</div>
             </div>
         </div>
 
-        <div id="project">
-            <div id="project-intro-text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                <div class="project-page-title">Project Mammoth</div>
-
-                <div class="project-page-subtitle">Raising awareness for marine biodiversity loss through hologram technology.</div>
-
-                <div class="project-page-tags">
-                    <div class="project-page-tag">+ UX</div>
-                    <div class="project-page-tag">+ Installation</div>
-                    <div class="project-page-tag">+ 3D Design</div>
+        <div id="page-content">
+            <div id="project-info" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800">
+                <h1 class="big-text">PROJECT MAMMOTH<span style="color: #38B6FF;">*</span></h1>
+                <div class="bio">Raising awareness for marine biodiversity loss through hologram technology.</span>
                 </div>
+
+                <p style="line-height: 1.5em;">
+                    <b style="font-family: SF Pro Bold;">Role:</b> Project lead, 3D modeller<br>
+                    <b style="font-family: SF Pro Bold;">Year:</b> 2021 - 2022<br>
+                    <b style="font-family: SF Pro Bold;">Timeline:</b> 8 months<br>
+                </p>
             </div>
 
-            <!-- summary -->
-            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                <span class="medium-bold">Project Mammoth</span> is an interactive hologram installation designed by Brock University's student team during the 2021/22 term. Spanning eight months of production, it raises awareness for biodiversity loss and the impact of human activities on marine species. The installation combines 3D design, sound design and interactive programming to create a unique, educational experience.
-
-                <div class="project-grid-2" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 25px;">
-                    <img src="img/project-mammoth/project-mammoth-2.webp" style="width: 100%; border-radius: 15px; height: 100%; object-fit: cover;">
-                    <img src="img/project-mammoth/project-mammoth-3.webp" style="width: 100%; border-radius: 15px;">
+            <div id="project-content">
+                <div class="bio">Project Mammoth is an interactive hologram installation designed by Brock University's student team during the 2021/22 term. Spanning eight months of production, it raises awareness for biodiversity loss and the impact of human activities on marine species. The installation combines 3D design, sound design and interactive programming to create a unique, educational experience.
                 </div>
-            </div>
 
-            <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 50px auto; z-index: 100; position: relative;">
+                <div class="grid-2" style="margin-top: 20px;">
+                    <img src="img/project-mammoth/project-mammoth-3.webp" style="height: 100%; width: 100%; object-fit: cover; border-radius: 15px;">
+                    <img src="img/project-mammoth/project-mammoth-2.webp" style="height: 100%; width: 100%; object-fit: cover; border-radius: 15px;">
+                </div>
 
-            <!-- concept origins -->
-            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 50px;">
-                <div class="section-title">Concept Origins</div>
-                As part of our third-year capstone project, our group was tasked with creating an interactive project; our goal was to deviate away from making a game, as many cohorts before us had done. Collaboratively, we selected to focus on designing an interactive installation that would integrate DIY hologram technology, something that hadn't been done before in the history of the program.
+                <hr>
+
+                <section id="section">
+                    <p class="section-title">A NEW TAKE ON LEARNING</p>
+                    <p class="design-challenge">How can we educate the public about biodiversity loss in a way that encourages engagement without causing more harm?</b>
+                    </p>
+                    <p class="page-text">Documentaries are useful method for bringing and awareness and attention to the critical nature of endangered species, but what if there was a way to do it using DIY hologram technology? This is what we set out to discover, integrating the topic of biodiversity loss in marine species as our focus point.</p>
+                </section>
+
                 <br><br>
-                Noting the variety of demographics and audiences that we could target, we chose to explore raising awareness on critical issues in a more visual manner that encourages people to learn at their own pace. In a world where climate change and biodiversity loss often go ignored in favour of economic and financial problems, we believed a hologram would be a suitable way to educate the public about the state of endangered marine life.
-                <br><br>
-                <div class="problem-statement">
-                    <div class="problem-title">THE CHALLENGE:</div>
-                    <div class="actual-problem">How can we educate the public about biodiversity loss in a way that encourages engagement without causing more harm?</div>
-                </div>
-            </div>
 
-            <!-- goals -->
-            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 50px;">
-                <div class="section-title">Installation Goals</div>
-                To better understand how to approach our goals in the context of a hologram, we researched existing methods of awareness for biodiversity loss and interactive projects about our topic, focusing on educational solutions. Our research outlined that over <u>41,000</u> endangered species existed; <u>7,000</u> were considered critically endangered, with <u>2,270</u> of them being marine species. It was also noted that media on endangered animals failed to showcase species that were
-                less popular or known about, which influenced our decision to target the world's oceanic and polar regions.
+                <section id="section">
+                    <p class="section-title">R&D: ORIGINS</p>
+                    <p class="bold-title">Marine species around the world are at risk.</b>
+                    </p>
+                    <p class="page-text">While endangered species and animal extinction have already been studied in media and films (think <i>Our Planet</i> and other documentaries narrated by the legendary Sir David Attenborough), we discovered that there are many species whose struggles are unknown by the general public due to a lack of exposure.</p>
 
-                <div class="project-grid-3" style="margin-top: 25px;">
-                    <div class="card">
-                        <img width="50" height="50" src="https://img.icons8.com/ios/500/644A75/whale.png" style="margin-bottom: 5px;">
-                        <div class="card-title">Educate the public on our chosen eight marine animals.</div>
+                    <div class="card-3" style="margin: 20px 0;">
+                        <div class="card">
+                            <p class="page-text"><span class="design-challenge">169,000+</span><br>The number of species on the International Union for Conversation of Nature's (IUCN) Red List of threatened species.</p>
+                        </div>
+                        <div class="card">
+                            <p class="page-text"><span class="design-challenge">47,000+</span><br>The number of species on the IUCN Red List that are currently threatened with extinction.</p>
+                        </div>
+                        <div class="card">
+                            <p class="page-text"><span class="design-challenge">1,473</span><br>The number of marine species currently on the IUCN Red List that are vulnerable, endangered or critically endangered.</p>
+                        </div>
                     </div>
 
-                    <div class="card">
-                        <img width="50" height="50" src="https://img.icons8.com/ios/500/644A75/book-and-pencil.png" style="margin-bottom: 5px;">
-                        <div class="card-title">Educate ourselves and others about hologram technology.</div>
-                    </div>
+                    <p class="page-text">To diversify our selections, we focused on the world's oceanic and polar regions — selecting a total of eight (8) unique marine species to highlight through our hologram.</p>
 
-                    <div class="card">
-                        <img width="50" height="50" src="https://img.icons8.com/ios/500/644A75/training.png" style="margin-bottom: 5px;">
-                        <div class="card-title">Educate the public on the significance of marine life.</div>
-                    </div>
+                    <ul style="margin: 20px 0;">
+                        <li>African penguin — <span style="color: #FFFFFF70;">Affected by lack of food from overfishing and climate change.</span></li>
 
-                    <div class="card">
-                        <img width="50" height="50" src="https://img.icons8.com/ios/500/644A75/marine-polution.png" style="margin-bottom: 5px;">
-                        <div class="card-title">Highlight the impact of human actions on climate change.</div>
-                    </div>
+                        <li>Blue-footed booby — <span style="color: #FFFFFF70;">Affected by lack of food from overfishing and climate change.</span></li>
 
-                    <div class="card">
-                        <img width="50" height="50" src="https://img.icons8.com/ios/500/644A75/speaker_1.png" style="margin-bottom: 5px;">
-                        <div class="card-title">Raise awareness for the animals on the endangered species list.</div>
-                    </div>
+                        <li>Hawksbill sea turtle — <span style="color: #FFFFFF70;">Affected by overfishing, shell poaching, ocean pollution and climate change.</span></li>
 
-                    <div class="card">
-                        <img width="50" height="50" src="https://img.icons8.com/ios/500/644A75/strike.png" style="margin-bottom: 5px;">
-                        <div class="card-title">Encourage the audience to take actions against these issues.</div>
-                    </div>
-                </div>
-            </div>
+                        <li>Española marine iguana — <span style="color: #FFFFFF70;">Affected by natural predators and climate change.</span></li>
 
-            <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 50px auto; z-index: 100; position: relative;">
+                        <li>Striped smooth hound shark — <span style="color: #FFFFFF70;">Affected by significant pressure from commerical and artisan fisheries.</span></li>
 
-            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 50px;">
-                <div class="problem-statement">
-                    <div class="quote">“A hologram projector sounds like science fiction, but our students are able to make all this a reality. They're [the students] building an interactive digital media object, which includes digital displays, embedded computing, open-source software and hardware, as well as additive manufacturing.”</div>
-                    <div class="year" style="padding-top: 10px;">
-                        — Dr. Aaron Mauro, Associate Professor & DDH Chair at Brock University
-                        <br>
-                        Source: Brock News <a href="https://brocku.ca/brock-news/2022/04/hologram-project-highlights-endangered-animals-for-brock-community/">(x)</a>
-                    </div>
-                </div>
-            </div>
+                        <li>North Atlantic right whale — <span style="color: #FFFFFF70;">Affected by threats of entaglement in fishing gear and vessel strikes.</span></li>
 
-            <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 50px auto; z-index: 100; position: relative;">
+                        <li><i>Acropora jacquelinae</i> coral — <span style="color: #FFFFFF70;">Affected by coral bleaching, human activity in waters, starfish species and diseases.</span></li>
 
-            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 50px;">
-                <div class="project-grid-3">
-                    <img src="img/project-mammoth/pm-photos-1.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/project-mammoth/pm-photos-2.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/project-mammoth/pm-photos-3.webp" style="width: 100%; border-radius: 15px;">
-                </div>
-            </div>
+                        <li>Arctic polar bear — <span style="color: #FFFFFF70;">Affected by lack of food and habit change.</span></li>
+                    </ul>
+                    </p>
 
-            <!-- marine species -->
-            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 50px;">
-                <div class="section-title">Marine Species</div>
-                Through a joint effort between the research and modelling teams, eight (8) marine species were selected for the installation. We chose to utilize a low-poly modelling style, relying on texturing and weight painting to define appearance details that make the animals recognizable.
+                    <br>
+                    <p class="page-text">Using Blender, myself and members of the modelling team created eight low-poly models of each selected marine species for the installation. Distincitive markings and details were added via texturing to aid with recognition.</p>
 
-                <div class="project-grid-2" style="margin-top: 25px;">
-                    <div class="research-card">
-                        <div class="research-card-image">
+
+                    <div class="grid-4" style="margin: 20px 0;">
+                        <div>
                             <img src="img/project-mammoth/animals-1.webp" style="width: 100%; border-radius: 15px;">
+                            <p class="page-text">African penguin</p>
+                            <span style="color: #FFFFFF70;">Model by Tany Dourev</span>
                         </div>
-                        <div class="research-card-text">
-                            <div class="role"><span class="medium-bold">African Penguin</span></div>
-                            <div class="details">Affected by lack of food from overfishing and climate change.</div>
-                            <div class="year">Model created by: Tany Dourev</div>
-                        </div>
-                    </div>
-
-                    <div class="research-card">
-                        <div class="research-card-image">
-                            <img src="img/project-mammoth/animals-2.webp" style="width: 100%; border-radius: 15px;">
-                        </div>
-                        <div class="research-card-text">
-                            <div class="role"><span class="medium-bold">Striped Smooth Hound Shark</span></div>
-                            <div class="details">Affected by significant pressure from commerical and artisan fisheries.</div>
-                            <div class="year">Model created by: Tany Dourev</div>
-                        </div>
-                    </div>
-
-                    <div class="research-card">
-                        <div class="research-card-image">
+                        <div>
                             <img src="img/project-mammoth/animals-3.webp" style="width: 100%; border-radius: 15px;">
+                            <p class="page-text">Blue-footed booby</p>
+                            <span style="color: #FFFFFF70;">Model by Samantha Savage</span>
                         </div>
-                        <div class="research-card-text">
-                            <div class="role"><span class="medium-bold">Blue-footed Booby</span></div>
-                            <div class="details">Affected by lack of food from overfishing and climate change.</div>
-                            <div class="year">Model created by: Samantha Savage</div>
-                        </div>
-                    </div>
-
-                    <div class="research-card">
-                        <div class="research-card-image">
-                            <img src="img/project-mammoth/animals-4.webp" style="width: 100%; border-radius: 15px;">
-                        </div>
-                        <div class="research-card-text">
-                            <div class="role"><span class="medium-bold">Española Marine Iguana</span></div>
-                            <div class="details">Affected by natural predators and climate change.</div>
-                            <div class="year">Model created by: Samantha Savage</div>
-                        </div>
-                    </div>
-
-                    <div class="research-card">
-                        <div class="research-card-image">
-                            <img src="img/project-mammoth/animals-5.webp" style="width: 100%; border-radius: 15px;">
-                        </div>
-                        <div class="research-card-text">
-                            <div class="role"><span class="medium-bold">North Atlantic Right Whale</span></div>
-                            <div class="details">Affected by threats of entaglement in fishing gear and vessel strikes.</div>
-                            <div class="year">Model created by: Yankeer (Coco) Xu & Tany Dourev</div>
-                        </div>
-                    </div>
-
-                    <div class="research-card">
-                        <div class="research-card-image">
-                            <img src="img/project-mammoth/animals-6.webp" style="width: 100%; border-radius: 15px;">
-                        </div>
-                        <div class="research-card-text">
-                            <div class="role"><span class="medium-bold">Acropora Jacquelinae</span></div>
-                            <div class="details">Affected by coral bleaching, human activity in waters, starfish species and diseases.</div>
-                            <div class="year">Model created by: Tany Dourev</div>
-                        </div>
-                    </div>
-
-                    <div class="research-card">
-                        <div class="research-card-image">
-                            <img src="img/project-mammoth/animals-7.webp" style="width: 100%; border-radius: 15px;">
-                        </div>
-                        <div class="research-card-text">
-                            <div class="role"><span class="medium-bold">Polar Bear</span></div>
-                            <div class="details">Affected by lack of food and habit change.</div>
-                            <div class="year">Model created by: Will Paskulin</div>
-                        </div>
-                    </div>
-
-                    <div class="research-card">
-                        <div class="research-card-image">
+                        <div>
                             <img src="img/project-mammoth/animals-8.webp" style="width: 100%; border-radius: 15px;">
+                            <p class="page-text">Hawksbill sea turtle</p>
+                            <span style="color: #FFFFFF70;">Model by Will Paskulin</span>
                         </div>
-                        <div class="research-card-text">
-                            <div class="role"><span class="medium-bold">Hawksbill Sea Turtle</span></div>
-                            <div class="details">Affected by overfishing, shell poaching, ocean pollution and climate change.</div>
-                            <div class="year">Model created by: Will Paskulin</div>
+                        <div>
+                            <img src="img/project-mammoth/animals-4.webp" style="width: 100%; border-radius: 15px;">
+                            <p class="page-text">Española marine iguana</p>
+                            <span style="color: #FFFFFF70;">Model by Samantha Savage</span>
+                        </div>
+                        <div>
+                            <img src="img/project-mammoth/animals-2.webp" style="width: 100%; border-radius: 15px;">
+                            <p class="page-text">Striped smooth hound shark</p>
+                            <span style="color: #FFFFFF70;">Model by Tany Dourev</span>
+                        </div>
+                        <div>
+                            <img src="img/project-mammoth/animals-5.webp" style="width: 100%; border-radius: 15px;">
+                            <p class="page-text">North Atlantic right whale</p>
+                            <span style="color: #FFFFFF70;">Model by Tany Dourev & Xu Yankeer</span>
+                        </div>
+                        <div>
+                            <img src="img/project-mammoth/animals-6.webp" style="width: 100%; border-radius: 15px;">
+                            <p class="page-text">Acropora jacquelinae coral</p>
+                            <span style="color: #FFFFFF70;">Model by Tany Dourev</span>
+                        </div>
+                        <div>
+                            <img src="img/project-mammoth/animals-7.webp" style="width: 100%; border-radius: 15px;">
+                            <p class="page-text">Arctic polar bear</p>
+                            <span style="color: #FFFFFF70;">Model by Tany Dourev</span>
                         </div>
                     </div>
+                </section>
+
+                <hr>
+
+                <div class="card-quote">"<b>A hologram projector sounds like science fiction, but our students are able to make all this a reality.</b> They're [the students] building an interactive digital media object, which includes digital displays, embedded computing, open-source software and hardware, as well as additive manufacturing."
+                    <br>
+                    <p class="section-title" style="margin-top: 10px;">— Dr. Aaron Mauro, Associate Professor & DDH Chair at Brock University • Source: Brock News <a href="https://brocku.ca/brock-news/2022/04/hologram-project-highlights-endangered-animals-for-brock-community/">(x)</a>
+                    </p>
                 </div>
-            </div>
 
-            <!-- environments -->
-            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 50px;">
-                <div class="section-title">Environments</div>
-                In order to properly apply the physics of holograms to the installation, it was required to make the models appear as if suspended in mid-air. This proved to be a challenge with the environments, as we wanted to provide context surrounding the habits of our selected animals while simultaneously avoiding breaking the illusion. I was tasked with creating the base design for environments, as well as creating environments alongside the modelling team. We opted for a dome-based
-                design, which solved the issue of objects entering the invisible "screen" of the hologram from the sides.
+                <hr>
 
-                <div class="project-grid-4" style="margin: 25px 0;">
-                    <img src="img/project-mammoth/enviro-1.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/project-mammoth/enviro-2.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/project-mammoth/enviro-3.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/project-mammoth/enviro-4.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/project-mammoth/enviro-5.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/project-mammoth/enviro-6.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/project-mammoth/enviro-7.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/project-mammoth/enviro-8.webp" style="width: 100%; border-radius: 15px;">
-                </div>
-            </div>
+                <section id="section">
+                    <p class="section-title">R&D: THE BUILDING</p>
+                    <p class="bold-title">Hologram crafting for beginners.</b>
+                    </p>
+                    <p class="page-text">We selected DIY hologram technology as our visual storytelling method, with the goal of seeing how it could be used for educational purposes. Until now, no one in the program had created a project using holograms, which gave us the opportunity to put together an installation with a strong impact through its design. We began by using videos of small-scale, DIY holograms created with pieces of a CD case, tape and a phone. Then, we transformed this into a
+                        mid-scale hologram for prototyping using plastic sheets; for the installation, we upscaled it with plexiglass and a TV monitor.</p>
 
-            <!-- interactive components -->
-            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 50px;">
-                <div class="section-title">Interactive Components</div>
-                The hologram is operated through a Flick motion sensor and Raspberry Pi, which is connected to a Python program written by our coding team to switch between animal visuals. The installation team performed several physical tests to create a system that would control the hologram. Gestures such as moving one's hand from the left to the right/up and down were selected, as they mimic motions people were already familiar with (ex. swiping right on a phone to see the next photo =
-                swiping right for the next visual). As a result, younger audiences would also be able to interact with the hologram in a simple manner, lessening the confusion on how the sensor board worked.
+                    <div class="grid-2" style="margin-top: 20px;">
+                        <img src="img/project-mammoth/pm-photos-3.webp" style="width: 100%; border-radius: 15px;">
+                        <img src="img/project-mammoth/pm-photos-2.webp" style="width: 100%; border-radius: 15px;">
+                    </div>
+                    <div class="caption">
+                        Left to right: Samantha Savage and Kathleen MacDonald with the mid-scale hologram prototype; Shannon Kelly prepping the plexiglass prism; The final build of the hologram.
+                    </div>
 
-                <div class="grid-1" style="margin-top: 25px;">
-                    <img src="img/project-mammoth/project-mammoth-1.webp" style="width: 100%; border-radius: 15px;">
-                </div>
-            </div>
+                    <p class="page-text">One of our biggest challenges was creating the media that would be displayed on the hologram. Our installation team reverse-engineered a system for hologram video creation, basing the media size on the overall dimensions of our plexiglass prism. A hologram video consisted of a combined series of four renders, each encompassing a side of the 3D object and positioned to face each of the cardinal directions. Renders were animated and exported through
+                        Blender.</p>
+                </section>
 
-            <!-- visual identity -->
-            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 50px;">
-                <div class="section-title">Visual Identity</div>
-                Project Mammoth's visual identity was designed to encapsulate a playful approach to the biodiversity awareness and education. We envisioned our project as something that would cater to audiences of all ages, as opposed to presenting itself solely as a hologram experiment.
                 <br><br>
-                The team's decision to select a mammoth as the project logo stemmed from the extinction of the <i>elephantid genus Mammuthus</i>, a mammal species which ultimately disappeared during the Holocene epoch due to climate change and human hunting. While mammoths are not classified as marine species, the team felt it best represented our mission: to educate viewers on animal endangerment and encourage action through awareness — all in hopes of avoiding the extinction of the animal
-                world. Thus, Project Mammoth was born... however, our internal team mascot ended up being the polar bear ^-^
 
-                <div class="project-grid-3" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 25px;">
-                    <img src="img/project-mammoth/logo-1.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/project-mammoth/logo-2.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/project-mammoth/logo-3.webp" style="width: 100%; border-radius: 15px;">
-                </div>
+                <section id="section">
+                    <p class="section-title">ENVIRONMENTS</p>
+                    <p class="bold-title">Creating lanscapes for each species.</b>
+                    </p>
+                    <p class="page-text">In order to properly apply the physics of hologram refraction to the installation, we brainstormed ways to suspend the hologram media through environmental renders. We wanted to provide more information about habitats for each species; this led us to develop dome-based environments, containing the animal render and surrounding elements that depicted its home. Through several tests, we discovered that this approach was the most successful in simulating a
+                        real hologram and the immersion would be maintained without revealing what actually powered the images.</p>
 
-                <div class="project-grid-2" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 15px;">
-                    <img src="img/project-mammoth/pm-mammoth.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/project-mammoth/colours.webp" style="width: 100%; border-radius: 15px;">
-                </div>
+                    <div class="grid-4" style="margin: 20px 0;">
+                        <img src="img/project-mammoth/enviro-1.webp" style="width: 100%; border-radius: 15px;">
+                        <img src="img/project-mammoth/enviro-2.webp" style="width: 100%; border-radius: 15px;">
+                        <img src="img/project-mammoth/enviro-3.webp" style="width: 100%; border-radius: 15px;">
+                        <img src="img/project-mammoth/enviro-4.webp" style="width: 100%; border-radius: 15px;">
+                        <img src="img/project-mammoth/enviro-5.webp" style="width: 100%; border-radius: 15px;">
+                        <img src="img/project-mammoth/enviro-6.webp" style="width: 100%; border-radius: 15px;">
+                        <img src="img/project-mammoth/enviro-7.webp" style="width: 100%; border-radius: 15px;">
+                        <img src="img/project-mammoth/enviro-8.webp" style="width: 100%; border-radius: 15px;">
+                    </div>
+                </section>
 
-                <div class="grid-1" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 15px;">
-                    <img src="img/project-mammoth/fonts.webp" style="width: 100%; border-radius: 15px;">
-                </div>
+                <br><br>
 
-                <div class="project-grid-3" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 15px;">
-                    <img src="img/project-mammoth/pm-poster-1.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/project-mammoth/pm-poster-2.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/project-mammoth/pm-poster-3.webp" style="width: 100%; border-radius: 15px;">
-                </div>
-            </div>
+                <section id="section">
+                    <p class="section-title">INTERACTIVITY</p>
+                    <p class="bold-title">Merging code with motion.</b>
+                    </p>
+                    <p class="page-text">One of our goals for the installation was to establish a way that viewers could interact with and control the hologram media. The coding team, with assistance from our supervisor, created a joint Flick motion sensor + Raspberry Pi + Python system that allowed us to switch between visuals. Compared to larger-scale/room-based installations, our system was humble yet powerful enough to operate videos and audio at the same time.</p>
 
-            <!-- credits -->
-            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 50px;">
-                <div class="section-title">Credits</div>
-                The following individuals are recognized for their contributions to the Project Mammoth installation:
+                    <div class="grid-2" style="margin-top: 20px;">
+                        <img src="img/project-mammoth/project-mammoth-1.webp" style="height: 100%; width: 100%; object-fit: cover; border-radius: 15px;">
+                        <img src="img/project-mammoth/pm-interactive-setup.png" style="width: 100%; border-radius: 15px;">
+                    </div>
+                    <div class="caption">
+                        Left to right: Testing the Python executable for the hologram videos; The Raspberry Pi + Flick motion sensor setup with a custom 3D-printed case.
+                    </div>
 
-                <div style="margin: 25px 0 25px 5px; padding-left: 20px; border-left: 1px solid #644A75;">
-                    <b>Project Lead:</b> Tany Dourev<br>
-                    <b>Secondary Lead:</b> Samantha Savage<br>
-                    <b>Research:</b> Kathleen MacDonald, Evan Mason, Will Paskulin, Rogo Jean<br>
-                    <b>Modelling:</b> Tany Dourev, Will Paskulin, Samantha Savage, Xu Yankeer (Coco)<br>
-                    <b>Sound & Narration:</b> Evan Mason, Wu Dongjian (Joey), Rigel Quindipan, Xu Yankeer (Coco)<br>
-                    <b>Installation:</b> Kathleen MacDonald, Evan Mason, Rogo Jean, Rigel Quindipan, Shannon Kelly, Patrick Arenas<br>
-                    <b>Coding:</b> Shannon Kelly, Matthew McNeil<br>
-                    <b>Branding:</b> Kathleen MacDonald, Samantha Savage, Will Paskulin
-                </div>
+                    <br>
+                    <p class="page-text">The installation team performed several usability tests to define motions that would be universal and understood by audiences of all ages. Gestures that mimicked movements familiar to phone users were selected (ex. swiping left on a phone to see the next photo = moving your hand to the left for the next visual; pressing the "up" button to increase the volume = moving your hand up to increase the sound levels).</p>
+                </section>
 
-                Thank you to Dr. Aaron Mauro of Brock University for his support and guidance throughout the project, and to Alison Innes of the Brock News for her photography.
+                <br><br>
+
+                <section id="section">
+                    <p class="section-title">VISUAL IDENTITY</p>
+                    <p class="bold-title">Branding Project Mammoth.</b></p>
+                    <p class="page-text">Project Mammoth's visual identity was designed to encapsulate a playful approach to biodiversity awareness and education. We envisioned our installation as something that would cater to audiences of all ages, encouraging both children and adults alike to interact with the project. The team's decision to select a mammoth as the project logo stems from the extinction of the <i>elephantid genus Mammuthus</i>, a mammal species that disappeared during the
+                        Holocene epoch due to climate change and human hunting. While mammoths are not classified as marine species, we belived that their fate best represented the critical nature of our topic and served as a reminder that the animals we highlighted could follow the same path of extinction if humanity doesn't strengthen its conservation efforts to protect them.</p>
+
+                    <div class="grid-3" style="margin-top: 20px;">
+                        <img src="img/project-mammoth/logo-1.webp" style="width: 100%; border-radius: 15px;">
+                        <img src="img/project-mammoth/logo-2.webp" style="width: 100%; border-radius: 15px;">
+                        <img src="img/project-mammoth/logo-3.webp" style="width: 100%; border-radius: 15px;">
+                    </div>
+
+                    <div class="grid-2" style="margin-top: 20px;">
+                        <img src="img/project-mammoth/pm-mammoth.webp" style="width: 100%; border-radius: 15px;">
+                        <img src="img/project-mammoth/colours.webp" style="width: 100%; border-radius: 15px;">
+                    </div>
+
+                    <img src="img/project-mammoth/fonts.webp" style="width: 100%; border-radius: 15px; margin-top: 20px;">
+
+                    <div class="grid-3" style="margin-top: 20px;">
+                        <img src="img/project-mammoth/pm-poster-1.webp" style="width: 100%; border-radius: 15px;">
+                        <img src="img/project-mammoth/pm-poster-2.webp" style="width: 100%; border-radius: 15px;">
+                        <img src="img/project-mammoth/pm-poster-3.webp" style="width: 100%; border-radius: 15px;">
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="section">
+                    <p class="section-title">CREDITS</p>
+                    <p class="page-text">
+                        <b>Project Lead:</b> Tany Dourev<br>
+                        <b>Secondary Lead:</b> Samantha Savage<br>
+                        <b>Research:</b> Kathleen MacDonald, Evan Mason, Will Paskulin, Rogo Jean<br>
+                        <b>Modelling:</b> Tany Dourev, Will Paskulin, Samantha Savage, Xu Yankeer (Coco)<br>
+                        <b>Sound & Narration:</b> Evan Mason, Wu Dongjian (Joey), Rigel Quindipan, Xu Yankeer (Coco)<br>
+                        <b>Installation:</b> Kathleen MacDonald, Evan Mason, Rogo Jean, Rigel Quindipan, Shannon Kelly, Patrick Arenas<br>
+                        <b>Coding:</b> Shannon Kelly, Matthew McNeil<br>
+                        <b>Branding:</b> Kathleen MacDonald, Samantha Savage, Will Paskulin
+                        <br><br>
+                        Thank you to Dr. Aaron Mauro of Brock University for his support and guidance throughout the project, and to Alison Innes of the Brock News for her photography.
+                    </p>
+                </section>
             </div>
         </div>
 
-        <div>
-            <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 60px auto 0 auto; z-index: 100; position: relative;">
-
-            <footer style="display: block; padding-bottom: 20px;">
-                <div id="copyright" style="text-align: center;">© Tany Dourev, 2024. All Rights Reserved.<br><span style="color: #644A7570;">+ Lovingly coded by yours truly.</span></div>
-            </footer>
+        <div id="copyright">
+            <p style="color: #FFFFFF50; font-size: 13px;">© Tany Dourev, 2025.<br>— v8.1 / ∞</p>
         </div>
     </div>
 
-    </div>
+    <!-- -------------------------------------------------------------------------------------------------- -->
 
+    <!-- scripts -->
     <script src="scripts/scripts.js" async defer></script>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- page fade -->
     <script>
-        AOS.init({
-            offset: 20,
+        document.body.classList.add('fade-out');
+
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
         });
     </script>
 
-    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-    <script>
-        const lenis = new Lenis()
-        lenis.on('scroll', (e) => {
-            console.log(e)
-        })
-
-        function raf(time) {
-            lenis.raf(time)
-            requestAnimationFrame(raf)
-        }
-
-        requestAnimationFrame(raf)
-    </script>
-</body>
+    <!-- ion icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </html>

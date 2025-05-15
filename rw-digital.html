@@ -6,7 +6,7 @@ ___   __  ___  ____  ___   __  __    __  __
  ) _/( () ))  \  )(   ) _)( () ))(__  )(( () )
 (_)   \__/(_)\_)(__) (_)   \__/(____)(__)\__/ 
 
-© Tany Dourev, 2024. All Rights Reserved.
+© Tany Dourev, 2025. All Rights Reserved.
 Do not re-post, re-produce or claim credit for the works posted on this website.
 Failure to respect content credit policies makes you a bad internet citizen :]
 --------------------------------------------------------------------------------- -->
@@ -17,286 +17,351 @@ Failure to respect content credit policies makes you a bad internet citizen :]
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>RW DIGITAL — Tany Dourev</title>
+    <title>RW DIGITAL | Tany Dourev</title>
     <meta name="description" content="Empowering businesses with digital marketing.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-
-    <!-- lenis smooth scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
-
-    <!-- AOS transitions -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/new.style.css">
+    <link rel="stylesheet" href="css/new.queries.css">
 
     <!-- favicon -->
     <link rel="icon" href="/img/favicon/favicon.png">
+
+    <style>
+        body {
+            overflow-y: visible;
+        }
+
+        .design-challenge {
+            margin-bottom: 10px;
+            font-family: SF Pro Bold;
+            font-size: 22px;
+            background: linear-gradient(90deg, #d9faff 0%, #63eaff 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @media only screen and (min-width: 600px) and (max-width: 767px) {
+            .grid-4 {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .big-text {
+                line-height: 1em;
+            }
+        }
+
+        @media only screen and (max-width: 599px) {
+            .grid-4 {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .big-text {
+                line-height: 1em;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div id="container">
-        <div id="top-gradient">
-            <img src="img/backgrounds/top-gradient.webp" style="display: block; width: 100%; height: 110vh;">
-        </div>
+        <div id="navigation">
+            <div class="home-name">
+                <a href="/">tany.io</a>
+            </div>
 
-        <header>
-            <navigation>
-                <div id="navigation-links">
-                    <div class="navigation-link">☆ミ</div>
-                    <div class="navigation-link">
-                        <a href="/">Home</a>
-                    </div>
-                    <div class="navigation-link">
-                        <a href="/about">About</a>
-                    </div>
-                    <div class="navigation-link">
-                        <a href="media/Resume_TanyDourev.pdf">Resume</a>
-                    </div>
-                    <div id="open-button" class="sidenav-toggle" onclick="openNav()">
-                        <ion-icon name="menu-outline"></ion-icon>
-                    </div>
+            <div class="navigation-links">
+                <div class="link">
+                    <a href="/about">about & cv ↗</a>
                 </div>
-            </navigation>
-        </header>
-
-        <div id="responsive-navigation" class="sidenav">
-            <ion-icon id="close-button" onclick="closeNav()" name="close-outline"></ion-icon>
-
-            <div id="responsive-links" style="padding: 200px 0 0 0;">
-
-                <div class="resp-link">⁕</div>
-
-                <div class="resp-link">
-                    <a href="/">home</a>
-                </div>
-
-                <div class="resp-link">
-                    <a href="/about">about</a>
-                </div>
-
-                <div class="resp-link">
-                    <a href="media/Resume_TanyDourev.pdf" target="_blank">resume</a>
-                </div>
+                <div class="link" style="color: #FFFFFF50;">research ↗</div>
             </div>
         </div>
 
-        <div id="project">
-            <div id="project-intro-text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                <div class="project-page-title">RW Digital</div>
-
-                <div class="project-page-subtitle">Empowering businesses with digital marketing.</div>
-
-                <div class="project-page-tags">
-                    <div class="project-page-tag">+ Graphic Design</div>
-                    <div class="project-page-tag">+ Web Design</div>
-                    <div class="project-page-tag">+ Agency</div>
+        <div id="page-content">
+            <div id="project-info" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800">
+                <h1 class="big-text">RW DIGITAL<span style="color: #00C2DF;">*</span></h1>
+                <div class="bio">Empowering businesses with digital marketing.</span>
                 </div>
+
+                <p style="line-height: 1.5em;">
+                    <b style="font-family: SF Pro Bold;">Role:</b> Lead graphic & brand designer, web designer<br>
+                    <b style="font-family: SF Pro Bold;">Year:</b> 2021 - Present<br>
+                </p>
             </div>
 
-            <!-- summary -->
-            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                In 2021, I joined the marketing and design team at the Canadian marketing agency <span class="medium-bold"><a href="https://rwdigital.ca/">RW Digital</a></span> as an in-house Graphic Designer. For over three years, I've been developing engaging multimedia content for the agency’s social media platforms, enhancing brand growth strategies via analytics and impactful design, and launching responsive, brand-adherent websites for clients. Collaborating alongside the agency principal,
-                I play a key role in the agency's growth.
-            </div>
+            <div id="project-content">
+                <div class="bio">In 2021, I joined the marketing and design team at <a href="https://www.rwdigital.ca" style="text-decoration: underline;">RW Digital</a> as an in-house designer. For over three years, I've helped to establish a new set of branding guidelines, enhance marketing efforts through impactful and educational design, and be part of the growth of a unique Canadian agency within a highly-competitive digital marketing
+                    industry.
+                </div>
 
-            <!-- <div style="text-align: center;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                <div class="wip-tag">🚧 This page is still in development. Some content may be missing...</div>
-            </div> -->
+                <img src="img/rw-thumbnail.png" style="width: 100%; margin-top: 10px; border-radius: 15px;">
 
-            <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 50px auto; z-index: 100; position: relative;">
+                <hr>
 
-            <!-- social media marketing -->
-            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 50px;">
-                <div class="section-title">Social Media Marketing</div>
-                Prior to joining the agency, RW Digital already had a partially-established brand identity; after doing an assessment with the agency principal, we noted that application of the identity was inconsistent and noted areas for improvement. Given the agency's main channels of communication are through its website and social media, we devised a goal to both improve the brand identity and make better use of social platforms to extends its reach.
+                <section id="section">
+                    <p class="section-title">THE CHALLENGE</p>
+                    <p class="design-challenge">RW Digital's analytics showed decent engagement via its website and a positive reputation through previous client work, but the agency's online presence and brand identity needed strengthening.</p>
+                    
+                    <p class="page-text">Prior to joining the agency, RW Digital already had a partially-established brand identity; after an audit with the agency principal, we discovered that the application of the guidelines was inconsistent and noted areas for improvement. Given the agency's main channels of communication are through its website and social media, we devised a goal to both improve the brand identity and make better use of social platforms to extends its reach.</p>
+                </section>
+
                 <br><br>
-                <div class="problem-statement">
-                    <div class="problem-title">THE PROBLEM:</div>
-                    <div class="actual-problem">RW Digital's analytics showed decent engagement via its website and a positive reputation through previous client work, however the agency's online presence and brand identity needed strengthening.</div>
-                </div>
-                <br>
-                After making adjustments to the agency brand guidelines, we monitored changes in engagement and interaction through analytics to determine whether our new strategies had a stronger impact on target audiences. One of the key deliverables within this plan was a rehaul of the agency's social media marketing; I was tasked with designing graphics for the agency's channels using the new guidelines. To view more of my work, visit RW Digital on Instagram → <a
-                    href="https://www.instagram.com/digital.rw/">@digital.rw</a>
 
-                <div class="project-grid-4" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin: 25px 0; gap: 5px;">
-                    <img src="img/rw-digital/lunar-new-year-23.webp" style="width: 100%;">
-                    <img src="img/rw-digital/kellykirby-showcase.webp" style="width: 100%;">
-                    <img src="img/rw-digital/vpl-testimonial.webp" style="width: 100%;">
-                    <img src="img/rw-digital/mid-autumn-festival.webp" style="width: 100%;">
-                    <img src="img/rw-digital/arts-connection-testimonial.webp" style="width: 100%;">
-                    <img src="img/rw-digital/sharing-farm.webp" style="width: 100%;">
-                    <img src="img/rw-digital/seo-bounce-rate.webp" style="width: 100%;">
-                    <img src="img/rw-digital/langley-testimonial.webp" style="width: 100%;">
-                    <img src="img/rw-digital/ga4-shopify-audiences.webp" style="width: 100%;">
-                    <img src="img/rw-digital/ublock-chrome.webp" style="width: 100%;">
-                    <img src="img/rw-digital/ai-for-seo.webp" style="width: 100%;">
-                    <img src="img/rw-digital/vpl-book-drive.webp" style="width: 100%;">
-                    <img src="img/rw-digital/seo-hotel-chains.webp" style="width: 100%;">
-                    <img src="img/rw-digital/google-privacy-lawsuit.webp" style="width: 100%;">
-                    <img src="img/rw-digital/trinity-western-talk.webp" style="width: 100%;">
-                    <img src="img/rw-digital/bcama-vision.webp" style="width: 100%;">
-                    <img src="img/rw-digital/case-mogul-testimonial.webp" style="width: 100%;">
-                    <img src="img/rw-digital/nabs-mentoring.webp" style="width: 100%;">
-                    <img src="img/rw-digital/lunar-new-year-24.webp" style="width: 100%;">
-                    <img src="img/rw-digital/cma-sponsorship.webp" style="width: 100%;">
-                </div>
-            </div>
+                <section id="section">
+                    <p class="section-title">GOALS</p>
+                    <p class="bold-title">Prioritizing agency needs.</b>
+                    </p>
 
-            <!-- branding -->
-            <!-- <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 50px;">
-                <div class="section-title">Brand Refresh</div>
-                <div style="text-align: center;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                    <div class="wip-tag">🚧 This section is still in development. Come back soon for more...</div>
-                </div>
-            </div> -->
+                    <div class="card-3">
+                        <div class="card">
+                            <div style="padding-bottom: 5px;"><b style="font-family: SF Pro Bold;">🎨 Branding Guidelines</b></div>
+                            <p class="page-text">Create a new set of branding guidelines based on existing materials and media.</p>
+                        </div>
+                        <div class="card">
+                            <div style="padding-bottom: 5px;"><b style="font-family: SF Pro Bold;">💻 Social Media Templates</b></div>
+                            <p class="page-text">Develop templates and visual guidelines for social media posts of varying types.</p>
+                        </div>
+                        <div class="card">
+                            <div style="padding-bottom: 5px;"><b style="font-family: SF Pro Bold;">📑 Digital Marketing Content</b></div>
+                            <p class="page-text">Deliver acessible and high-quality content that educates viewers on digital marketing.</p>
+                        </div>
+                        <div class="card">
+                            <div style="padding-bottom: 5px;"><b style="font-family: SF Pro Bold;">✨ Updated Styling</b></div>
+                            <p class="page-text">Update and refresh the agency's website according to the new branding guidelines.</p>
+                        </div>
+                        <div class="card">
+                            <div style="padding-bottom: 5px;"><b style="font-family: SF Pro Bold;">📈 Grow Clientbase</b></div>
+                            <p class="page-text">Encourage businesses to choose RW Digital as their primary go-to for digital marketing needs.</p>
+                        </div>
+                        <div class="card">
+                            <div style="padding-bottom: 5px;"><b style="font-family: SF Pro Bold;">🥇 Industry Leader</b></div>
+                            <p class="page-text">Establish RW Digital as a credible leader in the digital marketing industry through their services.</p>
+                        </div>
+                    </div>
+                </section>
 
-            <!-- website refresh -->
-            <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 50px;">
-                <div class="section-title">Agency Website</div>
-                In early 2024, I was tasked with re-designing and refreshing the agency's website, drafting up a new design based on existing layouts and updating content collections. The primary goal was to apply the new branding guidelines to the website, connecting it with the visual style of the graphics being posted on social media. I approached the project through a user-first perspective, ensuring website content was scalable for responsiveness and adherent to accessibility standards.
+                <hr>
+
+                <section id="section">
+                    <p class="section-title">SOCIAL MEDIA</p>
+                    <p class="bold-title">Pulling the IG grid out of the toolbox.</b>
+                    </p>
+                    <p class="page-text">One of the key goals with the brand refresh was to enact a new strategy for the agency's social media networks, supplemented by the new branding guidelines. Instead of relying just on the content, we experimented with using the Instagram grid layout to create a visually-appealing look for viewers. Our first strategy was to change the colour theme of posts every two months, shifting to the next hue in the spectrum and using organic shapes in the
+                        background.
+                        <br><br>
+                        While this strategy was successful, we found that it became difficult to connect the post themes to the colours outlined in the branding guidelines. After a second assessment, we created a new set of requirements for social media graphics:
+                    </p>
+
+                    <div class="card-3">
+                        <div class="card">
+                            <div style="padding-bottom: 5px;"><b>📑 Digital Marketing Posts</b></div>
+                            <p class="page-text">
+                                <i>Includes everything from GA4 guides to digital marketing news.</i>
+                                <br><br>
+                                <b>Colours:</b> Shades of blue/teal.<br>
+                                <b>Post Content:</b> Follows sizing templates and adheres to accessibility guidelines for digital media.<br>
+                                <b>Illustrations:</b> Related to post topic.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div style="padding-bottom: 5px;"><b>🤝 Services Testimonials</b></div>
+                            <p class="page-text">
+                                <i>Highlights positive impact and results from agency services for clients.</i>
+                                <br><br>
+                                <b>Colours:</b> Client branding.<br>
+                                <b>Post Content:</b> Uses testimonial template and adheres to accessibility guidelines for digital media.<br>
+                                <b>Illustrations:</b> Related to client.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div style="padding-bottom: 5px;"><b>🎭 Community Events</b></div>
+                            <p class="page-text">
+                                <b>Colours:</b> Associated with event marketing.<br>
+                                <b>Post Content:</b> Primary image-based.<br>
+                            </p>
+                            <br>
+                            <div style="padding-bottom: 5px;"><b>🎉 Holidays</b></div>
+                            <p class="page-text">
+                                <b>Style:</b> Creative freedom provided to designer; can be easily identified as a holiday post by appearance.<br>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <p class="page-text">This resulted in a more visually-cohesive social media presence, connecting businesses with an agency that prioritizes user needs and provides exceptional service.</a></p>
+                </section>
+
+                <hr>
+
+                <section id="section">
+                    <p class="bold-title">Digital Marketing Posts</p>
+                    <div class="grid-4" style="margin-top: 20px;">
+                        <img src="img/rw-digital/digital-marketing/ai-for-seo.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/digital-marketing/ga4-benchmarking.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/digital-marketing/ga4-chatgpt-prompts.webp" style="width: 100%; border-radius: 8x;">
+                        <img src="img/rw-digital/digital-marketing/ga4-generated-insights.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/digital-marketing/ga4-mistakes.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/digital-marketing/ga4-reviews-deletion.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/digital-marketing/ga4-shopify-audiences.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/digital-marketing/google-privacy-lawsuit.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/digital-marketing/google-research.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/digital-marketing/interview-april-wu.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/digital-marketing/seo-hotel-chains.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/digital-marketing/ublock-chrome.webp" style="width: 100%; border-radius: 8px;">
+                    </div>
+                </section>
+
                 <br><br>
-                Digital marketing can be <i>complicated</i> for those who aren't familiar with it. To solve this, I focused on implementing terminology and language for content that involved easy-to-understand and simple explanations, while simultaneously demonstrating a level of professionalism and knowledge that distinguishes RW Digital as a credible agency.
 
-                <div class="grid-1" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 25px;">
-                    <img src="img/rw-digital/render-1.webp" style="width: 100%; border-radius: 15px;">
-                </div>
+                <section id="section">
+                    <p class="bold-title">Services Testimonials</p>
+                    <div class="grid-4" style="margin-top: 10px;">
+                        <img src="img/rw-digital/testimonials/arts-connection-testimonial.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/testimonials/langley-testimonial.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/testimonials/505-junk-testimonial.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/testimonials/vpl-testimonial.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/testimonials/predator-ridge-testimonial.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/testimonials/downtown-ulock-testimonial.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/testimonials/case-mogul-testimonial.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/testimonials/as-software-testimonial.webp" style="width: 100%; border-radius: 8px;">
+                    </div>
+                </section>
 
-                <div class="project-grid-2" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
-                    <img src="img/rw-digital/colours.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/rw-digital/render-7.webp" style="width: 100%; border-radius: 15px;">
-                </div>
+                <br><br>
 
-                <div class="grid-1" style="margin-top: 10px;">
-                    <img src="img/rw-digital/fonts.webp" style="width: 100%; border-radius: 15px;">
-                </div>
+                <section id="section">
+                    <p class="bold-title">Sponsorships</p>
+                    <div class="grid-4" style="margin-top: 10px;">
+                        <img src="img/rw-digital/sponsorships/cma-sponsorship.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/sponsorships/rotary-5040-sponsorship.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/sponsorships/sharing-farm.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/sponsorships/aarcs-sponsorship.webp" style="width: 100%; border-radius: 8px;">
+                    </div>
+                </section>
 
-                <div class="project-grid-2" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
-                    <img src="img/rw-digital/render-6.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/rw-digital/render-2.webp" style="width: 100%; border-radius: 15px;">
-                </div>
+                <br><br>
 
-                <div class="grid-1" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
-                    <img src="img/rw-digital/render-3.webp" style="width: 100%; border-radius: 15px;">
-                </div>
+                <section id="section">
+                    <p class="bold-title">Community Events</p>
+                    <div class="grid-4" style="margin-top: 10px;">
+                        <img src="img/rw-digital/community-events/vpl-book-drive.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/community-events/taipei-entrepreneurs-conference.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/community-events/trinity-western-talk.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/community-events/bcama-vision.webp" style="width: 100%; border-radius: 8px;">
+                    </div>
+                </section>
 
-                <div class="project-grid-2" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 10px;">
-                    <img src="img/rw-digital/render-4.webp" style="width: 100%; border-radius: 15px;">
-                    <img src="img/rw-digital/render-8.webp" style="width: 100%; border-radius: 15px;">
-                </div>
+                <br><br>
+
+                <section id="section">
+                    <p class="bold-title">Holidays</p>
+                    <div class="grid-4" style="margin-top: 10px;">
+                        <img src="img/rw-digital/holidays/mid-autumn-festival.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/holidays/lunar-new-year-2023.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/holidays/lunar-new-year-2024.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/holidays/lunar-new-year-2025.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/holidays/halloween-2024.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/holidays/happy-holidays-2023.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/holidays/happy-holidays-2024.webp" style="width: 100%; border-radius: 8px;">
+                        <img src="img/rw-digital/holidays/nye-2025.webp" style="width: 100%; border-radius: 8px;">
+                    </div>
+
+                    <br><br>
+                    <p class="page-text">To view more of my work, visit RW Digital on Instagram → <a href="https://www.instagram.com/digital.rw/">@digital.rw</a></p>
+                </section>
+
+                <hr>
+
+                <section id="section">
+                    <p class="section-title">AGENCY WEBSITE</p>
+                    <p class="bold-title">The all-in-one go-to for services.</b>
+                    </p>
+                    <p class="page-text">Alongside the agency Principal, I was responsible for creating a new design for the agency website and apply the new branding guidelines to its structure. Given the agency's main channels of communication are through its website and social media, we devised a goal to both improve the brand identity and make better use of the website to extends its reach. We expanded the website to include service pages for the regions the agency serviced, simplified
+                        content to make it easier to understand for viewers, and performed usability checks for responsiveness and accessibility adherence. Additionally, we used language and copy that is easy to understanding, encouraging and simplified — all while maintaining a level of professionalism and expertise that marks RW Digital as a leader in the Canadian digital marketing industry.
+                    </p>
+
+
+
+                    <br><br>
+
+                    <section id="section">
+                        <p class="section-title">KEY INSIGHTS</p>
+                        <p class="bold-title">By the numbers.</b>
+                        </p>
+                        <p class="page-text">Using Google Analytics 4, we monitored key metrics to determine whether the website re-design had any impact on visitors looking for digital marketing services. We noted the following:</p>
+
+                        <div class="card-3">
+                            <div class="card">
+                                <p class="page-text"><span class="design-challenge">+75%</span><br>Increase for scroll depth to 75% of pages on the site.</p>
+                            </div>
+                            <div class="card">
+                                <p class="page-text"><span class="design-challenge">+55%</span><br>Increase for scroll depth to 100% of pages on the site.</p>
+                            </div>
+                            <div class="card">
+                                <p class="page-text"><span class="design-challenge">Page Visits</span><br>Increased visits to "Testimonials" page by prospective clients.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr>
+
+                    <section id="section">
+                        <div class="grid-2" style="margin: 20px 0;">
+                            <img src="img/rw-digital/website/mockup-phone-2.webp" style="width: 100%; border-radius: 15px;">
+                            <img src="img/rw-digital/website/mockup-laptop.webp" style="width: 100%; border-radius: 15px;">
+                        </div>
+
+                        <img src="img/rw-digital/website/site-renders.webp" style="width: 100%; border-radius: 15px;">
+                    </section>
+
+                    <div class="grid-2" style="margin: 20px 0;">
+                        <img src="img/rw-digital/website/mockup-laptop-3.webp" style="height: 100%; width: 100%; object-fit: cover; border-radius: 15px;">
+                        <img src="img/rw-digital/website/mockup-tablet.webp" style="height: 100%; width: 100%; object-fit: cover; border-radius: 15px;">
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="section">
+                    <p class="section-title">VISUAL UI</p>
+                    <p class="bold-title">Approachable and modern.</b>
+                    </p>
+                    <p class="page-text">The styling of the agency website reflects the new branding guidelines, making use of <i>Poppins</i> as the primary typeface and a colour palette comprised of whites/blue/turquoise. Illustrations are hand-selected from the Cuate collection, depicting digital marketing and analytics scenes. We selected this visual style for its combination of playfulness and modernity, embracing the agency's adaptable nature to the shifting trends in digital marketing.</p>
+
+                    <div class="grid-2" style="margin: 20px 0;">
+                        <img src="img/rw-website/colours.webp" style="width: 100%; border-radius: 15px;">
+                        <img src="img/rw-website/illustrations.webp" style="width: 100%; border-radius: 15px;">
+                    </div>
+
+                    <img src="img/rw-website/fonts.webp" style="width: 100%; border-radius: 15px;">
+                </section>
+
+
             </div>
         </div>
 
-        <!-- client work -->
-        <div class="text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-bottom: 50px;">
-            <div class="section-title">Client Work</div>
-            As part of the agency's design services for web development and SEO optimization, I work directly with clients of RW Digital to estabish brand guidelines, marketing strategies and responsive websites through WordPress management frameworks. Outdated websites and brand strategies contribute negatively to analytics and user interest; by making use of industry-standard UX practices and techniques for development, I help achieve the following standards:
-            <br>
-            <div class="project-grid-3" style="margin: 25px 0;">
-                <div class="card">
-                    <img width="50" height="50" src="https://img.icons8.com/ios/500/644A75/web-design.png" style="margin-bottom: 5px;">
-                    <div class="card-title">Design & User Experience</div>
-                    <div class="card-text">Applying branding guidelines, creating responsive layouts and writing SEO-friendly copy for pages.</div>
-                </div>
-
-                <div class="card">
-                    <img width="50" height="50" src="https://img.icons8.com/ios/500/644A75/cms.png" style="margin-bottom: 5px;">
-                    <div class="card-title">Technical Setup</div>
-                    <div class="card-text">Migrating content from existing management systems and running technical checks.</div>
-                </div>
-
-                <div class="card">
-                    <img width="50" height="50" src="https://img.icons8.com/ios/500/644A75/speed--v1.png" style="margin-bottom: 5px;">
-                    <div class="card-title">Website Optimization</div>
-                    <div class="card-text">Optimizing pages to run on various devices and pushing maximum performance with faster load times.</div>
-                </div>
-
-                <div class="card">
-                    <img width="50" height="50" src="https://img.icons8.com/ios/500/644A75/color-palette.png" style="margin-bottom: 5px; ">
-                    <div class="card-title">Brand Development</div>
-                    <div class="card-text">Helping businesses establish their identities and stand out in the industry.</div>
-                </div>
-
-                <div class="card">
-                    <img width="50" height="50" src="https://img.icons8.com/ios/500/644A75/goal--v1.png" style="margin-bottom: 5px;">
-                    <div class="card-title">Digital Marketing Strategies</div>
-                    <div class="card-text">Driving new lead generation opportunities and maximizing conversions.</div>
-                </div>
-
-                <div class="card">
-                    <img width="50" height="50" src="https://img.icons8.com/ios/500/644A75/test-passed--v1.png" style="margin-bottom: 5px;">
-                    <div class="card-title">Project Management</div>
-                    <div class="card-text">Communicating with key stakeholders to ensure requirements and needs are being met.</div>
-                </div>
-            </div>
-
-            <span class="medium-bold">Some of the clients I've designed for...</span>
-            <br><br>
-
-            <!-- ulock -->
-            <span class="code"><a href="https://selfstorage.ca/">U-Lock Mini Storage</a></span><span class="code"> ⁕ Pioneer in the Canadian self storage industry</span>
-
-            <div style="text-align: center;" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                <div class="wip-tag">✨ More information on this project coming soon...</div>
-            </div>
-            <br>
-
-            <!-- kelly kirby -->
-            <span class="code"><a href="https://kelly-kirby.com/">Kelly Kirby</a></span><span class="code"> ⁕ Renowned Canadian piano teaching institution & method</span>
-
-            <div class="grid-split" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 15px;">
-                <img src="img/rw-digital/kk-1.webp" style="width: 100%; border-radius: 15px;">
-                <img src="img/rw-digital/kk-5.webp" style="width: 100%; border-radius: 15px;">
-            </div>
-            <br>
-
-            <!-- silver bones tattoo -->
-            <span class="code"><a href="https://silverbonestattoo.com/">Silver Bones Tattoo</a></span><span class="code"> ⁕ Tattoo & microblading shop</span>
-
-            <div class="grid-split" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000" style="margin-top: 15px;">
-                <img src="img/rw-digital/sbt-1.webp" style="width: 100%; border-radius: 15px;">
-                <img src="img/rw-digital/sbt-2.webp" style="width: 100%; border-radius: 15px;">
-            </div>
-            <br>
+        <div id="copyright">
+            <p style="color: #FFFFFF50; font-size: 13px;">© Tany Dourev, 2025.<br>— v8.1 / ∞</p>
         </div>
     </div>
 
-    <div>
-        <img src="img/backgrounds/squiggly.webp" style="height: 5px; display: block; margin: 60px auto 0 auto; z-index: 100; position: relative;">
+    <!-- -------------------------------------------------------------------------------------------------- -->
 
-        <footer style="display: block; padding-bottom: 20px;">
-            <div id="copyright" style="text-align: center;">© Tany Dourev, 2024. All Rights Reserved.<br><span style="color: #644A7570;">+ Lovingly coded by yours truly.</span></div>
-        </footer>
-    </div>
-    </div>
-
-    </div>
-
+    <!-- scripts -->
     <script src="scripts/scripts.js" async defer></script>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- page fade -->
     <script>
-        AOS.init({
-            offset: 20,
+        document.body.classList.add('fade-out');
+
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
         });
     </script>
 
-    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-    <script>
-        const lenis = new Lenis()
-        lenis.on('scroll', (e) => {
-            console.log(e)
-        })
-
-        function raf(time) {
-            lenis.raf(time)
-            requestAnimationFrame(raf)
-        }
-
-        requestAnimationFrame(raf)
-    </script>
-</body>
+    <!-- ion icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </html>
