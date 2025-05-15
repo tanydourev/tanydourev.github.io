@@ -2,6 +2,7 @@
 @media only screen and (min-width: 1600px) {
 
     #navigation {
+        grid-template-columns: 85% 15%;
         margin-bottom: 80px;
     }
 
@@ -9,7 +10,7 @@
         grid-template-columns: 30% 70%;
     }
 
-    .big-texst {
+    .big-text {
         font-size: 90px;
     }
 
@@ -24,5 +25,290 @@
         overflow-x: hidden;
         scroll-behavior: smooth;
         padding-right: 30px;
+    }
+
+    #about-content {
+        grid-template-columns: 40% 60%;
+        gap: 60px;
+        width: 95%;
+    }
+
+    #about-information {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #copyright {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+    }
+}
+
+/* ----- SMALL MONITOR ----- */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    #navigation {
+        grid-template-columns: 75% 25%;
+        margin-bottom: 60px;
+    }
+
+    #home-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    #project-list {
+        padding: 0;
+    }
+
+    .big-text {
+        font-size: 75px;
+    }
+
+    #page-content,
+    #about-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    #project-content,
+    #about-content {
+        height: auto;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    #project-content {
+        height: auto;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    #about-content {
+        width: 100%;
+        gap: 60px;
+    }
+
+    #copyright {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+    }
+}
+
+/* ----- TABLET ----- */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    #navigation {
+        grid-template-columns: 70% 30%;
+        margin-bottom: 60px;
+    }
+
+    #home-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    #project-list {
+        padding: 0;
+    }
+
+    .extra-space {
+        margin-top: 5px;
+    }
+
+    .big-text {
+        font-size: 55px;
+    }
+
+    #page-content,
+    #about-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    #project-content {
+        height: auto;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    #about-content {
+        width: 100%;
+        gap: 60px;
+    }
+
+    #project-gallery {
+        grid-template-columns: auto;
+    }
+}
+
+/* ----- LANDSCAPE PHONE ----- */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+    #container {
+        padding: 20px;
+    }
+
+    #navigation {
+        grid-template-columns: 25% 75%;
+        margin-bottom: 50px;
+    }
+
+    #home-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    #project-list {
+        padding: 0 20px 0 0;
+    }
+
+    .project {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 5px;
+    }
+
+    .extra-space {
+        margin-top: 15px;
+    }
+
+    .big-text {
+        font-size: 48px;
+        line-height: 0.8em;
+    }
+
+    .bio {
+        font-size: 20px;
+        line-height: 1.4em;
+    }
+
+    .project p {
+        margin-top: 8px;
+        text-align: left;
+    }
+
+    #page-content,
+    #about-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    #project-content {
+        height: auto;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    #about-information {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    #project-gallery {
+        grid-template-columns: auto;
+    }
+
+    /* ----- GRIDS ----- */
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ----- CARDS ----- */
+
+    .card-2,
+    .card-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* ----- PHONE ----- */
+@media only screen and (max-width: 599px) {
+
+    #container {
+        padding: 20px;
+    }
+
+    #navigation {
+        grid-template-columns: 25% 75%;
+        margin-bottom: 50px;
+    }
+
+    #home-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    #project-list {
+        padding: 0 20px 0 0;
+    }
+
+    .project {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 5px;
+    }
+
+    .extra-space {
+        margin-top: 30px;
+    }
+
+    .big-text {
+        font-size: 48px;
+        line-height: 0.8em;
+    }
+
+    .bio {
+        font-size: 20px;
+        line-height: 1.4em;
+    }
+
+    .project p {
+        margin-top: 8px;
+        text-align: left;
+    }
+
+    #page-content,
+    #about-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    #project-content {
+        height: auto;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    #about-information {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    #project-gallery {
+        grid-template-columns: auto;
+    }
+
+    /* ----- GRIDS ----- */
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ----- CARDS ----- */
+
+    .card-2,
+    .card-3 {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

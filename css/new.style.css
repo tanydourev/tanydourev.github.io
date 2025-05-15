@@ -17,6 +17,7 @@ body {
     cursor: crosshair;
     opacity: 1;
     transition: 0.8s opacity;
+    overflow-x: hidden;
     overflow-y: hidden;
 }
 
@@ -55,6 +56,30 @@ li {
     padding-left: 10px;
 }
 
+/* ----- BUTTONS ----- */
+
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    color: #FFF;
+    background-color: #1c1c1c;
+    border-radius: 50px;
+    border: 2px solid #242424;
+
+    font-family: SF Pro Display;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    color: #FFF !important;
+    background-color: #151515;
+    cursor: pointer;
+}
+
 /* -------------------------------------------------------------------------------- */
 
 /* ----- FONTS ----- */
@@ -72,6 +97,11 @@ li {
 a {
     color: #FFFFFF;
     text-decoration: underline;
+    transition: 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ffffffb5;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -111,13 +141,18 @@ a {
 
 #navigation {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 82% 18%;
     margin-bottom: 65px;
+}
+
+#navigation a {
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
 }
 
 .navigation-links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .link {
@@ -154,6 +189,11 @@ a {
     line-height: 1.4em;
 }
 
+.project a {
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
 .project p {
     margin-bottom: 5px;
     font-family: SF Pro Display;
@@ -166,6 +206,53 @@ a {
     margin: 20px 0;
     font-size: 22px;
 }
+
+/* -------------------------------------------------------------------------------- */
+
+/* ----- MORE WORK ----- */
+
+#project-gallery {
+    height: 75dvh;
+    width: 95%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding-right: 30px;
+}
+
+.mItem img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.masonry {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.masonry .mItem {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1199px) {
+    .masonry {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 991px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 767px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
 
 /* -------------------------------------------------------------------------------- */
 
@@ -194,7 +281,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #292929;
+    background: #3d3d3d;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -208,6 +295,7 @@ a {
 .section-title {
     margin-bottom: 10px;
     font-size: 14px;
+    line-height: 1.3em;
     letter-spacing: 1px;
     color: #FFFFFF50;
 }
@@ -217,20 +305,18 @@ a {
     line-height: 1.5em;
 }
 
-.design-challenge {
-    margin-bottom: 10px;
-    font-family: SF Pro Bold;
-    font-size: 22px;
-    background: linear-gradient(90deg, #e9f7df 0%, #b0ee81 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .bold-title {
     margin-bottom: 5px;
     font-family: SF Pro Bold;
     font-size: 22px;
     color: #FFFFFF;
+}
+
+.caption {
+    font-size: 13px;
+    line-height: 1.3em;
+    margin: 8px 0 25px 0;
+    color: #999;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -258,9 +344,29 @@ a {
     border: 2px solid #242424;
 }
 
-.caption {
-    font-size: 13px;
-    line-height: 1.3em;
-    margin: 5px 0 25px 0;
-    color: #999;
+.card-quote {
+    font-size: 25px;
+    line-height: 1.4em;
+    margin-bottom: 5px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    border: 2px solid #242424;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ----- ABOUT ----- */
+
+#about-content {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 60px;
+    width: 95%;
+}
+
+#about-information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
 }
