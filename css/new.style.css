@@ -18,7 +18,6 @@ body {
     opacity: 1;
     transition: 0.8s opacity;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 body.fade-out {
