@@ -11,6 +11,29 @@ function closeNav() {
 // -------------------------------------------------------------------------------- //
 
 // FADE IN PAGE
+// window.addEventListener('DOMContentLoaded', () => {
+//     document.body.classList.remove('fade-out');
+// });
+
 window.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.remove('fade-out');
-  });
+    const container = document.getElementById('project-content');
+    const items = container.querySelectorAll('#section');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        root: container,
+        threshold: 0.1
+    });
+
+    items.forEach(item => observer.observe(item));
+});
+
+
+
+

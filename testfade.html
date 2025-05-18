@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fade In on Scroll (Scroll Container)</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden; /* prevent body scroll */
+    }
+
+    #scroll-container {
+      height: 100vh;
+      overflow-y: auto;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    .item {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      background: white;
+      margin-bottom: 20px;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .item.fade-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="scroll-container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+    <div class="item">Item 7</div>
+    <div class="item">Item 8</div>
+  </div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('scroll-container');
+      const items = container.querySelectorAll('.item');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        root: container,
+        threshold: 0.1
+      });
+
+      items.forEach(item => observer.observe(item));
+    });
+  </script>
+
+</body>
+</html>
