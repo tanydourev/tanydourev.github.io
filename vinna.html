@@ -78,6 +78,15 @@ Failure to respect content credit policies makes you a bad internet citizen :]
     <!-- scripts -->
     <script src="scripts/scripts.js" async defer></script>
 
+    <!-- page fade -->
+    <script>
+        document.body.classList.add('fade-out');
+
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
+        });
+    </script>
+
     <script>
         window.addEventListener('DOMContentLoaded', () => {
             const container = document.getElementById('project-content');

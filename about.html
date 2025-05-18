@@ -25,6 +25,12 @@ Failure to respect content credit policies makes you a bad internet citizen :]
 
     <!-- favicon -->
     <link rel="icon" href="/img/favicon/favicon.png">
+
+    <style>
+        #section {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
@@ -120,6 +126,15 @@ Failure to respect content credit policies makes you a bad internet citizen :]
 
         <!-- scripts -->
         <script src="scripts/scripts.js" async defer></script>
+
+        <!-- page fade -->
+        <script>
+            document.body.classList.add('fade-out');
+
+            window.addEventListener('DOMContentLoaded', () => {
+                document.body.classList.remove('fade-out');
+            });
+        </script>
 
         <!-- ion icons -->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

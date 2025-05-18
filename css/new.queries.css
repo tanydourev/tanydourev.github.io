@@ -29,7 +29,7 @@
 
     #about-content {
         grid-template-columns: 40% 60%;
-        gap: 60px;
+        gap: 100px;
         width: 95%;
     }
 

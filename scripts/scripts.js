@@ -7,10 +7,3 @@ function openNav() {
 function closeNav() {
     document.getElementById("responsive-navigation").style.width = "0";
 }
-
-// -------------------------------------------------------------------------------- //
-
-// FADE IN PAGE
-window.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.remove('fade-out');
-});
