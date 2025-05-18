@@ -70,45 +70,29 @@ Failure to respect content credit policies makes you a bad internet citizen :]
     <!-- scripts -->
     <script src="scripts/scripts.js" async defer></script>
 
-    <!-- page fade -->
     <script>
-        document.body.classList.add('fade-out');
-
         window.addEventListener('DOMContentLoaded', () => {
-            document.body.classList.remove('fade-out');
+            const container = document.getElementById('project-content');
+            const items = container.querySelectorAll('#section');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                root: container,
+                threshold: 0.1
+            });
+
+            items.forEach(item => observer.observe(item));
         });
     </script>
 
     <!-- ion icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <!-- smooth scroll -->
-    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-    <script>
-        const scrollWrapper = useRef(null);
-        const scrollContent = useRef(null);
-
-        const lenis = new Lenis()
-        lenis.on('scroll', (e) => {
-            // console.log(e)
-        })
-
-        function raf(time) {
-            lenis.raf(time)
-            requestAnimationFrame(raf)
-        }
-
-        requestAnimationFrame(raf)
-    </script>
-
-    <!-- fade elements -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 10,
-            anchorPlacement: 'top-bottom',
-        });
-    </script>
 
 </html>
