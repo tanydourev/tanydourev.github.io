@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="css/new.style.css">
     <link rel="stylesheet" href="css/new.queries.css">
 
-    <!-- AOS transitions -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="/img/favicon/favicon.png">
 
     <style>
+        body {
+            overflow-y: visible;
+        }
+        
         .design-challenge {
             margin-bottom: 5px;
             font-family: SF Pro Bold;
@@ -22,22 +26,21 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
-        .navigation-links {
-            grid-template-columns: repeat(3, 1fr);
-        }
     </style>
 </head>
 
 <body>
     <div id="container">
         <div id="navigation">
-            <div class="home-name">tany.io</div>
+            <div class="home-name">
+                <a href="/">tany.io</a>
+            </div>
 
             <div class="navigation-links">
-                <div class="link">about ↗</div>
-                <div class="link">read.cv ↗</div>
-                <div class="link">research ↗</div>
+                <div class="link">
+                    <a href="/about">about & cv ↗</a>
+                </div>
+                <div class="link" style="color: #FFFFFF50;">research ↗</div>
             </div>
         </div>
 
@@ -324,17 +327,25 @@
             document.body.classList.remove('fade-out');
         });
     </script>
-
-    <!-- ion icons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <!-- fade elements -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
-        AOS.init({
-            offset: 10,
-            anchorPlacement: 'top-bottom',
+        window.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('project-content');
+            const items = container.querySelectorAll('#section');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                root: container,
+                threshold: 0.1
+            });
+
+            items.forEach(item => observer.observe(item));
         });
     </script>
 
