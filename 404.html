@@ -7,60 +7,60 @@
     <title>404 - Unable to access page</title>
     <meta name="description" content="Unable to access page (404).">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/new.style.css">
+    <link rel="stylesheet" href="css/new.queries.css">
 
-    <!-- lenis smooth scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
-
-    <!-- AOS transitions -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- favicon -->
-    <link rel="icon" href="/img/favicon/favicon.png">
+    <style>
+        body {
+            overflow-y: hidden;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="container">
-        <div id="top-gradient">
-            <img src="img/backgrounds/top-gradient.webp" style="display: block; width: 100%; height: 100%;">
-        </div>
-
-        <div id="error-text">
-            <div class="error-title" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">Oops, went the wrong way...</div>
-
-            <div class="error-text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="1000">The GPS gave you the wrong directions ^-^
+    <div id="container" style="margin-top: 100px;">
+        <div class="error-404">
+            <div class="big-text">404</div>
+            <div class="bio" style="text-align: center;">Oops, the GPS gave you the wrong directions.
+                <br>
+                <span style="color: #FFFFFF50;">You were supposed to turn right 200m ago.</span>
             </div>
-
-            <div class="error-code">+ 404</div>
         </div>
     </div>
 
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+    <!-- scripts -->
     <script src="scripts/scripts.js" async defer></script>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- page fade -->
     <script>
-        AOS.init({
-            offset: 20,
+        document.body.classList.add('fade-out');
+
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
         });
     </script>
 
-    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script>
-        const lenis = new Lenis()
-        lenis.on('scroll', (e) => {
-            console.log(e)
-        })
+        window.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('about-content');
+            const items = container.querySelectorAll('#section');
 
-        function raf(time) {
-            lenis.raf(time)
-            requestAnimationFrame(raf)
-        }
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                root: container,
+                threshold: 0.1
+            });
 
-        requestAnimationFrame(raf)
+            items.forEach(item => observer.observe(item));
+        });
     </script>
 </body>
 

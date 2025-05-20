@@ -44,7 +44,9 @@ Failure to respect content credit policies makes you a bad internet citizen :]
                 <div class="link">
                     <a href="/about">about & cv ↗</a>
                 </div>
-                <div class="link" style="color: #FFFFFF50;">research ↗</div>
+                <div class="link">
+                    <a href="/research">research ↗</a>
+                </div>
             </div>
         </div>
 
@@ -121,23 +123,42 @@ Failure to respect content credit policies makes you a bad internet citizen :]
                 <p style="color: #FFFFFF50; font-size: 13px;">© Tany Dourev, 2025.<br>— v8.1 / ∞</p>
             </div>
         </div>
+    </div>
 
-        <!-- -------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------- -->
 
-        <!-- scripts -->
-        <script src="scripts/scripts.js" async defer></script>
+    <!-- scripts -->
+    <script src="scripts/scripts.js" async defer></script>
 
-        <!-- page fade -->
-        <script>
-            document.body.classList.add('fade-out');
+    <!-- page fade -->
+    <script>
+        document.body.classList.add('fade-out');
 
-            window.addEventListener('DOMContentLoaded', () => {
-                document.body.classList.remove('fade-out');
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
+        });
+    </script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('about-content');
+            const items = container.querySelectorAll('#section');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                root: container,
+                threshold: 0.1
             });
-        </script>
 
-        <!-- ion icons -->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            items.forEach(item => observer.observe(item));
+        });
+    </script>
+</body>
 
 </html>
